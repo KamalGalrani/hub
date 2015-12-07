@@ -1,10 +1,10 @@
-package cz.Communication;
+package eu.ailao.hub.communication;
 /**
  * Created by Petr Marek on 26.11.2015.
  * Class which handles connection between web interface and yodaQA
  */
 
-import cz.Concepts.ConceptMemorizer;
+import eu.ailao.hub.concepts.ConceptMemorizer;
 import org.json.JSONObject;
 import spark.Request;
 import spark.Response;
@@ -57,7 +57,7 @@ public class WebInterface implements Runnable {
 		response.status(201);
 
 		Map<String, String[]> queryParamsMap = request.queryMap().toMap();
-		String question = queryParamsMap.get("question")[0];
+		String question = queryParamsMap.get("text")[0];
 		conceptMemorizer.updateConcepts(queryParamsMap, questionCount);
 		questionCount++;
 

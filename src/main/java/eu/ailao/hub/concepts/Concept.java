@@ -1,4 +1,4 @@
-package cz.Concepts;
+package eu.ailao.hub.concepts;
 
 /**
  * Created by Petr Marek on 01.12.2015.

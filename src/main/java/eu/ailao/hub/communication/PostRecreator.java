@@ -1,6 +1,6 @@
-package cz.Communication;
+package eu.ailao.hub.communication;
 
-import cz.Concepts.Concept;
+import eu.ailao.hub.concepts.Concept;
 import org.apache.http.HttpEntity;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
@@ -79,7 +79,7 @@ public class PostRecreator {
 	/***
 	 * Adds concepts to parameters of POST
 	 * @param urlParameters List of parameters, where concepts are add
-	 * @param concepts Concepts to add
+	 * @param concepts concepts to add
 	 * @return List of parameters with added concepts
 	 */
 	private List<NameValuePair> addConcepts(List<NameValuePair> urlParameters, ArrayDeque<Concept> concepts){

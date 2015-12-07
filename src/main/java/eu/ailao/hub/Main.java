@@ -1,6 +1,6 @@
-package cz;
+package eu.ailao.hub;
 
-import cz.Communication.WebInterface;
+import eu.ailao.hub.communication.WebInterface;
 
 /**
  * Created by Petr Marek on 26.11.2015.

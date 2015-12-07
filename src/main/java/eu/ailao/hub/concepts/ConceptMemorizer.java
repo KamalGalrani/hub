@@ -1,4 +1,4 @@
-package cz.Concepts;
+package eu.ailao.hub.concepts;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -26,7 +26,7 @@ public class ConceptMemorizer {
 
 	/***
 	 * Updates memory of concepts. Adds new concepts and deletes the old ones
-	 * @param queryParamsMap Concepts in map
+	 * @param queryParamsMap concepts in map
 	 * @param questionCount Number of asked questions until now
 	 */
 	public void updateConcepts(Map<String, String[]> queryParamsMap, int questionCount) {
@@ -43,7 +43,7 @@ public class ConceptMemorizer {
 
 	/***
 	 * Updates memory of concepts. Adds new concepts and deletes the old ones
-	 * @param json Concepts in json
+	 * @param json concepts in json
 	 * @param questionCount Number of asked questions until now
 	 */
 	public void updateConcepts(JSONObject json, int questionCount) {

@@ -1,6 +1,6 @@
-package cz.Communication;
+package eu.ailao.hub.communication;
 
-import cz.Concepts.Concept;
+import eu.ailao.hub.concepts.Concept;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.CloseableHttpResponse;

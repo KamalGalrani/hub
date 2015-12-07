@@ -1,0 +1,30 @@
+apply plugin: 'java'
+apply plugin: 'maven'
+apply plugin: 'application'
+
+mainClassName = 'eu.ailao.hub.Main'
+
+group = 'cz.PetrMarek.Hub'
+version = '1.0'
+
+description = """"""
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+run {
+    if (project.hasProperty('execArgs'))
+        args(execArgs.split(' '))
+}
+
+repositories {
+        
+     maven { url "http://repo.maven.apache.org/maven2" }
+}
+dependencies {
+    compile group: 'com.sparkjava', name: 'spark-core', version:'2.2'
+    compile group: 'org.apache.httpcomponents', name: 'httpcore', version:'4.4.4'
+    compile group: 'org.apache.httpcomponents', name: 'httpclient', version:'4.5.1'
+    compile group: 'org.apache.httpcomponents', name: 'httpasyncclient', version:'4.1.1'
+    compile group: 'org.json', name: 'json', version:'20151123'
+}
