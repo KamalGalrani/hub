@@ -16,6 +16,7 @@ targetCompatibility = 1.8
 run {
     if (project.hasProperty('execArgs'))
         args(execArgs.split(' '))
+    systemProperties = System.getProperties()
 }
 
 repositories {
