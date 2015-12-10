@@ -31,7 +31,9 @@ public class ConceptMemorizer {
 	 */
 	public void updateConcepts(Map<String, String[]> queryParamsMap, int questionCount) {
 		removeOldConcepts(questionCount);
-		int numberOfConcepts = Integer.parseInt(queryParamsMap.get("numberOfConcepts")[0]);
+		int numberOfConcepts = 0;
+		if (queryParamsMap.containsKey("numberOfConcepts"))
+			Integer.parseInt(queryParamsMap.get("numberOfConcepts")[0]);
 		if (numberOfConcepts > 1) {
 			for (int i = 1; i < numberOfConcepts; i++) {
 				Concept concept = new Concept(Integer.parseInt(queryParamsMap.get("pageID" + String.valueOf(i))[0]),
