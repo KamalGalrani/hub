@@ -16,6 +16,8 @@ public class ConceptMemorizer {
 	private ArrayDeque<Concept> concepts = new ArrayDeque<>();
 	private final int MAX_QUESTIONS_TO_REMEMBER_CONCEPT = 5;
 
+	private int questionCount=0;
+
 	/***
 	 * Returns concepts in memory
 	 * @return concepts
@@ -27,9 +29,8 @@ public class ConceptMemorizer {
 	/***
 	 * Updates memory of concepts. Adds new concepts and deletes the old ones
 	 * @param queryParamsMap concepts in map
-	 * @param questionCount Number of asked questions until now
 	 */
-	public void updateConcepts(Map<String, String[]> queryParamsMap, int questionCount) {
+	public void updateConcepts(Map<String, String[]> queryParamsMap) {
 		removeOldConcepts(questionCount);
 		int numberOfConcepts = 0;
 		if (queryParamsMap.containsKey("numberOfConcepts"))
@@ -41,14 +42,14 @@ public class ConceptMemorizer {
 				concepts.add(concept);
 			}
 		}
+		questionCount++;
 	}
 
 	/***
 	 * Updates memory of concepts. Adds new concepts and deletes the old ones
 	 * @param json concepts in json
-	 * @param questionCount Number of asked questions until now
 	 */
-	public void updateConcepts(JSONObject json, int questionCount) {
+	public void updateConcepts(JSONObject json) {
 		if (((Boolean)json.get("finished"))) {
 			removeOldConcepts(questionCount);
 			JSONObject summary = json.getJSONObject("summary");
@@ -61,6 +62,7 @@ public class ConceptMemorizer {
 				}
 			}
 		}
+		questionCount++;
 	}
 
 	/***

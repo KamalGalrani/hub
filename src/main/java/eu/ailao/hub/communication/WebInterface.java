@@ -4,17 +4,22 @@ package eu.ailao.hub.communication;
  * Class which handles connection between web interface and yodaQA
  */
 
+import eu.ailao.hub.concepts.Concept;
 import eu.ailao.hub.concepts.ConceptMemorizer;
+import eu.ailao.hub.questions.Question;
+import eu.ailao.hub.questions.QuestionMapper;
+import eu.ailao.hub.transformations.Transformation;
+import eu.ailao.hub.transformations.TransformationArray;
 import org.json.JSONObject;
 import spark.Request;
 import spark.Response;
 
 import java.io.IOException;
+import java.util.ArrayDeque;
 import java.util.Map;
 import java.util.concurrent.ExecutionException;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
+import static eu.ailao.hub.Statics.isContain;
 import static spark.Spark.*;
 import static spark.Spark.get;
 
@@ -24,13 +29,13 @@ public class WebInterface implements Runnable {
 	private int port;
 	private String yodaQAURL;
 	private ConceptMemorizer conceptMemorizer;
-
-	private int questionCount = 0;
+	private QuestionMapper questionMapper;
 
 	public WebInterface(int port, String yodaQAURL) {
 		this.port = port;
 		this.yodaQAURL = yodaQAURL;
 		conceptMemorizer=new ConceptMemorizer();
+		questionMapper =new QuestionMapper();
 	}
 
 	/***
@@ -57,11 +62,16 @@ public class WebInterface implements Runnable {
 		response.status(201);
 
 		Map<String, String[]> queryParamsMap = request.queryMap().toMap();
-		String question = queryParamsMap.get("text")[0];
-		conceptMemorizer.updateConcepts(queryParamsMap, questionCount);
-		questionCount++;
+		conceptMemorizer.updateConcepts(queryParamsMap);
 
-		return answerQuestion(question, request);
+		String questionText = queryParamsMap.get("text")[0];
+		Question question=new Question(questionText);
+		question=transformQuestion(question);
+
+		String answerID= askQuestion(question, request);
+		questionMapper.addQuestion(getQuestionID(answerID),question);
+
+		return answerID;
 	}
 
 
@@ -75,12 +85,13 @@ public class WebInterface implements Runnable {
 		response.type("application/json");
 		response.header("Access-Control-Allow-Origin", "*");
 		response.status(201);
-		String id = request.params("id");
+		int id = Integer.parseInt(request.params("id"));
 		CommunicationHandler communicationHandler = new CommunicationHandler();
 		String GETResponse = communicationHandler.getGETResponse(yodaQAURL + "q/" + id);
-		JSONObject jsonObj = new JSONObject(GETResponse);
-		conceptMemorizer.updateConcepts(jsonObj, questionCount);
-		return GETResponse;
+		JSONObject answer = new JSONObject(GETResponse);
+		answer=transformBack(id,answer);
+		conceptMemorizer.updateConcepts(answer);
+		return answer.toString();
 	}
 
 	/***
@@ -111,28 +122,37 @@ public class WebInterface implements Runnable {
 	 * @param request Request from web interface
 	 * @return response of yodaQA
 	 */
-	private String answerQuestion(String question, Request request) {
-		String[] thirdPersonPronouns = {"he", "she", "it", "his", "hers", "him", "her", "they", "them", "their"};
-		CommunicationHandler communicationHandler = new CommunicationHandler();
+	private String askQuestion(Question question, Request request) {
+		ArrayDeque<Concept> concepts;
+		concepts= getConceptsIfThirdPersonPronouns(question.getTransformedQuestionText());
 
-		for (int i = 0; i < thirdPersonPronouns.length; i++) {
-			if (isContain(question.toLowerCase(), thirdPersonPronouns[i])) {
-				return communicationHandler.getPOSTResponse(yodaQAURL + "/q", request, conceptMemorizer.getConcepts());
-			}
-		}
-		return communicationHandler.getPOSTResponse(yodaQAURL + "/q", request, null);
+		CommunicationHandler communicationHandler = new CommunicationHandler();
+		return communicationHandler.getPOSTResponse(yodaQAURL + "/q", request, question.getTransformedQuestionText(), concepts);
 	}
 
-	/***
-	 * Checks if word appears in text
-	 * @param text
-	 * @param word
-	 * @return TRUE if word appears in text, FALSE if word doesn't appear in text
-	 */
-	private static boolean isContain(String text, String word){
-		String pattern = "\\b"+word+"\\b";
-		Pattern p=Pattern.compile(pattern);
-		Matcher m=p.matcher(text);
-		return m.find();
+	private Question transformQuestion(Question question){
+		for(Transformation transformation: TransformationArray.transformationsList){
+			question.applyTransformationIfUseful(transformation);
+		}
+		return question;
+	}
+
+	private ArrayDeque<Concept> getConceptsIfThirdPersonPronouns(String question){
+		String[] thirdPersonPronouns = {"he", "she", "it", "his", "hers", "him", "her", "they", "them", "their"};
+		for (int i = 0; i < thirdPersonPronouns.length; i++) {
+			if (isContain(question.toLowerCase(), thirdPersonPronouns[i])) {
+				return conceptMemorizer.getConcepts();
+			}
+		}
+		return null;
+	}
+
+	private int getQuestionID(String answer){
+		return Integer.parseInt(answer.replaceAll("[\\D]", ""));
+	}
+
+	private JSONObject transformBack(int id, JSONObject answer){
+		Question question = questionMapper.getQuestionByID(id);
+		return question.transformBack(answer);
 	}
 }

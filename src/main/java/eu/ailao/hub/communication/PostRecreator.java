@@ -24,9 +24,9 @@ public class PostRecreator {
 	 * @param concepts More concepts to add to POST
 	 * @return POST for yodaQA
 	 */
-	public HttpPost recreatePost(HttpPost httpPost, Request request, ArrayDeque<Concept> concepts) {
+	public HttpPost recreatePost(HttpPost httpPost, Request request, String question, ArrayDeque<Concept> concepts) {
 		httpPost = addHeadersToPost(httpPost, request);
-		httpPost = addParamsToPost(httpPost, request, concepts);
+		httpPost = addParamsToPost(httpPost, request, question, concepts);
 		return httpPost;
 	}
 
@@ -54,14 +54,18 @@ public class PostRecreator {
 	 * @param concepts New concepts to add
 	 * @return POST for yodaQA
 	 */
-	private HttpPost addParamsToPost(HttpPost httpPost, Request request, ArrayDeque<Concept> concepts) {
+	private HttpPost addParamsToPost(HttpPost httpPost, Request request, String question, ArrayDeque<Concept> concepts) {
 		try {
 			Map<String, String[]> queryParamsMap = request.queryMap().toMap();
 			List<NameValuePair> urlParameters = new ArrayList<NameValuePair>();
 			for (Map.Entry<String, String[]> entry : queryParamsMap.entrySet()) {
-				if (concepts!=null && entry.getKey().equals("numberOfConcepts")){
+				if (concepts != null && entry.getKey().equals("numberOfConcepts")){
 					urlParameters.add(new BasicNameValuePair(entry.getKey(), String.valueOf(Integer.parseInt(entry.getValue()[0])+concepts.size())));
-				continue;
+					continue;
+				}
+				if (question != null && entry.getKey().equals("text")){
+					urlParameters.add(new BasicNameValuePair(entry.getKey(), question));
+					continue;
 				}
 				urlParameters.add(new BasicNameValuePair(entry.getKey(), entry.getValue()[0]));
 			}
