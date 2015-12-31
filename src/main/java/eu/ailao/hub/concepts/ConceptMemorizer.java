@@ -16,6 +16,9 @@ public class ConceptMemorizer {
 	private ArrayDeque<Concept> concepts = new ArrayDeque<>();
 	private final int MAX_QUESTIONS_TO_REMEMBER_CONCEPT = 5;
 
+	/***
+	 * Number of asked questions
+	 */
 	private int questionCount=0;
 
 	/***

@@ -7,6 +7,7 @@ import java.util.ArrayList;
 
 /**
  * Created by Petr Marek on 30.12.2015.
+ * Question class storing original text of answer, applied transformations and transformed text of answer
  */
 public class Question {
 	private String originalQuestionText;
@@ -22,6 +23,11 @@ public class Question {
 		return transformedQuestionText;
 	}
 
+	/***
+	 * Test if transformation can be applied and applies it if so
+	 * @param transformation Transformation to apply
+	 * @return TRUE if transformation was applied
+	 */
 	public boolean applyTransformationIfUseful(Transformation transformation){
 		if (isTransformationUseful(transformation)){
 			this.transformedQuestionText = transformation.transform(transformedQuestionText);
@@ -31,10 +37,20 @@ public class Question {
 		return false;
 	}
 
+	/***
+	 * Tests if is transformation useful and can be applied
+	 * @param transformation
+	 * @return TRUE if it is useful
+	 */
 	private boolean isTransformationUseful(Transformation transformation){
 		return transformation.transformDetection(originalQuestionText);
 	}
 
+	/***
+	 * Transforms answer to question back by applying back transformations in reverse order
+	 * @param answer Answer to question to transform back
+	 * @return Answer transformed back
+	 */
 	public JSONObject transformBack(JSONObject answer){
 		answer.put("text", originalQuestionText);
 		for (int i = transformations.size() - 1; i >= 0; i--) {

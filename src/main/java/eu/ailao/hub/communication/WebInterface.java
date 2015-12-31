@@ -69,7 +69,7 @@ public class WebInterface implements Runnable {
 		question=transformQuestion(question);
 
 		String answerID= askQuestion(question, request);
-		questionMapper.addQuestion(getQuestionID(answerID),question);
+		questionMapper.addQuestion(getQuestionIDFromAnswer(answerID),question);
 
 		return answerID;
 	}
@@ -130,13 +130,11 @@ public class WebInterface implements Runnable {
 		return communicationHandler.getPOSTResponse(yodaQAURL + "/q", request, question.getTransformedQuestionText(), concepts);
 	}
 
-	private Question transformQuestion(Question question){
-		for(Transformation transformation: TransformationArray.transformationsList){
-			question.applyTransformationIfUseful(transformation);
-		}
-		return question;
-	}
-
+	/***
+	 * Detects if there is pronouns in the third person in question text. If so, returns memorized concepts from concept memorizer
+	 * @param question Question to check for pronoun
+	 * @return Concepts from concept memorizer
+	 */
 	private ArrayDeque<Concept> getConceptsIfThirdPersonPronouns(String question){
 		String[] thirdPersonPronouns = {"he", "she", "it", "his", "hers", "him", "her", "they", "them", "their"};
 		for (int i = 0; i < thirdPersonPronouns.length; i++) {
@@ -147,10 +145,35 @@ public class WebInterface implements Runnable {
 		return null;
 	}
 
-	private int getQuestionID(String answer){
+	/***
+	 * Gets ID of question from YodaQA's answer to this question
+	 * @param answer YodaQA's answer
+	 * @return id of question
+	 */
+	private int getQuestionIDFromAnswer(String answer){
 		return Integer.parseInt(answer.replaceAll("[\\D]", ""));
 	}
 
+	/***
+	 * Applies transformations to question
+	 * Change question text according to transformations defined in TransformationArray.transformationsList
+	 * @param question Question to transform
+	 * @return Transformed question
+	 */
+	private Question transformQuestion(Question question){
+		for(Transformation transformation: TransformationArray.transformationsList){
+			question.applyTransformationIfUseful(transformation);
+		}
+		return question;
+	}
+
+	/***
+	 * Transforms answer back
+	 * Applies back transformations in reverse order to answer
+	 * @param id id of question
+	 * @param answer YodaQA's answer
+	 * @return Answer transformed back
+	 */
 	private JSONObject transformBack(int id, JSONObject answer){
 		Question question = questionMapper.getQuestionByID(id);
 		return question.transformBack(answer);

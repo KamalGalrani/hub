@@ -5,6 +5,7 @@ import java.util.regex.Pattern;
 
 /**
  * Created by Petr Marek on 30.12.2015.
+ * Class of statics functions
  */
 public final class Statics {
 
