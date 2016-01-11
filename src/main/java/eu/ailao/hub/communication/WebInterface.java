@@ -66,7 +66,7 @@ public class WebInterface implements Runnable {
 
 		String questionText = queryParamsMap.get("text")[0];
 		Question question=new Question(questionText);
-		question=transformQuestion(question);
+		transformQuestion(question);
 
 		String answerID= askQuestion(question, request);
 		questionMapper.addQuestion(getQuestionIDFromAnswer(answerID),question);
@@ -160,11 +160,10 @@ public class WebInterface implements Runnable {
 	 * @param question Question to transform
 	 * @return Transformed question
 	 */
-	private Question transformQuestion(Question question){
+	private void transformQuestion(Question question){
 		for(Transformation transformation: TransformationArray.transformationsList){
 			question.applyTransformationIfUseful(transformation);
 		}
-		return question;
 	}
 
 	/***
