@@ -11,7 +11,7 @@ import eu.ailao.hub.questions.QuestionMapper;
 import eu.ailao.hub.transformations.Transformation;
 import eu.ailao.hub.transformations.TransformationArray;
 import eu.ailao.hub.users.User;
-import eu.ailao.hub.users.UserMaper;
+import eu.ailao.hub.users.UserMapper;
 import org.json.JSONObject;
 import spark.Request;
 import spark.Response;
@@ -31,15 +31,15 @@ public class WebInterface implements Runnable {
 	private int port;
 	private String yodaQAURL;
 	private QuestionMapper questionMapper;
-	private UserMaper userMaper;
+	private UserMapper userMapper;
 
-	private static final String SESSION_NAME = "username";
+	private static final String USER_ID = "userID";
 
 	public WebInterface(int port, String yodaQAURL) {
 		this.port = port;
 		this.yodaQAURL = yodaQAURL;
-		questionMapper =new QuestionMapper();
-		userMaper=new UserMaper();
+		this.questionMapper =new QuestionMapper();
+		this.userMapper =new UserMapper();
 	}
 
 	/***
@@ -65,11 +65,13 @@ public class WebInterface implements Runnable {
 		response.header("Access-Control-Allow-Origin", "*");
 		response.status(201);
 		String tempSessionID="a";
-		User user=userMaper.getUserByID(tempSessionID);
+
+		User user= userMapper.getUserByID(tempSessionID);
 		if (user==null){
 			user=new User(tempSessionID, new ConceptMemorizer());
-			userMaper.addUser(user.getId(),user);
+			userMapper.addUser(user.getId(), user);
 		}
+
 		Map<String, String[]> queryParamsMap = request.queryMap().toMap();
 		user.getConceptMemorizer().updateConceptsDuringAsking(queryParamsMap);
 
@@ -90,15 +92,17 @@ public class WebInterface implements Runnable {
 	 * @return
 	 */
 	private Object handleGettingAnswer(Request request, Response response) {
-		String tempSessionID="a";
-		User user=userMaper.getUserByID(tempSessionID);
-		if (user==null){
-			user=new User(tempSessionID, new ConceptMemorizer());
-			userMaper.addUser(user.getId(),user);
-		}
 		response.type("application/json");
 		response.header("Access-Control-Allow-Origin", "*");
 		response.status(201);
+
+		String tempSessionID="a";
+		User user= userMapper.getUserByID(tempSessionID);
+		if (user==null){
+			user=new User(tempSessionID, new ConceptMemorizer());
+			userMapper.addUser(user.getId(), user);
+		}
+
 		int id = Integer.parseInt(request.params("id"));
 		CommunicationHandler communicationHandler = new CommunicationHandler();
 		String GETResponse = communicationHandler.getGETResponse(yodaQAURL + "q/" + id);
@@ -146,9 +150,9 @@ public class WebInterface implements Runnable {
 	}
 
 	/***
-	 * Detects if there is pronouns in the third person in question text. If so, returns memorized concepts from concept memorizer
+	 * Detects if there is pronouns in the third person in question text.
 	 * @param question Question to check for pronoun
-	 * @return Concepts from concept memorizer
+	 * @return TRUE if there is third person pronoun in question
 	 */
 	private boolean isThirdPersonPronouns(String question){
 		String[] thirdPersonPronouns = {"he", "she", "it", "his", "hers", "him", "her", "they", "them", "their"};

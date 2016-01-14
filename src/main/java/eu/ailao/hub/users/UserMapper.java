@@ -4,8 +4,9 @@ import java.util.HashMap;
 
 /**
  * Created by Petr Marek on 14.01.2016.
+ * Remembers users by their id
  */
-public class UserMaper {
+public class UserMapper {
 	HashMap<String, User> userMap=new HashMap<>();
 
 	public User getUserByID(String id){

@@ -4,6 +4,7 @@ import eu.ailao.hub.concepts.ConceptMemorizer;
 
 /**
  * Created by Petr Marek on 14.01.2016.
+ * Class storing id of user and his concept memorizer
  */
 public class User {
 	String id;
