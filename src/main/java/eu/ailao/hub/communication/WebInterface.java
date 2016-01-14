@@ -38,8 +38,8 @@ public class WebInterface implements Runnable {
 	public WebInterface(int port, String yodaQAURL) {
 		this.port = port;
 		this.yodaQAURL = yodaQAURL;
-		this.questionMapper =new QuestionMapper();
-		this.userMapper =new UserMapper();
+		this.questionMapper = new QuestionMapper();
+		this.userMapper = new UserMapper();
 	}
 
 	/***
@@ -48,7 +48,7 @@ public class WebInterface implements Runnable {
 	public void run() {
 		port(port);
 		post("/q", ((request, response) -> handleGettingID(request, response)));
-		get("/q/:id", ((request, response) -> handleGettingAnswer(request, response)));
+		get("/q/*/*", ((request, response) -> handleGettingAnswer(request, response)));
 		get("/q/", ((request, response) -> handleGettingInformation(request, response)));
 	}
 
@@ -64,25 +64,27 @@ public class WebInterface implements Runnable {
 	private Object handleGettingID(Request request, Response response) throws IOException, ExecutionException, InterruptedException {
 		response.header("Access-Control-Allow-Origin", "*");
 		response.status(201);
-		String tempSessionID="a";
-
-		User user= userMapper.getUserByID(tempSessionID);
-		if (user==null){
-			user=new User(tempSessionID, new ConceptMemorizer());
-			userMapper.addUser(user.getId(), user);
-		}
 
 		Map<String, String[]> queryParamsMap = request.queryMap().toMap();
-		user.getConceptMemorizer().updateConceptsDuringAsking(queryParamsMap);
 
 		String questionText = queryParamsMap.get("text")[0];
 		Question question=new Question(questionText);
 		question=transformQuestion(question);
 
+		String[] userIDStringArr=queryParamsMap.get("userID");
+		String userIDString=null;
+		if (userIDStringArr!=null){
+			userIDString=userIDStringArr[0];
+		}
+		User user= userMapper.getUser(userIDString);
+
+		user.getConceptMemorizer().updateConceptsDuringAsking(queryParamsMap);
+
 		String answerID= askQuestion(question, request, user.getConceptMemorizer().getConcepts());
 		questionMapper.addQuestion(getQuestionIDFromAnswer(answerID),question);
-
-		return answerID;
+		JSONObject answer = new JSONObject(answerID);
+		answer.put("userID",user.getUserID());
+		return answer.toString();
 	}
 
 	/***
@@ -96,14 +98,10 @@ public class WebInterface implements Runnable {
 		response.header("Access-Control-Allow-Origin", "*");
 		response.status(201);
 
-		String tempSessionID="a";
-		User user= userMapper.getUserByID(tempSessionID);
-		if (user==null){
-			user=new User(tempSessionID, new ConceptMemorizer());
-			userMapper.addUser(user.getId(), user);
-		}
+		String userID=request.splat()[1];
+		User user= userMapper.getUser(userID);
 
-		int id = Integer.parseInt(request.params("id"));
+		int id = Integer.parseInt(request.splat()[0]);
 		CommunicationHandler communicationHandler = new CommunicationHandler();
 		String GETResponse = communicationHandler.getGETResponse(yodaQAURL + "q/" + id);
 		JSONObject answer = new JSONObject(GETResponse);

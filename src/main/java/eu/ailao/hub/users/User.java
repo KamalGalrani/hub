@@ -7,27 +7,19 @@ import eu.ailao.hub.concepts.ConceptMemorizer;
  * Class storing id of user and his concept memorizer
  */
 public class User {
-	String id;
 	ConceptMemorizer conceptMemorizer;
+	int userID;
 
-	public User(String id, ConceptMemorizer conceptMemorizer) {
-		this.id = id;
+	public User(ConceptMemorizer conceptMemorizer, int userID) {
 		this.conceptMemorizer = conceptMemorizer;
-	}
-
-	public String getId() {
-		return id;
-	}
-
-	public void setId(String id) {
-		this.id = id;
+		this.userID=userID;
 	}
 
 	public ConceptMemorizer getConceptMemorizer() {
 		return conceptMemorizer;
 	}
 
-	public void setConceptMemorizer(ConceptMemorizer conceptMemorizer) {
-		this.conceptMemorizer = conceptMemorizer;
+	public int getUserID() {
+		return userID;
 	}
 }
