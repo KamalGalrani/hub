@@ -33,7 +33,7 @@ public class ConceptMemorizer {
 	 * Updates memory of concepts. Adds new concepts and deletes the old ones
 	 * @param queryParamsMap concepts in map
 	 */
-	public void updateConcepts(Map<String, String[]> queryParamsMap) {
+	public void updateConceptsDuringAsking(Map<String, String[]> queryParamsMap) {
 		removeOldConcepts(questionCount);
 		int numberOfConcepts = 0;
 		if (queryParamsMap.containsKey("numberOfConcepts"))
@@ -52,7 +52,7 @@ public class ConceptMemorizer {
 	 * Updates memory of concepts. Adds new concepts and deletes the old ones
 	 * @param json concepts in json
 	 */
-	public void updateConcepts(JSONObject json) {
+	public void updateConceptsDuringGettingQuestion(JSONObject json) {
 		if (((Boolean)json.get("finished"))) {
 			removeOldConcepts(questionCount);
 			JSONObject summary = json.getJSONObject("summary");
@@ -65,7 +65,6 @@ public class ConceptMemorizer {
 				}
 			}
 		}
-		questionCount++;
 	}
 
 	/***
