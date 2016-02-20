@@ -21,7 +21,7 @@ public class AgeTransformation extends Transformation {
 	/***
 	 * Patterns of date
 	 */
-	String[] patterns={"yyyy", "yyyy-MM-dd"};
+	String[] patterns = {"yyyy", "yyyy-MM-dd"};
 
 	/***
 	 * Detect if question contains "How old is" string;
@@ -64,7 +64,7 @@ public class AgeTransformation extends Transformation {
 			String answerText = (String) singleAnswer.get("text");
 
 			LocalDate date = parseToLocalDate(answerText);
-			if (date == null){
+			if (date == null) {
 				singleAnswer.put("text", answerText);
 				continue;
 			}
@@ -74,6 +74,13 @@ public class AgeTransformation extends Transformation {
 			singleAnswer.put("text", String.valueOf(age.getYears()));
 		}
 		answer.put("answers", answers);
+		if (!answer.isNull("answerSentence")) {
+			String answerSentence = (String) answer.get("answerSentence");
+			String[] answerSentenceSplit = answerSentence.split("date of birth is");
+			answerSentenceSplit = answerSentenceSplit[0].split("birth date");
+			answer.put("answerSentence", answerSentenceSplit[0] + "is "
+					+ ((JSONObject) answer.getJSONArray("answers").get(0)).get("text") + " years old.");
+		}
 		return answer;
 	}
 
@@ -83,10 +90,10 @@ public class AgeTransformation extends Transformation {
 	 * @return LocalDate or null
 	 */
 	private LocalDate parseToLocalDate(String answerText) {
-		LocalDate dt=null;
-		int i=0;
-		while(dt == null) {
-			if (i >= patterns.length){
+		LocalDate dt = null;
+		int i = 0;
+		while (dt == null) {
+			if (i >= patterns.length) {
 				break;
 			}
 			dt = parseByPattern(answerText, patterns[i]);
@@ -101,12 +108,13 @@ public class AgeTransformation extends Transformation {
 	 * @param pattern Pattern of LocalDate
 	 * @return LocalDate or null
 	 */
-	private LocalDate parseByPattern(String answerText,String pattern){
-		LocalDate dt=null;
+	private LocalDate parseByPattern(String answerText, String pattern) {
+		LocalDate dt = null;
 		try {
 			DateTimeFormatter dtf = DateTimeFormat.forPattern(pattern);
 			dt = dtf.parseLocalDate(answerText);
-		} catch (Exception e) {}
+		} catch (Exception e) {
+		}
 		return dt;
 	}
 }
