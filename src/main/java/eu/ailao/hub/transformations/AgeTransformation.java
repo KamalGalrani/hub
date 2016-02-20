@@ -78,6 +78,7 @@ public class AgeTransformation extends Transformation {
 			String answerSentence = (String) answer.get("answerSentence");
 			String[] answerSentenceSplit = answerSentence.split("date of birth is");
 			answerSentenceSplit = answerSentenceSplit[0].split("birth date");
+			answerSentenceSplit = answerSentenceSplit[0].split("year is");
 			answer.put("answerSentence", answerSentenceSplit[0] + "is "
 					+ ((JSONObject) answer.getJSONArray("answers").get(0)).get("text") + " years old.");
 		}
