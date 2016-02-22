@@ -70,8 +70,9 @@ public class PostRecreator {
 				urlParameters.add(new BasicNameValuePair(entry.getKey(), entry.getValue()[0]));
 			}
 			if (concepts!=null){
-				addConcepts(urlParameters,concepts);
+				urlParameters=addConcepts(urlParameters,concepts);
 			}
+			urlParameters=removeEmptyUrlParameters(urlParameters);
 			HttpEntity postParams = new UrlEncodedFormEntity(urlParameters);
 			httpPost.setEntity(postParams);
 		} catch (UnsupportedEncodingException e) {
@@ -90,9 +91,19 @@ public class PostRecreator {
 		int conceptsSize=concepts.size();
 		for (int i = 0; i < conceptsSize; i++) {
 			Concept concept=concepts.poll();
-			urlParameters.add(new BasicNameValuePair("pageID"+String.valueOf(i+1),String.valueOf(concept.getPageID())));
+			urlParameters.add(new BasicNameValuePair("pageID" + String.valueOf(i + 1), String.valueOf(concept.getPageID())));
 			urlParameters.add(new BasicNameValuePair("fullLabel"+String.valueOf(i+1), String.valueOf(concept.getFullLabel())));
 		}
 		return urlParameters;
+	}
+
+	private List<NameValuePair> removeEmptyUrlParameters(List<NameValuePair> urlParameters){
+		List<NameValuePair> newUrlParameters=new ArrayList<NameValuePair>();
+		for(int i=0;i<urlParameters.size();i++){
+			if (!urlParameters.get(i).getValue().equals("")){
+				newUrlParameters.add(urlParameters.get(i));
+			}
+		}
+		return newUrlParameters;
 	}
 }

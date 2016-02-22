@@ -3,6 +3,7 @@ package eu.ailao.hub.users;
 import eu.ailao.hub.concepts.ConceptMemorizer;
 
 import java.util.HashMap;
+import java.util.Random;
 
 /**
  * Created by Petr Marek on 14.01.2016.
@@ -10,7 +11,7 @@ import java.util.HashMap;
  */
 public class UserMapper {
 	HashMap<Integer, User> userMap=new HashMap<>();
-	int numberOfUsers=0;
+	Random idgen = new Random();
 
 	/**
 	 * Returns user from hashMap of users
@@ -27,8 +28,7 @@ public class UserMapper {
 	 * @param user user to add
 	 */
 	private void addUser(User user){
-		userMap.put(numberOfUsers,user);
-		numberOfUsers++;
+		userMap.put(user.getUserID(),user);
 	}
 
 	/**
@@ -39,7 +39,7 @@ public class UserMapper {
 	public User getUser(String userID){
 		User user;
 		if (userID==null || userID.equals("")){
-			user=createNewUser(numberOfUsers);
+			user=createNewUser(idgen.nextInt(Integer.MAX_VALUE));
 		}else{
 			int id=Integer.parseInt(userID);
 			user=findUserWithID(id);
