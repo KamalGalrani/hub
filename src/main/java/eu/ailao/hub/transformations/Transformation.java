@@ -29,4 +29,11 @@ public abstract class Transformation {
 	 * @return answer transformed back
 	 */
 	public abstract JSONObject transformBack(JSONObject answer);
+
+	/***
+	 * Transforms answer sentence by applying back transformations in reverse order
+	 * @param answerSentence Sentence of answer to transform back
+	 * @return Sentence transformed back
+	 */
+	public abstract String transformBackAnswerSentence(String answerSentence);
 }

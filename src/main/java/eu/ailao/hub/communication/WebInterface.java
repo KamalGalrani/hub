@@ -4,6 +4,7 @@ package eu.ailao.hub.communication;
  * Class which handles connection between web interface and yodaQA
  */
 
+import eu.ailao.hub.AnswerSentenceGenerator;
 import eu.ailao.hub.concepts.Concept;
 import eu.ailao.hub.concepts.ConceptMemorizer;
 import eu.ailao.hub.questions.Question;
@@ -32,6 +33,7 @@ public class WebInterface implements Runnable {
 	private String yodaQAURL;
 	private QuestionMapper questionMapper;
 	private UserMapper userMapper;
+	private AnswerSentenceGenerator answerSentenceGenerator;
 
 	private static final String USER_ID = "userID";
 
@@ -40,6 +42,7 @@ public class WebInterface implements Runnable {
 		this.yodaQAURL = yodaQAURL;
 		this.questionMapper = new QuestionMapper();
 		this.userMapper = new UserMapper();
+		this.answerSentenceGenerator = new AnswerSentenceGenerator();
 	}
 
 	/***
@@ -68,22 +71,22 @@ public class WebInterface implements Runnable {
 		Map<String, String[]> queryParamsMap = request.queryMap().toMap();
 
 		String questionText = queryParamsMap.get("text")[0];
-		Question question=new Question(questionText);
+		Question question = new Question(questionText);
 		transformQuestion(question);
 
-		String[] userIDStringArr=queryParamsMap.get("userID");
-		String userIDString=null;
-		if (userIDStringArr!=null){
-			userIDString=userIDStringArr[0];
+		String[] userIDStringArr = queryParamsMap.get("userID");
+		String userIDString = null;
+		if (userIDStringArr != null) {
+			userIDString = userIDStringArr[0];
 		}
-		User user= userMapper.getUser(userIDString);
+		User user = userMapper.getUser(userIDString);
 
 		user.getConceptMemorizer().updateConceptsDuringAsking(queryParamsMap);
 
-		String answerID= askQuestion(question, request, user.getConceptMemorizer().getConcepts());
-		questionMapper.addQuestion(getQuestionIDFromAnswer(answerID),question);
+		String answerID = askQuestion(question, request, user.getConceptMemorizer().getConcepts());
+		questionMapper.addQuestion(getQuestionIDFromAnswer(answerID), question);
 		JSONObject answer = new JSONObject(answerID);
-		answer.put("userID",user.getUserID());
+		answer.put("userID", user.getUserID());
 		return answer.toString();
 	}
 
@@ -98,15 +101,20 @@ public class WebInterface implements Runnable {
 		response.header("Access-Control-Allow-Origin", "*");
 		response.status(201);
 
-		String userID=request.splat()[1];
-		User user= userMapper.getUser(userID);
+		String userID = request.splat()[1];
+		User user = userMapper.getUser(userID);
 
 		int id = Integer.parseInt(request.splat()[0]);
 		CommunicationHandler communicationHandler = new CommunicationHandler();
 		String GETResponse = communicationHandler.getGETResponse(yodaQAURL + "q/" + id);
 		JSONObject answer = new JSONObject(GETResponse);
-		answer=transformBack(id,answer);
+		answer = transformBack(id, answer);
 		user.getConceptMemorizer().updateConceptsDuringGettingQuestion(answer);
+		String answerSentence = answerSentenceGenerator.getAnswerSentence(answer);
+		if (answerSentence != null) {
+			answerSentence = transformBackAnswerSentence(id, answerSentence);
+		}
+		answer.put("answerSentence", answerSentence);
 		return answer.toString();
 	}
 
@@ -117,7 +125,7 @@ public class WebInterface implements Runnable {
 	 * @return
 	 */
 	private Object handleGettingInformation(Request request, Response response) {
-		String result=null;
+		String result = null;
 		response.type("application/json");
 		response.header("Access-Control-Allow-Origin", "*");
 		response.status(201);
@@ -139,9 +147,9 @@ public class WebInterface implements Runnable {
 	 * @return response of yodaQA
 	 */
 	private String askQuestion(Question question, Request request, ArrayDeque<Concept> concepts) {
-		ArrayDeque<Concept> _concepts=new ArrayDeque<>();
-		if (isThirdPersonPronouns(question.getTransformedQuestionText())){
-			_concepts=concepts;
+		ArrayDeque<Concept> _concepts = new ArrayDeque<>();
+		if (isThirdPersonPronouns(question.getTransformedQuestionText())) {
+			_concepts = concepts;
 		}
 		CommunicationHandler communicationHandler = new CommunicationHandler();
 		return communicationHandler.getPOSTResponse(yodaQAURL + "/q", request, question.getTransformedQuestionText(), _concepts);
@@ -152,7 +160,7 @@ public class WebInterface implements Runnable {
 	 * @param question Question to check for pronoun
 	 * @return TRUE if there is third person pronoun in question
 	 */
-	private boolean isThirdPersonPronouns(String question){
+	private boolean isThirdPersonPronouns(String question) {
 		String[] thirdPersonPronouns = {"he", "she", "it", "his", "hers", "him", "her", "they", "them", "their"};
 		for (int i = 0; i < thirdPersonPronouns.length; i++) {
 			if (isContain(question.toLowerCase(), thirdPersonPronouns[i])) {
@@ -167,7 +175,7 @@ public class WebInterface implements Runnable {
 	 * @param answer YodaQA's answer
 	 * @return id of question
 	 */
-	private int getQuestionIDFromAnswer(String answer){
+	private int getQuestionIDFromAnswer(String answer) {
 		return Integer.parseInt(answer.replaceAll("[\\D]", ""));
 	}
 
@@ -177,8 +185,8 @@ public class WebInterface implements Runnable {
 	 * @param question Question to transform
 	 * @return Transformed question
 	 */
-	private void transformQuestion(Question question){
-		for(Transformation transformation: TransformationArray.transformationsList){
+	private void transformQuestion(Question question) {
+		for (Transformation transformation : TransformationArray.transformationsList) {
 			question.applyTransformationIfUseful(transformation);
 		}
 	}
@@ -190,8 +198,13 @@ public class WebInterface implements Runnable {
 	 * @param answer YodaQA's answer
 	 * @return Answer transformed back
 	 */
-	private JSONObject transformBack(int id, JSONObject answer){
+	private JSONObject transformBack(int id, JSONObject answer) {
 		Question question = questionMapper.getQuestionByID(id);
 		return question.transformBack(answer);
+	}
+
+	private String transformBackAnswerSentence(int id, String answerSentence) {
+		Question question = questionMapper.getQuestionByID(id);
+		return question.transformBackAnswerSentence(answerSentence);
 	}
 }

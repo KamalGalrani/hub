@@ -12,7 +12,7 @@ import java.util.ArrayList;
 public class Question {
 	private String originalQuestionText;
 	private String transformedQuestionText;
-	private ArrayList<Transformation> transformations=new ArrayList<>();
+	private ArrayList<Transformation> transformations = new ArrayList<>();
 
 	public Question(String questionText) {
 		this.originalQuestionText = questionText;
@@ -28,8 +28,8 @@ public class Question {
 	 * @param transformation Transformation to apply
 	 * @return TRUE if transformation was applied
 	 */
-	public boolean applyTransformationIfUseful(Transformation transformation){
-		if (isTransformationUseful(transformation)){
+	public boolean applyTransformationIfUseful(Transformation transformation) {
+		if (isTransformationUseful(transformation)) {
 			this.transformedQuestionText = transformation.transform(transformedQuestionText);
 			this.transformations.add(transformation);
 			return true;
@@ -42,7 +42,7 @@ public class Question {
 	 * @param transformation
 	 * @return TRUE if it is useful
 	 */
-	private boolean isTransformationUseful(Transformation transformation){
+	private boolean isTransformationUseful(Transformation transformation) {
 		return transformation.transformDetection(originalQuestionText);
 	}
 
@@ -51,11 +51,23 @@ public class Question {
 	 * @param answer Answer to question to transform back
 	 * @return Answer transformed back
 	 */
-	public JSONObject transformBack(JSONObject answer){
+	public JSONObject transformBack(JSONObject answer) {
 		answer.put("text", originalQuestionText);
 		for (int i = transformations.size() - 1; i >= 0; i--) {
-			answer=transformations.get(i).transformBack(answer);
+			answer = transformations.get(i).transformBack(answer);
 		}
 		return answer;
+	}
+
+	/***
+	 * Transforms answer sentence by applying back transformations in reverse order
+	 * @param answerSentence Sentence of answer to transform back
+	 * @return Sentence transformed back
+	 */
+	public String transformBackAnswerSentence(String answerSentence) {
+		for (int i = transformations.size() - 1; i >= 0; i--) {
+			answerSentence = transformations.get(i).transformBackAnswerSentence(answerSentence);
+		}
+		return answerSentence;
 	}
 }

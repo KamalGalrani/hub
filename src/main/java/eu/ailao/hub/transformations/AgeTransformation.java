@@ -74,15 +74,19 @@ public class AgeTransformation extends Transformation {
 			singleAnswer.put("text", String.valueOf(age.getYears()));
 		}
 		answer.put("answers", answers);
-		if (!answer.isNull("answerSentence")) {
-			String answerSentence = (String) answer.get("answerSentence");
-			String[] answerSentenceSplit = answerSentence.split("date of birth is");
-			answerSentenceSplit = answerSentenceSplit[0].split("birth date");
-			answerSentenceSplit = answerSentenceSplit[0].split("year is");
-			answer.put("answerSentence", answerSentenceSplit[0] + "is "
-					+ ((JSONObject) answer.getJSONArray("answers").get(0)).get("text") + " years old.");
-		}
 		return answer;
+	}
+
+	/***
+	 * Transforms answer sentence by applying back transformations in reverse order
+	 * @param answerSentence Sentence of answer to transform back
+	 * @return Sentence transformed back
+	 */
+	@Override
+	public String transformBackAnswerSentence(String answerSentence) {
+		answerSentence = answerSentence.replace("birth date", "age");
+		answerSentence = answerSentence.replace("date of birth", "age");
+		return answerSentence;
 	}
 
 	/***
