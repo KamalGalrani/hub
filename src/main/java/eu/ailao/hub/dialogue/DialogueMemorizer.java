@@ -2,10 +2,7 @@ package eu.ailao.hub.dialogue;
 
 import eu.ailao.hub.concepts.Concept;
 
-import java.util.ArrayDeque;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
+import java.util.*;
 
 /**
  * Created by Petr Marek on 24.02.2016.
@@ -19,6 +16,10 @@ public class DialogueMemorizer {
 
 	public Dialogue getDialog(int dialogID){
 		return dialogs.get(dialogID);
+	}
+
+	public ArrayList<Dialogue> getDialogs(){
+		return new ArrayList<Dialogue>(dialogs.values());
 	}
 
 }

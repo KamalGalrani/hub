@@ -6,7 +6,6 @@ package eu.ailao.hub.communication;
 
 import eu.ailao.hub.AnswerSentenceGenerator;
 import eu.ailao.hub.concepts.Concept;
-import eu.ailao.hub.concepts.ConceptMemorizer;
 import eu.ailao.hub.dialogue.Dialogue;
 import eu.ailao.hub.dialogue.DialogueMemorizer;
 import eu.ailao.hub.questions.Question;
@@ -15,12 +14,14 @@ import eu.ailao.hub.transformations.Transformation;
 import eu.ailao.hub.transformations.TransformationArray;
 import eu.ailao.hub.users.User;
 import eu.ailao.hub.users.UserMapper;
+import org.json.JSONArray;
 import org.json.JSONObject;
 import spark.Request;
 import spark.Response;
 
 import java.io.IOException;
 import java.util.ArrayDeque;
+import java.util.ArrayList;
 import java.util.Map;
 import java.util.Random;
 import java.util.concurrent.ExecutionException;
@@ -96,14 +97,16 @@ public class WebInterface implements Runnable {
 		JSONObject answer = new JSONObject(answerID);
 		answer.put("userID", user.getUserID());
 
-		String dialogID=queryParamsMap.get("dialogueID")[0];
-		if (dialogID.equals("")){
-			int newDialogueID=idgen.nextInt(Integer.MAX_VALUE);
+		String dialogID = queryParamsMap.get("dialogueID")[0];
+		if (dialogID.equals("")) {
+			int newDialogueID = idgen.nextInt(Integer.MAX_VALUE);
 			dialogueMemorizer.addDialogue(new Dialogue(newDialogueID));
 			dialogueMemorizer.getDialog(newDialogueID).addQuestion(Integer.parseInt(answer.getString("id")));
-		}else{
+			dialogID = Integer.toString(newDialogueID);
+		} else {
 			dialogueMemorizer.getDialog(Integer.parseInt(dialogID)).addQuestion(Integer.parseInt(answer.getString("id")));
 		}
+		answer.put("dialogueID", dialogID);
 
 		return answer.toString();
 	}
@@ -121,8 +124,27 @@ public class WebInterface implements Runnable {
 
 		String userID = request.splat()[1];
 		User user = userMapper.getUser(userID);
+		String sid = request.splat()[0];
+		if (sid.startsWith("d_")) {
+			//return dialogue
+			int id = Integer.parseInt(sid.replace("d_", ""));
+			Dialogue dialogue = dialogueMemorizer.getDialog(id);
+			ArrayList<Integer> questions = dialogue.getQuestions();
+			JSONArray dialogueAnswer = new JSONArray();
+			for (int qid : questions) {
+				JSONObject answer = getAnswer(qid, user);
+				dialogueAnswer.put(answer);
+			}
+			return dialogueAnswer.toString();
+		} else {
+			//return only one answer
+			int id = Integer.parseInt(sid);
+			JSONObject answer = getAnswer(id, user);
+			return answer.toString();
+		}
+	}
 
-		int id = Integer.parseInt(request.splat()[0]);
+	private JSONObject getAnswer(int id, User user) {
 		CommunicationHandler communicationHandler = new CommunicationHandler();
 		String GETResponse = communicationHandler.getGETResponse(yodaQAURL + "q/" + id);
 		JSONObject answer = new JSONObject(GETResponse);
@@ -133,7 +155,7 @@ public class WebInterface implements Runnable {
 			answerSentence = transformBackAnswerSentence(id, answerSentence);
 		}
 		answer.put("answerSentence", answerSentence);
-		return answer.toString();
+		return answer;
 	}
 
 	/***
@@ -154,6 +176,10 @@ public class WebInterface implements Runnable {
 			result = communicationHandler.getGETResponse(yodaQAURL + "q/?inProgress");
 		} else if (request.queryParams("answered") != null) {
 			result = communicationHandler.getGETResponse(yodaQAURL + "q/?answered");
+		} else if (request.queryParams("dialogs") != null) {
+			//TODO return dialogs in some form
+			ArrayList dialogs = dialogueMemorizer.getDialogs();
+			result = new JSONObject(dialogs.subList(0, 6 < dialogs.size() ? 6 : dialogs.size())).toString();
 		}
 		return result;
 	}

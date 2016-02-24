@@ -18,7 +18,7 @@ public class Dialogue {
 		questionsOfDialogue.add(questionID);
 	}
 
-	public ArrayList getQuestion(){
+	public ArrayList<Integer> getQuestions(){
 		return questionsOfDialogue;
 	}
 
