@@ -1,6 +1,7 @@
 package eu.ailao.hub.users;
 
 import eu.ailao.hub.concepts.ConceptMemorizer;
+import eu.ailao.hub.dialogue.DialogueMemorizer;
 
 /**
  * Created by Petr Marek on 14.01.2016.
@@ -9,10 +10,12 @@ import eu.ailao.hub.concepts.ConceptMemorizer;
 public class User {
 	ConceptMemorizer conceptMemorizer;
 	int userID;
+	DialogueMemorizer dialogueMemorizer;
 
-	public User(ConceptMemorizer conceptMemorizer, int userID) {
+	public User(ConceptMemorizer conceptMemorizer, int userID, DialogueMemorizer dialogueMemorizer) {
 		this.conceptMemorizer = conceptMemorizer;
 		this.userID=userID;
+		this.dialogueMemorizer = dialogueMemorizer;
 	}
 
 	public ConceptMemorizer getConceptMemorizer() {
@@ -21,5 +24,9 @@ public class User {
 
 	public int getUserID() {
 		return userID;
+	}
+
+	public DialogueMemorizer getDialogueMemorizer() {
+		return dialogueMemorizer;
 	}
 }
