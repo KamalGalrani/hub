@@ -7,6 +7,8 @@ package eu.ailao.hub.communication;
 import eu.ailao.hub.AnswerSentenceGenerator;
 import eu.ailao.hub.concepts.Concept;
 import eu.ailao.hub.concepts.ConceptMemorizer;
+import eu.ailao.hub.dialogue.Dialogue;
+import eu.ailao.hub.dialogue.DialogueMemorizer;
 import eu.ailao.hub.questions.Question;
 import eu.ailao.hub.questions.QuestionMapper;
 import eu.ailao.hub.transformations.Transformation;
@@ -20,6 +22,7 @@ import spark.Response;
 import java.io.IOException;
 import java.util.ArrayDeque;
 import java.util.Map;
+import java.util.Random;
 import java.util.concurrent.ExecutionException;
 
 import static eu.ailao.hub.Statics.isContain;
@@ -34,6 +37,8 @@ public class WebInterface implements Runnable {
 	private QuestionMapper questionMapper;
 	private UserMapper userMapper;
 	private AnswerSentenceGenerator answerSentenceGenerator;
+	private DialogueMemorizer dialogueMemorizer;
+	private Random idgen;
 
 	private static final String USER_ID = "userID";
 
@@ -43,6 +48,8 @@ public class WebInterface implements Runnable {
 		this.questionMapper = new QuestionMapper();
 		this.userMapper = new UserMapper();
 		this.answerSentenceGenerator = new AnswerSentenceGenerator();
+		this.dialogueMemorizer = new DialogueMemorizer();
+		this.idgen = new Random();
 	}
 
 	/***
@@ -85,8 +92,19 @@ public class WebInterface implements Runnable {
 
 		String answerID = askQuestion(question, request, user.getConceptMemorizer().getConcepts());
 		questionMapper.addQuestion(getQuestionIDFromAnswer(answerID), question);
+
 		JSONObject answer = new JSONObject(answerID);
 		answer.put("userID", user.getUserID());
+
+		String dialogID=queryParamsMap.get("dialogueID")[0];
+		if (dialogID.equals("")){
+			int newDialogueID=idgen.nextInt(Integer.MAX_VALUE);
+			dialogueMemorizer.addDialogue(new Dialogue(newDialogueID));
+			dialogueMemorizer.getDialog(newDialogueID).addQuestion(Integer.parseInt(answer.getString("id")));
+		}else{
+			dialogueMemorizer.getDialog(Integer.parseInt(dialogID)).addQuestion(Integer.parseInt(answer.getString("id")));
+		}
+
 		return answer.toString();
 	}
 

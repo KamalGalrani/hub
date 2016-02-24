@@ -1,6 +1,7 @@
 package eu.ailao.hub.users;
 
 import eu.ailao.hub.concepts.ConceptMemorizer;
+import eu.ailao.hub.dialogue.DialogueMemorizer;
 
 import java.util.HashMap;
 import java.util.Random;

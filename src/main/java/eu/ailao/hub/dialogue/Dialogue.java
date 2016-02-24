@@ -9,9 +9,9 @@ public class Dialogue {
 	private int id;
 	private ArrayList<Integer> questionsOfDialogue;
 
-	public Dialogue(int id, ArrayList<Integer> questionsOfDialogue) {
+	public Dialogue(int id) {
 		this.id = id;
-		this.questionsOfDialogue = questionsOfDialogue;
+		this.questionsOfDialogue = new ArrayList<>();
 	}
 
 	public void addQuestion(int questionID) {
@@ -20,5 +20,9 @@ public class Dialogue {
 
 	public ArrayList getQuestion(){
 		return questionsOfDialogue;
+	}
+
+	public int getId() {
+		return id;
 	}
 }

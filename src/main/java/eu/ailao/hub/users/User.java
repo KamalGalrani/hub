@@ -10,12 +10,10 @@ import eu.ailao.hub.dialogue.DialogueMemorizer;
 public class User {
 	ConceptMemorizer conceptMemorizer;
 	int userID;
-	DialogueMemorizer dialogueMemorizer;
 
-	public User(ConceptMemorizer conceptMemorizer, int userID, DialogueMemorizer dialogueMemorizer) {
+	public User(ConceptMemorizer conceptMemorizer, int userID) {
 		this.conceptMemorizer = conceptMemorizer;
-		this.userID=userID;
-		this.dialogueMemorizer = dialogueMemorizer;
+		this.userID = userID;
 	}
 
 	public ConceptMemorizer getConceptMemorizer() {
@@ -24,9 +22,5 @@ public class User {
 
 	public int getUserID() {
 		return userID;
-	}
-
-	public DialogueMemorizer getDialogueMemorizer() {
-		return dialogueMemorizer;
 	}
 }
