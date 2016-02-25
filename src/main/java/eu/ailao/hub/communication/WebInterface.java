@@ -60,6 +60,7 @@ public class WebInterface implements Runnable {
 		port(port);
 		post("/q", ((request, response) -> handleGettingID(request, response)));
 		get("/q/*/*", ((request, response) -> handleGettingAnswer(request, response)));
+		get("/q/:dID", ((request, response) -> handleGettingDialogInfo(request, response)));
 		get("/q/", ((request, response) -> handleGettingInformation(request, response)));
 	}
 
@@ -112,7 +113,7 @@ public class WebInterface implements Runnable {
 	}
 
 	/***
-	 * Reaction to GET request to /q/:id
+	 * Reaction to GET request to /q/:id/:userID
 	 * @param request
 	 * @param response
 	 * @return
@@ -130,11 +131,7 @@ public class WebInterface implements Runnable {
 			int id = Integer.parseInt(sid.replace("d_", ""));
 			Dialogue dialogue = dialogueMemorizer.getDialog(id);
 			ArrayList<Integer> questions = dialogue.getQuestions();
-			JSONArray dialogueAnswer = new JSONArray();
-			for (int qid : questions) {
-				JSONObject answer = getAnswer(qid, user);
-				dialogueAnswer.put(answer);
-			}
+			JSONArray dialogueAnswer = new JSONArray(questions);
 			return dialogueAnswer.toString();
 		} else {
 			//return only one answer
@@ -142,6 +139,27 @@ public class WebInterface implements Runnable {
 			JSONObject answer = getAnswer(id, user);
 			return answer.toString();
 		}
+	}
+
+	/***
+	 * Reaction to GET request to /q/:id/
+	 * @param request
+	 * @param response
+	 * @return
+	 */
+	private Object handleGettingDialogInfo(Request request, Response response) {
+		response.type("application/json");
+		response.header("Access-Control-Allow-Origin", "*");
+		response.status(201);
+
+		String sid = request.params("dID");
+		//return dialogue
+		int id = Integer.parseInt(sid.replace("d_", ""));
+		Dialogue dialogue = dialogueMemorizer.getDialog(id);
+		ArrayList<Integer> questions = dialogue.getQuestions();
+		JSONArray dialogueAnswer = new JSONArray(questions);
+		return dialogueAnswer.toString();
+
 	}
 
 	private JSONObject getAnswer(int id, User user) {
@@ -179,7 +197,7 @@ public class WebInterface implements Runnable {
 		} else if (request.queryParams("dialogs") != null) {
 			//TODO return dialogs in some form
 			ArrayList dialogs = dialogueMemorizer.getDialogs();
-			result = new JSONObject(dialogs.subList(0, 6 < dialogs.size() ? 6 : dialogs.size())).toString();
+			result = new JSONArray(dialogs.subList(0, 6 < dialogs.size() ? 6 : dialogs.size())).toString();
 		}
 		return result;
 	}
