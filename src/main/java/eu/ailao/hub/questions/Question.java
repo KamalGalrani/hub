@@ -10,6 +10,7 @@ import java.util.ArrayList;
  * Question class storing original text of answer, applied transformations and transformed text of answer
  */
 public class Question {
+	private int yodaQuestionID;
 	private String originalQuestionText;
 	private String transformedQuestionText;
 	private ArrayList<Transformation> transformations = new ArrayList<>();
@@ -21,6 +22,14 @@ public class Question {
 
 	public String getTransformedQuestionText() {
 		return transformedQuestionText;
+	}
+
+	public int getYodaQuestionID() {
+		return yodaQuestionID;
+	}
+
+	public void setYodaQuestionID(int yodaQuestionID) {
+		this.yodaQuestionID = yodaQuestionID;
 	}
 
 	/***

@@ -20,10 +20,7 @@ import spark.Request;
 import spark.Response;
 
 import java.io.IOException;
-import java.util.ArrayDeque;
-import java.util.ArrayList;
-import java.util.Map;
-import java.util.Random;
+import java.util.*;
 import java.util.concurrent.ExecutionException;
 
 import static eu.ailao.hub.Statics.isContain;
@@ -92,20 +89,21 @@ public class WebInterface implements Runnable {
 
 		user.getConceptMemorizer().updateConceptsDuringAsking(queryParamsMap);
 
-		String answerID = askQuestion(question, request, user.getConceptMemorizer().getConcepts());
-		questionMapper.addQuestion(getQuestionIDFromAnswer(answerID), question);
+		String questionID = askQuestion(question, request, user.getConceptMemorizer().getConcepts());
+		questionMapper.addQuestion(getQuestionIDFromAnswer(questionID), question);
+		question.setYodaQuestionID(getQuestionIDFromAnswer(questionID));
 
-		JSONObject answer = new JSONObject(answerID);
+		JSONObject answer = new JSONObject(questionID);
 		answer.put("userID", user.getUserID());
 
 		String dialogID = queryParamsMap.get("dialogueID")[0];
 		if (dialogID.equals("")) {
 			int newDialogueID = idgen.nextInt(Integer.MAX_VALUE);
 			dialogueMemorizer.addDialogue(new Dialogue(newDialogueID));
-			dialogueMemorizer.getDialog(newDialogueID).addQuestion(Integer.parseInt(answer.getString("id")));
+			dialogueMemorizer.getDialog(newDialogueID).addQuestion(question);
 			dialogID = Integer.toString(newDialogueID);
 		} else {
-			dialogueMemorizer.getDialog(Integer.parseInt(dialogID)).addQuestion(Integer.parseInt(answer.getString("id")));
+			dialogueMemorizer.getDialog(Integer.parseInt(dialogID)).addQuestion(question);
 		}
 		answer.put("dialogueID", dialogID);
 
@@ -130,7 +128,7 @@ public class WebInterface implements Runnable {
 			//return dialogue
 			int id = Integer.parseInt(sid.replace("d_", ""));
 			Dialogue dialogue = dialogueMemorizer.getDialog(id);
-			ArrayList<Integer> questions = dialogue.getQuestions();
+			ArrayList<Integer> questions = dialogue.getQuestionsIDs();
 			JSONArray dialogueAnswer = new JSONArray(questions);
 			return dialogueAnswer.toString();
 		} else {
@@ -156,7 +154,7 @@ public class WebInterface implements Runnable {
 		//return dialogue
 		int id = Integer.parseInt(sid.replace("d_", ""));
 		Dialogue dialogue = dialogueMemorizer.getDialog(id);
-		ArrayList<Integer> questions = dialogue.getQuestions();
+		ArrayList<Integer> questions = dialogue.getQuestionsIDs();
 		JSONArray dialogueAnswer = new JSONArray(questions);
 		return dialogueAnswer.toString();
 
@@ -195,9 +193,16 @@ public class WebInterface implements Runnable {
 		} else if (request.queryParams("answered") != null) {
 			result = communicationHandler.getGETResponse(yodaQAURL + "q/?answered");
 		} else if (request.queryParams("dialogs") != null) {
-			//TODO return dialogs in some form
 			ArrayList dialogs = dialogueMemorizer.getDialogs();
-			result = new JSONArray(dialogs.subList(0, 6 < dialogs.size() ? 6 : dialogs.size())).toString();
+			List lastDialogs=dialogs.subList(0, 6 < dialogs.size() ? 6 : dialogs.size());
+			JSONArray dialogArray=new JSONArray();
+			for (int i = 0; i < lastDialogs.size(); i++) {
+				JSONObject oneDialog=new JSONObject();
+				oneDialog.put("id",((Dialogue)lastDialogs.get(i)).getId());
+				oneDialog.put("dialogQuestions",createDialogAnswer((Dialogue) lastDialogs.get(i)));
+				dialogArray.put(oneDialog);
+			}
+			result = dialogArray.toString();
 		}
 		return result;
 	}
@@ -268,5 +273,17 @@ public class WebInterface implements Runnable {
 	private String transformBackAnswerSentence(int id, String answerSentence) {
 		Question question = questionMapper.getQuestionByID(id);
 		return question.transformBackAnswerSentence(answerSentence);
+	}
+
+	private JSONArray createDialogAnswer(Dialogue dialogue){
+		JSONArray dialogueAnswer = new JSONArray();
+		ArrayList<Question> questions = dialogue.getQuestions();
+		for (int i = 0; i < questions.size(); i++) {
+			JSONObject question=new JSONObject();
+			question.put("id", questions.get(i).getYodaQuestionID());
+			question.put("text",questions.get(i).getTransformedQuestionText());
+			dialogueAnswer.put(question);
+		}
+		return dialogueAnswer;
 	}
 }
