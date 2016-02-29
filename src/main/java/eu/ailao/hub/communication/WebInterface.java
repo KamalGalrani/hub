@@ -103,7 +103,7 @@ public class WebInterface implements Runnable {
 			dialogueMemorizer.getDialog(newDialogueID).addQuestion(question);
 			dialogID = Integer.toString(newDialogueID);
 		} else {
-			dialogueMemorizer.getDialog(Integer.parseInt(dialogID)).addQuestion(question);
+			dialogueMemorizer.getDialog(Integer.parseInt(dialogID.replace("d_", ""))).addQuestion(question);
 		}
 		answer.put("dialogueID", dialogID);
 
