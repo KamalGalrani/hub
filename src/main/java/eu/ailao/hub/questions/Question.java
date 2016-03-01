@@ -24,6 +24,10 @@ public class Question {
 		return transformedQuestionText;
 	}
 
+	public String getOriginalQuestionText(){
+		return originalQuestionText;
+	}
+
 	public int getYodaQuestionID() {
 		return yodaQuestionID;
 	}

@@ -40,7 +40,7 @@ public class UserMapper {
 	public User getUser(String userID){
 		User user;
 		if (userID==null || userID.equals("")){
-			user=createNewUser(idgen.nextInt(Integer.MAX_VALUE));
+			user=createNewUser();
 		}else{
 			int id=Integer.parseInt(userID);
 			user=findUserWithID(id);
@@ -50,11 +50,10 @@ public class UserMapper {
 
 	/**
 	 * Creates new user with id and put it into hasmMap of users
-	 * @param id desired id
 	 * @return user
 	 */
-	private User createNewUser(int id){
-		User user=new User(new ConceptMemorizer(),id);
+	private User createNewUser(){
+		User user=new User(new ConceptMemorizer(),idgen.nextInt(Integer.MAX_VALUE));
 		addUser(user);
 		return user;
 	}
@@ -67,7 +66,7 @@ public class UserMapper {
 	private User findUserWithID(int id){
 		User user=getUserByID(id);
 		if (user==null){
-			user=createNewUser(id);
+			user=createNewUser();
 		}
 		return user;
 	}
