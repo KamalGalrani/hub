@@ -1,6 +1,7 @@
 package eu.ailao.hub.dialogue;
 
 import eu.ailao.hub.concepts.Concept;
+import eu.ailao.hub.questions.Question;
 
 import java.util.*;
 
@@ -8,6 +9,12 @@ import java.util.*;
  * Created by Petr Marek on 24.02.2016.
  */
 public class DialogueMemorizer {
+	private Random idgen;
+
+	public DialogueMemorizer() {
+		this.idgen = new Random();
+	}
+
 	private HashMap<Integer,Dialogue> dialogs = new HashMap<>();
 
 	public void addDialogue(Dialogue dialogue){
@@ -20,6 +27,13 @@ public class DialogueMemorizer {
 
 	public ArrayList<Dialogue> getDialogs(){
 		return new ArrayList<Dialogue>(dialogs.values());
+	}
+
+	public int createNewDialogue(Question firstQuestion){
+		int newDialogueID = idgen.nextInt(Integer.MAX_VALUE);
+		this.addDialogue(new Dialogue(newDialogueID));
+		this.getDialog(newDialogueID).addQuestion(firstQuestion);
+		return newDialogueID;
 	}
 
 }

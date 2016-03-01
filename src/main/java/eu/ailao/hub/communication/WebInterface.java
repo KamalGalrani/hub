@@ -36,7 +36,7 @@ public class WebInterface implements Runnable {
 	private UserMapper userMapper;
 	private AnswerSentenceGenerator answerSentenceGenerator;
 	private DialogueMemorizer dialogueMemorizer;
-	private Random idgen;
+
 
 	private static final String USER_ID = "userID";
 
@@ -47,7 +47,6 @@ public class WebInterface implements Runnable {
 		this.userMapper = new UserMapper();
 		this.answerSentenceGenerator = new AnswerSentenceGenerator();
 		this.dialogueMemorizer = new DialogueMemorizer();
-		this.idgen = new Random();
 	}
 
 	/***
@@ -98,12 +97,14 @@ public class WebInterface implements Runnable {
 
 		String dialogID = queryParamsMap.get("dialogueID")[0];
 		if (dialogID.equals("")) {
-			int newDialogueID = idgen.nextInt(Integer.MAX_VALUE);
-			dialogueMemorizer.addDialogue(new Dialogue(newDialogueID));
-			dialogueMemorizer.getDialog(newDialogueID).addQuestion(question);
-			dialogID = Integer.toString(newDialogueID);
+			dialogID = Integer.toString(dialogueMemorizer.createNewDialogue(question));
 		} else {
-			dialogueMemorizer.getDialog(Integer.parseInt(dialogID.replace("d_", ""))).addQuestion(question);
+			Dialogue dialog=dialogueMemorizer.getDialog(Integer.parseInt(dialogID.replace("d_", "")));
+			if (dialog!=null){
+				dialog.addQuestion(question);
+			}else{
+				dialogID = Integer.toString(dialogueMemorizer.createNewDialogue(question));
+			}
 		}
 		answer.put("dialogueID", dialogID);
 
