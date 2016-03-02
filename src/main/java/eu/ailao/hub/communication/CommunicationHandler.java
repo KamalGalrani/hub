@@ -1,6 +1,6 @@
 package eu.ailao.hub.communication;
 
-import eu.ailao.hub.concepts.Concept;
+import eu.ailao.hub.corefresol.concepts.Concept;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.CloseableHttpResponse;
@@ -27,13 +27,13 @@ public class CommunicationHandler {
 	 * @param concepts More concepts to send to yodaQA
 	 * @return response of yodaQA
 	 */
-	public String getPOSTResponse(String address, Request request,String question, ArrayDeque<Concept> concepts) {
+	public String getPOSTResponse(String address, Request request, String question, ArrayDeque<Concept> concepts, String prewiousBestAnswer) {
 		String result = "";
 		try {
 			CloseableHttpClient httpClient = HttpClients.createDefault();
 			HttpPost httpPost = new HttpPost(address);
 			PostRecreator postRecreator = new PostRecreator();
-			httpPost = postRecreator.recreatePost(httpPost, request,question, concepts);
+			httpPost = postRecreator.recreatePost(httpPost, request, question, concepts, prewiousBestAnswer);
 
 			CloseableHttpResponse httpResponse = httpClient.execute(httpPost);
 
@@ -67,7 +67,7 @@ public class CommunicationHandler {
 			HttpGet outgoingRequest = new HttpGet(address);
 			HttpResponse incommingResponse = client.execute(outgoingRequest);
 			BufferedReader rd = new BufferedReader
-					(new InputStreamReader(incommingResponse.getEntity().getContent(),"UTF8"));
+					(new InputStreamReader(incommingResponse.getEntity().getContent(), "UTF8"));
 
 			String line;
 			while ((line = rd.readLine()) != null) {

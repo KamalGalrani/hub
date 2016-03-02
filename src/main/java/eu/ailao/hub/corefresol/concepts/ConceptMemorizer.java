@@ -1,4 +1,4 @@
-package eu.ailao.hub.concepts;
+package eu.ailao.hub.corefresol.concepts;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -19,13 +19,13 @@ public class ConceptMemorizer {
 	/***
 	 * Number of asked questions
 	 */
-	private int questionCount=0;
+	private int questionCount = 0;
 
 	/***
 	 * Returns concepts in memory
 	 * @return concepts
 	 */
-	public ArrayDeque<Concept> getConcepts(){
+	public ArrayDeque<Concept> getConcepts() {
 		return concepts;
 	}
 
@@ -53,14 +53,14 @@ public class ConceptMemorizer {
 	 * @param json concepts in json
 	 */
 	public void updateConceptsDuringGettingQuestion(JSONObject json) {
-		if (((Boolean)json.get("finished"))) {
+		if (((Boolean) json.get("finished"))) {
 			removeOldConcepts(questionCount);
 			JSONObject summary = json.getJSONObject("summary");
 			JSONArray conceptsJSON = summary.getJSONArray("concepts");
 			if (conceptsJSON.length() > 0) {
 				for (int i = 0; i < conceptsJSON.length(); i++) {
-					JSONObject JSONConcept=conceptsJSON.getJSONObject(i);
-					Concept concept = new Concept((int)JSONConcept.get("pageId"),(String)JSONConcept.get("title"), questionCount);
+					JSONObject JSONConcept = conceptsJSON.getJSONObject(i);
+					Concept concept = new Concept((int) JSONConcept.get("pageId"), (String) JSONConcept.get("title"), questionCount);
 					concepts.add(concept);
 				}
 			}

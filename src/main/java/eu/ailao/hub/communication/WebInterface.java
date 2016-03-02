@@ -5,7 +5,7 @@ package eu.ailao.hub.communication;
  */
 
 import eu.ailao.hub.AnswerSentenceGenerator;
-import eu.ailao.hub.concepts.Concept;
+import eu.ailao.hub.corefresol.concepts.Concept;
 import eu.ailao.hub.dialogue.Dialogue;
 import eu.ailao.hub.dialogue.DialogueMemorizer;
 import eu.ailao.hub.questions.Question;
@@ -88,7 +88,7 @@ public class WebInterface implements Runnable {
 
 		user.getConceptMemorizer().updateConceptsDuringAsking(queryParamsMap);
 
-		String questionID = askQuestion(question, request, user.getConceptMemorizer().getConcepts());
+		String questionID = askQuestion(question, request, user);
 		questionMapper.addQuestion(getQuestionIDFromAnswer(questionID), question);
 		question.setYodaQuestionID(getQuestionIDFromAnswer(questionID));
 
@@ -127,7 +127,7 @@ public class WebInterface implements Runnable {
 		String sid = request.splat()[0];
 		int id = Integer.parseInt(sid);
 		JSONObject answer = getAnswer(id, user);
-		answer.put("userID",user.getUserID());
+		answer.put("userID", user.getUserID());
 		return answer.toString();
 	}
 
@@ -157,6 +157,7 @@ public class WebInterface implements Runnable {
 		JSONObject answer = new JSONObject(GETResponse);
 		answer = transformBack(id, answer);
 		user.getConceptMemorizer().updateConceptsDuringGettingQuestion(answer);
+		user.getBestAnswerMemorizer().setBestAnswer(answer);
 		String answerSentence = answerSentenceGenerator.getAnswerSentence(answer);
 		if (answerSentence != null) {
 			answerSentence = transformBackAnswerSentence(id, answerSentence);
@@ -204,13 +205,15 @@ public class WebInterface implements Runnable {
 	 * @param request Request from web interface
 	 * @return response of yodaQA
 	 */
-	private String askQuestion(Question question, Request request, ArrayDeque<Concept> concepts) {
+	private String askQuestion(Question question, Request request, User user) {
 		ArrayDeque<Concept> _concepts = new ArrayDeque<>();
+		String prewiousBestAnswer = "";
 		if (isThirdPersonPronouns(question.getTransformedQuestionText())) {
-			_concepts = concepts;
+			_concepts = user.getConceptMemorizer().getConcepts();
+			prewiousBestAnswer = user.getBestAnswerMemorizer().getBestAnswer();
 		}
 		CommunicationHandler communicationHandler = new CommunicationHandler();
-		return communicationHandler.getPOSTResponse(yodaQAURL + "/q", request, question.getTransformedQuestionText(), _concepts);
+		return communicationHandler.getPOSTResponse(yodaQAURL + "/q", request, question.getTransformedQuestionText(), _concepts, prewiousBestAnswer);
 	}
 
 	/***

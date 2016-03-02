@@ -1,6 +1,6 @@
 package eu.ailao.hub.communication;
 
-import eu.ailao.hub.concepts.Concept;
+import eu.ailao.hub.corefresol.concepts.Concept;
 import org.apache.http.HttpEntity;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
@@ -24,9 +24,9 @@ public class PostRecreator {
 	 * @param concepts More concepts to add to POST
 	 * @return POST for yodaQA
 	 */
-	public HttpPost recreatePost(HttpPost httpPost, Request request, String question, ArrayDeque<Concept> concepts) {
+	public HttpPost recreatePost(HttpPost httpPost, Request request, String question, ArrayDeque<Concept> concepts, String prewiousBestAnswer) {
 		httpPost = addHeadersToPost(httpPost, request);
-		httpPost = addParamsToPost(httpPost, request, question, concepts);
+		httpPost = addParamsToPost(httpPost, request, question, concepts, prewiousBestAnswer);
 		return httpPost;
 	}
 
@@ -54,25 +54,26 @@ public class PostRecreator {
 	 * @param concepts New concepts to add
 	 * @return POST for yodaQA
 	 */
-	private HttpPost addParamsToPost(HttpPost httpPost, Request request, String question, ArrayDeque<Concept> concepts) {
+	private HttpPost addParamsToPost(HttpPost httpPost, Request request, String question, ArrayDeque<Concept> concepts, String prewiousCorrectAnswer) {
 		try {
 			Map<String, String[]> queryParamsMap = request.queryMap().toMap();
 			List<NameValuePair> urlParameters = new ArrayList<NameValuePair>();
 			for (Map.Entry<String, String[]> entry : queryParamsMap.entrySet()) {
-				if (concepts != null && entry.getKey().equals("numberOfConcepts")){
-					urlParameters.add(new BasicNameValuePair(entry.getKey(), String.valueOf(Integer.parseInt(entry.getValue()[0])+concepts.size())));
+				if (concepts != null && entry.getKey().equals("numberOfConcepts")) {
+					urlParameters.add(new BasicNameValuePair(entry.getKey(), String.valueOf(Integer.parseInt(entry.getValue()[0]) + concepts.size())));
 					continue;
 				}
-				if (question != null && entry.getKey().equals("text")){
+				if (question != null && entry.getKey().equals("text")) {
 					urlParameters.add(new BasicNameValuePair(entry.getKey(), question));
 					continue;
 				}
 				urlParameters.add(new BasicNameValuePair(entry.getKey(), entry.getValue()[0]));
 			}
-			if (concepts!=null){
-				urlParameters=addConcepts(urlParameters,concepts);
+			if (concepts != null) {
+				urlParameters = addConcepts(urlParameters, concepts);
 			}
-			urlParameters=removeEmptyUrlParameters(urlParameters);
+			urlParameters.add(new BasicNameValuePair("prewiousCorrectAnswer", prewiousCorrectAnswer));
+			urlParameters = removeEmptyUrlParameters(urlParameters);
 			HttpEntity postParams = new UrlEncodedFormEntity(urlParameters);
 			httpPost.setEntity(postParams);
 		} catch (UnsupportedEncodingException e) {
@@ -87,20 +88,20 @@ public class PostRecreator {
 	 * @param concepts concepts to add
 	 * @return List of parameters with added concepts
 	 */
-	private List<NameValuePair> addConcepts(List<NameValuePair> urlParameters, ArrayDeque<Concept> concepts){
-		int conceptsSize=concepts.size();
+	private List<NameValuePair> addConcepts(List<NameValuePair> urlParameters, ArrayDeque<Concept> concepts) {
+		int conceptsSize = concepts.size();
 		for (int i = 0; i < conceptsSize; i++) {
-			Concept concept=concepts.poll();
+			Concept concept = concepts.poll();
 			urlParameters.add(new BasicNameValuePair("pageID" + String.valueOf(i + 1), String.valueOf(concept.getPageID())));
-			urlParameters.add(new BasicNameValuePair("fullLabel"+String.valueOf(i+1), String.valueOf(concept.getFullLabel())));
+			urlParameters.add(new BasicNameValuePair("fullLabel" + String.valueOf(i + 1), String.valueOf(concept.getFullLabel())));
 		}
 		return urlParameters;
 	}
 
-	private List<NameValuePair> removeEmptyUrlParameters(List<NameValuePair> urlParameters){
-		List<NameValuePair> newUrlParameters=new ArrayList<NameValuePair>();
-		for(int i=0;i<urlParameters.size();i++){
-			if (!urlParameters.get(i).getValue().equals("")){
+	private List<NameValuePair> removeEmptyUrlParameters(List<NameValuePair> urlParameters) {
+		List<NameValuePair> newUrlParameters = new ArrayList<NameValuePair>();
+		for (int i = 0; i < urlParameters.size(); i++) {
+			if (!urlParameters.get(i).getValue().equals("")) {
 				newUrlParameters.add(urlParameters.get(i));
 			}
 		}

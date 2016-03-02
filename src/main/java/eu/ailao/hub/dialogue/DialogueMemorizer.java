@@ -1,6 +1,5 @@
 package eu.ailao.hub.dialogue;
 
-import eu.ailao.hub.concepts.Concept;
 import eu.ailao.hub.questions.Question;
 
 import java.util.*;

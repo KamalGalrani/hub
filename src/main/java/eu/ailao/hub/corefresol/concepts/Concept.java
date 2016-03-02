@@ -1,4 +1,4 @@
-package eu.ailao.hub.concepts;
+package eu.ailao.hub.corefresol.concepts;
 
 /**
  * Created by Petr Marek on 01.12.2015.

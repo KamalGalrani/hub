@@ -1,7 +1,7 @@
 package eu.ailao.hub.users;
 
-import eu.ailao.hub.concepts.ConceptMemorizer;
-import eu.ailao.hub.dialogue.DialogueMemorizer;
+import eu.ailao.hub.corefresol.answers.BestAnswerMemorizer;
+import eu.ailao.hub.corefresol.concepts.ConceptMemorizer;
 
 import java.util.HashMap;
 import java.util.Random;
@@ -11,7 +11,7 @@ import java.util.Random;
  * Remembers users by their id, number of users and handles creation of new users
  */
 public class UserMapper {
-	HashMap<Integer, User> userMap=new HashMap<>();
+	HashMap<Integer, User> userMap = new HashMap<>();
 	Random idgen = new Random();
 
 	/**
@@ -19,8 +19,8 @@ public class UserMapper {
 	 * @param id is of desired user
 	 * @return user
 	 */
-	private User getUserByID(int id){
-		User user=userMap.get(id);
+	private User getUserByID(int id) {
+		User user = userMap.get(id);
 		return user;
 	}
 
@@ -28,8 +28,8 @@ public class UserMapper {
 	 * Adds user to hashMap of users
 	 * @param user user to add
 	 */
-	private void addUser(User user){
-		userMap.put(user.getUserID(),user);
+	private void addUser(User user) {
+		userMap.put(user.getUserID(), user);
 	}
 
 	/**
@@ -37,13 +37,13 @@ public class UserMapper {
 	 * @param userID id of user
 	 * @return user
 	 */
-	public User getUser(String userID){
+	public User getUser(String userID) {
 		User user;
-		if (userID==null || userID.equals("")){
-			user=createNewUser();
-		}else{
-			int id=Integer.parseInt(userID);
-			user=findUserWithID(id);
+		if (userID == null || userID.equals("")) {
+			user = createNewUser();
+		} else {
+			int id = Integer.parseInt(userID);
+			user = findUserWithID(id);
 		}
 		return user;
 	}
@@ -52,8 +52,8 @@ public class UserMapper {
 	 * Creates new user with id and put it into hasmMap of users
 	 * @return user
 	 */
-	private User createNewUser(){
-		User user=new User(new ConceptMemorizer(),idgen.nextInt(Integer.MAX_VALUE));
+	private User createNewUser() {
+		User user = new User(new ConceptMemorizer(), new BestAnswerMemorizer(), idgen.nextInt(Integer.MAX_VALUE));
 		addUser(user);
 		return user;
 	}
@@ -63,10 +63,10 @@ public class UserMapper {
 	 * @param id id of user
 	 * @return user
 	 */
-	private User findUserWithID(int id){
-		User user=getUserByID(id);
-		if (user==null){
-			user=createNewUser();
+	private User findUserWithID(int id) {
+		User user = getUserByID(id);
+		if (user == null) {
+			user = createNewUser();
 		}
 		return user;
 	}
