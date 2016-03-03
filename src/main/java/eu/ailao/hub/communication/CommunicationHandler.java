@@ -27,13 +27,13 @@ public class CommunicationHandler {
 	 * @param concepts More concepts to send to yodaQA
 	 * @return response of yodaQA
 	 */
-	public String getPOSTResponse(String address, Request request, String question, ArrayDeque<Concept> concepts, String prewiousBestAnswer) {
+	public String getPOSTResponse(String address, Request request, String question, ArrayDeque<Concept> concepts, String artificialClue) {
 		String result = "";
 		try {
 			CloseableHttpClient httpClient = HttpClients.createDefault();
 			HttpPost httpPost = new HttpPost(address);
 			PostRecreator postRecreator = new PostRecreator();
-			httpPost = postRecreator.recreatePost(httpPost, request, question, concepts, prewiousBestAnswer);
+			httpPost = postRecreator.recreatePost(httpPost, request, question, concepts, artificialClue);
 
 			CloseableHttpResponse httpResponse = httpClient.execute(httpPost);
 

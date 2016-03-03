@@ -54,7 +54,7 @@ public class PostRecreator {
 	 * @param concepts New concepts to add
 	 * @return POST for yodaQA
 	 */
-	private HttpPost addParamsToPost(HttpPost httpPost, Request request, String question, ArrayDeque<Concept> concepts, String prewiousCorrectAnswer) {
+	private HttpPost addParamsToPost(HttpPost httpPost, Request request, String question, ArrayDeque<Concept> concepts, String artificialClue) {
 		try {
 			Map<String, String[]> queryParamsMap = request.queryMap().toMap();
 			List<NameValuePair> urlParameters = new ArrayList<NameValuePair>();
@@ -72,7 +72,7 @@ public class PostRecreator {
 			if (concepts != null) {
 				urlParameters = addConcepts(urlParameters, concepts);
 			}
-			urlParameters.add(new BasicNameValuePair("prewiousCorrectAnswer", prewiousCorrectAnswer));
+			urlParameters.add(new BasicNameValuePair("artificialClue", artificialClue));
 			urlParameters = removeEmptyUrlParameters(urlParameters);
 			HttpEntity postParams = new UrlEncodedFormEntity(urlParameters);
 			httpPost.setEntity(postParams);
@@ -98,6 +98,12 @@ public class PostRecreator {
 		return urlParameters;
 	}
 
+	/**
+	 * Erase empty parameters, because there can be empty parameter and nonempty parameter with same name.
+	 * It could happen, that empty parameter overwrites nonempty parameter. This method prevents it.
+	 * @param urlParameters url parameters to clear
+	 * @return lis of cleared url parameters
+	 */
 	private List<NameValuePair> removeEmptyUrlParameters(List<NameValuePair> urlParameters) {
 		List<NameValuePair> newUrlParameters = new ArrayList<NameValuePair>();
 		for (int i = 0; i < urlParameters.size(); i++) {

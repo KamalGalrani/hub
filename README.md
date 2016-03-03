@@ -13,8 +13,8 @@ Quick instructions for setting up, building and running:
 ####Example
 YodaQA runs on ``http://localhost:4567/``. To run HUB on port 4568 (it must differ from yodaQA's port), run in it's root directory ``gradlew build`` and ``gradlew run -PexecArgs="4568 http://localhost:4567/"``. To connect YodaQA-client to HUB add ``?e=http://localhost:4568/`` to the end of url.
 
-##Dialogue API
-Dialogue API expands YodaQA's API https://github.com/brmson/yodaqa/blob/master/doc/REST-API.md. Hub gets request from
+##Dialog API
+Dialog API expands YodaQA's API https://github.com/brmson/yodaqa/blob/master/doc/REST-API.md. Hub gets request from
 web client and sends it further to YodaQA with minor changes. The list of changes follows.
 
 ####Artificial concepts

@@ -1,6 +1,6 @@
 package eu.ailao.hub.users;
 
-import eu.ailao.hub.corefresol.answers.BestAnswerMemorizer;
+import eu.ailao.hub.corefresol.answers.ClueMemorizer;
 import eu.ailao.hub.corefresol.concepts.ConceptMemorizer;
 
 import java.util.HashMap;
@@ -53,7 +53,7 @@ public class UserMapper {
 	 * @return user
 	 */
 	private User createNewUser() {
-		User user = new User(new ConceptMemorizer(), new BestAnswerMemorizer(), idgen.nextInt(Integer.MAX_VALUE));
+		User user = new User(new ConceptMemorizer(), new ClueMemorizer(), idgen.nextInt(Integer.MAX_VALUE));
 		addUser(user);
 		return user;
 	}

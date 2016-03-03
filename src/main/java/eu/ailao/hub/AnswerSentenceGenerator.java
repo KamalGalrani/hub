@@ -10,10 +10,16 @@ import java.util.List;
 
 /**
  * Created by Petr Marek on 23.02.2016.
+ * Class generating sentence to answer
  */
 public class AnswerSentenceGenerator {
 
 
+	/**
+	 * Creates answer sentence to answer
+	 * @param answer answer from which answer sentence will be generated
+	 * @return answer sentence
+	 */
 	public String getAnswerSentence(JSONObject answer) {
 		try {
 			JSONObject a0 = answer.getJSONArray("answers").getJSONObject(0);
@@ -57,6 +63,11 @@ public class AnswerSentenceGenerator {
 		}
 	}
 
+	/**
+	 * Creates list form JSON array
+	 * @param jsonArray to crate list
+	 * @return list
+	 */
 	private List jsonArrayToList(JSONArray jsonArray) {
 		ArrayList list = new ArrayList();
 		if (jsonArray != null) {

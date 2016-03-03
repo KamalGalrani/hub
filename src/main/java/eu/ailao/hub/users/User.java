@@ -1,6 +1,6 @@
 package eu.ailao.hub.users;
 
-import eu.ailao.hub.corefresol.answers.BestAnswerMemorizer;
+import eu.ailao.hub.corefresol.answers.ClueMemorizer;
 import eu.ailao.hub.corefresol.concepts.ConceptMemorizer;
 
 /**
@@ -9,12 +9,12 @@ import eu.ailao.hub.corefresol.concepts.ConceptMemorizer;
  */
 public class User {
 	ConceptMemorizer conceptMemorizer;
-	BestAnswerMemorizer bestAnswerMemorizer;
+	ClueMemorizer clueMemorizer;
 	int userID;
 
-	public User(ConceptMemorizer conceptMemorizer, BestAnswerMemorizer bestAnswerMemorizer, int userID) {
+	public User(ConceptMemorizer conceptMemorizer, ClueMemorizer clueMemorizer, int userID) {
 		this.conceptMemorizer = conceptMemorizer;
-		this.bestAnswerMemorizer = bestAnswerMemorizer;
+		this.clueMemorizer = clueMemorizer;
 		this.userID = userID;
 	}
 
@@ -22,8 +22,8 @@ public class User {
 		return conceptMemorizer;
 	}
 
-	public BestAnswerMemorizer getBestAnswerMemorizer() {
-		return bestAnswerMemorizer;
+	public ClueMemorizer getClueMemorizer() {
+		return clueMemorizer;
 	}
 
 	public int getUserID() {

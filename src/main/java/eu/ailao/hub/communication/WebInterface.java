@@ -6,8 +6,8 @@ package eu.ailao.hub.communication;
 
 import eu.ailao.hub.AnswerSentenceGenerator;
 import eu.ailao.hub.corefresol.concepts.Concept;
-import eu.ailao.hub.dialogue.Dialogue;
-import eu.ailao.hub.dialogue.DialogueMemorizer;
+import eu.ailao.hub.dialog.Dialog;
+import eu.ailao.hub.dialog.DialogMemorizer;
 import eu.ailao.hub.questions.Question;
 import eu.ailao.hub.questions.QuestionMapper;
 import eu.ailao.hub.transformations.Transformation;
@@ -35,7 +35,7 @@ public class WebInterface implements Runnable {
 	private QuestionMapper questionMapper;
 	private UserMapper userMapper;
 	private AnswerSentenceGenerator answerSentenceGenerator;
-	private DialogueMemorizer dialogueMemorizer;
+	private DialogMemorizer dialogMemorizer;
 
 
 	private static final String USER_ID = "userID";
@@ -46,7 +46,7 @@ public class WebInterface implements Runnable {
 		this.questionMapper = new QuestionMapper();
 		this.userMapper = new UserMapper();
 		this.answerSentenceGenerator = new AnswerSentenceGenerator();
-		this.dialogueMemorizer = new DialogueMemorizer();
+		this.dialogMemorizer = new DialogMemorizer();
 	}
 
 	/***
@@ -95,18 +95,18 @@ public class WebInterface implements Runnable {
 		JSONObject answer = new JSONObject(questionID);
 		answer.put("userID", user.getUserID());
 
-		String dialogID = queryParamsMap.get("dialogueID")[0];
+		String dialogID = queryParamsMap.get("dialogID")[0];
 		if (dialogID.equals("")) {
-			dialogID = "d_" + Integer.toString(dialogueMemorizer.createNewDialogue(question));
+			dialogID = "d_" + Integer.toString(dialogMemorizer.createNewDialog(question));
 		} else {
-			Dialogue dialog = dialogueMemorizer.getDialog(Integer.parseInt(dialogID.replace("d_", "")));
+			Dialog dialog = dialogMemorizer.getDialog(Integer.parseInt(dialogID.replace("d_", "")));
 			if (dialog != null) {
 				dialog.addQuestion(question);
 			} else {
-				dialogID = Integer.toString(dialogueMemorizer.createNewDialogue(question));
+				dialogID = Integer.toString(dialogMemorizer.createNewDialog(question));
 			}
 		}
-		answer.put("dialogueID", dialogID);
+		answer.put("dialogID", dialogID);
 
 		return answer.toString();
 	}
@@ -143,12 +143,12 @@ public class WebInterface implements Runnable {
 		response.status(201);
 
 		String sid = request.params("dID");
-		//return dialogue
+		//return dialog
 		int id = Integer.parseInt(sid.replace("d_", ""));
-		Dialogue dialogue = dialogueMemorizer.getDialog(id);
-		ArrayList<Integer> questions = dialogue.getQuestionsIDs();
-		JSONArray dialogueAnswer = new JSONArray(questions);
-		return dialogueAnswer.toString();
+		Dialog dialog = dialogMemorizer.getDialog(id);
+		ArrayList<Integer> questions = dialog.getQuestionsIDs();
+		JSONArray dialogAnswer = new JSONArray(questions);
+		return dialogAnswer.toString();
 	}
 
 	private JSONObject getAnswer(int id, User user) {
@@ -157,7 +157,7 @@ public class WebInterface implements Runnable {
 		JSONObject answer = new JSONObject(GETResponse);
 		answer = transformBack(id, answer);
 		user.getConceptMemorizer().updateConceptsDuringGettingQuestion(answer);
-		user.getBestAnswerMemorizer().setBestAnswer(answer);
+		user.getClueMemorizer().setClue(answer);
 		String answerSentence = answerSentenceGenerator.getAnswerSentence(answer);
 		if (answerSentence != null) {
 			answerSentence = transformBackAnswerSentence(id, answerSentence);
@@ -185,13 +185,13 @@ public class WebInterface implements Runnable {
 		} else if (request.queryParams("answered") != null) {
 			result = communicationHandler.getGETResponse(yodaQAURL + "q/?answered");
 		} else if (request.queryParams("dialogs") != null) {
-			ArrayList dialogs = dialogueMemorizer.getDialogs();
+			ArrayList dialogs = dialogMemorizer.getDialogs();
 			List lastDialogs = dialogs.subList(0, 6 < dialogs.size() ? 6 : dialogs.size());
 			JSONArray dialogArray = new JSONArray();
 			for (int i = 0; i < lastDialogs.size(); i++) {
 				JSONObject oneDialog = new JSONObject();
-				oneDialog.put("id", ((Dialogue) lastDialogs.get(i)).getId());
-				oneDialog.put("dialogQuestions", createDialogAnswer((Dialogue) lastDialogs.get(i)));
+				oneDialog.put("id", ((Dialog) lastDialogs.get(i)).getId());
+				oneDialog.put("dialogQuestions", createDialogAnswer((Dialog) lastDialogs.get(i)));
 				dialogArray.put(oneDialog);
 			}
 			result = dialogArray.toString();
@@ -207,13 +207,13 @@ public class WebInterface implements Runnable {
 	 */
 	private String askQuestion(Question question, Request request, User user) {
 		ArrayDeque<Concept> _concepts = new ArrayDeque<>();
-		String prewiousBestAnswer = "";
+		String artificialClue = "";
 		if (isThirdPersonPronouns(question.getTransformedQuestionText())) {
 			_concepts = user.getConceptMemorizer().getConcepts();
-			prewiousBestAnswer = user.getBestAnswerMemorizer().getBestAnswer();
+			artificialClue = user.getClueMemorizer().getClue();
 		}
 		CommunicationHandler communicationHandler = new CommunicationHandler();
-		return communicationHandler.getPOSTResponse(yodaQAURL + "/q", request, question.getTransformedQuestionText(), _concepts, prewiousBestAnswer);
+		return communicationHandler.getPOSTResponse(yodaQAURL + "/q", request, question.getTransformedQuestionText(), _concepts, artificialClue);
 	}
 
 	/***
@@ -264,20 +264,32 @@ public class WebInterface implements Runnable {
 		return question.transformBack(answer);
 	}
 
+	/**
+	 * Gets the answer sentence and transforms it back.
+	 * Example: "Travolta birth date is 64" transforms back by age transformation to "Travolta age is 64"
+	 * @param id id of question
+	 * @param answerSentence sentence to transform
+	 * @return sentence transformed back
+	 */
 	private String transformBackAnswerSentence(int id, String answerSentence) {
 		Question question = questionMapper.getQuestionByID(id);
 		return question.transformBackAnswerSentence(answerSentence);
 	}
 
-	private JSONArray createDialogAnswer(Dialogue dialogue) {
-		JSONArray dialogueAnswer = new JSONArray();
-		ArrayList<Question> questions = dialogue.getQuestions();
+	/**
+	 * Creates JSON answer for client in form of dialog
+	 * @param dialog Dialog to recreate in JSON
+	 * @return JSON of dialog
+	 */
+	private JSONArray createDialogAnswer(Dialog dialog) {
+		JSONArray dialogAnswer = new JSONArray();
+		ArrayList<Question> questions = dialog.getQuestions();
 		for (int i = 0; i < questions.size(); i++) {
 			JSONObject question = new JSONObject();
 			question.put("id", questions.get(i).getYodaQuestionID());
 			question.put("text", questions.get(i).getOriginalQuestionText());
-			dialogueAnswer.put(question);
+			dialogAnswer.put(question);
 		}
-		return dialogueAnswer;
+		return dialogAnswer;
 	}
 }
