@@ -14,6 +14,8 @@ import eu.ailao.hub.transformations.Transformation;
 import eu.ailao.hub.transformations.TransformationArray;
 import org.json.JSONArray;
 import org.json.JSONObject;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import spark.Request;
 import spark.Response;
 
@@ -28,6 +30,7 @@ import static spark.Spark.get;
 
 public class WebInterface implements Runnable {
 
+	final Logger logger = LoggerFactory.getLogger(WebInterface.class);
 	private int port;
 	private String yodaQAURL;
 	private QuestionMapper questionMapper;
@@ -73,8 +76,9 @@ public class WebInterface implements Runnable {
 
 		String questionText = queryParamsMap.get("text")[0];
 		Question question = new Question(questionText);
+		logger.info("Getting id| Question asked: {}", question.getOriginalQuestionText());
 		transformQuestion(question);
-
+		logger.info("Getting id| Question transformed: {}", question.getTransformedQuestionText());
 		String dialogID = queryParamsMap.get("dialogID")[0];
 		Dialog dialog;
 		if (dialogID.equals("")) {
@@ -95,6 +99,7 @@ public class WebInterface implements Runnable {
 
 		JSONObject answer = new JSONObject(questionID);
 		answer.put("dialogID", dialog.getId());
+		logger.info("Getting id| Question text: {}, Dialog id: {}, Question id: {}", questionText, dialog.getId(), question.getYodaQuestionID());
 		return answer.toString();
 	}
 
@@ -120,6 +125,9 @@ public class WebInterface implements Runnable {
 
 		JSONObject answer = getAnswer(id, dialog);
 		answer.put("dialogID", dialog.getId());
+		if ((boolean) answer.get("finished")) {
+			logger.info("Getting answer| Question id: {}, Dialog id: {}, Question text: {}, Generated answers: {}, Finished: {}", id, dialog.getId(), answer.get("text"), answer.get("gen_answers"), answer.get("finished"));
+		}
 		return answer.toString();
 	}
 
@@ -139,6 +147,7 @@ public class WebInterface implements Runnable {
 		Dialog dialog = dialogMemorizer.getDialog(id);
 		ArrayList<Integer> questions = dialog.getQuestionsIDs();
 		JSONArray dialogAnswer = new JSONArray(questions);
+		logger.info("Getting dialogs info| Dialog id: {}, Questions ids: {}", dialog.getId(), dialog.getQuestionsIDs());
 		return dialogAnswer.toString();
 	}
 
@@ -200,6 +209,7 @@ public class WebInterface implements Runnable {
 		ArrayDeque<Concept> _concepts = new ArrayDeque<>();
 		String artificialClue = "";
 		if (isThirdPersonPronouns(question.getTransformedQuestionText())) {
+			logger.info("Coreference resolurion used for: {}", question.getTransformedQuestionText());
 			_concepts = dialog.getConceptMemorizer().getConcepts();
 			artificialClue = dialog.getClueMemorizer().getClue();
 		}
