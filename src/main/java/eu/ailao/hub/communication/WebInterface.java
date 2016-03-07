@@ -223,7 +223,7 @@ public class WebInterface implements Runnable {
 	 * @return TRUE if there is third person pronoun in question
 	 */
 	private boolean isThirdPersonPronouns(String question) {
-		String[] thirdPersonPronouns = {"he", "she", "it", "his", "hers", "him", "her", "they", "them", "their"};
+		String[] thirdPersonPronouns = {"he", "she", "it", "its", "his", "hers", "him", "her", "they", "them", "their", "theirs"};
 		for (int i = 0; i < thirdPersonPronouns.length; i++) {
 			if (isContain(question.toLowerCase(), thirdPersonPronouns[i])) {
 				return true;
