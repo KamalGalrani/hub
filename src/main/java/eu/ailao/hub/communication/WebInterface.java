@@ -12,8 +12,6 @@ import eu.ailao.hub.questions.Question;
 import eu.ailao.hub.questions.QuestionMapper;
 import eu.ailao.hub.transformations.Transformation;
 import eu.ailao.hub.transformations.TransformationArray;
-import eu.ailao.hub.users.User;
-import eu.ailao.hub.users.UserMapper;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import spark.Request;
@@ -33,7 +31,6 @@ public class WebInterface implements Runnable {
 	private int port;
 	private String yodaQAURL;
 	private QuestionMapper questionMapper;
-	private UserMapper userMapper;
 	private AnswerSentenceGenerator answerSentenceGenerator;
 	private DialogMemorizer dialogMemorizer;
 
@@ -44,7 +41,6 @@ public class WebInterface implements Runnable {
 		this.port = port;
 		this.yodaQAURL = yodaQAURL;
 		this.questionMapper = new QuestionMapper();
-		this.userMapper = new UserMapper();
 		this.answerSentenceGenerator = new AnswerSentenceGenerator();
 		this.dialogMemorizer = new DialogMemorizer();
 	}
@@ -79,40 +75,31 @@ public class WebInterface implements Runnable {
 		Question question = new Question(questionText);
 		transformQuestion(question);
 
-		String[] userIDStringArr = queryParamsMap.get("userID");
-		String userIDString = null;
-		if (userIDStringArr != null) {
-			userIDString = userIDStringArr[0];
+		String dialogID = queryParamsMap.get("dialogID")[0];
+		Dialog dialog;
+		if (dialogID.equals("")) {
+			dialog = dialogMemorizer.createNewDialog(question);
+		} else {
+			dialog = dialogMemorizer.getDialog(dialogID);
+			if (dialog != null) {
+				dialog.addQuestion(question);
+			} else {
+				dialog = dialogMemorizer.createNewDialog(question);
+			}
 		}
-		User user = userMapper.getUser(userIDString);
+		dialog.getConceptMemorizer().updateConceptsDuringAsking(queryParamsMap);
 
-		user.getConceptMemorizer().updateConceptsDuringAsking(queryParamsMap);
-
-		String questionID = askQuestion(question, request, user);
+		String questionID = askQuestion(question, request, dialog);
 		questionMapper.addQuestion(getQuestionIDFromAnswer(questionID), question);
 		question.setYodaQuestionID(getQuestionIDFromAnswer(questionID));
 
 		JSONObject answer = new JSONObject(questionID);
-		answer.put("userID", user.getUserID());
-
-		String dialogID = queryParamsMap.get("dialogID")[0];
-		if (dialogID.equals("")) {
-			dialogID = "d_" + Integer.toString(dialogMemorizer.createNewDialog(question));
-		} else {
-			Dialog dialog = dialogMemorizer.getDialog(Integer.parseInt(dialogID.replace("d_", "")));
-			if (dialog != null) {
-				dialog.addQuestion(question);
-			} else {
-				dialogID = Integer.toString(dialogMemorizer.createNewDialog(question));
-			}
-		}
-		answer.put("dialogID", dialogID);
-
+		answer.put("dialogID", dialog.getId());
 		return answer.toString();
 	}
 
 	/***
-	 * Reaction to GET request to /q/:id/:userID
+	 * Reaction to GET request to /q/:id/:dialogID
 	 * @param request
 	 * @param response
 	 * @return
@@ -122,12 +109,17 @@ public class WebInterface implements Runnable {
 		response.header("Access-Control-Allow-Origin", "*");
 		response.status(201);
 
-		String userID = request.splat()[1];
-		User user = userMapper.getUser(userID);
-		String sid = request.splat()[0];
-		int id = Integer.parseInt(sid);
-		JSONObject answer = getAnswer(id, user);
-		answer.put("userID", user.getUserID());
+		String stringID = request.splat()[0];
+		int id = Integer.parseInt(stringID);
+
+		String dialogID = request.splat()[1];
+		Dialog dialog = dialogMemorizer.getDialog(dialogID);
+		if (!dialog.hasQuestionWithId(id)) {
+			dialog.addQuestion(questionMapper.getQuestionByID(id));
+		}
+
+		JSONObject answer = getAnswer(id, dialog);
+		answer.put("dialogID", dialog.getId());
 		return answer.toString();
 	}
 
@@ -142,22 +134,21 @@ public class WebInterface implements Runnable {
 		response.header("Access-Control-Allow-Origin", "*");
 		response.status(201);
 
-		String sid = request.params("dID");
+		String id = request.params("dID");
 		//return dialog
-		int id = Integer.parseInt(sid.replace("d_", ""));
 		Dialog dialog = dialogMemorizer.getDialog(id);
 		ArrayList<Integer> questions = dialog.getQuestionsIDs();
 		JSONArray dialogAnswer = new JSONArray(questions);
 		return dialogAnswer.toString();
 	}
 
-	private JSONObject getAnswer(int id, User user) {
+	private JSONObject getAnswer(int id, Dialog dialog) {
 		CommunicationHandler communicationHandler = new CommunicationHandler();
 		String GETResponse = communicationHandler.getGETResponse(yodaQAURL + "q/" + id);
 		JSONObject answer = new JSONObject(GETResponse);
 		answer = transformBack(id, answer);
-		user.getConceptMemorizer().updateConceptsDuringGettingQuestion(answer);
-		user.getClueMemorizer().setClue(answer);
+		dialog.getConceptMemorizer().updateConceptsDuringGettingQuestion(answer);
+		dialog.getClueMemorizer().setClue(answer);
 		String answerSentence = answerSentenceGenerator.getAnswerSentence(answer);
 		if (answerSentence != null) {
 			answerSentence = transformBackAnswerSentence(id, answerSentence);
@@ -205,12 +196,12 @@ public class WebInterface implements Runnable {
 	 * @param request Request from web interface
 	 * @return response of yodaQA
 	 */
-	private String askQuestion(Question question, Request request, User user) {
+	private String askQuestion(Question question, Request request, Dialog dialog) {
 		ArrayDeque<Concept> _concepts = new ArrayDeque<>();
 		String artificialClue = "";
 		if (isThirdPersonPronouns(question.getTransformedQuestionText())) {
-			_concepts = user.getConceptMemorizer().getConcepts();
-			artificialClue = user.getClueMemorizer().getClue();
+			_concepts = dialog.getConceptMemorizer().getConcepts();
+			artificialClue = dialog.getClueMemorizer().getClue();
 		}
 		CommunicationHandler communicationHandler = new CommunicationHandler();
 		return communicationHandler.getPOSTResponse(yodaQAURL + "/q", request, question.getTransformedQuestionText(), _concepts, artificialClue);

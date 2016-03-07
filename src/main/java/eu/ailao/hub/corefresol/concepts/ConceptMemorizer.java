@@ -14,7 +14,7 @@ import java.util.Map;
  */
 public class ConceptMemorizer {
 	private ArrayDeque<Concept> concepts = new ArrayDeque<>();
-	private final int MAX_QUESTIONS_TO_REMEMBER_CONCEPT = 5;
+	private final int MAX_QUESTIONS_TO_REMEMBER_CONCEPT = 2;
 
 	/***
 	 * Number of asked questions
@@ -45,7 +45,6 @@ public class ConceptMemorizer {
 				concepts.add(concept);
 			}
 		}
-		questionCount++;
 	}
 
 	/***
@@ -64,6 +63,7 @@ public class ConceptMemorizer {
 					concepts.add(concept);
 				}
 			}
+			questionCount++;
 		}
 	}
 

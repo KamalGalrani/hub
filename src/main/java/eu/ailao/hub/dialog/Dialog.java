@@ -1,5 +1,7 @@
 package eu.ailao.hub.dialog;
 
+import eu.ailao.hub.corefresol.answers.ClueMemorizer;
+import eu.ailao.hub.corefresol.concepts.ConceptMemorizer;
 import eu.ailao.hub.questions.Question;
 
 import java.util.ArrayList;
@@ -11,10 +13,14 @@ import java.util.ArrayList;
 public class Dialog {
 	private int id;
 	private ArrayList<Question> questionsOfDialogue;
+	private ConceptMemorizer conceptMemorizer;
+	private ClueMemorizer clueMemorizer;
 
 	public Dialog(int id) {
 		this.id = id;
 		this.questionsOfDialogue = new ArrayList<>();
+		this.conceptMemorizer = new ConceptMemorizer();
+		this.clueMemorizer = new ClueMemorizer();
 	}
 
 	/**
@@ -25,7 +31,7 @@ public class Dialog {
 		questionsOfDialogue.add(questionID);
 	}
 
-	public ArrayList<Question> getQuestions(){
+	public ArrayList<Question> getQuestions() {
 		return questionsOfDialogue;
 	}
 
@@ -33,7 +39,7 @@ public class Dialog {
 	 * Gets all question's ids of dialog
 	 * @return array list of question's ids in dialog
 	 */
-	public ArrayList<Integer> getQuestionsIDs(){
+	public ArrayList<Integer> getQuestionsIDs() {
 		ArrayList<Integer> questionIDs = new ArrayList<Integer>();
 		for (int i = 0; i < questionsOfDialogue.size(); i++) {
 			questionIDs.add(questionsOfDialogue.get(i).getYodaQuestionID());
@@ -43,5 +49,22 @@ public class Dialog {
 
 	public int getId() {
 		return id;
+	}
+
+	public ConceptMemorizer getConceptMemorizer() {
+		return conceptMemorizer;
+	}
+
+	public ClueMemorizer getClueMemorizer() {
+		return clueMemorizer;
+	}
+
+	public boolean hasQuestionWithId(int id) {
+		for (Question question : questionsOfDialogue) {
+			if (question.getYodaQuestionID() == id) {
+				return true;
+			}
+		}
+		return false;
 	}
 }

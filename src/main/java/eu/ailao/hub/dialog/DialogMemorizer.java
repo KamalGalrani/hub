@@ -15,38 +15,59 @@ public class DialogMemorizer {
 		this.idgen = new Random();
 	}
 
-	private HashMap<Integer,Dialog> dialogs = new HashMap<>();
+	private HashMap<Integer, Dialog> dialogs = new HashMap<>();
 
 	/**
 	 * Add dialog to dialog memorizer
 	 * @param dialog dialog to add
 	 */
-	public void addDialogue(Dialog dialog){
-			dialogs.put(dialog.getId(), dialog);
+	public void addDialog(Dialog dialog) {
+		dialogs.put(dialog.getId(), dialog);
 	}
 
-	public Dialog getDialog(int dialogID){
-		return dialogs.get(dialogID);
+	/**
+	 * Returns dialog with id
+	 * @param dialogID id in form d_id
+	 * @return dialog
+	 */
+	public Dialog getDialog(String dialogID) {
+		int Id = Integer.parseInt(dialogID.replace("d_", ""));
+		Dialog dialog = dialogs.get(Id);
+		if (dialog == null) {
+			return createNewDialog();
+		}
+		return dialogs.get(Id);
 	}
 
 	/**
 	 * Returns all dialogs form dialog memorizer
 	 * @return all dialogs
 	 */
-	public ArrayList<Dialog> getDialogs(){
+	public ArrayList<Dialog> getDialogs() {
 		return new ArrayList<Dialog>(dialogs.values());
+	}
+
+	/**
+	 * Creates new dialog and adds it to dialog memorizer
+	 * @return new dialog
+	 */
+	public Dialog createNewDialog() {
+		int newDialogueID = idgen.nextInt(Integer.MAX_VALUE);
+		Dialog dialog = new Dialog(newDialogueID);
+		this.addDialog(dialog);
+		return dialog;
 	}
 
 	/**
 	 * Creates new dialog with first question and adds it to dialog memorizer
 	 * @param firstQuestion first question of dialog to add
-	 * @return id of dialog
+	 * @return new dialog
 	 */
-	public int createNewDialog(Question firstQuestion){
+	public Dialog createNewDialog(Question firstQuestion) {
 		int newDialogueID = idgen.nextInt(Integer.MAX_VALUE);
-		this.addDialogue(new Dialog(newDialogueID));
-		this.getDialog(newDialogueID).addQuestion(firstQuestion);
-		return newDialogueID;
+		Dialog dialog = new Dialog(newDialogueID);
+		dialog.addQuestion(firstQuestion);
+		this.addDialog(dialog);
+		return dialog;
 	}
-
 }
