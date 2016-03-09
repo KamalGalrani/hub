@@ -2,6 +2,8 @@ package eu.ailao.hub.questions;
 
 import eu.ailao.hub.transformations.Transformation;
 import org.json.JSONObject;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.ArrayList;
 
@@ -10,6 +12,7 @@ import java.util.ArrayList;
  * Question class storing original text of answer, applied transformations and transformed text of answer
  */
 public class Question {
+	final Logger logger = LoggerFactory.getLogger(Question.class);
 	private int yodaQuestionID;
 	private String originalQuestionText;
 	private String transformedQuestionText;
@@ -43,8 +46,10 @@ public class Question {
 	 */
 	public boolean applyTransformationIfUseful(Transformation transformation) {
 		if (isTransformationUseful(transformation)) {
-			this.transformedQuestionText = transformation.transform(transformedQuestionText);
+			String questionBeforeTransform=transformedQuestionText;
+			this.transformedQuestionText = transformation.transform(questionBeforeTransform);
 			this.transformations.add(transformation);
+			logger.info("Getting id| Question: {}, Transformed to: {}, By: {}", questionBeforeTransform, transformedQuestionText, transformation.getClass().getName());
 			return true;
 		}
 		return false;

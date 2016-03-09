@@ -78,7 +78,6 @@ public class WebInterface implements Runnable {
 		Question question = new Question(questionText);
 		logger.info("Getting id| Question asked: {}", question.getOriginalQuestionText());
 		transformQuestion(question);
-		logger.info("Getting id| Question transformed: {}", question.getTransformedQuestionText());
 		String dialogID = queryParamsMap.get("dialogID")[0];
 		Dialog dialog;
 		if (dialogID.equals("")) {
