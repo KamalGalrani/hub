@@ -15,7 +15,7 @@ public class DialogMemorizer {
 		this.idgen = new Random();
 	}
 
-	private HashMap<Integer, Dialog> dialogs = new HashMap<>();
+	private LinkedHashMap<Integer, Dialog> dialogs = new LinkedHashMap<>();
 
 	/**
 	 * Add dialog to dialog memorizer

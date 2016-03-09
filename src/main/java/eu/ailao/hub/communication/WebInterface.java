@@ -186,7 +186,7 @@ public class WebInterface implements Runnable {
 			result = communicationHandler.getGETResponse(yodaQAURL + "q/?answered");
 		} else if (request.queryParams("dialogs") != null) {
 			ArrayList dialogs = dialogMemorizer.getDialogs();
-			List lastDialogs = dialogs.subList(0, 6 < dialogs.size() ? 6 : dialogs.size());
+			List lastDialogs = dialogs.subList(0 < dialogs.size() - 6 ? dialogs.size() - 6 : 0, dialogs.size());
 			JSONArray dialogArray = new JSONArray();
 			for (int i = 0; i < lastDialogs.size(); i++) {
 				JSONObject oneDialog = new JSONObject();
