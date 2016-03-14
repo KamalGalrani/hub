@@ -61,39 +61,52 @@ public class TrafficConnector {
 	 * Return all information about traffic flow in one street
 	 * @param trafficFlow Json with traffic flow information of all streets within some bounding box
 	 * @param street Name of street we want to find
-	 * @return Json with one street only
+	 * @return JsonArray with one street only in both directions
 	 */
-	//TODO: There are two streets with the same name but different orientation, return both or specify which we want
-	public JSONObject getStreetJson(JSONObject trafficFlow, String street) {
+	public JSONArray getStreetsJson(JSONObject trafficFlow, String street) {
+		JSONArray streetsArray = new JSONArray();
 		JSONArray RWS = (JSONArray) trafficFlow.get("RWS");
 		JSONArray RW = (JSONArray) ((JSONObject) RWS.get(0)).get("RW");
 		for (Object streetObject : RW) {
 			JSONObject JSONstreet = (JSONObject) streetObject;
 			if (JSONstreet.get("DE").equals(street)) {
-				return JSONstreet;
+				streetsArray.put(JSONstreet);
 			}
 		}
-		return null;
+		return streetsArray;
 	}
 
 	/**
 	 * Parse street traffic flow info into StreetTrafficInfo.class
-	 * @param street Json with all information about traffic flow in street
+	 * @param streets JsonArray with all information about traffic flow in streets
 	 * @return StreetTrafficInfo object
 	 */
-	//FIXME Repair of bad parsing, for example Evropská street
-	public StreetTrafficInfo getStreetTrafficInfo(JSONObject street) {
+	public StreetTrafficInfo getStreetTrafficInfo(JSONArray streets) {
 		StreetTrafficInfo streetTrafficInfo = new StreetTrafficInfo();
-		//Parsing of crazy JSON format
-		JSONArray FIS = (JSONArray) street.get("FIS");
-		for (Object FI : FIS) {
-			JSONArray FI2 = ((JSONObject)FI).getJSONArray("FI");
-			for (Object FI3 : FI2) {
-				String secondStreet = ((JSONObject)FI3).getJSONObject("TMC").getString("DE");
-				JSONArray CF = ((JSONObject)FI3).getJSONArray("CF");
-				for (Object CF2 : CF) {
-					Double jamFactor = ((JSONObject)CF2).getDouble("JF");
-					streetTrafficInfo.addSituationOnCross(street.getString("DE"), secondStreet, jamFactor);
+		for (Object streetObject : streets) {
+			JSONObject street=(JSONObject)streetObject;
+			//Parsing of crazy JSON format
+			JSONArray FIS = (JSONArray) street.get("FIS");
+			for (Object FI : FIS) {
+				JSONArray FI2 = ((JSONObject) FI).getJSONArray("FI");
+				for (Object FI3 : FI2) {
+					String secondStreet = ((JSONObject) FI3).getJSONObject("TMC").getString("DE");
+					JSONArray CF = ((JSONObject) FI3).getJSONArray("CF");
+					for (Object CF2 : CF) {
+						Double jamFactor = ((JSONObject) CF2).getDouble("JF");
+
+						//Parse subsegments
+						try {
+							JSONObject SSS = ((JSONObject) CF2).getJSONObject("SSS");
+							JSONArray SS = SSS.getJSONArray("SS");
+							for (Object SS2 : SS) {
+								streetTrafficInfo.addSituationOnCross(street.getString("DE"), secondStreet, ((JSONObject) SS2).getDouble("JF"));
+							}
+						} catch (Exception e) {
+						}
+
+						streetTrafficInfo.addSituationOnCross(street.getString("DE"), secondStreet, jamFactor);
+					}
 				}
 			}
 		}
