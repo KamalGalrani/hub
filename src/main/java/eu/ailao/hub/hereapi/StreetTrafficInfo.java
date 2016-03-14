@@ -1,5 +1,7 @@
 package eu.ailao.hub.hereapi;
 
+import org.json.JSONArray;
+
 import java.util.ArrayList;
 
 /**
@@ -16,5 +18,11 @@ public class StreetTrafficInfo {
 
 	public ArrayList<CrossSituation> getSituationsOnCrosses() {
 		return situationsOnCrosses;
+	}
+
+	@Override
+	public String toString() {
+		JSONArray toPrint=new JSONArray(situationsOnCrosses);
+		return toPrint.toString();
 	}
 }

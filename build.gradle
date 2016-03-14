@@ -19,6 +19,14 @@ run {
     systemProperties = System.getProperties()
 }
 
+task(run_traffic, dependsOn: 'classes', type: JavaExec) {
+    main = 'eu.ailao.hub.Main_Traffic'
+    if (project.hasProperty('execArgs'))
+        args(execArgs.split(' '))
+    classpath = sourceSets.main.runtimeClasspath
+    systemProperties = System.getProperties()
+}
+
 repositories {
 
      maven { url "http://repo.maven.apache.org/maven2" }

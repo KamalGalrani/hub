@@ -38,7 +38,6 @@ public class TrafficConnector {
 					conn.getInputStream(), "UTF8"));
 
 			String output;
-			System.out.println("Output from Server .... \n");
 			while ((output = br.readLine()) != null) {
 				response += output;
 			}
