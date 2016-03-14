@@ -81,23 +81,19 @@ public class TrafficConnector {
 	 * @param street Json with all information about traffic flow in street
 	 * @return StreetTrafficInfo object
 	 */
-	//TODO Simplify this method
 	//FIXME Repair of bad parsing, for example Evropská street
 	public StreetTrafficInfo getStreetTrafficInfo(JSONObject street) {
 		StreetTrafficInfo streetTrafficInfo = new StreetTrafficInfo();
 		//Parsing of crazy JSON format
 		JSONArray FIS = (JSONArray) street.get("FIS");
 		for (Object FI : FIS) {
-			JSONObject JSONFI = (JSONObject) FI;
-			JSONArray FI2 = (JSONArray) JSONFI.get("FI");
+			JSONArray FI2 = ((JSONObject)FI).getJSONArray("FI");
 			for (Object FI3 : FI2) {
-				JSONObject JSONFI3 = (JSONObject) FI3;
-				String secondStreet = (String) ((JSONObject) JSONFI3.get("TMC")).get("DE");
-				JSONArray CF = (JSONArray) JSONFI3.get("CF");
+				String secondStreet = ((JSONObject)FI3).getJSONObject("TMC").getString("DE");
+				JSONArray CF = ((JSONObject)FI3).getJSONArray("CF");
 				for (Object CF2 : CF) {
-					JSONObject JSONCF2 = (JSONObject) CF2;
-					Double jamFactor = (double) JSONCF2.get("JF");
-					streetTrafficInfo.addSituationOnCross((String) street.get("DE"), secondStreet, jamFactor);
+					Double jamFactor = ((JSONObject)CF2).getDouble("JF");
+					streetTrafficInfo.addSituationOnCross(street.getString("DE"), secondStreet, jamFactor);
 				}
 			}
 		}
@@ -117,9 +113,11 @@ public class TrafficConnector {
 		JSONObject resultObject = result.getJSONObject(0);
 		JSONObject location = resultObject.getJSONObject("Location");
 		JSONObject mapView = location.getJSONObject("MapView");
+
 		JSONObject bottomRight = mapView.getJSONObject("BottomRight");
 		double bottomRightLatitude = bottomRight.getDouble("Latitude");
 		double bottomRightLongitude = bottomRight.getDouble("Longitude");
+
 		JSONObject topLeft = mapView.getJSONObject("TopLeft");
 		double topLeftLatitude = topLeft.getDouble("Latitude");
 		double topLeftLongitude = topLeft.getDouble("Longitude");
