@@ -138,6 +138,12 @@ public class TrafficConnector {
 		return new BoundingBox(topLeftLatitude,topLeftLongitude,bottomRightLatitude, bottomRightLongitude);
 	}
 
+	/**
+	 * Filters only incidents, which are in selected street
+	 * @param trafficIncidents all traffic incidents
+	 * @param streetName name of selected street
+	 * @return JSON array of incidents in selected street only
+	 */
 	public JSONArray getStreetIncidents(JSONObject trafficIncidents, String streetName) {
 		JSONArray incidentsArray = new JSONArray();
 		try {
@@ -175,6 +181,11 @@ public class TrafficConnector {
 		return incidentsArray;
 	}
 
+	/**
+	 * Parse information about traffic incidents into one streetIncidentInfo object
+	 * @param streetIncidents traffic incidents to parse
+	 * @return object containing information about all traffic incidents in one street
+	 */
 	public StreetIncidentInfo getStreetIncidentInfo(JSONArray streetIncidents) {
 		StreetIncidentInfo streetIncidentInfo = new StreetIncidentInfo();
 		for (Object incident : streetIncidents) {

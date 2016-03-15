@@ -2,6 +2,7 @@ package eu.ailao.hub.hereapi;
 
 /**
  * Created by Petr Marek on 15.03.2016.
+ * Class containing information about one traffic incident
  */
 public class Incident {
 	private String active;

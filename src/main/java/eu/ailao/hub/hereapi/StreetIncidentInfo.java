@@ -6,6 +6,7 @@ import java.util.ArrayList;
 
 /**
  * Created by Petr Marek on 15.03.2016.
+ * Class containing all traffic incidents in one street
  */
 public class StreetIncidentInfo {
 	ArrayList<Incident> incidents = new ArrayList<>();
