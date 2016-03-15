@@ -83,7 +83,7 @@ public class TrafficConnector {
 	public StreetTrafficInfo getStreetTrafficInfo(JSONArray streets) {
 		StreetTrafficInfo streetTrafficInfo = new StreetTrafficInfo();
 		for (Object streetObject : streets) {
-			JSONObject street=(JSONObject)streetObject;
+			JSONObject street = (JSONObject) streetObject;
 			//Parsing of crazy JSON format
 			JSONArray FIS = (JSONArray) street.get("FIS");
 			for (Object FI : FIS) {
@@ -117,6 +117,7 @@ public class TrafficConnector {
 	 * @param streetPositionInfo Json with all information about street position
 	 * @return bounding box of street
 	 */
+	//FIXME sometimes the right street is not on the first position
 	public BoundingBox getStreetBoundingBox(JSONObject streetPositionInfo) {
 		JSONObject response = streetPositionInfo.getJSONObject("Response");
 		JSONArray view = response.getJSONArray("View");
@@ -126,13 +127,76 @@ public class TrafficConnector {
 		JSONObject location = resultObject.getJSONObject("Location");
 		JSONObject mapView = location.getJSONObject("MapView");
 
+		JSONObject topLeft = mapView.getJSONObject("TopLeft");
+		double topLeftLatitude = topLeft.getDouble("Latitude");
+		double topLeftLongitude = topLeft.getDouble("Longitude");
+
 		JSONObject bottomRight = mapView.getJSONObject("BottomRight");
 		double bottomRightLatitude = bottomRight.getDouble("Latitude");
 		double bottomRightLongitude = bottomRight.getDouble("Longitude");
 
-		JSONObject topLeft = mapView.getJSONObject("TopLeft");
-		double topLeftLatitude = topLeft.getDouble("Latitude");
-		double topLeftLongitude = topLeft.getDouble("Longitude");
-		return new BoundingBox(bottomRightLatitude, bottomRightLongitude, topLeftLatitude, topLeftLongitude);
+		return new BoundingBox(topLeftLatitude,topLeftLongitude,bottomRightLatitude, bottomRightLongitude);
+	}
+
+	public JSONArray getStreetIncidents(JSONObject trafficIncidents, String streetName) {
+		JSONArray incidentsArray = new JSONArray();
+		try {
+			JSONArray trafficItems = trafficIncidents.getJSONObject("TRAFFICITEMS").getJSONArray("TRAFFICITEM");
+			for (Object trafficItem : trafficItems) {
+				boolean incidentAddedAlready = false;
+				JSONObject trafficItemJSON = (JSONObject) trafficItem;
+				JSONObject defined = trafficItemJSON.getJSONObject("LOCATION").getJSONObject("DEFINED");
+
+				//origin
+				JSONArray descriptions = defined.getJSONObject("ORIGIN").getJSONObject("ROADWAY").getJSONArray("DESCRIPTION");
+				for (Object description : descriptions) {
+					JSONObject descriptionJSON = (JSONObject) description;
+					if (descriptionJSON.getString("content").equals(streetName)) {
+						incidentsArray.put(trafficItemJSON);
+						incidentAddedAlready = true;
+						break;
+					}
+				}
+
+				if (incidentAddedAlready) continue;
+
+				//to
+				JSONArray descriptions2 = defined.getJSONObject("TO").getJSONObject("ROADWAY").getJSONArray("DESCRIPTION");
+				for (Object description : descriptions2) {
+					JSONObject descriptionJSON = (JSONObject) description;
+					if (descriptionJSON.getString("content").equals(streetName)) {
+						incidentsArray.put(trafficItemJSON);
+						break;
+					}
+				}
+			}
+		} catch (Exception e) {
+		}
+		return incidentsArray;
+	}
+
+	public StreetIncidentInfo getStreetIncidentInfo(JSONArray streetIncidents) {
+		StreetIncidentInfo streetIncidentInfo = new StreetIncidentInfo();
+		for (Object incident : streetIncidents) {
+			JSONObject incidentJSON = (JSONObject) incident;
+			String active = incidentJSON.getString("TRAFFICITEMSTATUSSHORTDESC");
+			String type = incidentJSON.getString("TRAFFICITEMTYPEDESC");
+			String startTime = incidentJSON.getString("STARTTIME");
+			String endTime = incidentJSON.getString("ENDTIME");
+			String criticality = incidentJSON.getJSONObject("CRITICALITY").getString("DESCRIPTION");
+			String comment = incidentJSON.getString("COMMENTS");
+
+			JSONObject description = (JSONObject) incidentJSON.getJSONObject("LOCATION").getJSONObject("DEFINED").getJSONObject("ORIGIN").getJSONObject("ROADWAY").getJSONArray("DESCRIPTION").get(0);
+			String origin = description.getString("content");
+
+			description = (JSONObject) incidentJSON.getJSONObject("LOCATION").getJSONObject("DEFINED").getJSONObject("ORIGIN").getJSONObject("DIRECTION").getJSONArray("DESCRIPTION").get(0);
+			String direction = description.getString("content");
+
+			description = (JSONObject) incidentJSON.getJSONObject("LOCATION").getJSONObject("DEFINED").getJSONObject("TO").getJSONObject("ROADWAY").getJSONArray("DESCRIPTION").get(0);
+			String to = description.getString("content");
+
+			streetIncidentInfo.addIncident(active, type, startTime, endTime, criticality, comment, origin, to, direction);
+		}
+		return streetIncidentInfo;
 	}
 }
