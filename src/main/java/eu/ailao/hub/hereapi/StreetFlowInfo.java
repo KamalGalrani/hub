@@ -8,7 +8,7 @@ import java.util.ArrayList;
  * Created by Petr Marek on 10.03.2016.
  * Class with information about traffic flow info in street
  */
-public class StreetTrafficInfo {
+public class StreetFlowInfo {
 	private ArrayList<CrossSituation> situationsOnCrosses = new ArrayList<>();
 
 	public void addSituationOnCross(String owningStreet, String secondStreet, double jamFactor) {

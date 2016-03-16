@@ -9,6 +9,8 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by Petr Marek on 10.03.2016.
@@ -76,12 +78,12 @@ public class TrafficConnector {
 	}
 
 	/**
-	 * Parse street traffic flow info into StreetTrafficInfo.class
+	 * Parse street traffic flow info into StreetFlowInfo.class
 	 * @param streets JsonArray with all information about traffic flow in streets
-	 * @return StreetTrafficInfo object
+	 * @return StreetFlowInfo object
 	 */
-	public StreetTrafficInfo getStreetTrafficInfo(JSONArray streets) {
-		StreetTrafficInfo streetTrafficInfo = new StreetTrafficInfo();
+	public StreetFlowInfo getStreetFlowInfo(JSONArray streets) {
+		StreetFlowInfo streetFlowInfo = new StreetFlowInfo();
 		for (Object streetObject : streets) {
 			JSONObject street = (JSONObject) streetObject;
 			//Parsing of crazy JSON format
@@ -99,17 +101,17 @@ public class TrafficConnector {
 							JSONObject SSS = ((JSONObject) CF2).getJSONObject("SSS");
 							JSONArray SS = SSS.getJSONArray("SS");
 							for (Object SS2 : SS) {
-								streetTrafficInfo.addSituationOnCross(street.getString("DE"), secondStreet, ((JSONObject) SS2).getDouble("JF"));
+								streetFlowInfo.addSituationOnCross(street.getString("DE"), secondStreet, ((JSONObject) SS2).getDouble("JF"));
 							}
 						} catch (Exception e) {
 						}
 
-						streetTrafficInfo.addSituationOnCross(street.getString("DE"), secondStreet, jamFactor);
+						streetFlowInfo.addSituationOnCross(street.getString("DE"), secondStreet, jamFactor);
 					}
 				}
 			}
 		}
-		return streetTrafficInfo;
+		return streetFlowInfo;
 	}
 
 	/**
@@ -117,25 +119,30 @@ public class TrafficConnector {
 	 * @param streetPositionInfo Json with all information about street position
 	 * @return bounding box of street
 	 */
-	//FIXME sometimes the right street is not on the first position
-	public BoundingBox getStreetBoundingBox(JSONObject streetPositionInfo) {
-		JSONObject response = streetPositionInfo.getJSONObject("Response");
-		JSONArray view = response.getJSONArray("View");
-		JSONObject viewObject = view.getJSONObject(0);
-		JSONArray result = viewObject.getJSONArray("Result");
-		JSONObject resultObject = result.getJSONObject(0);
-		JSONObject location = resultObject.getJSONObject("Location");
-		JSONObject mapView = location.getJSONObject("MapView");
+	public List<BoundingBox> getStreetBoundingBoxes(JSONObject streetPositionInfo) {
+		ArrayList<BoundingBox> boundingBoxes = new ArrayList<>();
+		try {
+			JSONObject response = streetPositionInfo.getJSONObject("Response");
+			JSONArray view = response.getJSONArray("View");
+			JSONObject viewObject = view.getJSONObject(0);
+			JSONArray result = viewObject.getJSONArray("Result");
+			for (Object resultObject : result) {
+				JSONObject resultObjectJSON = (JSONObject) resultObject;
+				JSONObject location = resultObjectJSON.getJSONObject("Location");
+				JSONObject mapView = location.getJSONObject("MapView");
 
-		JSONObject topLeft = mapView.getJSONObject("TopLeft");
-		double topLeftLatitude = topLeft.getDouble("Latitude");
-		double topLeftLongitude = topLeft.getDouble("Longitude");
+				JSONObject topLeft = mapView.getJSONObject("TopLeft");
+				double topLeftLatitude = topLeft.getDouble("Latitude");
+				double topLeftLongitude = topLeft.getDouble("Longitude");
 
-		JSONObject bottomRight = mapView.getJSONObject("BottomRight");
-		double bottomRightLatitude = bottomRight.getDouble("Latitude");
-		double bottomRightLongitude = bottomRight.getDouble("Longitude");
-
-		return new BoundingBox(topLeftLatitude,topLeftLongitude,bottomRightLatitude, bottomRightLongitude);
+				JSONObject bottomRight = mapView.getJSONObject("BottomRight");
+				double bottomRightLatitude = bottomRight.getDouble("Latitude");
+				double bottomRightLongitude = bottomRight.getDouble("Longitude");
+				boundingBoxes.add(new BoundingBox(topLeftLatitude, topLeftLongitude, bottomRightLatitude, bottomRightLongitude));
+			}
+		} catch (Exception e) {
+		}
+		return boundingBoxes;
 	}
 
 	/**

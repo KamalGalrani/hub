@@ -1,10 +1,6 @@
 package eu.ailao.hub;
 
 import eu.ailao.hub.communication.WebInterface;
-import eu.ailao.hub.hereapi.StreetTrafficInfo;
-import eu.ailao.hub.hereapi.TrafficConnector;
-import org.json.JSONArray;
-import org.json.JSONObject;
 
 /**
  * Created by Petr Marek on 26.11.2015.
