@@ -25,10 +25,10 @@ public class Dialog {
 
 	/**
 	 * Adds question to dialog
-	 * @param questionID id of question
+	 * @param question question to add
 	 */
-	public void addQuestion(Question questionID) {
-		questionsOfDialogue.add(questionID);
+	public void addQuestion(Question question) {
+		questionsOfDialogue.add(question);
 	}
 
 	public ArrayList<Question> getQuestions() {
@@ -42,7 +42,7 @@ public class Dialog {
 	public ArrayList<Integer> getQuestionsIDs() {
 		ArrayList<Integer> questionIDs = new ArrayList<Integer>();
 		for (int i = 0; i < questionsOfDialogue.size(); i++) {
-			questionIDs.add(questionsOfDialogue.get(i).getYodaQuestionID());
+			questionIDs.add(questionsOfDialogue.get(i).getClientQuestionID());
 		}
 		return questionIDs;
 	}
@@ -61,7 +61,7 @@ public class Dialog {
 
 	public boolean hasQuestionWithId(int id) {
 		for (Question question : questionsOfDialogue) {
-			if (question.getYodaQuestionID() == id) {
+			if (question.getClientQuestionID() == id) {
 				return true;
 			}
 		}

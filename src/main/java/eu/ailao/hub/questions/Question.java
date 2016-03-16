@@ -1,5 +1,6 @@
 package eu.ailao.hub.questions;
 
+import eu.ailao.hub.Statics;
 import eu.ailao.hub.transformations.Transformation;
 import org.json.JSONObject;
 import org.slf4j.Logger;
@@ -13,10 +14,12 @@ import java.util.ArrayList;
  */
 public class Question {
 	final Logger logger = LoggerFactory.getLogger(Question.class);
-	private int yodaQuestionID;
+	private int serviceQuestionID;
+	private int clientQuestionID;
 	private String originalQuestionText;
 	private String transformedQuestionText;
 	private ArrayList<Transformation> transformations = new ArrayList<>();
+	private Statics.Services service;
 
 	public Question(String questionText) {
 		this.originalQuestionText = questionText;
@@ -31,12 +34,28 @@ public class Question {
 		return originalQuestionText;
 	}
 
-	public int getYodaQuestionID() {
-		return yodaQuestionID;
+	public int getServiceQuestionID() {
+		return serviceQuestionID;
 	}
 
-	public void setYodaQuestionID(int yodaQuestionID) {
-		this.yodaQuestionID = yodaQuestionID;
+	public void setServiceQuestionID(int serviceQuestionID) {
+		this.serviceQuestionID = serviceQuestionID;
+	}
+
+	public int getClientQuestionID() {
+		return clientQuestionID;
+	}
+
+	public void setClientQuestionID(int clientQuestionID) {
+		this.clientQuestionID = clientQuestionID;
+	}
+
+	public Statics.Services getService() {
+		return service;
+	}
+
+	public void setService(Statics.Services service) {
+		this.service = service;
 	}
 
 	/***

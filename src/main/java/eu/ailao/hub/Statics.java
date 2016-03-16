@@ -21,4 +21,9 @@ public final class Statics {
 		Matcher m=p.matcher(text);
 		return m.find();
 	}
+
+	public static enum Services{
+		YODA_QA,
+		TRAFFIC
+	}
 }

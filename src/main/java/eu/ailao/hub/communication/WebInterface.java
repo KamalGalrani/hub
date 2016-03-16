@@ -5,9 +5,11 @@ package eu.ailao.hub.communication;
  */
 
 import eu.ailao.hub.AnswerSentenceGenerator;
+import eu.ailao.hub.Statics;
 import eu.ailao.hub.corefresol.concepts.Concept;
 import eu.ailao.hub.dialog.Dialog;
 import eu.ailao.hub.dialog.DialogMemorizer;
+import eu.ailao.hub.hereapi.Traffic;
 import eu.ailao.hub.questions.Question;
 import eu.ailao.hub.questions.QuestionMapper;
 import eu.ailao.hub.transformations.Transformation;
@@ -36,6 +38,7 @@ public class WebInterface implements Runnable {
 	private QuestionMapper questionMapper;
 	private AnswerSentenceGenerator answerSentenceGenerator;
 	private DialogMemorizer dialogMemorizer;
+	private Traffic traffic;
 
 
 	private static final String USER_ID = "userID";
@@ -46,6 +49,7 @@ public class WebInterface implements Runnable {
 		this.questionMapper = new QuestionMapper();
 		this.answerSentenceGenerator = new AnswerSentenceGenerator();
 		this.dialogMemorizer = new DialogMemorizer();
+		this.traffic = new Traffic();
 	}
 
 	/***
@@ -76,30 +80,45 @@ public class WebInterface implements Runnable {
 
 		String questionText = queryParamsMap.get("text")[0];
 		Question question = new Question(questionText);
+
 		logger.info("Getting id| Question asked: {}", question.getOriginalQuestionText());
-		transformQuestion(question);
+
 		String dialogID = queryParamsMap.get("dialogID")[0];
-		Dialog dialog;
-		if (dialogID.equals("")) {
-			dialog = dialogMemorizer.createNewDialog(question);
+		Dialog dialog = dialogMemorizer.getDialog(dialogID);
+		dialog.addQuestion(question);
+
+		//TODO DECIDE SOMEHOW WHAT SERVICE ASK (YODA_QA, TRAFFIC...)
+		boolean askYoda = true;
+		int questionID = 0;
+		if (askYoda) {
+			questionID = askQuestionYodaQA(question, request, dialog);
 		} else {
-			dialog = dialogMemorizer.getDialog(dialogID);
-			if (dialog != null) {
-				dialog.addQuestion(question);
-			} else {
-				dialog = dialogMemorizer.createNewDialog(question);
-			}
+			questionID = askQuestionTraffic(question);
 		}
-		dialog.getConceptMemorizer().updateConceptsDuringAsking(queryParamsMap);
+
+		question.setServiceQuestionID(questionID);
+
+		int clientQuestionID = questionMapper.addQuestion(question);
+
+		JSONObject answer = new JSONObject();
+		answer.put("id", clientQuestionID);
+		answer.put("dialogID", dialog.getId());
+		logger.info("Getting id| Question text: {}, Dialog id: {}, Question id: {}", questionText, dialog.getId(), question.getServiceQuestionID());
+		return answer.toString();
+	}
+
+	private int askQuestionYodaQA(Question question, Request request, Dialog dialog) {
+		transformQuestion(question);
+		dialog.getConceptMemorizer().updateConceptsDuringAsking(request.queryMap().toMap());
 
 		String questionID = askQuestion(question, request, dialog);
-		questionMapper.addQuestion(getQuestionIDFromAnswer(questionID), question);
-		question.setYodaQuestionID(getQuestionIDFromAnswer(questionID));
+		question.setService(Statics.Services.YODA_QA);
+		int questionIDint = getQuestionIDFromAnswer(questionID);
+		return questionIDint;
+	}
 
-		JSONObject answer = new JSONObject(questionID);
-		answer.put("dialogID", dialog.getId());
-		logger.info("Getting id| Question text: {}, Dialog id: {}, Question id: {}", questionText, dialog.getId(), question.getYodaQuestionID());
-		return answer.toString();
+	private int askQuestionTraffic(Question question){
+		return traffic.askQuestion(question.getTransformedQuestionText());
 	}
 
 	/***
@@ -152,9 +171,12 @@ public class WebInterface implements Runnable {
 
 	private JSONObject getAnswer(int id, Dialog dialog) {
 		CommunicationHandler communicationHandler = new CommunicationHandler();
-		String GETResponse = communicationHandler.getGETResponse(yodaQAURL + "q/" + id);
+		Question question = questionMapper.getQuestionByID(id);
+		int serviceID = question.getServiceQuestionID();
+		String GETResponse = communicationHandler.getGETResponse(yodaQAURL + "q/" + serviceID);
 		JSONObject answer = new JSONObject(GETResponse);
 		answer = transformBack(id, answer);
+		answer.put("id",question.getClientQuestionID());
 		dialog.getConceptMemorizer().updateConceptsDuringGettingQuestion(answer);
 		dialog.getClueMemorizer().setClue(answer);
 		String answerSentence = answerSentenceGenerator.getAnswerSentence(answer);
@@ -286,7 +308,7 @@ public class WebInterface implements Runnable {
 		ArrayList<Question> questions = dialog.getQuestions();
 		for (int i = 0; i < questions.size(); i++) {
 			JSONObject question = new JSONObject();
-			question.put("id", questions.get(i).getYodaQuestionID());
+			question.put("id", questions.get(i).getClientQuestionID());
 			question.put("text", questions.get(i).getOriginalQuestionText());
 			dialogAnswer.put(question);
 		}

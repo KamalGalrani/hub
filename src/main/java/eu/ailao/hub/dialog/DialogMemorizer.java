@@ -31,6 +31,9 @@ public class DialogMemorizer {
 	 * @return dialog
 	 */
 	public Dialog getDialog(String dialogID) {
+		if (dialogID.equals("")){
+			return createNewDialog();
+		}
 		int Id = Integer.parseInt(dialogID.replace("d_", ""));
 		Dialog dialog = dialogs.get(Id);
 		if (dialog == null) {
