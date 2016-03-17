@@ -88,7 +88,7 @@ public class WebInterface implements Runnable {
 		dialog.addQuestion(question);
 
 		//TODO DECIDE SOMEHOW WHAT SERVICE ASK (YODA_QA, TRAFFIC...)
-		boolean askYoda = true;
+		boolean askYoda = false;
 		int questionID;
 		if (askYoda) {
 			questionID = askQuestionYodaQA(question, request, dialog);

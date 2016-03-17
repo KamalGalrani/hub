@@ -1,9 +1,13 @@
 package eu.ailao.hub.traffic;
 
 import eu.ailao.hub.questions.Question;
+import eu.ailao.hub.traffic.hereapi.BoundingBox;
+import eu.ailao.hub.traffic.hereapi.StreetFlowInfo;
+import eu.ailao.hub.traffic.hereapi.TrafficInformationGetter;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
+import java.util.ArrayList;
 import java.util.Random;
 
 /**
@@ -22,7 +26,11 @@ public class Traffic {
 	 */
 	public int askQuestion(String question){
 		int id= idgen.nextInt(Integer.MAX_VALUE);
-		trafficAnswerMemorizer.addToAnswerMap(id, "Not implemented yet.");
+		TrafficInformationGetter trafficInformationGetter=new TrafficInformationGetter();
+		ArrayList<BoundingBox> boundingBoxes= (ArrayList<BoundingBox>) trafficInformationGetter.getStreetBoundingBoxes(question);
+		StreetFlowInfo streetFlowInfo=trafficInformationGetter.getStreetFlowInfo(question, boundingBoxes);
+		String answerText=new AnswerTextGenerator().generateAnswerText(streetFlowInfo);
+		trafficAnswerMemorizer.addToAnswerMap(id, answerText);
 		return id;
 	}
 
