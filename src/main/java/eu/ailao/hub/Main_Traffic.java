@@ -1,8 +1,9 @@
 package eu.ailao.hub;
 
-import eu.ailao.hub.hereapi.*;
-import org.json.JSONArray;
-import org.json.JSONObject;
+import eu.ailao.hub.traffic.hereapi.BoundingBox;
+import eu.ailao.hub.traffic.hereapi.StreetFlowInfo;
+import eu.ailao.hub.traffic.hereapi.StreetIncidentInfo;
+import eu.ailao.hub.traffic.hereapi.TrafficInformationGetter;
 
 import java.util.ArrayList;
 

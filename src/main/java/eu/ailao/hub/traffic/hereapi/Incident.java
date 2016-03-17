@@ -1,4 +1,4 @@
-package eu.ailao.hub.hereapi;
+package eu.ailao.hub.traffic.hereapi;
 
 /**
  * Created by Petr Marek on 15.03.2016.

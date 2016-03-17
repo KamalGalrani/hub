@@ -9,7 +9,7 @@ import eu.ailao.hub.Statics;
 import eu.ailao.hub.corefresol.concepts.Concept;
 import eu.ailao.hub.dialog.Dialog;
 import eu.ailao.hub.dialog.DialogMemorizer;
-import eu.ailao.hub.hereapi.Traffic;
+import eu.ailao.hub.traffic.Traffic;
 import eu.ailao.hub.questions.Question;
 import eu.ailao.hub.questions.QuestionMapper;
 import eu.ailao.hub.transformations.Transformation;
@@ -89,7 +89,7 @@ public class WebInterface implements Runnable {
 
 		//TODO DECIDE SOMEHOW WHAT SERVICE ASK (YODA_QA, TRAFFIC...)
 		boolean askYoda = true;
-		int questionID = 0;
+		int questionID;
 		if (askYoda) {
 			questionID = askQuestionYodaQA(question, request, dialog);
 		} else {
@@ -107,6 +107,13 @@ public class WebInterface implements Runnable {
 		return answer.toString();
 	}
 
+	/**
+	 * Ask yodaQA
+	 * @param question Question to ask
+	 * @param request Incoming request
+	 * @param dialog Dialog in which question is
+	 * @return service ID
+	 */
 	private int askQuestionYodaQA(Question question, Request request, Dialog dialog) {
 		transformQuestion(question);
 		dialog.getConceptMemorizer().updateConceptsDuringAsking(request.queryMap().toMap());
@@ -117,7 +124,13 @@ public class WebInterface implements Runnable {
 		return questionIDint;
 	}
 
+	/**
+	 * Ask traffic
+	 * @param question question to ask
+	 * @return service ID
+	 */
 	private int askQuestionTraffic(Question question){
+		question.setService(Statics.Services.TRAFFIC);
 		return traffic.askQuestion(question.getTransformedQuestionText());
 	}
 
@@ -135,13 +148,21 @@ public class WebInterface implements Runnable {
 		String stringID = request.splat()[0];
 		int id = Integer.parseInt(stringID);
 
+		Question question = questionMapper.getQuestionByID(id);
+
 		String dialogID = request.splat()[1];
 		Dialog dialog = dialogMemorizer.getDialog(dialogID);
 		if (!dialog.hasQuestionWithId(id)) {
-			dialog.addQuestion(questionMapper.getQuestionByID(id));
+			dialog.addQuestion(question);
 		}
 
-		JSONObject answer = getAnswer(id, dialog);
+		JSONObject answer;
+		if (question.getService().equals(Statics.Services.YODA_QA)){
+			answer = getAnswer(id, dialog);
+		}else{
+			answer = traffic.getAnswer(id, question);
+		}
+
 		answer.put("dialogID", dialog.getId());
 		if ((boolean) answer.get("finished")) {
 			logger.info("Getting answer| Question id: {}, Dialog id: {}, Question text: {}, Generated answers: {}, Finished: {}", id, dialog.getId(), answer.get("text"), answer.get("gen_answers"), answer.get("finished"));
@@ -169,6 +190,12 @@ public class WebInterface implements Runnable {
 		return dialogAnswer.toString();
 	}
 
+	/**
+	 * Get answer from YODAQA
+	 * @param id client id
+	 * @param dialog dialog in which is
+	 * @return answer
+	 */
 	private JSONObject getAnswer(int id, Dialog dialog) {
 		CommunicationHandler communicationHandler = new CommunicationHandler();
 		Question question = questionMapper.getQuestionByID(id);

@@ -1,4 +1,4 @@
-package eu.ailao.hub.hereapi;
+package eu.ailao.hub.traffic.hereapi;
 
 import org.json.JSONArray;
 
