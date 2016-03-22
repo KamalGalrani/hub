@@ -12,6 +12,9 @@ import eu.ailao.hub.dialog.DialogMemorizer;
 import eu.ailao.hub.traffic.Traffic;
 import eu.ailao.hub.questions.Question;
 import eu.ailao.hub.questions.QuestionMapper;
+import eu.ailao.hub.traffic.hereapi.QuestionAnalyzer;
+import eu.ailao.hub.traffic.hereapi.TrafficQuestionInfo;
+import eu.ailao.hub.traffic.hereapi.TrafficTopic;
 import eu.ailao.hub.transformations.Transformation;
 import eu.ailao.hub.transformations.TransformationArray;
 import org.json.JSONArray;
@@ -87,10 +90,13 @@ public class WebInterface implements Runnable {
 		Dialog dialog = dialogMemorizer.getDialog(dialogID);
 		dialog.addQuestion(question);
 
-		//TODO DECIDE SOMEHOW WHAT SERVICE ASK (YODA_QA, TRAFFIC...)
-		boolean askYoda = false;
+		//Analyze if question concerns traffic topics
+		QuestionAnalyzer questionAnalyzer = new QuestionAnalyzer();
+		TrafficQuestionInfo trafficQuestionInfo=questionAnalyzer.analyzeTrafficQuestion(question.getTransformedQuestionText());
+
 		int questionID;
-		if (askYoda) {
+		//If I don't know topic or street name, than I will ask YodaQA
+		if (trafficQuestionInfo.getStreetName()==null || trafficQuestionInfo.getTrafficTopic()== TrafficTopic.UNKNOWN) {
 			questionID = askQuestionYodaQA(question, request, dialog);
 		} else {
 			questionID = askQuestionTraffic(question);

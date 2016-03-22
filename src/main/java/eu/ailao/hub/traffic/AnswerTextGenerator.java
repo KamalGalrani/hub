@@ -1,7 +1,9 @@
 package eu.ailao.hub.traffic;
 
 import eu.ailao.hub.traffic.hereapi.CrossSituation;
+import eu.ailao.hub.traffic.hereapi.Incident;
 import eu.ailao.hub.traffic.hereapi.StreetFlowInfo;
+import eu.ailao.hub.traffic.hereapi.StreetIncidentInfo;
 
 import java.util.ArrayList;
 
@@ -11,17 +13,49 @@ import java.util.ArrayList;
  */
 public class AnswerTextGenerator {
 
-	public String generateAnswerText(StreetFlowInfo streetFlowInfo){
+	/**
+	 * Generates answer sentence
+	 * @param streetFlowInfo information about street flow
+	 * @return answer sentence
+	 */
+	public String generateAnswerText(StreetFlowInfo streetFlowInfo) {
 		ArrayList<CrossSituation> crossSituations = streetFlowInfo.getSituationsOnCrosses();
-		String street=crossSituations.get(0).getOwningStreet();
-		float maxJamFactor=0;
-		for (CrossSituation crossSituation : crossSituations){
-			float crossJamFactor=(float)crossSituation.getJamFactor();
-			if (crossJamFactor>maxJamFactor){
-				maxJamFactor=crossJamFactor;
+		if (crossSituations.size() != 0) {
+			String street = crossSituations.get(0).getOwningStreet();
+			float maxJamFactor = 0;
+			for (CrossSituation crossSituation : crossSituations) {
+				float crossJamFactor = (float) crossSituation.getJamFactor();
+				if (crossJamFactor > maxJamFactor) {
+					maxJamFactor = crossJamFactor;
+				}
 			}
+			return "Actual traffic situation on " + street + " street is " + maxJamFactor;
+		} else {
+			return "Sorry, I don't have data for this street.";
 		}
+	}
 
-		return "Actual traffic situation on "+street+" street is "+maxJamFactor;
+	/**
+	 * Generates answer sentence
+	 * @param streetIncidentInfo information about street flow
+	 * @return answer sentence
+	 */
+	public String generateAnswerText(StreetIncidentInfo streetIncidentInfo) {
+		String toReturn = "";
+		ArrayList<Incident> incidents = streetIncidentInfo.getIncidents();
+		switch (incidents.size()) {
+			case 0:
+				return "There is no traffic incident";
+			case 1:
+				toReturn = "There is incident ";
+				break;
+			default:
+				toReturn = "There are incidents ";
+				break;
+		}
+		for (Incident incident : incidents) {
+			toReturn += "with criticality " + incident.getCriticality() + ", ";
+		}
+		return toReturn;
 	}
 }
