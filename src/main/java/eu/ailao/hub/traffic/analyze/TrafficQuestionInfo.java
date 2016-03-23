@@ -1,4 +1,4 @@
-package eu.ailao.hub.traffic.hereapi;
+package eu.ailao.hub.traffic.analyze;
 
 /**
  * Created by Petr Marek on 21.03.2016.
@@ -20,5 +20,10 @@ public class TrafficQuestionInfo {
 
 	public String getStreetName() {
 		return streetName;
+	}
+
+	@Override
+	public String toString() {
+		return trafficTopic+"\t"+streetName;
 	}
 }

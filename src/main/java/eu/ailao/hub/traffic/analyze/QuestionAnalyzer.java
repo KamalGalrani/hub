@@ -1,16 +1,17 @@
-package eu.ailao.hub.traffic.hereapi;
+package eu.ailao.hub.traffic.analyze;
 
 import eu.ailao.hub.Statics;
+import eu.ailao.hub.traffic.hereapi.TrafficConnector;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
 /**
  * Created by Petr Marek on 21.03.2016.
- * Class for analyzing traffic question
+ * Class for analyze traffic question
  */
 public class QuestionAnalyzer {
 
-
+	String LABEL_LOOKUP_ADDRESS = "http://[::1]:5000/";
 
 	/**
 	 * This method recognize topic of answer and street name
@@ -59,7 +60,7 @@ public class QuestionAnalyzer {
 
 		String[] words= sentenceToWords(question);
 		for (String word: words){
-			String url="http://[::1]:5000/search/"+word;
+			String url= LABEL_LOOKUP_ADDRESS +"search/"+word;
 			JSONObject labelLookup=trafficConnector.GETRequest(url);
 			String streetName=getStreetNameFromLabelLookup(labelLookup);
 			if (streetName!=null){

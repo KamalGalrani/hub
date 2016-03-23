@@ -1,7 +1,15 @@
 package eu.ailao.hub.traffic;
 
 import eu.ailao.hub.questions.Question;
+import eu.ailao.hub.traffic.analyze.QuestionAnalyzer;
+import eu.ailao.hub.traffic.analyze.TrafficQuestionInfo;
+import eu.ailao.hub.traffic.analyze.TrafficTopic;
 import eu.ailao.hub.traffic.hereapi.*;
+import eu.ailao.hub.traffic.hereapi.dataclasses.BoundingBox;
+import eu.ailao.hub.traffic.hereapi.dataclasses.StreetFlowInfo;
+import eu.ailao.hub.traffic.hereapi.dataclasses.StreetIncidentInfo;
+import eu.ailao.hub.traffic.output.AnswerTextGenerator;
+import eu.ailao.hub.traffic.output.TrafficAnswerMemorizer;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
@@ -10,7 +18,7 @@ import java.util.Random;
 
 /**
  * Created by Petr Marek on 16.03.2016.
- * Class handling analyzing of traffic questions and asking
+ * Class handling analyze of traffic questions and asking
  */
 public class Traffic {
 
@@ -19,7 +27,7 @@ public class Traffic {
 	private QuestionAnalyzer questionAnalyzer = new QuestionAnalyzer();
 
 	/**
-	 * Analyzes and start answering process
+	 * Analyzes and start answering process for client
 	 * @param question text of question
 	 * @return service id
 	 */

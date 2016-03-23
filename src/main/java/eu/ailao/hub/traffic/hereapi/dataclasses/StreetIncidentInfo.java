@@ -1,5 +1,6 @@
-package eu.ailao.hub.traffic.hereapi;
+package eu.ailao.hub.traffic.hereapi.dataclasses;
 
+import eu.ailao.hub.traffic.hereapi.dataclasses.Incident;
 import org.json.JSONArray;
 
 import java.util.ArrayList;

@@ -1,4 +1,4 @@
-package eu.ailao.hub.traffic;
+package eu.ailao.hub.traffic.output;
 
 import java.util.LinkedHashMap;
 

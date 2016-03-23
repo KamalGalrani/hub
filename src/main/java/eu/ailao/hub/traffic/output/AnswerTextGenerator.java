@@ -1,9 +1,9 @@
-package eu.ailao.hub.traffic;
+package eu.ailao.hub.traffic.output;
 
-import eu.ailao.hub.traffic.hereapi.CrossSituation;
-import eu.ailao.hub.traffic.hereapi.Incident;
-import eu.ailao.hub.traffic.hereapi.StreetFlowInfo;
-import eu.ailao.hub.traffic.hereapi.StreetIncidentInfo;
+import eu.ailao.hub.traffic.hereapi.dataclasses.CrossSituation;
+import eu.ailao.hub.traffic.hereapi.dataclasses.Incident;
+import eu.ailao.hub.traffic.hereapi.dataclasses.StreetFlowInfo;
+import eu.ailao.hub.traffic.hereapi.dataclasses.StreetIncidentInfo;
 
 import java.util.ArrayList;
 
