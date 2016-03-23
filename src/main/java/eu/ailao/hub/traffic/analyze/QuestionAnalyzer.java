@@ -11,7 +11,7 @@ import org.json.JSONObject;
  */
 public class QuestionAnalyzer {
 
-	String LABEL_LOOKUP_ADDRESS = "http://[::1]:5000/";
+	private String LABEL_LOOKUP_ADDRESS = Statics.labelLookupURL;
 
 	/**
 	 * This method recognize topic of answer and street name

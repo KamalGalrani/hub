@@ -8,15 +8,20 @@ Quick instructions for setting up, building and running:
   * You need Java 1.8 and Gradle
   * We assume that you cloned Hub and are now in the directory that contains this README.
   * ``gradlew build`` to build
-  * ``gradlew run -PexecArgs="[Port to run] [Address of YodaQA]"`` to run
+  * ``gradlew run -PexecArgs="[Port to run] [Address of YodaQA] [Address of Lookup Service]"`` to run
 
 ####Example
-YodaQA runs on ``http://localhost:4567/``. To run HUB on port 4568 (it must differ from yodaQA's port), run in it's root directory ``gradlew build`` and ``gradlew run -PexecArgs="4568 http://localhost:4567/"``. To connect YodaQA-client to HUB add ``?e=http://localhost:4568/`` to the end of url.
+YodaQA runs on ``http://localhost:4567/``. Lookup Service runs on ``http://localhost:5000/``. To run HUB on port 4568 (it must differ from yodaQA's port and Lookup Service port), run in it's root directory ``gradlew build`` and ``gradlew run -PexecArgs="4568 http://localhost:4567/ http://[::1]:5000/"``. To connect YodaQA-client to HUB add ``?e=http://localhost:4568/`` to the end of url.
 
 ####Traffic info
-You can test traffic question topic detection by running ``gradlew run_traffic -PexecArgs="[Question]"`. Output will be in the form of "topic	street name". This is used for testing mainly.
+You can test traffic question topic detection by running ``gradlew run_traffic -PexecArgs="[Question] [Address of Lookup Service]"`. Output will be in the form of "topic<TAB>street name". This is used for testing mainly.
 You need running Lookup Services https://github.com/brmson/label-lookup for this feature.
-Connection address can be changed in the eu.ailao.hub.traffic.analyze.QuestionAnalyzer.class by changing the value of LABEL_LOOKUP_ADDRESS variable.
+
+####Traffic info testing on dataset
+You can test traffic on dataset https://docs.google.com/spreadsheets/d/1LAY6trroXwdL8OQVGbBym6EA4yPZEFdR9eHJRAOZIIY/edit?usp=sharing. This dataset contains question and it's topic with street names.
+We usually have one street name (for questions concerning only single street), however there can be multiple for questions like "How to get from Evropská to Technická".
+Download the spreadsheet as .tsv file. Start test by ``gradlew run_trafficTest -PexecArgs="[Location of .tsv file] [Address of Lookup Service]"`. It will evaluate
+how many questions has correctly detected topic and street name.
 
 ##Dialog API
 Dialog API expands YodaQA's API https://github.com/brmson/yodaqa/blob/master/doc/REST-API.md. Hub gets request from

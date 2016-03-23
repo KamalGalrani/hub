@@ -22,8 +22,10 @@ public final class Statics {
 		return m.find();
 	}
 
-	public static enum Services{
+	public enum Services{
 		YODA_QA,
 		TRAFFIC
 	}
+
+	public static String labelLookupURL="http://[::1]:5000/";
 }
