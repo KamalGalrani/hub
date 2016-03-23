@@ -9,12 +9,9 @@ import eu.ailao.hub.Statics;
 import eu.ailao.hub.corefresol.concepts.Concept;
 import eu.ailao.hub.dialog.Dialog;
 import eu.ailao.hub.dialog.DialogMemorizer;
-import eu.ailao.hub.traffic.Traffic;
 import eu.ailao.hub.questions.Question;
 import eu.ailao.hub.questions.QuestionMapper;
-import eu.ailao.hub.traffic.analyze.QuestionAnalyzer;
-import eu.ailao.hub.traffic.analyze.TrafficQuestionInfo;
-import eu.ailao.hub.traffic.analyze.TrafficTopic;
+import eu.ailao.hub.traffic.Traffic;
 import eu.ailao.hub.transformations.Transformation;
 import eu.ailao.hub.transformations.TransformationArray;
 import org.json.JSONArray;
@@ -25,12 +22,14 @@ import spark.Request;
 import spark.Response;
 
 import java.io.IOException;
-import java.util.*;
+import java.util.ArrayDeque;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
 import java.util.concurrent.ExecutionException;
 
 import static eu.ailao.hub.Statics.isContain;
 import static spark.Spark.*;
-import static spark.Spark.get;
 
 
 public class WebInterface implements Runnable {
@@ -90,16 +89,11 @@ public class WebInterface implements Runnable {
 		Dialog dialog = dialogMemorizer.getDialog(dialogID);
 		dialog.addQuestion(question);
 
-		//Analyze if question concerns traffic topics
-		QuestionAnalyzer questionAnalyzer = new QuestionAnalyzer();
-		TrafficQuestionInfo trafficQuestionInfo=questionAnalyzer.analyzeTrafficQuestion(question.getTransformedQuestionText());
-
 		int questionID;
-		//If I don't know topic or street name, than I will ask YodaQA
-		if (trafficQuestionInfo.getStreetName()==null || trafficQuestionInfo.getTrafficTopic()== TrafficTopic.UNKNOWN) {
+		questionID = askQuestionTraffic(question);
+		//Traffic can't help, ask YodaQA
+		if (questionID == -1) {
 			questionID = askQuestionYodaQA(question, request, dialog);
-		} else {
-			questionID = askQuestionTraffic(question);
 		}
 
 		question.setServiceQuestionID(questionID);
@@ -135,7 +129,7 @@ public class WebInterface implements Runnable {
 	 * @param question question to ask
 	 * @return service ID
 	 */
-	private int askQuestionTraffic(Question question){
+	private int askQuestionTraffic(Question question) {
 		question.setService(Statics.Services.TRAFFIC);
 		return traffic.askQuestion(question.getTransformedQuestionText());
 	}
@@ -163,9 +157,9 @@ public class WebInterface implements Runnable {
 		}
 
 		JSONObject answer;
-		if (question.getService().equals(Statics.Services.YODA_QA)){
+		if (question.getService().equals(Statics.Services.YODA_QA)) {
 			answer = getAnswer(id, dialog);
-		}else{
+		} else {
 			answer = traffic.getAnswer(id, question);
 		}
 
@@ -209,7 +203,7 @@ public class WebInterface implements Runnable {
 		String GETResponse = communicationHandler.getGETResponse(yodaQAURL + "q/" + serviceID);
 		JSONObject answer = new JSONObject(GETResponse);
 		answer = transformBack(id, answer);
-		answer.put("id",question.getClientQuestionID());
+		answer.put("id", question.getClientQuestionID());
 		dialog.getConceptMemorizer().updateConceptsDuringGettingQuestion(answer);
 		dialog.getClueMemorizer().setClue(answer);
 		String answerSentence = answerSentenceGenerator.getAnswerSentence(answer);

@@ -36,14 +36,14 @@ public class QuestionAnalyzer {
 		//Incidents
 		for (String incidentKeyword : incidentKeywords) {
 			if (Statics.isContain(question, incidentKeyword)) {
-				return  TrafficTopic.INCIDENTS;
+				return  TrafficTopic.INCIDENT;
 			}
 		}
 
 		//Traffic flow
 		for (String flowKeyword : flowKeywords) {
 			if (Statics.isContain(question, flowKeyword)) {
-				return TrafficTopic.FLOW;
+				return TrafficTopic.TRAFFIC_SITUATION;
 			}
 		}
 
@@ -77,9 +77,6 @@ public class QuestionAnalyzer {
 	 */
 	private String[] sentenceToWords(String sentence) {
 		String[] words = sentence.split("\\s+");
-		for (int i = 0; i < words.length; i++) {
-			words[i] = words[i].replaceAll("[^\\w]", "");
-		}
 		return  words;
 	}
 

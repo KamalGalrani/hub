@@ -23,13 +23,24 @@ public class AnswerTextGenerator {
 		if (crossSituations.size() != 0) {
 			String street = crossSituations.get(0).getOwningStreet();
 			float maxJamFactor = 0;
+			float minJamFactor = 10;
 			for (CrossSituation crossSituation : crossSituations) {
 				float crossJamFactor = (float) crossSituation.getJamFactor();
 				if (crossJamFactor > maxJamFactor) {
 					maxJamFactor = crossJamFactor;
 				}
+				if (crossJamFactor < minJamFactor){
+					minJamFactor = crossJamFactor;
+				}
 			}
-			return "Actual traffic situation on " + street + " street is " + maxJamFactor;
+			maxJamFactor=maxJamFactor/2;
+			minJamFactor=maxJamFactor/2;
+			int minJamFactorOutput= (int) (minJamFactor/2);
+			int maxJamFactorOutput= (int) (maxJamFactor/2);
+			if (minJamFactor==maxJamFactor){
+				return "Actual traffic situation on " + street + " is "+maxJamFactorOutput+".";
+			}
+			return "Actual traffic situation on " + street + " is between degrees "+ minJamFactorOutput+" and " + maxJamFactorOutput+".";
 		} else {
 			return "Sorry, I don't have data for this street.";
 		}

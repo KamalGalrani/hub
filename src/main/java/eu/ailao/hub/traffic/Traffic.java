@@ -48,15 +48,18 @@ public class Traffic {
 			TrafficInformationGetter trafficInformationGetter = new TrafficInformationGetter();
 			ArrayList<BoundingBox> boundingBoxes = (ArrayList<BoundingBox>) trafficInformationGetter.getStreetBoundingBoxes(streetName);
 			switch (topic){
-				case FLOW:
+				case TRAFFIC_SITUATION:
 					StreetFlowInfo streetFlowInfo = trafficInformationGetter.getStreetFlowInfo(streetName, boundingBoxes);
 					answerText = new AnswerTextGenerator().generateAnswerText(streetFlowInfo);
 					break;
-				case INCIDENTS:
+				case INCIDENT:
 					StreetIncidentInfo incidentInfo = trafficInformationGetter.getStreetIncidentInfo(streetName, boundingBoxes);
 					answerText = new AnswerTextGenerator().generateAnswerText(incidentInfo);
 					break;
 			}
+		}else{
+			//I can't help you
+			return -1;
 		}
 
 		trafficAnswerMemorizer.addToAnswerMap(id, answerText);

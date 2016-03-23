@@ -6,6 +6,10 @@ package eu.ailao.hub.traffic.analyze;
  */
 public enum TrafficTopic {
 	UNKNOWN,
-	FLOW,
-	INCIDENTS
+	TRAFFIC_SITUATION,
+	INCIDENT,
+	CONSTRUCTION,
+	CLOSURE,
+	RESTRICTION_END,
+	FASTEST_ROUTE,
 }
