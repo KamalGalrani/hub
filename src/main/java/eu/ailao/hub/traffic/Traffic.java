@@ -12,6 +12,8 @@ import eu.ailao.hub.traffic.output.AnswerTextGenerator;
 import eu.ailao.hub.traffic.output.TrafficAnswerMemorizer;
 import org.json.JSONArray;
 import org.json.JSONObject;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.ArrayList;
 import java.util.Random;
@@ -22,6 +24,7 @@ import java.util.Random;
  */
 public class Traffic {
 
+	final Logger logger = LoggerFactory.getLogger(Traffic.class);
 	private Random idgen = new Random();
 	private TrafficAnswerMemorizer trafficAnswerMemorizer = new TrafficAnswerMemorizer();
 	private QuestionAnalyzer questionAnalyzer = new QuestionAnalyzer();
@@ -34,9 +37,12 @@ public class Traffic {
 	public int askQuestion(String question) {
 		int id = idgen.nextInt(Integer.MAX_VALUE);
 
+
 		TrafficQuestionInfo trafficQuestionInfo = questionAnalyzer.analyzeTrafficQuestion(question);
 		String streetName = trafficQuestionInfo.getStreetName();
 		TrafficTopic topic = trafficQuestionInfo.getTrafficTopic();
+
+		logger.info("Analyzing traffic question| Topic: {} Street name: {}", topic, streetName);
 
 		String answerText="I don't know what you ask.";
 
@@ -45,6 +51,7 @@ public class Traffic {
 		}
 
 		if (!topic.equals(TrafficTopic.UNKNOWN) && streetName!=null){
+			logger.info("Analyzing traffic question| This is traffic question");
 			TrafficInformationGetter trafficInformationGetter = new TrafficInformationGetter();
 			ArrayList<BoundingBox> boundingBoxes = (ArrayList<BoundingBox>) trafficInformationGetter.getStreetBoundingBoxes(streetName);
 			switch (topic){
@@ -58,7 +65,7 @@ public class Traffic {
 					break;
 			}
 		}else{
-			//I can't help you
+			logger.info("Analyzing traffic question| Question is not about traffic");
 			return -1;
 		}
 
