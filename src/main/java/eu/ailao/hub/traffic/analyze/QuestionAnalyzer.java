@@ -54,7 +54,7 @@ public class QuestionAnalyzer {
 	/**
 	 * Finds name of street contained in question by ask to label-lookup
 	 * @param question traffic question
-	 * @return name of street
+	 * @return name of street, null if it was not founded
 	 */
 	private String analyzeStreetName(String question) {
 		String[] words = sentenceToWords(question);
@@ -68,6 +68,12 @@ public class QuestionAnalyzer {
 		return null;
 	}
 
+	/**
+	 * Finds street name with length of "number of Words"
+	 * @param words Words of question
+	 * @param numberOfWords length of street name
+	 * @return name of street if it was founded, null otherwise
+	 */
 	private String findStreetName(String[] words, int numberOfWords) {
 		TrafficConnector trafficConnector = new TrafficConnector();
 		for (int i = 0; i < words.length - numberOfWords + 1; i++) {
