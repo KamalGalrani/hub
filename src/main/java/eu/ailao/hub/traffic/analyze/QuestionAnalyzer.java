@@ -12,16 +12,17 @@ import org.json.JSONObject;
 public class QuestionAnalyzer {
 
 	private String LABEL_LOOKUP_ADDRESS = Statics.labelLookupURL;
+	private int MAXIMUM_STREET_NAME_WORDS = 4;
 
 	/**
 	 * This method recognize topic of answer and street name
 	 * @param question traffic question
 	 * @return topic and street name
 	 */
-	public TrafficQuestionInfo analyzeTrafficQuestion(String question){
+	public TrafficQuestionInfo analyzeTrafficQuestion(String question) {
 		TrafficTopic topic = analyzeQuestionTopic(question);
 		String street = analyzeStreetName(question);
-		return new TrafficQuestionInfo(topic,street);
+		return new TrafficQuestionInfo(topic, street);
 	}
 
 	/**
@@ -29,14 +30,14 @@ public class QuestionAnalyzer {
 	 * @param question traffic question
 	 * @return topic of question
 	 */
-	private TrafficTopic analyzeQuestionTopic(String question){
+	private TrafficTopic analyzeQuestionTopic(String question) {
 		String[] flowKeywords = {"flow", "traffic flow", "traffic"};
 		String[] incidentKeywords = {"incident", "incidents", "traffic incident", "traffic incidents"};
 
 		//Incidents
 		for (String incidentKeyword : incidentKeywords) {
 			if (Statics.isContain(question, incidentKeyword)) {
-				return  TrafficTopic.INCIDENT;
+				return TrafficTopic.INCIDENT;
 			}
 		}
 
@@ -55,16 +56,36 @@ public class QuestionAnalyzer {
 	 * @param question traffic question
 	 * @return name of street
 	 */
-	private String analyzeStreetName(String question){
-		TrafficConnector trafficConnector = new TrafficConnector();
+	private String analyzeStreetName(String question) {
+		String[] words = sentenceToWords(question);
 
-		String[] words= sentenceToWords(question);
-		for (String word: words){
-			String url= LABEL_LOOKUP_ADDRESS +"search/"+word;
-			JSONObject labelLookup=trafficConnector.GETRequest(url);
-			String streetName=getStreetNameFromLabelLookup(labelLookup);
-			if (streetName!=null){
-				return  streetName;
+		for (int i = 1; i < MAXIMUM_STREET_NAME_WORDS; i++) {
+			String name = findStreetName(words, i);
+			if (name != null) {
+				return name;
+			}
+		}
+		return null;
+	}
+
+	private String findStreetName(String[] words, int numberOfWords) {
+		TrafficConnector trafficConnector = new TrafficConnector();
+		for (int i = 0; i < words.length - numberOfWords + 1; i++) {
+			String searchTerm = "";
+			for (int j = 0; j < numberOfWords; j++) {
+				if (j == numberOfWords - 1) {
+					searchTerm += words[i + j];
+				} else {
+					searchTerm += words[i + j] + " ";
+				}
+			}
+			searchTerm = searchTerm.replace(" ", "%20");
+			searchTerm = searchTerm.replace("?", "");
+			String url = LABEL_LOOKUP_ADDRESS + "search/" + searchTerm;
+			JSONObject labelLookup = trafficConnector.GETRequest(url);
+			String streetName = getStreetNameFromLabelLookup(labelLookup);
+			if (streetName != null) {
+				return streetName;
 			}
 		}
 		return null;
@@ -77,7 +98,7 @@ public class QuestionAnalyzer {
 	 */
 	private String[] sentenceToWords(String sentence) {
 		String[] words = sentence.split("\\s+");
-		return  words;
+		return words;
 	}
 
 	/**
@@ -85,12 +106,12 @@ public class QuestionAnalyzer {
 	 * @param labelLookup labelLookup result
 	 * @return name of street
 	 */
-	String getStreetNameFromLabelLookup(JSONObject labelLookup){
-		JSONArray results=labelLookup.getJSONArray("results");
-		for (Object result: results) {
-			int distance=  ((JSONObject)result).getInt("dist");
-			if (distance==0){
-				return ((JSONObject)result).getString("matchedLabel");
+	String getStreetNameFromLabelLookup(JSONObject labelLookup) {
+		JSONArray results = labelLookup.getJSONArray("results");
+		for (Object result : results) {
+			int distance = ((JSONObject) result).getInt("dist");
+			if (distance == 0) {
+				return ((JSONObject) result).getString("matchedLabel");
 			}
 		}
 		return null;
