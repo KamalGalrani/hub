@@ -6,6 +6,8 @@ import eu.ailao.hub.traffic.hereapi.dataclasses.StreetIncidentInfo;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -56,6 +58,11 @@ public class TrafficInformationGetter {
 	 */
 	public List<BoundingBox> getStreetBoundingBoxes(String streetName) {
 		TrafficConnector trafficConnector = new TrafficConnector();
+		try {
+			streetName=URLEncoder.encode(streetName, "UTF-8");
+		} catch (UnsupportedEncodingException e) {
+			e.printStackTrace();
+		}
 		JSONObject streetPosition = trafficConnector.GETRequest("https://geocoder.cit.api.here.com/6.2/geocode.json?searchtext=" + streetName + "%2C%20Prague&app_id=m0gORGqDQz7BRg7MUiC3&app_code=GgpH8vtSsoG0h7rh_a9mnA&gen=8");
 		ArrayList<BoundingBox> boundingBoxes = (ArrayList<BoundingBox>) trafficConnector.getStreetBoundingBoxes(streetPosition);
 		return boundingBoxes;
