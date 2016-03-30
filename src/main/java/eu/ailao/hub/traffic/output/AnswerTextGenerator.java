@@ -29,18 +29,18 @@ public class AnswerTextGenerator {
 				if (crossJamFactor > maxJamFactor) {
 					maxJamFactor = crossJamFactor;
 				}
-				if (crossJamFactor < minJamFactor){
+				if (crossJamFactor < minJamFactor) {
 					minJamFactor = crossJamFactor;
 				}
 			}
-			maxJamFactor=maxJamFactor/2;
-			minJamFactor=maxJamFactor/2;
-			int minJamFactorOutput= (int) (minJamFactor/2);
-			int maxJamFactorOutput= (int) (maxJamFactor/2);
-			if (minJamFactor==maxJamFactor){
-				return "Actual traffic situation on " + street + " is "+maxJamFactorOutput+".";
+			maxJamFactor = maxJamFactor / 2;
+			minJamFactor = maxJamFactor / 2;
+			int minJamFactorOutput = (int) ((minJamFactor + 1) / 2);
+			int maxJamFactorOutput = (int) ((maxJamFactor + 1) / 2);
+			if (minJamFactor == maxJamFactor) {
+				return "Actual traffic situation on " + street + " is " + maxJamFactorOutput + ".";
 			}
-			return "Actual traffic situation on " + street + " is between degrees "+ minJamFactorOutput+" and " + maxJamFactorOutput+".";
+			return "Actual traffic situation on " + street + " is between degrees " + minJamFactorOutput + " and " + maxJamFactorOutput + ".";
 		} else {
 			return "Sorry, I don't have data for this street.";
 		}
@@ -54,19 +54,27 @@ public class AnswerTextGenerator {
 	public String generateAnswerText(StreetIncidentInfo streetIncidentInfo) {
 		String toReturn = "";
 		ArrayList<Incident> incidents = streetIncidentInfo.getIncidents();
-		switch (incidents.size()) {
-			case 0:
-				return "There is no traffic incident";
-			case 1:
-				toReturn = "There is incident ";
-				break;
-			default:
-				toReturn = "There are incidents ";
-				break;
-		}
 		for (Incident incident : incidents) {
-			toReturn += "with criticality " + incident.getCriticality() + ", ";
+			if (incident.isRoadClosed()) {
+				toReturn += "The road is closed ";
+			} else {
+				toReturn += "The traffic is limited ";
+			}
+			toReturn += "between " + incident.getOrigin() + " and " + incident.getTo() + " ";
+			toReturn += "in the direction to " + incident.getDirection() +" ";
+			switch (incident.getType()){
+				case "CONSTRUCTION":
+					toReturn += "due to construction ";
+					break;
+				case "ACCIDENT":
+					toReturn += "due to accident ";
+					break;
+				case "WEATHER":
+					toReturn += "due to weather ";
+			}
+			toReturn += "until " + incident.getEndTime() + ". ";
 		}
+
 		return toReturn;
 	}
 }

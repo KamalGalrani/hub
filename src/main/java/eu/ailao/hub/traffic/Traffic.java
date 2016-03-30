@@ -54,6 +54,7 @@ public class Traffic {
 			logger.info("Analyzing traffic question| This is traffic question");
 			TrafficInformationGetter trafficInformationGetter = new TrafficInformationGetter();
 			ArrayList<BoundingBox> boundingBoxes = (ArrayList<BoundingBox>) trafficInformationGetter.getStreetBoundingBoxes(streetName);
+			//ArrayList<BoundingBox> boundingBoxes = null;
 			switch (topic){
 				case TRAFFIC_SITUATION:
 					StreetFlowInfo streetFlowInfo = trafficInformationGetter.getStreetFlowInfo(streetName, boundingBoxes);

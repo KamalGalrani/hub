@@ -6,6 +6,7 @@ package eu.ailao.hub.traffic.hereapi.dataclasses;
  */
 public class Incident {
 	private String active;
+	private boolean roadClosed;
 	private String type;
 	private String startTime;
 	private String endTime;
@@ -15,8 +16,9 @@ public class Incident {
 	private String to;
 	private String direction;
 
-	public Incident(String active, String type, String startTime, String endTime, String criticality, String comment, String origin, String to, String direction) {
+	public Incident(String active, boolean roadClosed, String type, String startTime, String endTime, String criticality, String comment, String origin, String to, String direction) {
 		this.active = active;
+		this.roadClosed = roadClosed;
 		this.type = type;
 		this.startTime = startTime;
 		this.endTime = endTime;
@@ -29,6 +31,10 @@ public class Incident {
 
 	public String isActive() {
 		return active;
+	}
+
+	public boolean isRoadClosed() {
+		return roadClosed;
 	}
 
 	public String getType() {

@@ -34,7 +34,7 @@ public class QuestionAnalyzer {
 		String[] flowKeywords = {"flow", "traffic flow", "traffic"};
 		String[] incidentKeywords = {"incident", "incidents", "traffic incident", "traffic incidents"};
 
-		//Incidents
+		//Incidents.txt
 		for (String incidentKeyword : incidentKeywords) {
 			if (Statics.isContain(question, incidentKeyword)) {
 				return TrafficTopic.INCIDENT;

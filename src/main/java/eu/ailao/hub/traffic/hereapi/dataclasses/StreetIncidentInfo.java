@@ -1,6 +1,5 @@
 package eu.ailao.hub.traffic.hereapi.dataclasses;
 
-import eu.ailao.hub.traffic.hereapi.dataclasses.Incident;
 import org.json.JSONArray;
 
 import java.util.ArrayList;
@@ -12,8 +11,8 @@ import java.util.ArrayList;
 public class StreetIncidentInfo {
 	ArrayList<Incident> incidents = new ArrayList<>();
 
-	public void addIncident(String active, String type, String startTime, String endTime, String criticality, String comment, String origin, String to, String direction) {
-		Incident incident = new Incident(active, type, startTime, endTime, criticality, comment, origin, to, direction);
+	public void addIncident(String active, boolean roadClosed, String type, String startTime, String endTime, String criticality, String comment, String origin, String to, String direction) {
+		Incident incident = new Incident(active, roadClosed, type, startTime, endTime, criticality, comment, origin, to, direction);
 		incidents.add(incident);
 	}
 

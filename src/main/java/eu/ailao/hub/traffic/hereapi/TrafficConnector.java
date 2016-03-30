@@ -207,16 +207,18 @@ public class TrafficConnector {
 			String criticality = incidentJSON.getJSONObject("CRITICALITY").getString("DESCRIPTION");
 			String comment = incidentJSON.getString("COMMENTS");
 
-			JSONObject description = (JSONObject) incidentJSON.getJSONObject("LOCATION").getJSONObject("DEFINED").getJSONObject("ORIGIN").getJSONObject("ROADWAY").getJSONArray("DESCRIPTION").get(0);
+			JSONObject description = (JSONObject) incidentJSON.getJSONObject("LOCATION").getJSONObject("DEFINED").getJSONObject("ORIGIN").getJSONObject("POINT").getJSONArray("DESCRIPTION").get(0);
 			String origin = description.getString("content");
 
 			description = (JSONObject) incidentJSON.getJSONObject("LOCATION").getJSONObject("DEFINED").getJSONObject("ORIGIN").getJSONObject("DIRECTION").getJSONArray("DESCRIPTION").get(0);
 			String direction = description.getString("content");
 
-			description = (JSONObject) incidentJSON.getJSONObject("LOCATION").getJSONObject("DEFINED").getJSONObject("TO").getJSONObject("ROADWAY").getJSONArray("DESCRIPTION").get(0);
+			description = (JSONObject) incidentJSON.getJSONObject("LOCATION").getJSONObject("DEFINED").getJSONObject("TO").getJSONObject("POINT").getJSONArray("DESCRIPTION").get(0);
 			String to = description.getString("content");
 
-			streetIncidentInfo.addIncident(active, type, startTime, endTime, criticality, comment, origin, to, direction);
+			boolean isClosed = incidentJSON.getJSONObject("TRAFFICITEMDETAIL").getBoolean("ROADCLOSED");
+
+			streetIncidentInfo.addIncident(active, isClosed, type, startTime, endTime, criticality, comment, origin, to, direction);
 		}
 		return streetIncidentInfo;
 	}
