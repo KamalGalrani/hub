@@ -37,7 +37,11 @@ public class Main_TrafficTest {
 
 			while (dataRow != null) {
 				String[] dataArray = dataRow.split("\t");
-				boolean[] result = testQuestion(totalQuestions, dataArray[0], dataArray[1], dataArray[2]);
+				String secondStreet = null;
+				if (dataArray.length >= 4) {
+					secondStreet = dataArray[3];
+				}
+				boolean[] result = testQuestion(totalQuestions, dataArray[0], dataArray[1], dataArray[2], secondStreet);
 				if (result[TOPIC]) {
 					correctTopics++;
 				}
@@ -60,18 +64,34 @@ public class Main_TrafficTest {
 		}
 	}
 
-	private boolean[] testQuestion(int questionNumber, String question, String topic, String street) {
+	private boolean[] testQuestion(int questionNumber, String question, String topic, String street, String streetTwo) {
 		boolean[] results = new boolean[2];
 		QuestionAnalyzer questionAnalyzer = new QuestionAnalyzer();
 		TrafficQuestionInfo trafficQuestionInfo = questionAnalyzer.analyzeTrafficQuestion(question);
 		if (trafficQuestionInfo.getTrafficTopic().toString().equals(topic)) {
 			results[TOPIC] = true;
 		}
-		if (trafficQuestionInfo.getStreetName() != null && trafficQuestionInfo.getStreetName().equals(street)) {
-			results[STREET] = true;
+		if (streetTwo != null) {
+			if (trafficQuestionInfo.getStreetNameFrom() != null && trafficQuestionInfo.getStreetNameFrom().toLowerCase().equals(street.toLowerCase()) &&
+					trafficQuestionInfo.getStreetNameTo() != null && trafficQuestionInfo.getStreetNameTo().toLowerCase().equals(streetTwo.toLowerCase())) {
+				results[STREET] = true;
+			}
+		} else {
+			if (trafficQuestionInfo.getStreetName() != null && trafficQuestionInfo.getStreetName().toLowerCase().equals(street.toLowerCase())) {
+				results[STREET] = true;
+			}
 		}
-		System.out.println(questionNumber + ") " + question + " " + topic + " " + street);
-		System.out.println("Detected: " + trafficQuestionInfo.getTrafficTopic() + " " + trafficQuestionInfo.getStreetName());
+		if (streetTwo != null) {
+			System.out.println(questionNumber + ") " + question + " " + topic + " " + street + " " + streetTwo);
+		} else {
+			System.out.println(questionNumber + ") " + question + " " + topic + " " + street);
+		}
+		if (streetTwo != null) {
+			System.out.println("Detected: " + trafficQuestionInfo.getTrafficTopic() + " " + trafficQuestionInfo.getStreetNameFrom() + " " + trafficQuestionInfo.getStreetNameTo());
+		} else {
+			System.out.println("Detected: " + trafficQuestionInfo.getTrafficTopic() + " " + trafficQuestionInfo.getStreetName());
+		}
+		System.out.println("Topic: "+results[TOPIC]+" Street: "+results[STREET]);
 		System.out.println();
 		return results;
 	}

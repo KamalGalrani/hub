@@ -1,8 +1,7 @@
 package eu.ailao.hub.traffic.hereapi;
 
-import eu.ailao.hub.traffic.hereapi.dataclasses.BoundingBox;
-import eu.ailao.hub.traffic.hereapi.dataclasses.StreetFlowInfo;
-import eu.ailao.hub.traffic.hereapi.dataclasses.StreetIncidentInfo;
+import eu.ailao.hub.traffic.hereapi.dataclasses.*;
+import eu.ailao.hub.traffic.test.TestSituations;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
@@ -26,11 +25,11 @@ public class TrafficInformationGetter {
 	public StreetIncidentInfo getStreetIncidentInfo(String streetName, List<BoundingBox> boundingBoxes) {
 		TrafficConnector trafficConnector = new TrafficConnector();
 		JSONArray trafficIncidentsOnStreet=new JSONArray();
-		for (BoundingBox boundingBox : boundingBoxes) {
-			JSONObject trafficIncidents = trafficConnector.GETRequest("https://traffic.cit.api.here.com/traffic/6.0/incidents.json?bbox=" + boundingBox.getTopLeftLatitude() + "," + boundingBox.getTopLeftLongitude() + ";" + boundingBox.getBottomRightLatitude() + "," + boundingBox.getBottomRightLongitude() + "&criticality=0%2C1%2C2%2C3&app_id=m0gORGqDQz7BRg7MUiC3&app_code=GgpH8vtSsoG0h7rh_a9mnA");
-			//JSONObject trafficIncidents = new TestSituations().getTrafficIncidents();
+//		for (BoundingBox boundingBox : boundingBoxes) {
+			//JSONObject trafficIncidents = trafficConnector.GETRequest("https://traffic.cit.api.here.com/traffic/6.0/incidents.json?bbox=" + boundingBox.getTopLeftLatitude() + "," + boundingBox.getTopLeftLongitude() + ";" + boundingBox.getBottomRightLatitude() + "," + boundingBox.getBottomRightLongitude() + "&criticality=0%2C1%2C2%2C3&app_id=m0gORGqDQz7BRg7MUiC3&app_code=GgpH8vtSsoG0h7rh_a9mnA");
+			JSONObject trafficIncidents = new TestSituations().getTrafficIncidents();
 			concatJSONArrays(trafficIncidentsOnStreet,trafficConnector.getStreetIncidents(trafficIncidents, streetName));
-		}
+		//}
 		StreetIncidentInfo streetIncidentInfo = trafficConnector.getStreetIncidentInfo(trafficIncidentsOnStreet);
 		return streetIncidentInfo;
 	}
@@ -52,6 +51,13 @@ public class TrafficInformationGetter {
 		return streetFlowInfo;
 	}
 
+	public FastestRouteInfo getFastestRouteInfo(Position from, Position to){
+		TrafficConnector trafficConnector = new TrafficConnector();
+		JSONObject fastestRoute = trafficConnector.GETRequest("https://route.cit.api.here.com/routing/7.2/calculateroute.json?waypoint0="+from.getLatitude()+"%2C"+from.getLongitude()+"&waypoint1="+to.getLatitude()+"%2C"+to.getLongitude()+"&mode=fastest%3Bcar%3Btraffic%3Aenabled&routeattributes=lg&maneuverattributes=le%2Cnr&app_id=m0gORGqDQz7BRg7MUiC3&app_code=GgpH8vtSsoG0h7rh_a9mnA&departure=now");
+		FastestRouteInfo fastestRouteInfo = trafficConnector.getFastestRouteInfo(fastestRoute);
+		return fastestRouteInfo;
+	}
+
 	/**
 	 * Return possible bounding boxes of street
 	 * @param streetName name of street
@@ -67,6 +73,18 @@ public class TrafficInformationGetter {
 		JSONObject streetPosition = trafficConnector.GETRequest("https://geocoder.cit.api.here.com/6.2/geocode.json?searchtext=" + streetName + "%2C%20Prague&app_id=m0gORGqDQz7BRg7MUiC3&app_code=GgpH8vtSsoG0h7rh_a9mnA&gen=8");
 		ArrayList<BoundingBox> boundingBoxes = (ArrayList<BoundingBox>) trafficConnector.getStreetBoundingBoxes(streetPosition);
 		return boundingBoxes;
+	}
+
+	public Position getStreetPosition(String streetName){
+		TrafficConnector trafficConnector = new TrafficConnector();
+		try {
+			streetName=URLEncoder.encode(streetName, "UTF-8");
+		} catch (UnsupportedEncodingException e) {
+			e.printStackTrace();
+		}
+		JSONObject streetPosition = trafficConnector.GETRequest("https://geocoder.cit.api.here.com/6.2/geocode.json?searchtext=" + streetName + "%2C%20Prague&app_id=m0gORGqDQz7BRg7MUiC3&app_code=GgpH8vtSsoG0h7rh_a9mnA&gen=8");
+		Position position = trafficConnector.getStreetPosition(streetPosition);
+		return position;
 	}
 
 	/**

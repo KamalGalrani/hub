@@ -4,10 +4,8 @@ import eu.ailao.hub.questions.Question;
 import eu.ailao.hub.traffic.analyze.QuestionAnalyzer;
 import eu.ailao.hub.traffic.analyze.TrafficQuestionInfo;
 import eu.ailao.hub.traffic.analyze.TrafficTopic;
-import eu.ailao.hub.traffic.hereapi.*;
-import eu.ailao.hub.traffic.hereapi.dataclasses.BoundingBox;
-import eu.ailao.hub.traffic.hereapi.dataclasses.StreetFlowInfo;
-import eu.ailao.hub.traffic.hereapi.dataclasses.StreetIncidentInfo;
+import eu.ailao.hub.traffic.hereapi.TrafficInformationGetter;
+import eu.ailao.hub.traffic.hereapi.dataclasses.*;
 import eu.ailao.hub.traffic.output.AnswerTextGenerator;
 import eu.ailao.hub.traffic.output.TrafficAnswerMemorizer;
 import org.json.JSONArray;
@@ -37,42 +35,78 @@ public class Traffic {
 	public int askQuestion(String question) {
 		int id = idgen.nextInt(Integer.MAX_VALUE);
 
-
 		TrafficQuestionInfo trafficQuestionInfo = questionAnalyzer.analyzeTrafficQuestion(question);
 		String streetName = trafficQuestionInfo.getStreetName();
+		String streetNameFrom = trafficQuestionInfo.getStreetNameFrom();
+		String streetNameTo = trafficQuestionInfo.getStreetNameTo();
 		TrafficTopic topic = trafficQuestionInfo.getTrafficTopic();
 
 		logger.info("Analyzing traffic question| Topic: {} Street name: {}", topic, streetName);
 
-		String answerText="I don't know what you ask.";
+		String answerText = "I don't know what you ask.";
 
-		if (streetName==null) {
-			answerText="I don't know this street.";
+		if (topic.equals(TrafficTopic.UNKNOWN)) {
+			logger.info("Analyzing traffic question| Question is not about traffic");
+			trafficAnswerMemorizer.addToAnswerMap(id, answerText);
+			return -1;
+		}
+		if (topic.equals(TrafficTopic.FASTEST_ROUTE)) {
+			if (streetNameFrom == null || streetNameTo == null) {
+				logger.info("Analyzing traffic question| Question is not about traffic");
+				answerText = "I don't know those streets.";
+				trafficAnswerMemorizer.addToAnswerMap(id, answerText);
+				return -1;
+			}
+		} else {
+			if (streetName == null) {
+				logger.info("Analyzing traffic question| Question is not about traffic");
+				answerText = "I don't know this street.";
+				trafficAnswerMemorizer.addToAnswerMap(id, answerText);
+				return -1;
+			}
 		}
 
-		if (!topic.equals(TrafficTopic.UNKNOWN) && streetName!=null){
-			logger.info("Analyzing traffic question| This is traffic question");
-			TrafficInformationGetter trafficInformationGetter = new TrafficInformationGetter();
-			ArrayList<BoundingBox> boundingBoxes = (ArrayList<BoundingBox>) trafficInformationGetter.getStreetBoundingBoxes(streetName);
-			//ArrayList<BoundingBox> boundingBoxes = null;
-			switch (topic){
-				case TRAFFIC_SITUATION:
-					StreetFlowInfo streetFlowInfo = trafficInformationGetter.getStreetFlowInfo(streetName, boundingBoxes);
-					answerText = new AnswerTextGenerator().generateAnswerText(streetFlowInfo);
-					break;
-				case INCIDENT:
-					StreetIncidentInfo incidentInfo = trafficInformationGetter.getStreetIncidentInfo(streetName, boundingBoxes);
-					answerText = new AnswerTextGenerator().generateAnswerText(incidentInfo);
-					break;
-			}
-		}else{
-			logger.info("Analyzing traffic question| Question is not about traffic");
-			return -1;
+		logger.info("Analyzing traffic question| This is traffic question");
+		TrafficInformationGetter trafficInformationGetter = new TrafficInformationGetter();
+		ArrayList<BoundingBox> boundingBoxes = null;
+		switch (topic) {
+			case TRAFFIC_SITUATION:
+				//ArrayList<BoundingBox> boundingBoxes = (ArrayList<BoundingBox>) trafficInformationGetter.getStreetBoundingBoxes(streetName);
+				StreetFlowInfo streetFlowInfo = trafficInformationGetter.getStreetFlowInfo(streetName, boundingBoxes);
+				answerText = new AnswerTextGenerator().generateAnswerText(topic, streetFlowInfo);
+				break;
+			case INCIDENT:
+				//ArrayList<BoundingBox> boundingBoxes = (ArrayList<BoundingBox>) trafficInformationGetter.getStreetBoundingBoxes(streetName);
+				StreetIncidentInfo incidentInfo = trafficInformationGetter.getStreetIncidentInfo(streetName, boundingBoxes);
+				answerText = new AnswerTextGenerator().generateAnswerText(topic, incidentInfo);
+				break;
+			case RESTRICTION_END:
+				//ArrayList<BoundingBox> boundingBoxes = (ArrayList<BoundingBox>) trafficInformationGetter.getStreetBoundingBoxes(streetName);
+				StreetIncidentInfo incidentInfoRestrictionEnd = trafficInformationGetter.getStreetIncidentInfo(streetName, boundingBoxes);
+				answerText = new AnswerTextGenerator().generateAnswerText(topic, incidentInfoRestrictionEnd);
+				break;
+			case CLOSURE:
+				//ArrayList<BoundingBox> boundingBoxes = (ArrayList<BoundingBox>) trafficInformationGetter.getStreetBoundingBoxes(streetName);
+				StreetIncidentInfo incidentInfoClosure = trafficInformationGetter.getStreetIncidentInfo(streetName, boundingBoxes);
+				answerText = new AnswerTextGenerator().generateAnswerText(topic, incidentInfoClosure);
+				break;
+			case CONSTRUCTION:
+				//ArrayList<BoundingBox> boundingBoxes = (ArrayList<BoundingBox>) trafficInformationGetter.getStreetBoundingBoxes(streetName);
+				StreetIncidentInfo incidentInfoConstruction = trafficInformationGetter.getStreetIncidentInfo(streetName, boundingBoxes);
+				answerText = new AnswerTextGenerator().generateAnswerText(topic, incidentInfoConstruction);
+				break;
+			case FASTEST_ROUTE:
+				Position fromPoint = trafficInformationGetter.getStreetPosition(streetNameFrom);
+				Position toPoint = trafficInformationGetter.getStreetPosition(streetNameTo);
+				FastestRouteInfo fastestRouteInfo = trafficInformationGetter.getFastestRouteInfo(fromPoint,toPoint);
+				answerText = new AnswerTextGenerator().generateAnswerText(topic, fastestRouteInfo);
+				break;
 		}
 
 		trafficAnswerMemorizer.addToAnswerMap(id, answerText);
 		return id;
 	}
+
 
 	/**
 	 * Returns text of answer

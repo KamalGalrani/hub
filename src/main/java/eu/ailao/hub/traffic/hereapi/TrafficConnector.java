@@ -1,8 +1,6 @@
 package eu.ailao.hub.traffic.hereapi;
 
-import eu.ailao.hub.traffic.hereapi.dataclasses.BoundingBox;
-import eu.ailao.hub.traffic.hereapi.dataclasses.StreetFlowInfo;
-import eu.ailao.hub.traffic.hereapi.dataclasses.StreetIncidentInfo;
+import eu.ailao.hub.traffic.hereapi.dataclasses.*;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
@@ -13,6 +11,7 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 /**
@@ -148,6 +147,26 @@ public class TrafficConnector {
 		return boundingBoxes;
 	}
 
+	public Position getStreetPosition(JSONObject streetPositionInfo) {
+		Position position = null;
+		try {
+			JSONObject response = streetPositionInfo.getJSONObject("Response");
+			JSONArray view = response.getJSONArray("View");
+			JSONObject viewObject = view.getJSONObject(0);
+			JSONArray result = viewObject.getJSONArray("Result");
+			JSONObject resultObjectJSON = result.getJSONObject(0);
+			JSONObject location = resultObjectJSON.getJSONObject("Location");
+			JSONArray navigationPositions = location.getJSONArray("NavigationPosition");
+			JSONObject navigationPosition = navigationPositions.getJSONObject(0);
+			Double latitude = navigationPosition.getDouble("Latitude");
+			Double longitude = navigationPosition.getDouble("Longitude");
+			position = new Position(latitude, longitude);
+
+		} catch (Exception e) {
+		}
+		return position;
+	}
+
 	/**
 	 * Filters only incidents, which are in selected street
 	 * @param trafficIncidents all traffic incidents
@@ -189,6 +208,81 @@ public class TrafficConnector {
 		} catch (Exception e) {
 		}
 		return incidentsArray;
+	}
+
+	public FastestRouteInfo getFastestRouteInfo(JSONObject route) {
+		int NUMBER_OF_STREETS = 3;
+		String fromStreet;
+		String toStreet;
+		ArrayList<StreetFastestRoute> throughStreets = new ArrayList<>();
+		int time;
+		JSONObject response = route.getJSONObject("response");
+		JSONArray routeArray = response.getJSONArray("route");
+		JSONObject oneRoute = routeArray.getJSONObject(0);
+
+		JSONArray waypoint = oneRoute.getJSONArray("waypoint");
+
+		JSONObject fromWaypoint = waypoint.getJSONObject(0);
+		fromStreet = fromWaypoint.getString("mappedRoadName");
+
+		JSONObject toWaypoint = waypoint.getJSONObject(1);
+		toStreet = toWaypoint.getString("mappedRoadName");
+
+		JSONObject summary = oneRoute.getJSONObject("summary");
+		time = summary.getInt("travelTime");
+
+		JSONArray legArray = oneRoute.getJSONArray("leg");
+		JSONObject leg = legArray.getJSONObject(0);
+		JSONArray maneuverArray = leg.getJSONArray("maneuver");
+		for (int i = 0; i < maneuverArray.length(); i++) {
+			JSONObject maneuverJSON = maneuverArray.getJSONObject(i);
+			String roadName = maneuverJSON.getString("nextRoadName");
+			int length = maneuverJSON.getInt("length");
+			if (!roadName.equals("")) {
+				if (throughStreets.size() == 0 || !throughStreets.get(throughStreets.size() - 1).getName().equals(roadName)) {
+					throughStreets.add(new StreetFastestRoute(roadName, length, i));
+				} else {
+					throughStreets.get(throughStreets.size() - 1).addLength(length);
+				}
+			}
+		}
+		throughStreets.sort(new Comparator<StreetFastestRoute>() {
+			@Override
+			public int compare(StreetFastestRoute o1, StreetFastestRoute o2) {
+				if (o1.getLength() < o2.getLength()) {
+					return 1;
+				}
+				if (o1.getLength() == o2.getLength()) {
+					return 0;
+				}
+				return -1;
+			}
+		});
+
+		ArrayList<StreetFastestRoute> longestStreets = new ArrayList<>();
+		for (int i = 0; i < NUMBER_OF_STREETS; i++) {
+			longestStreets.add(throughStreets.get(i));
+		}
+
+		longestStreets.sort(new Comparator<StreetFastestRoute>() {
+			@Override
+			public int compare(StreetFastestRoute o1, StreetFastestRoute o2) {
+				if (o1.getIndexInRoute() < o2.getIndexInRoute()) {
+					return -1;
+				}
+				if (o1.getIndexInRoute() == o2.getIndexInRoute()) {
+					return 0;
+				}
+				return 1;
+			}
+		});
+
+		ArrayList<String> streets = new ArrayList<>();
+		for (int i = 0; i < NUMBER_OF_STREETS; i++) {
+			streets.add(longestStreets.get(i).getName());
+		}
+
+		return new FastestRouteInfo(fromStreet, toStreet, streets, time);
 	}
 
 	/**

@@ -12,7 +12,9 @@ import org.json.JSONObject;
 public class QuestionAnalyzer {
 
 	private String LABEL_LOOKUP_ADDRESS = Statics.labelLookupURL;
-	private int MAXIMUM_STREET_NAME_WORDS = 4;
+	private final int MAXIMUM_STREET_NAME_WORDS = 4;
+	private final int FROM = 0;
+	private final int TO = 1;
 
 	/**
 	 * This method recognize topic of answer and street name
@@ -21,8 +23,19 @@ public class QuestionAnalyzer {
 	 */
 	public TrafficQuestionInfo analyzeTrafficQuestion(String question) {
 		TrafficTopic topic = analyzeQuestionTopic(question);
-		String street = analyzeStreetName(question);
-		return new TrafficQuestionInfo(topic, street);
+		if (!topic.equals(TrafficTopic.FASTEST_ROUTE)) {
+			String street = analyzeStreetName(question);
+			return new TrafficQuestionInfo(topic, street);
+		} else {
+			try {
+				String streetOne = analyzeStreetName(question);
+				String streetTwo = analyzeStreetName(question.replace(streetOne, ""));
+				String[] fromTo = findFromAndTo(question, streetOne, streetTwo);
+				return new TrafficQuestionInfo(topic, fromTo[FROM], fromTo[TO]);
+			} catch (Exception e) {
+				return new TrafficQuestionInfo(topic, null);
+			}
+		}
 	}
 
 	/**
@@ -34,9 +47,9 @@ public class QuestionAnalyzer {
 		String[] flowKeywords = {"flow", "traffic flow", "traffic"};
 		String[] incidentKeywords = {"incident", "incidents", "traffic incident", "traffic incidents", "crash", "crashes", "accident", "accidents", "problem", "happen"};
 		String[] fastestRoadKeywords = {"how long", "how to", "fastest route", "take me"};
-		String[] constructionKeywords = {"construction","constructions"};
-		String[] closedKeywords = {"closed","closure"};
-		String[] restrictionEndKeywords = {"end","again","passable"};
+		String[] constructionKeywords = {"construction", "constructions"};
+		String[] closedKeywords = {"closed", "closure", "passable"};
+		String[] restrictionEndKeywords = {"end", "again", "passable", "will"};
 
 		//Incidents
 		for (String incidentKeyword : incidentKeywords) {
@@ -120,10 +133,13 @@ public class QuestionAnalyzer {
 			searchTerm = searchTerm.replace(" ", "%20");
 			searchTerm = searchTerm.replace("?", "");
 			String url = LABEL_LOOKUP_ADDRESS + "search/" + searchTerm;
-			JSONObject labelLookup = trafficConnector.GETRequest(url);
-			String streetName = getStreetNameFromLabelLookup(labelLookup);
-			if (streetName != null) {
-				return streetName;
+			try {
+				JSONObject labelLookup = trafficConnector.GETRequest(url);
+				String streetName = getStreetNameFromLabelLookup(labelLookup);
+				if (streetName != null) {
+					return streetName;
+				}
+			} catch (Exception e) {
 			}
 		}
 		return null;
@@ -135,7 +151,7 @@ public class QuestionAnalyzer {
 	 * @return array of words
 	 */
 	private String[] sentenceToWords(String sentence) {
-		String[] words = sentence.split("\\s+");
+		String[] words = sentence.toLowerCase().split("\\s+");
 		return words;
 	}
 
@@ -153,5 +169,36 @@ public class QuestionAnalyzer {
 			}
 		}
 		return null;
+	}
+
+	//TODO finding multiword street names
+	String[] findFromAndTo(String question, String streetOne, String streetTwo) {
+		String[] words = sentenceToWords(question.toLowerCase());
+		String streetOneLowerCase = streetOne.toLowerCase();
+		String streetTwoLowerCase = streetTwo.toLowerCase();
+		int streetOneIndex = -1;
+		int streetTwoIndex = -1;
+		for (int i = 0; i < words.length; i++) {
+			if (streetOneIndex != -1 && streetTwoIndex != -1) {
+				break;
+			}
+			if (words[i].equals(streetOneLowerCase)) {
+				streetOneIndex = i;
+			}
+			if (words[i].equals(streetTwoLowerCase)) {
+				streetTwoIndex = i;
+			}
+		}
+		if ((streetOneIndex - 1) >= 0 && words[streetOneIndex - 1].equals("from")) {
+			return new String[]{streetOne, streetTwo};
+		} else if ((streetOneIndex - 1) >= 0 && words[streetOneIndex - 1].equals("to")) {
+			return new String[]{streetTwo, streetOne};
+		} else if ((streetTwoIndex - 1) >= 0 && words[streetTwoIndex - 1].equals("from")) {
+			return new String[]{streetTwo, streetOne};
+		} else if ((streetTwoIndex - 1) >= 0 && words[streetTwoIndex - 1].equals("to")) {
+			return new String[]{streetOne, streetTwo};
+		} else {
+			return new String[]{streetOne, streetTwo};
+		}
 	}
 }
