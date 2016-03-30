@@ -32,19 +32,51 @@ public class QuestionAnalyzer {
 	 */
 	private TrafficTopic analyzeQuestionTopic(String question) {
 		String[] flowKeywords = {"flow", "traffic flow", "traffic"};
-		String[] incidentKeywords = {"incident", "incidents", "traffic incident", "traffic incidents"};
+		String[] incidentKeywords = {"incident", "incidents", "traffic incident", "traffic incidents", "crash", "crashes", "accident", "accidents", "problem", "happen"};
+		String[] fastestRoadKeywords = {"how long", "how to", "fastest route", "take me"};
+		String[] constructionKeywords = {"construction","constructions"};
+		String[] closedKeywords = {"closed","closure"};
+		String[] restrictionEndKeywords = {"end","again","passable"};
 
-		//Incidents.txt
+		//Incidents
 		for (String incidentKeyword : incidentKeywords) {
-			if (Statics.isContain(question, incidentKeyword)) {
+			if (Statics.isContain(question.toLowerCase(), incidentKeyword)) {
 				return TrafficTopic.INCIDENT;
 			}
 		}
 
 		//Traffic flow
 		for (String flowKeyword : flowKeywords) {
-			if (Statics.isContain(question, flowKeyword)) {
+			if (Statics.isContain(question.toLowerCase(), flowKeyword)) {
 				return TrafficTopic.TRAFFIC_SITUATION;
+			}
+		}
+
+		//Fastest route
+		for (String fastestRoadKeyword : fastestRoadKeywords) {
+			if (Statics.isContain(question.toLowerCase(), fastestRoadKeyword)) {
+				return TrafficTopic.FASTEST_ROUTE;
+			}
+		}
+
+		//Constructions
+		for (String constructionKeyword : constructionKeywords) {
+			if (Statics.isContain(question.toLowerCase(), constructionKeyword)) {
+				return TrafficTopic.CONSTRUCTION;
+			}
+		}
+
+		//Closure
+		for (String closedKeyword : closedKeywords) {
+			if (Statics.isContain(question.toLowerCase(), closedKeyword)) {
+				return TrafficTopic.CLOSURE;
+			}
+		}
+
+		//Restriction end
+		for (String restrictionEndKeyword : restrictionEndKeywords) {
+			if (Statics.isContain(question.toLowerCase(), restrictionEndKeyword)) {
+				return TrafficTopic.RESTRICTION_END;
 			}
 		}
 
