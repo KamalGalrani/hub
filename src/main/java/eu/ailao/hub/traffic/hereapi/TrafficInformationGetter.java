@@ -1,7 +1,6 @@
 package eu.ailao.hub.traffic.hereapi;
 
 import eu.ailao.hub.traffic.hereapi.dataclasses.*;
-import eu.ailao.hub.traffic.test.TestSituations;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
@@ -25,11 +24,11 @@ public class TrafficInformationGetter {
 	public StreetIncidentInfo getStreetIncidentInfo(String streetName, List<BoundingBox> boundingBoxes) {
 		TrafficConnector trafficConnector = new TrafficConnector();
 		JSONArray trafficIncidentsOnStreet=new JSONArray();
-//		for (BoundingBox boundingBox : boundingBoxes) {
-			//JSONObject trafficIncidents = trafficConnector.GETRequest("https://traffic.cit.api.here.com/traffic/6.0/incidents.json?bbox=" + boundingBox.getTopLeftLatitude() + "," + boundingBox.getTopLeftLongitude() + ";" + boundingBox.getBottomRightLatitude() + "," + boundingBox.getBottomRightLongitude() + "&criticality=0%2C1%2C2%2C3&app_id=m0gORGqDQz7BRg7MUiC3&app_code=GgpH8vtSsoG0h7rh_a9mnA");
-			JSONObject trafficIncidents = new TestSituations().getTrafficIncidents();
+		for (BoundingBox boundingBox : boundingBoxes) {
+			JSONObject trafficIncidents = trafficConnector.GETRequest("https://traffic.cit.api.here.com/traffic/6.0/incidents.json?bbox=" + boundingBox.getTopLeftLatitude() + "," + boundingBox.getTopLeftLongitude() + ";" + boundingBox.getBottomRightLatitude() + "," + boundingBox.getBottomRightLongitude() + "&criticality=0%2C1%2C2%2C3&app_id=m0gORGqDQz7BRg7MUiC3&app_code=GgpH8vtSsoG0h7rh_a9mnA");
+			//JSONObject trafficIncidents = new TestSituations().getTrafficIncidents();
 			concatJSONArrays(trafficIncidentsOnStreet,trafficConnector.getStreetIncidents(trafficIncidents, streetName));
-		//}
+		}
 		StreetIncidentInfo streetIncidentInfo = trafficConnector.getStreetIncidentInfo(trafficIncidentsOnStreet);
 		return streetIncidentInfo;
 	}

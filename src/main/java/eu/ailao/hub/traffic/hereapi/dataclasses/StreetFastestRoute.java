@@ -2,6 +2,7 @@ package eu.ailao.hub.traffic.hereapi.dataclasses;
 
 /**
  * Created by Petr Marek on 3/30/2016.
+ * Class storing about one street on fastest route
  */
 public class StreetFastestRoute {
 	private String name;

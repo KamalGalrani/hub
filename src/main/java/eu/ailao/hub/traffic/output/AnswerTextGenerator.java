@@ -12,7 +12,8 @@ import java.util.ArrayList;
 public class AnswerTextGenerator {
 
 	/**
-	 * Generates answer sentence
+	 * Generates answer sentence about street flow
+	 * @param topic topic of question
 	 * @param streetFlowInfo information about street flow
 	 * @return answer sentence
 	 */
@@ -33,9 +34,15 @@ public class AnswerTextGenerator {
 			}
 			maxJamFactor = maxJamFactor / 2;
 			minJamFactor = maxJamFactor / 2;
-			int minJamFactorOutput = (int) ((minJamFactor + 1) / 2);
-			int maxJamFactorOutput = (int) ((maxJamFactor + 1) / 2);
-			if (minJamFactor == maxJamFactor) {
+			int minJamFactorOutput = (int) ((minJamFactor + 2) / 2);
+			int maxJamFactorOutput = (int) ((maxJamFactor + 2) / 2);
+			if (minJamFactorOutput==6){
+				minJamFactorOutput--;
+			}
+			if (maxJamFactorOutput==6){
+				maxJamFactorOutput--;
+			}
+			if (minJamFactorOutput == maxJamFactorOutput) {
 				return "Actual traffic situation on " + street + " is " + maxJamFactorOutput + ".";
 			}
 			return "Actual traffic situation on " + street + " is between degrees " + minJamFactorOutput + " and " + maxJamFactorOutput + ".";
@@ -45,7 +52,8 @@ public class AnswerTextGenerator {
 	}
 
 	/**
-	 * Generates answer sentence
+	 * Generates answer sentence about street incidents, constructions, closed roads, and ends of restrictions
+	 * @param topic topic of question
 	 * @param streetIncidentInfo information about street flow
 	 * @return answer sentence
 	 */
@@ -64,6 +72,12 @@ public class AnswerTextGenerator {
 		}
 	}
 
+	/**
+	 * Generates answer sentence about fastest road
+	 * @param topic topic of question
+	 * @param fastestRouteInfo iformation about fastest road
+	 * @return answer sentence
+	 */
 	public String generateAnswerText(TrafficTopic topic, FastestRouteInfo fastestRouteInfo) {
 		String toReturn = "";
 		toReturn += "The fastest route takes ";
@@ -82,6 +96,11 @@ public class AnswerTextGenerator {
 		return toReturn;
 	}
 
+	/**
+	 * Generates answer sentence about street incidents
+	 * @param streetIncidentInfo information about street incidents
+	 * @return answer sentence
+	 */
 	private String generateAnswerTextIncident(StreetIncidentInfo streetIncidentInfo) {
 		String toReturn = "";
 		ArrayList<Incident> incidents = streetIncidentInfo.getIncidents();
@@ -110,6 +129,11 @@ public class AnswerTextGenerator {
 		return toReturn;
 	}
 
+	/**
+	 * Generates answer sentence about ends of restrictions
+	 * @param streetIncidentInfo information about restrictions ends
+	 * @return answer sentence
+	 */
 	private String generateAnswerTextRestrictionEnds(StreetIncidentInfo streetIncidentInfo) {
 		String toReturn = "";
 		ArrayList<Incident> incidents = streetIncidentInfo.getIncidents();
@@ -136,6 +160,11 @@ public class AnswerTextGenerator {
 		return toReturn;
 	}
 
+	/**
+	 * Generates answer sentence about streets closures
+	 * @param streetIncidentInfo information about closures
+	 * @return answer sentence
+	 */
 	private String generateAnswerTextClosure(StreetIncidentInfo streetIncidentInfo) {
 		String toReturn = "";
 		ArrayList<Incident> incidents = streetIncidentInfo.getIncidents();
@@ -167,6 +196,11 @@ public class AnswerTextGenerator {
 		return toReturn;
 	}
 
+	/**
+	 * Generates answer sentence about constructions
+	 * @param streetIncidentInfo information about constructions
+	 * @return answer sentence
+	 */
 	private String generateAnswerTextConstruction(StreetIncidentInfo streetIncidentInfo) {
 		String toReturn = "";
 		ArrayList<Incident> incidents = streetIncidentInfo.getIncidents();

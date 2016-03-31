@@ -71,27 +71,27 @@ public class Traffic {
 		ArrayList<BoundingBox> boundingBoxes = null;
 		switch (topic) {
 			case TRAFFIC_SITUATION:
-				//ArrayList<BoundingBox> boundingBoxes = (ArrayList<BoundingBox>) trafficInformationGetter.getStreetBoundingBoxes(streetName);
+				boundingBoxes = (ArrayList<BoundingBox>) trafficInformationGetter.getStreetBoundingBoxes(streetName);
 				StreetFlowInfo streetFlowInfo = trafficInformationGetter.getStreetFlowInfo(streetName, boundingBoxes);
 				answerText = new AnswerTextGenerator().generateAnswerText(topic, streetFlowInfo);
 				break;
 			case INCIDENT:
-				//ArrayList<BoundingBox> boundingBoxes = (ArrayList<BoundingBox>) trafficInformationGetter.getStreetBoundingBoxes(streetName);
+				boundingBoxes = (ArrayList<BoundingBox>) trafficInformationGetter.getStreetBoundingBoxes(streetName);
 				StreetIncidentInfo incidentInfo = trafficInformationGetter.getStreetIncidentInfo(streetName, boundingBoxes);
 				answerText = new AnswerTextGenerator().generateAnswerText(topic, incidentInfo);
 				break;
 			case RESTRICTION_END:
-				//ArrayList<BoundingBox> boundingBoxes = (ArrayList<BoundingBox>) trafficInformationGetter.getStreetBoundingBoxes(streetName);
+				boundingBoxes = (ArrayList<BoundingBox>) trafficInformationGetter.getStreetBoundingBoxes(streetName);
 				StreetIncidentInfo incidentInfoRestrictionEnd = trafficInformationGetter.getStreetIncidentInfo(streetName, boundingBoxes);
 				answerText = new AnswerTextGenerator().generateAnswerText(topic, incidentInfoRestrictionEnd);
 				break;
 			case CLOSURE:
-				//ArrayList<BoundingBox> boundingBoxes = (ArrayList<BoundingBox>) trafficInformationGetter.getStreetBoundingBoxes(streetName);
+				boundingBoxes = (ArrayList<BoundingBox>) trafficInformationGetter.getStreetBoundingBoxes(streetName);
 				StreetIncidentInfo incidentInfoClosure = trafficInformationGetter.getStreetIncidentInfo(streetName, boundingBoxes);
 				answerText = new AnswerTextGenerator().generateAnswerText(topic, incidentInfoClosure);
 				break;
 			case CONSTRUCTION:
-				//ArrayList<BoundingBox> boundingBoxes = (ArrayList<BoundingBox>) trafficInformationGetter.getStreetBoundingBoxes(streetName);
+				boundingBoxes = (ArrayList<BoundingBox>) trafficInformationGetter.getStreetBoundingBoxes(streetName);
 				StreetIncidentInfo incidentInfoConstruction = trafficInformationGetter.getStreetIncidentInfo(streetName, boundingBoxes);
 				answerText = new AnswerTextGenerator().generateAnswerText(topic, incidentInfoConstruction);
 				break;

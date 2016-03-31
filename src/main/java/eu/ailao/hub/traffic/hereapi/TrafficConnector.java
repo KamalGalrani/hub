@@ -147,6 +147,11 @@ public class TrafficConnector {
 		return boundingBoxes;
 	}
 
+	/**
+	 * Gets street position from JSON answer of HERE api
+	 * @param streetPositionInfo JSON from HERE api
+	 * @return position of street
+	 */
 	public Position getStreetPosition(JSONObject streetPositionInfo) {
 		Position position = null;
 		try {
@@ -210,11 +215,15 @@ public class TrafficConnector {
 		return incidentsArray;
 	}
 
+	/**
+	 * Get info about fastest path from JSON
+	 * @param route JSON with information
+	 * @return object with information about fastest route
+	 */
 	public FastestRouteInfo getFastestRouteInfo(JSONObject route) {
 		int NUMBER_OF_STREETS = 3;
 		String fromStreet;
 		String toStreet;
-		ArrayList<StreetFastestRoute> throughStreets = new ArrayList<>();
 		int time;
 		JSONObject response = route.getJSONObject("response");
 		JSONArray routeArray = response.getJSONArray("route");
@@ -234,19 +243,37 @@ public class TrafficConnector {
 		JSONArray legArray = oneRoute.getJSONArray("leg");
 		JSONObject leg = legArray.getJSONObject(0);
 		JSONArray maneuverArray = leg.getJSONArray("maneuver");
+
+		ArrayList<String> longestStreets = getLongestStreets(maneuverArray, NUMBER_OF_STREETS);
+
+		return new FastestRouteInfo(fromStreet, toStreet, longestStreets, time);
+	}
+
+	/**
+	 * Gets three longest streets from maneuvers along the fastest route
+	 * @param maneuverArray Array of maneuvers
+	 * @param numberOfStreets Number of streets to return
+	 * @return n longest streets on fastest route
+	 */
+	private ArrayList<String> getLongestStreets(JSONArray maneuverArray, int numberOfStreets){
+		ArrayList<StreetFastestRoute> passingStreets = new ArrayList<>();
+
+		//Add streets with same name together
 		for (int i = 0; i < maneuverArray.length(); i++) {
 			JSONObject maneuverJSON = maneuverArray.getJSONObject(i);
 			String roadName = maneuverJSON.getString("nextRoadName");
 			int length = maneuverJSON.getInt("length");
 			if (!roadName.equals("")) {
-				if (throughStreets.size() == 0 || !throughStreets.get(throughStreets.size() - 1).getName().equals(roadName)) {
-					throughStreets.add(new StreetFastestRoute(roadName, length, i));
+				if (passingStreets.size() == 0 || !passingStreets.get(passingStreets.size() - 1).getName().equals(roadName)) {
+					passingStreets.add(new StreetFastestRoute(roadName, length, i));
 				} else {
-					throughStreets.get(throughStreets.size() - 1).addLength(length);
+					passingStreets.get(passingStreets.size() - 1).addLength(length);
 				}
 			}
 		}
-		throughStreets.sort(new Comparator<StreetFastestRoute>() {
+
+		//Sort them according to length
+		passingStreets.sort(new Comparator<StreetFastestRoute>() {
 			@Override
 			public int compare(StreetFastestRoute o1, StreetFastestRoute o2) {
 				if (o1.getLength() < o2.getLength()) {
@@ -259,11 +286,13 @@ public class TrafficConnector {
 			}
 		});
 
+		//Get the longest ones
 		ArrayList<StreetFastestRoute> longestStreets = new ArrayList<>();
-		for (int i = 0; i < NUMBER_OF_STREETS; i++) {
-			longestStreets.add(throughStreets.get(i));
+		for (int i = 0; i < numberOfStreets; i++) {
+			longestStreets.add(passingStreets.get(i));
 		}
 
+		//Sort them according to index in the path
 		longestStreets.sort(new Comparator<StreetFastestRoute>() {
 			@Override
 			public int compare(StreetFastestRoute o1, StreetFastestRoute o2) {
@@ -277,12 +306,13 @@ public class TrafficConnector {
 			}
 		});
 
+		//Get their names
 		ArrayList<String> streets = new ArrayList<>();
-		for (int i = 0; i < NUMBER_OF_STREETS; i++) {
+		for (int i = 0; i < numberOfStreets; i++) {
 			streets.add(longestStreets.get(i).getName());
 		}
 
-		return new FastestRouteInfo(fromStreet, toStreet, streets, time);
+		return streets;
 	}
 
 	/**

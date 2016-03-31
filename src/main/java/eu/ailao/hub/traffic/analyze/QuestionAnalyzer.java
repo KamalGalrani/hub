@@ -172,6 +172,13 @@ public class QuestionAnalyzer {
 	}
 
 	//TODO finding multiword street names
+	/**
+	 * Finds which street is considered as origin and which as goal
+	 * @param question Question
+	 * @param streetOne name of the street
+	 * @param streetTwo name of the street
+	 * @return String array[2] in format [name of from street, name of to street]
+	 */
 	String[] findFromAndTo(String question, String streetOne, String streetTwo) {
 		String[] words = sentenceToWords(question.toLowerCase());
 		String streetOneLowerCase = streetOne.toLowerCase();

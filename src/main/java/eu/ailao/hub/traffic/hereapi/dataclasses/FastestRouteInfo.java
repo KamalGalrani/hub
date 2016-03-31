@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 /**
  * Created by Petr Marek on 3/30/2016.
+ * Class storing information about the fastest route
  */
 public class FastestRouteInfo {
 	private String fromStreet;
