@@ -75,7 +75,7 @@ public class AnswerTextGenerator {
 	/**
 	 * Generates answer sentence about fastest road
 	 * @param topic topic of question
-	 * @param fastestRouteInfo iformation about fastest road
+	 * @param fastestRouteInfo information about fastest road
 	 * @return answer sentence
 	 */
 	public String generateAnswerText(TrafficTopic topic, FastestRouteInfo fastestRouteInfo) {
@@ -125,6 +125,9 @@ public class AnswerTextGenerator {
 				}
 				toReturn += "until " + incident.getEndTime() + ". ";
 			}
+		}
+		if (toReturn.equals("")){
+			toReturn = "There is no traffic incident.";
 		}
 		return toReturn;
 	}
@@ -212,7 +215,7 @@ public class AnswerTextGenerator {
 			}
 		}
 		if (toReturn.equals("")) {
-			toReturn = "There are no construction works in this route.";
+			toReturn = "There are no construction works on this route.";
 		}
 		return toReturn;
 	}
