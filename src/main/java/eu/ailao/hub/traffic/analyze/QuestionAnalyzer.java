@@ -120,7 +120,6 @@ public class QuestionAnalyzer {
 	 * @return name of street if it was founded, null otherwise
 	 */
 	private String findStreetName(String[] words, int numberOfWords) {
-		TrafficConnector trafficConnector = new TrafficConnector();
 		for (int i = 0; i < words.length - numberOfWords + 1; i++) {
 			String searchTerm = "";
 			for (int j = 0; j < numberOfWords; j++) {
@@ -130,17 +129,66 @@ public class QuestionAnalyzer {
 					searchTerm += words[i + j] + " ";
 				}
 			}
-			searchTerm = searchTerm.replace(" ", "%20");
-			searchTerm = searchTerm.replace("?", "");
-			String url = LABEL_LOOKUP_ADDRESS + "search/" + searchTerm;
-			try {
-				JSONObject labelLookup = trafficConnector.GETRequest(url);
-				String streetName = getStreetNameFromLabelLookup(labelLookup);
-				if (streetName != null) {
-					return streetName;
-				}
-			} catch (Exception e) {
+			String foundedStreet =  sendSearchTermToLabelLookup(searchTerm);
+			if (foundedStreet!=null){
+				return trySurroundingsOfName(i, numberOfWords, words,  foundedStreet);
 			}
+		}
+		return null;
+	}
+
+	/**
+	 * Tries to search for street name in the surrounding of founded name so far
+	 * The motivation is to find name of street "Na staré cestě", when there is street named "Na staré"
+	 * "Na staré" is founded as candidate for street name and this method tries to find if this name continues or not
+	 * @param index index of beginning of street name in question
+	 * @param numberOfWords number of words, from which the name of street consists
+	 * @param words question divided to words
+	 * @param foundedStreet founded street name
+	 * @return name of street
+	 */
+	private String trySurroundingsOfName(int index, int numberOfWords, String[] words, String foundedStreet){
+		//try words after
+		String longestStreetName=foundedStreet;
+		String searchTerm = foundedStreet;
+		for (int i = index-1; i>=0; i--){
+			searchTerm = words[i]+" "+searchTerm;
+			String newCandidate = sendSearchTermToLabelLookup(searchTerm);
+			if (newCandidate!=null){
+				longestStreetName= newCandidate;
+			}else{
+				break;
+			}
+		}
+		searchTerm = longestStreetName;
+		for (int i = index+numberOfWords; i < words.length; i++) {
+			searchTerm+= " "+words[i];
+			String newCandidate = sendSearchTermToLabelLookup(searchTerm);
+			if (newCandidate!=null){
+				longestStreetName= newCandidate;
+			}else{
+				break;
+			}
+		}
+		return longestStreetName;
+	}
+
+	/**
+	 * Searches for street name in label lookup
+	 * @param searchTerm search term to send, usually name of street
+	 * @return name of street which was founded, or null
+	 */
+	private String sendSearchTermToLabelLookup(String searchTerm){
+		TrafficConnector trafficConnector = new TrafficConnector();
+		searchTerm = searchTerm.replace(" ", "%20");
+		String url = LABEL_LOOKUP_ADDRESS + "search/" + searchTerm;
+		try {
+			JSONObject labelLookup = trafficConnector.GETRequest(url);
+			String streetName = getStreetNameFromLabelLookup(labelLookup);
+			if (streetName != null) {
+				return streetName;
+			}
+		} catch (Exception e) {
 		}
 		return null;
 	}
@@ -151,7 +199,7 @@ public class QuestionAnalyzer {
 	 * @return array of words
 	 */
 	private String[] sentenceToWords(String sentence) {
-		String[] words = sentence.toLowerCase().split("\\s+");
+		String[] words = sentence.toLowerCase().replaceAll("[.,?;]","").split("\\s+");
 		return words;
 	}
 
@@ -171,7 +219,6 @@ public class QuestionAnalyzer {
 		return null;
 	}
 
-	//TODO finding multiword street names
 	/**
 	 * Finds which street is considered as origin and which as goal
 	 * @param question Question
@@ -180,29 +227,23 @@ public class QuestionAnalyzer {
 	 * @return String array[2] in format [name of from street, name of to street]
 	 */
 	String[] findFromAndTo(String question, String streetOne, String streetTwo) {
-		String[] words = sentenceToWords(question.toLowerCase());
-		String streetOneLowerCase = streetOne.toLowerCase();
-		String streetTwoLowerCase = streetTwo.toLowerCase();
-		int streetOneIndex = -1;
-		int streetTwoIndex = -1;
-		for (int i = 0; i < words.length; i++) {
-			if (streetOneIndex != -1 && streetTwoIndex != -1) {
-				break;
-			}
-			if (words[i].equals(streetOneLowerCase)) {
-				streetOneIndex = i;
-			}
-			if (words[i].equals(streetTwoLowerCase)) {
-				streetTwoIndex = i;
-			}
-		}
-		if ((streetOneIndex - 1) >= 0 && words[streetOneIndex - 1].equals("from")) {
+		String newQuestion = question.toLowerCase();
+		String[] dividedQuestionOne = newQuestion.split(streetOne.toLowerCase());
+		String[] dividedQuestionTwo = newQuestion.split(streetTwo.toLowerCase());
+
+		String[] wordsOne = sentenceToWords(dividedQuestionOne[0]);
+		String[] wordsTwo = sentenceToWords(dividedQuestionTwo[0]);
+
+		String wordBeforeStreetOne = wordsOne[wordsOne.length-1];
+		String wordBeforeStreetTwo = wordsTwo[wordsTwo.length-1];
+
+		if (wordBeforeStreetOne.equals("from")) {
 			return new String[]{streetOne, streetTwo};
-		} else if ((streetOneIndex - 1) >= 0 && words[streetOneIndex - 1].equals("to")) {
+		} else if (wordBeforeStreetOne.equals("to")) {
 			return new String[]{streetTwo, streetOne};
-		} else if ((streetTwoIndex - 1) >= 0 && words[streetTwoIndex - 1].equals("from")) {
+		} else if (wordBeforeStreetTwo.equals("from")) {
 			return new String[]{streetTwo, streetOne};
-		} else if ((streetTwoIndex - 1) >= 0 && words[streetTwoIndex - 1].equals("to")) {
+		} else if (wordBeforeStreetTwo.equals("to")) {
 			return new String[]{streetOne, streetTwo};
 		} else {
 			return new String[]{streetOne, streetTwo};
