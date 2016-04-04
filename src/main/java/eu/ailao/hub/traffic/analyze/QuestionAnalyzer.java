@@ -1,6 +1,7 @@
 package eu.ailao.hub.traffic.analyze;
 
 import eu.ailao.hub.Statics;
+import eu.ailao.hub.traffic.analyze.dataclases.StreetCandidate;
 import eu.ailao.hub.traffic.hereapi.TrafficConnector;
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -103,14 +104,14 @@ public class QuestionAnalyzer {
 	 */
 	private String analyzeStreetName(String question) {
 		String[] words = sentenceToWords(question);
-
+		StreetCandidate streetCandidate = null;
 		for (int i = 1; i < MAXIMUM_STREET_NAME_WORDS; i++) {
-			String name = findStreetName(words, i);
-			if (name != null) {
-				return name;
+			streetCandidate = findStreetCandidate(words, i, streetCandidate);
+			if (streetCandidate!=null && streetCandidate.getDistance()==0) {
+				return streetCandidate.getStreetName();
 			}
 		}
-		return null;
+		return streetCandidate.getStreetName();
 	}
 
 	/**
@@ -119,7 +120,7 @@ public class QuestionAnalyzer {
 	 * @param numberOfWords length of street name
 	 * @return name of street if it was founded, null otherwise
 	 */
-	private String findStreetName(String[] words, int numberOfWords) {
+	private StreetCandidate findStreetCandidate(String[] words, int numberOfWords, StreetCandidate bestStreetCandidate) {
 		for (int i = 0; i < words.length - numberOfWords + 1; i++) {
 			String searchTerm = "";
 			for (int j = 0; j < numberOfWords; j++) {
@@ -129,12 +130,22 @@ public class QuestionAnalyzer {
 					searchTerm += words[i + j] + " ";
 				}
 			}
-			String foundedStreet =  sendSearchTermToLabelLookup(searchTerm);
-			if (foundedStreet!=null){
-				return trySurroundingsOfName(i, numberOfWords, words,  foundedStreet);
+			StreetCandidate streetCandidate = sendSearchTermToLabelLookup(searchTerm);
+			if (streetCandidate==null){
+				continue;
+			}
+			if (streetCandidate.getDistance()==0){
+				streetCandidate=trySurroundingsOfName(i, numberOfWords, words, streetCandidate);
+				return streetCandidate;
+			}else{
+				if (bestStreetCandidate==null || bestStreetCandidate.getDistance() > streetCandidate.getDistance() ){
+					bestStreetCandidate=streetCandidate;
+				}else if(bestStreetCandidate.getDistance() == streetCandidate.getDistance() && bestStreetCandidate.getStreetName().length()<streetCandidate.getStreetName().length()){
+					bestStreetCandidate=streetCandidate;
+				}
 			}
 		}
-		return null;
+		return bestStreetCandidate;
 	}
 
 	/**
@@ -147,30 +158,30 @@ public class QuestionAnalyzer {
 	 * @param foundedStreet founded street name
 	 * @return name of street
 	 */
-	private String trySurroundingsOfName(int index, int numberOfWords, String[] words, String foundedStreet){
+	private StreetCandidate trySurroundingsOfName(int index, int numberOfWords, String[] words, StreetCandidate foundedStreet) {
 		//try words after
-		String longestStreetName=foundedStreet;
-		String searchTerm = foundedStreet;
-		for (int i = index-1; i>=0; i--){
-			searchTerm = words[i]+" "+searchTerm;
-			String newCandidate = sendSearchTermToLabelLookup(searchTerm);
-			if (newCandidate!=null){
-				longestStreetName= newCandidate;
-			}else{
+		StreetCandidate longestStreet = foundedStreet;
+		String searchTerm = foundedStreet.getStreetName();
+		for (int i = index - 1; i >= 0; i--) {
+			searchTerm = words[i] + " " + searchTerm;
+			StreetCandidate newCandidate = sendSearchTermToLabelLookup(searchTerm);
+			if (newCandidate != null && newCandidate.getDistance()==0) {
+				longestStreet = newCandidate;
+			} else {
 				break;
 			}
 		}
-		searchTerm = longestStreetName;
-		for (int i = index+numberOfWords; i < words.length; i++) {
-			searchTerm+= " "+words[i];
-			String newCandidate = sendSearchTermToLabelLookup(searchTerm);
-			if (newCandidate!=null){
-				longestStreetName= newCandidate;
-			}else{
+		searchTerm = longestStreet.getStreetName();
+		for (int i = index + numberOfWords; i < words.length; i++) {
+			searchTerm += " " + words[i];
+			StreetCandidate newCandidate = sendSearchTermToLabelLookup(searchTerm);
+			if (newCandidate != null && newCandidate.getDistance()==0) {
+				longestStreet = newCandidate;
+			} else {
 				break;
 			}
 		}
-		return longestStreetName;
+		return longestStreet;
 	}
 
 	/**
@@ -178,17 +189,18 @@ public class QuestionAnalyzer {
 	 * @param searchTerm search term to send, usually name of street
 	 * @return name of street which was founded, or null
 	 */
-	private String sendSearchTermToLabelLookup(String searchTerm){
+	private StreetCandidate sendSearchTermToLabelLookup(String searchTerm) {
 		TrafficConnector trafficConnector = new TrafficConnector();
 		searchTerm = searchTerm.replace(" ", "%20");
 		String url = LABEL_LOOKUP_ADDRESS + "search/" + searchTerm;
 		try {
 			JSONObject labelLookup = trafficConnector.GETRequest(url);
-			String streetName = getStreetNameFromLabelLookup(labelLookup);
-			if (streetName != null) {
-				return streetName;
+			StreetCandidate streetCandidate = getStreetCandidateFromLabelLookup(labelLookup);
+			if (streetCandidate != null) {
+				return streetCandidate;
 			}
 		} catch (Exception e) {
+			e.printStackTrace();
 		}
 		return null;
 	}
@@ -199,22 +211,22 @@ public class QuestionAnalyzer {
 	 * @return array of words
 	 */
 	private String[] sentenceToWords(String sentence) {
-		String[] words = sentence.toLowerCase().replaceAll("[.,?;]","").split("\\s+");
+		String[] words = sentence.toLowerCase().replaceAll("[.,?;]", "").split("\\s+");
 		return words;
 	}
 
 	/**
 	 * Checks what results match name of some street
 	 * @param labelLookup labelLookup result
-	 * @return name of street
+	 * @return street candidate
 	 */
-	String getStreetNameFromLabelLookup(JSONObject labelLookup) {
+	StreetCandidate getStreetCandidateFromLabelLookup(JSONObject labelLookup) {
 		JSONArray results = labelLookup.getJSONArray("results");
-		for (Object result : results) {
-			int distance = ((JSONObject) result).getInt("dist");
-			if (distance == 0) {
-				return ((JSONObject) result).getString("matchedLabel");
-			}
+		if (results.length() > 0) {
+			String streetName = ((JSONObject) results.get(0)).getString("matchedLabel");
+			float distance = (float) ((JSONObject) results.get(0)).getDouble("dist");
+			StreetCandidate streetCandidate = new StreetCandidate(streetName, distance);
+			return streetCandidate;
 		}
 		return null;
 	}
@@ -234,8 +246,8 @@ public class QuestionAnalyzer {
 		String[] wordsOne = sentenceToWords(dividedQuestionOne[0]);
 		String[] wordsTwo = sentenceToWords(dividedQuestionTwo[0]);
 
-		String wordBeforeStreetOne = wordsOne[wordsOne.length-1];
-		String wordBeforeStreetTwo = wordsTwo[wordsTwo.length-1];
+		String wordBeforeStreetOne = wordsOne[wordsOne.length - 1];
+		String wordBeforeStreetTwo = wordsTwo[wordsTwo.length - 1];
 
 		if (wordBeforeStreetOne.equals("from")) {
 			return new String[]{streetOne, streetTwo};

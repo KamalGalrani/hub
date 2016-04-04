@@ -49,7 +49,7 @@ public class Main_TrafficTest {
 				if (result[STREET]) {
 					correctStreets++;
 				}
-				if (result[TOPIC] && result[STREET]){
+				if (result[TOPIC] && result[STREET]) {
 					correctAll++;
 				}
 				totalQuestions++;
@@ -84,6 +84,8 @@ public class Main_TrafficTest {
 		} else {
 			if (trafficQuestionInfo.getStreetName() != null && trafficQuestionInfo.getStreetName().toLowerCase().equals(street.toLowerCase())) {
 				results[STREET] = true;
+			} else if (trafficQuestionInfo.getStreetNameFrom() != null && trafficQuestionInfo.getStreetNameFrom().toLowerCase().equals(street.toLowerCase())) {
+				results[STREET] = true;
 			}
 		}
 		if (streetTwo != null) {
@@ -94,9 +96,13 @@ public class Main_TrafficTest {
 		if (streetTwo != null) {
 			System.out.println("Detected: " + trafficQuestionInfo.getTrafficTopic() + " " + trafficQuestionInfo.getStreetNameFrom() + " " + trafficQuestionInfo.getStreetNameTo());
 		} else {
-			System.out.println("Detected: " + trafficQuestionInfo.getTrafficTopic() + " " + trafficQuestionInfo.getStreetName());
+			if (trafficQuestionInfo.getStreetName() != null) {
+				System.out.println("Detected: " + trafficQuestionInfo.getTrafficTopic() + " " + trafficQuestionInfo.getStreetName());
+			} else {
+				System.out.println("Detected: " + trafficQuestionInfo.getTrafficTopic() + " " + trafficQuestionInfo.getStreetNameFrom());
+			}
 		}
-		System.out.println("Topic: "+results[TOPIC]+" Street: "+results[STREET]);
+		System.out.println("Topic: " + results[TOPIC] + " Street: " + results[STREET]);
 		System.out.println();
 		return results;
 	}
