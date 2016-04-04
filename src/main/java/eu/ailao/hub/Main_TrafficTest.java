@@ -29,6 +29,7 @@ public class Main_TrafficTest {
 		int totalQuestions = 0;
 		int correctTopics = 0;
 		int correctStreets = 0;
+		int correctAll = 0;
 
 		BufferedReader TSVFile = null;
 		try {
@@ -48,6 +49,9 @@ public class Main_TrafficTest {
 				if (result[STREET]) {
 					correctStreets++;
 				}
+				if (result[TOPIC] && result[STREET]){
+					correctAll++;
+				}
 				totalQuestions++;
 				dataRow = TSVFile.readLine();
 			}
@@ -56,6 +60,7 @@ public class Main_TrafficTest {
 
 			System.out.println("Topic score: " + (float) correctTopics / (float) totalQuestions);
 			System.out.println("Street score: " + (float) correctStreets / (float) totalQuestions);
+			System.out.println("Total score: " + (float) correctAll / (float) totalQuestions);
 
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
