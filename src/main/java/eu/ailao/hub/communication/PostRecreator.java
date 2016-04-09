@@ -74,7 +74,7 @@ public class PostRecreator {
 			}
 			urlParameters.add(new BasicNameValuePair("artificialClue", artificialClue));
 			urlParameters = removeEmptyUrlParameters(urlParameters);
-			HttpEntity postParams = new UrlEncodedFormEntity(urlParameters);
+			HttpEntity postParams = new UrlEncodedFormEntity(urlParameters, "UTF-8");
 			httpPost.setEntity(postParams);
 		} catch (UnsupportedEncodingException e) {
 			e.printStackTrace();
