@@ -1,6 +1,7 @@
 package eu.ailao.hub.traffic.analyze;
 
 import eu.ailao.hub.Statics;
+import eu.ailao.hub.traffic.analyze.dataclases.LoadedDataset;
 import eu.ailao.hub.traffic.analyze.dataclases.StreetCandidate;
 import eu.ailao.hub.traffic.hereapi.TrafficConnector;
 import org.json.JSONArray;
@@ -22,8 +23,10 @@ public class QuestionAnalyzer {
 	 * @param question traffic question
 	 * @return topic and street name
 	 */
-	public TrafficQuestionInfo analyzeTrafficQuestion(String question) {
-		TrafficTopic topic = analyzeQuestionTopic(question);
+	public TrafficQuestionInfo analyzeTrafficQuestion(String question, LoadedDataset loadedDataset) {
+		TopicAnalyzer topicAnalyzer = new TopicAnalyzer();
+		TrafficTopic topic = topicAnalyzer.analyzeTrafficTopic(question,loadedDataset);
+		//TrafficTopic topic = analyzeQuestionTopic(question);
 		if (!topic.equals(TrafficTopic.FASTEST_ROUTE)) {
 			String street = analyzeStreetName(question);
 			return new TrafficQuestionInfo(topic, street);
@@ -31,7 +34,7 @@ public class QuestionAnalyzer {
 			try {
 				String streetOne = analyzeStreetName(question);
 				String streetTwo = analyzeStreetName(question.replace(streetOne, ""));
-				String[] fromTo = findFromAndTo(question, streetOne, streetTwo);
+				String[] fromTo = findOriginDestination(question, streetOne, streetTwo);
 				return new TrafficQuestionInfo(topic, fromTo[FROM], fromTo[TO]);
 			} catch (Exception e) {
 				return new TrafficQuestionInfo(topic, null);
@@ -103,10 +106,10 @@ public class QuestionAnalyzer {
 	 * @return name of street, null if it was not founded
 	 */
 	private String analyzeStreetName(String question) {
-		String[] words = sentenceToWords(question);
+		String[] tokens = tokenization(question);
 		StreetCandidate streetCandidate = null;
 		for (int i = 1; i < MAXIMUM_STREET_NAME_WORDS; i++) {
-			streetCandidate = findStreetCandidate(words, i, streetCandidate);
+			streetCandidate = findStreetCandidate(tokens, i, streetCandidate);
 			if (streetCandidate!=null && streetCandidate.getDistance()==0) {
 				return streetCandidate.getStreetName();
 			}
@@ -135,7 +138,7 @@ public class QuestionAnalyzer {
 				continue;
 			}
 			if (streetCandidate.getDistance()==0){
-				streetCandidate=trySurroundingsOfName(i, numberOfWords, words, streetCandidate);
+				streetCandidate= searchSurroundings(i, numberOfWords, words, streetCandidate);
 				return streetCandidate;
 			}else{
 				if (bestStreetCandidate==null || bestStreetCandidate.getDistance() > streetCandidate.getDistance() ){
@@ -158,7 +161,7 @@ public class QuestionAnalyzer {
 	 * @param foundedStreet founded street name
 	 * @return name of street
 	 */
-	private StreetCandidate trySurroundingsOfName(int index, int numberOfWords, String[] words, StreetCandidate foundedStreet) {
+	private StreetCandidate searchSurroundings(int index, int numberOfWords, String[] words, StreetCandidate foundedStreet) {
 		//try words after
 		StreetCandidate longestStreet = foundedStreet;
 		String searchTerm = foundedStreet.getStreetName();
@@ -210,7 +213,7 @@ public class QuestionAnalyzer {
 	 * @param sentence sentence to split
 	 * @return array of words
 	 */
-	private String[] sentenceToWords(String sentence) {
+	private String[] tokenization(String sentence) {
 		String[] words = sentence.toLowerCase().replaceAll("[.,?;]", "").split("\\s+");
 		return words;
 	}
@@ -238,13 +241,13 @@ public class QuestionAnalyzer {
 	 * @param streetTwo name of the street
 	 * @return String array[2] in format [name of from street, name of to street]
 	 */
-	String[] findFromAndTo(String question, String streetOne, String streetTwo) {
+	String[] findOriginDestination(String question, String streetOne, String streetTwo) {
 		String newQuestion = question.toLowerCase();
 		String[] dividedQuestionOne = newQuestion.split(streetOne.toLowerCase());
 		String[] dividedQuestionTwo = newQuestion.split(streetTwo.toLowerCase());
 
-		String[] wordsOne = sentenceToWords(dividedQuestionOne[0]);
-		String[] wordsTwo = sentenceToWords(dividedQuestionTwo[0]);
+		String[] wordsOne = tokenization(dividedQuestionOne[0]);
+		String[] wordsTwo = tokenization(dividedQuestionTwo[0]);
 
 		String wordBeforeStreetOne = wordsOne[wordsOne.length - 1];
 		String wordBeforeStreetTwo = wordsTwo[wordsTwo.length - 1];

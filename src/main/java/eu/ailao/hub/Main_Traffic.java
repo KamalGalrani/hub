@@ -2,6 +2,7 @@ package eu.ailao.hub;
 
 import eu.ailao.hub.traffic.analyze.QuestionAnalyzer;
 import eu.ailao.hub.traffic.analyze.TrafficQuestionInfo;
+import eu.ailao.hub.traffic.analyze.dataclases.LoadedDataset;
 
 /**
  * Created by Petr Marek on 14.03.2016.
@@ -16,8 +17,9 @@ public class Main_Traffic {
 		String question = args[0];
 		Statics.labelLookupURL = args[1];
 
+		LoadedDataset loadedDataset= new LoadedDataset();
 		QuestionAnalyzer questionAnalyzer=new QuestionAnalyzer();
-		TrafficQuestionInfo trafficQuestionInfo = questionAnalyzer.analyzeTrafficQuestion(question);
+		TrafficQuestionInfo trafficQuestionInfo = questionAnalyzer.analyzeTrafficQuestion(question,loadedDataset);
 		System.out.println(trafficQuestionInfo);
 
 		return;
