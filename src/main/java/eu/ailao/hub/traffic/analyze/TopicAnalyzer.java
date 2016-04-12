@@ -1,6 +1,6 @@
 package eu.ailao.hub.traffic.analyze;
 
-import eu.ailao.hub.traffic.analyze.dataclases.LoadedDataset;
+import eu.ailao.hub.traffic.analyze.dataclases.LoadedReferenceQuestions;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
@@ -11,20 +11,18 @@ import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.text.Normalizer;
-import java.util.HashMap;
 
 /**
  * Created by Petr Marek on 4/11/2016.
  */
 public class TopicAnalyzer {
 
-	public TrafficTopic analyzeTrafficTopic(String question, LoadedDataset loadedDataset) {
+	public TrafficTopic analyzeTrafficTopic(String question) {
 		try {
-			JSONObject jsonObject = askDatasetSTS(question, loadedDataset);
+			JSONObject jsonObject = askDatasetSTS(question);
 			JSONArray probabilities = jsonObject.getJSONArray("score");
-			HashMap<TrafficTopic, Float> topicsProbabilities = getProbabilitiesOfTopics(loadedDataset, probabilities);
-			//TrafficTopic topic = determineTopicAverage(topicsProbabilities);
-			TrafficTopic topic = determineTopicMax(probabilities, loadedDataset);
+			double[] normalizedProbabilities = normalizeProbabilities(probabilities);
+			TrafficTopic topic = determineTopicMax(normalizedProbabilities);
 			return topic;
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -32,15 +30,14 @@ public class TopicAnalyzer {
 		return TrafficTopic.UNKNOWN;
 	}
 
-	private JSONObject askDatasetSTS(String question, LoadedDataset loadedDataset) throws IOException {
+	private JSONObject askDatasetSTS(String question) throws IOException {
 		String response = "";
-		URL url = new URL("http://pichl.ailao.eu:5000/score");
+		URL url = new URL("http://pichl.ailao.eu:5050/score");
 		HttpURLConnection conn = (HttpURLConnection) url.openConnection();
 		conn.setDoOutput(true);
 		conn.setRequestMethod("POST");
 		conn.setRequestProperty("Content-Type", "application/json");
-
-		String input = createQuerry(question, loadedDataset);
+		String input = createQuerry(question);
 		OutputStream os = conn.getOutputStream();
 		os.write(input.getBytes());
 		os.flush();
@@ -56,11 +53,12 @@ public class TopicAnalyzer {
 		return new JSONObject(response);
 	}
 
-	private String createQuerry(String question, LoadedDataset loadedDataset) {
+	private String createQuerry(String question) {
 		JSONObject querry = new JSONObject();
 		JSONArray jsonArray = new JSONArray();
-		for (int i = 0; i < loadedDataset.size(); i++) {
-			jsonArray.put(stripAccents(loadedDataset.getQuestion(i).toLowerCase()));
+		LoadedReferenceQuestions loadedReferenceQuestions = LoadedReferenceQuestions.getInstance();
+		for (int i = 0; i < loadedReferenceQuestions.size(); i++) {
+			jsonArray.put(stripAccents(loadedReferenceQuestions.getQuestion(i).toLowerCase().replace("?","")));
 		}
 		querry.put("qtext", question);
 		querry.put("atext", jsonArray);
@@ -73,49 +71,28 @@ public class TopicAnalyzer {
 		return s;
 	}
 
-	private HashMap<TrafficTopic, Float> getProbabilitiesOfTopics(LoadedDataset loadedDataset, JSONArray probabilities) {
-		HashMap<TrafficTopic, Float> sumOfProbabilities = new HashMap<>();
-		HashMap<TrafficTopic, Integer> numberOfQuestionsWithTopic = new HashMap<>();
-		for (int i = 0; i < loadedDataset.size(); i++) {
-			TrafficTopic trafficTopic = loadedDataset.getTrafficTopic(i);
-			if (sumOfProbabilities.containsKey(trafficTopic)) {
-				sumOfProbabilities.put(trafficTopic, (float) (sumOfProbabilities.get(trafficTopic) + probabilities.getDouble(i)));
-				numberOfQuestionsWithTopic.put(trafficTopic, numberOfQuestionsWithTopic.get(trafficTopic) + 1);
-			} else {
-				sumOfProbabilities.put(trafficTopic, (float) probabilities.getDouble(i));
-				numberOfQuestionsWithTopic.put(trafficTopic, 1);
-			}
-		}
-
-		HashMap<TrafficTopic, Float> probabilitiesOfTopics = new HashMap<>();
-		for (TrafficTopic topic : sumOfProbabilities.keySet()) {
-			probabilitiesOfTopics.put(topic, sumOfProbabilities.get(topic) / numberOfQuestionsWithTopic.get(topic));
-		}
-		return probabilitiesOfTopics;
-	}
-
-	private TrafficTopic determineTopicAverage(HashMap<TrafficTopic, Float> topicsProbabilities) {
+	private TrafficTopic determineTopicMax(double[] probabilities) {
 		TrafficTopic mostProbableTopic = null;
-		float biggestProbability = -1;
-		for (TrafficTopic topic : topicsProbabilities.keySet()) {
-			float probability = topicsProbabilities.get(topic);
-			if (probability > biggestProbability) {
-				biggestProbability = probability;
-				mostProbableTopic = topic;
+		double biggestProbability = -1;
+		LoadedReferenceQuestions loadedReferenceQuestions = LoadedReferenceQuestions.getInstance();
+		for (int i = 0; i < probabilities.length; i++){
+			if (probabilities[i] > biggestProbability) {
+				biggestProbability = probabilities[i];
+				mostProbableTopic = loadedReferenceQuestions.getTrafficTopic(i);
 			}
 		}
 		return mostProbableTopic;
 	}
 
-	private TrafficTopic determineTopicMax(JSONArray probabilities, LoadedDataset loadedDataset) {
-		TrafficTopic mostProbableTopic = null;
-		float biggestProbability = -1;
-		for (int i = 0; i < probabilities.length(); i++){
-			if (probabilities.getDouble(i) > biggestProbability) {
-				biggestProbability = (float) probabilities.getDouble(i);
-				mostProbableTopic = loadedDataset.getTrafficTopic(i);
-			}
+	private double[] normalizeProbabilities(JSONArray probabilities){
+		double[] normalizedProbabilities = new double[probabilities.length()];
+		for (int i = 0; i < probabilities.length(); i++) {
+			normalizedProbabilities[i] = sigmoid((Double) probabilities.get(i));
 		}
-		return mostProbableTopic;
+		return normalizedProbabilities;
+	}
+
+	public static double sigmoid(double x) {
+		return (1/( 1 + Math.pow(Math.E,(-1*x))));
 	}
 }

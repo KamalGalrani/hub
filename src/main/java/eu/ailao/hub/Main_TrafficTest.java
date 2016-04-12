@@ -2,7 +2,6 @@ package eu.ailao.hub;
 
 import eu.ailao.hub.traffic.analyze.QuestionAnalyzer;
 import eu.ailao.hub.traffic.analyze.TrafficQuestionInfo;
-import eu.ailao.hub.traffic.analyze.dataclases.LoadedDataset;
 
 import java.io.*;
 
@@ -12,8 +11,6 @@ import java.io.*;
 public class Main_TrafficTest {
 	private final int TOPIC = 0;
 	private final int STREET = 1;
-
-	private LoadedDataset loadedDataset= new LoadedDataset();
 
 	public static void main(String[] args) {
 		if (args.length < 2) {
@@ -75,7 +72,7 @@ public class Main_TrafficTest {
 	private boolean[] testQuestion(int questionNumber, String question, String topic, String street, String streetTwo) {
 		boolean[] results = new boolean[2];
 		QuestionAnalyzer questionAnalyzer = new QuestionAnalyzer();
-		TrafficQuestionInfo trafficQuestionInfo = questionAnalyzer.analyzeTrafficQuestion(question,loadedDataset);
+		TrafficQuestionInfo trafficQuestionInfo = questionAnalyzer.analyzeTrafficQuestion(question);
 		if (trafficQuestionInfo.getTrafficTopic().toString().equals(topic)) {
 			results[TOPIC] = true;
 		}

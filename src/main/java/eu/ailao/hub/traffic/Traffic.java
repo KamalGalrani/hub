@@ -35,7 +35,7 @@ public class Traffic {
 	public int askQuestion(String question) {
 		int id = idgen.nextInt(Integer.MAX_VALUE);
 
-		TrafficQuestionInfo trafficQuestionInfo = questionAnalyzer.analyzeTrafficQuestion(question,null);
+		TrafficQuestionInfo trafficQuestionInfo = questionAnalyzer.analyzeTrafficQuestion(question);
 		String streetName = trafficQuestionInfo.getStreetName();
 		String streetNameFrom = trafficQuestionInfo.getStreetNameFrom();
 		String streetNameTo = trafficQuestionInfo.getStreetNameTo();

@@ -7,16 +7,25 @@ import java.util.ArrayList;
 
 /**
  * Created by Petr Marek on 4/11/2016.
+ * SINGLETON
  */
-public class LoadedDataset {
+public class LoadedReferenceQuestions {
 
-	ArrayList<String[]> loadedDataset;
-
-	public LoadedDataset() {
-		loadedDataset = loadDataset();
+	private static LoadedReferenceQuestions instance = null;
+	private LoadedReferenceQuestions() {
+		// Exists only to defeat instantiation.
+	}
+	public static LoadedReferenceQuestions getInstance() {
+		if(instance == null) {
+			loadedDataset=loadDataset();
+			instance = new LoadedReferenceQuestions();
+		}
+		return instance;
 	}
 
-	public ArrayList<String[]> getLoadedDataset() {
+	private static ArrayList<String[]> loadedDataset;
+
+	public ArrayList<String[]> getReferenceQuestion() {
 		return loadedDataset;
 	}
 
@@ -32,7 +41,7 @@ public class LoadedDataset {
 		return loadedDataset.size();
 	}
 
-	private ArrayList<String[]> loadDataset() {
+	private static ArrayList<String[]> loadDataset() {
 		ArrayList<String[]> loadedDataset = new ArrayList<>();
 		BufferedReader TSVFile = null;
 		try {

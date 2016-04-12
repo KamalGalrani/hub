@@ -1,7 +1,6 @@
 package eu.ailao.hub.traffic.analyze;
 
 import eu.ailao.hub.Statics;
-import eu.ailao.hub.traffic.analyze.dataclases.LoadedDataset;
 import eu.ailao.hub.traffic.analyze.dataclases.StreetCandidate;
 import eu.ailao.hub.traffic.hereapi.TrafficConnector;
 import org.json.JSONArray;
@@ -23,10 +22,9 @@ public class QuestionAnalyzer {
 	 * @param question traffic question
 	 * @return topic and street name
 	 */
-	public TrafficQuestionInfo analyzeTrafficQuestion(String question, LoadedDataset loadedDataset) {
+	public TrafficQuestionInfo analyzeTrafficQuestion(String question) {
 		TopicAnalyzer topicAnalyzer = new TopicAnalyzer();
-		TrafficTopic topic = topicAnalyzer.analyzeTrafficTopic(question,loadedDataset);
-		//TrafficTopic topic = analyzeQuestionTopic(question);
+		TrafficTopic topic = topicAnalyzer.analyzeTrafficTopic(question);
 		if (!topic.equals(TrafficTopic.FASTEST_ROUTE)) {
 			String street = analyzeStreetName(question);
 			return new TrafficQuestionInfo(topic, street);
@@ -43,64 +41,6 @@ public class QuestionAnalyzer {
 	}
 
 	/**
-	 * Finds topic of question by keywords
-	 * @param question traffic question
-	 * @return topic of question
-	 */
-	private TrafficTopic analyzeQuestionTopic(String question) {
-		String[] flowKeywords = {"flow", "traffic flow", "traffic"};
-		String[] incidentKeywords = {"incident", "incidents", "traffic incident", "traffic incidents", "crash", "crashes", "accident", "accidents", "problem", "happen"};
-		String[] fastestRoadKeywords = {"how long", "how to", "fastest route", "take me"};
-		String[] constructionKeywords = {"construction", "constructions"};
-		String[] closedKeywords = {"closed", "closure", "passable"};
-		String[] restrictionEndKeywords = {"end", "again", "passable", "will"};
-
-		//Incidents
-		for (String incidentKeyword : incidentKeywords) {
-			if (Statics.isContain(question.toLowerCase(), incidentKeyword)) {
-				return TrafficTopic.INCIDENT;
-			}
-		}
-
-		//Traffic flow
-		for (String flowKeyword : flowKeywords) {
-			if (Statics.isContain(question.toLowerCase(), flowKeyword)) {
-				return TrafficTopic.TRAFFIC_SITUATION;
-			}
-		}
-
-		//Fastest route
-		for (String fastestRoadKeyword : fastestRoadKeywords) {
-			if (Statics.isContain(question.toLowerCase(), fastestRoadKeyword)) {
-				return TrafficTopic.FASTEST_ROUTE;
-			}
-		}
-
-		//Constructions
-		for (String constructionKeyword : constructionKeywords) {
-			if (Statics.isContain(question.toLowerCase(), constructionKeyword)) {
-				return TrafficTopic.CONSTRUCTION;
-			}
-		}
-
-		//Closure
-		for (String closedKeyword : closedKeywords) {
-			if (Statics.isContain(question.toLowerCase(), closedKeyword)) {
-				return TrafficTopic.CLOSURE;
-			}
-		}
-
-		//Restriction end
-		for (String restrictionEndKeyword : restrictionEndKeywords) {
-			if (Statics.isContain(question.toLowerCase(), restrictionEndKeyword)) {
-				return TrafficTopic.RESTRICTION_END;
-			}
-		}
-
-		return TrafficTopic.UNKNOWN;
-	}
-
-	/**
 	 * Finds name of street contained in question by ask to label-lookup
 	 * @param question traffic question
 	 * @return name of street, null if it was not founded
@@ -113,6 +53,9 @@ public class QuestionAnalyzer {
 			if (streetCandidate!=null && streetCandidate.getDistance()==0) {
 				return streetCandidate.getStreetName();
 			}
+		}
+		if (streetCandidate==null){
+			return null;
 		}
 		return streetCandidate.getStreetName();
 	}
