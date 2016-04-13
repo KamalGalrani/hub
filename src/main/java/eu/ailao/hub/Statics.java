@@ -15,17 +15,19 @@ public final class Statics {
 	 * @param word
 	 * @return TRUE if word appears in text, FALSE if word doesn't appear in text
 	 */
-	public static boolean isContain(String text, String word){
-		String pattern = "\\b"+word+"\\b";
-		Pattern p=Pattern.compile(pattern);
-		Matcher m=p.matcher(text);
+	public static boolean isContain(String text, String word) {
+		String pattern = "\\b" + word + "\\b";
+		Pattern p = Pattern.compile(pattern);
+		Matcher m = p.matcher(text);
 		return m.find();
 	}
 
-	public enum Services{
+	public enum Services {
 		YODA_QA,
 		TRAFFIC
 	}
 
-	public static String labelLookupURL="http://[::1]:5000/";
+	public static String labelLookupURL = "http://[::1]:5000/";
+	public static String datasetSTSURL = "http://pichl.ailao.eu:5050/score";
+	public static String referenceQuestions = "";
 }

@@ -1,5 +1,7 @@
 package eu.ailao.hub.traffic.analyze.dataclases;
 
+import eu.ailao.hub.Statics;
+
 import java.io.*;
 import java.util.ArrayList;
 
@@ -50,8 +52,7 @@ public class LoadedReferenceQuestions {
 		ArrayList<String[]> loadedDataset = new ArrayList<>();
 		BufferedReader TSVFile = null;
 		try {
-			//TODO send tsv file as program argument
-			TSVFile = new BufferedReader(new InputStreamReader(new FileInputStream("C:\\Users\\ermrk\\OneDrive\\Dokumenty\\TrafficDataset.tsv"), "UTF8"));
+			TSVFile = new BufferedReader(new InputStreamReader(new FileInputStream(Statics.referenceQuestions), "UTF8"));
 			String dataRow = TSVFile.readLine();
 			while (dataRow != null) {
 				String[] dataArray = dataRow.split("\t");

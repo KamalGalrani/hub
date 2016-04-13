@@ -1,5 +1,6 @@
 package eu.ailao.hub.traffic.analyze;
 
+import eu.ailao.hub.Statics;
 import eu.ailao.hub.traffic.analyze.dataclases.LoadedReferenceQuestions;
 import eu.ailao.hub.traffic.analyze.dataclases.TrafficTopic;
 import org.json.JSONArray;
@@ -45,7 +46,7 @@ public class TopicAnalyzer {
 	 */
 	private JSONObject askDatasetSTS(String question) throws IOException {
 		String response = "";
-		URL url = new URL("http://pichl.ailao.eu:5050/score");
+		URL url = new URL(Statics.datasetSTSURL);
 		HttpURLConnection conn = (HttpURLConnection) url.openConnection();
 		conn.setDoOutput(true);
 		conn.setRequestMethod("POST");

@@ -9,12 +9,14 @@ import eu.ailao.hub.traffic.analyze.dataclases.TrafficQuestionInfo;
  */
 public class Main_Traffic {
 	public static void main(String[] args) {
-		if (args.length < 2) {
-			System.err.println("Insert question and Lookup Service URL as arguments please.");
+		if (args.length < 4) {
+			System.err.println("Insert question, Lookup Service URL, Dataset-STS URL and reference questions TSV file as arguments please.");
 			System.exit(-1);
 		}
 		String question = args[0];
 		Statics.labelLookupURL = args[1];
+		Statics.datasetSTSURL = args[2];
+		Statics.referenceQuestions = args[3];
 
 		QuestionAnalyzer questionAnalyzer=new QuestionAnalyzer();
 		TrafficQuestionInfo trafficQuestionInfo = questionAnalyzer.analyzeTrafficQuestion(question);

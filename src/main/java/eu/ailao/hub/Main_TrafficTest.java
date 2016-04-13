@@ -13,12 +13,14 @@ public class Main_TrafficTest {
 	private final int STREET = 1;
 
 	public static void main(String[] args) {
-		if (args.length < 2) {
-			System.err.println("Insert .tsv file and Lookup Service URL as arguments please.");
+		if (args.length < 4) {
+			System.err.println("Insert test question .tsv file, Lookup Service URL, Dataset-STS URL and reference questions TSV file as arguments please.");
 			System.exit(-1);
 		}
 		String tsvFile = args[0];
 		Statics.labelLookupURL = args[1];
+		Statics.datasetSTSURL = args[2];
+		Statics.referenceQuestions = args[3];
 
 		Main_TrafficTest main_trafficTest = new Main_TrafficTest();
 
