@@ -20,6 +20,8 @@ import java.text.Normalizer;
  */
 public class TopicAnalyzer {
 
+	private double TRESHOLD = 0.839827;
+
 	/**
 	 * Analyze topic of the traffic question
 	 * @param question Question
@@ -44,7 +46,7 @@ public class TopicAnalyzer {
 	 * @return Answer from DatasetSTS
 	 * @throws IOException
 	 */
-	private JSONObject askDatasetSTS(String question) throws IOException {
+	public JSONObject askDatasetSTS(String question) throws IOException {
 		String response = "";
 		URL url = new URL(Statics.datasetSTSURL);
 		HttpURLConnection conn = (HttpURLConnection) url.openConnection();
@@ -101,10 +103,13 @@ public class TopicAnalyzer {
 	 * @return The most probable topic
 	 */
 	private TrafficTopic determineTopicMax(double[] probabilities) {
-		TrafficTopic mostProbableTopic = null;
+		TrafficTopic mostProbableTopic = TrafficTopic.UNKNOWN;
 		double biggestProbability = -1;
 		LoadedReferenceQuestions loadedReferenceQuestions = LoadedReferenceQuestions.getInstance();
 		for (int i = 0; i < probabilities.length; i++) {
+			if (probabilities[i] < TRESHOLD) {
+				continue;
+			}
 			if (probabilities[i] > biggestProbability) {
 				biggestProbability = probabilities[i];
 				mostProbableTopic = loadedReferenceQuestions.getTrafficTopic(i);
@@ -118,7 +123,7 @@ public class TopicAnalyzer {
 	 * @param probabilities probabilities
 	 * @return Normalized probabilities
 	 */
-	private double[] normalizeProbabilities(JSONArray probabilities) {
+	public double[] normalizeProbabilities(JSONArray probabilities) {
 		double[] normalizedProbabilities = new double[probabilities.length()];
 		for (int i = 0; i < probabilities.length(); i++) {
 			normalizedProbabilities[i] = sigmoid((Double) probabilities.get(i));
