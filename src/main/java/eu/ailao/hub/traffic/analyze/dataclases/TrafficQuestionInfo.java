@@ -1,4 +1,4 @@
-package eu.ailao.hub.traffic.analyze;
+package eu.ailao.hub.traffic.analyze.dataclases;
 
 /**
  * Created by Petr Marek on 21.03.2016.

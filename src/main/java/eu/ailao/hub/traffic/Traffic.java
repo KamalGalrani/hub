@@ -2,8 +2,8 @@ package eu.ailao.hub.traffic;
 
 import eu.ailao.hub.questions.Question;
 import eu.ailao.hub.traffic.analyze.QuestionAnalyzer;
-import eu.ailao.hub.traffic.analyze.TrafficQuestionInfo;
-import eu.ailao.hub.traffic.analyze.TrafficTopic;
+import eu.ailao.hub.traffic.analyze.dataclases.TrafficQuestionInfo;
+import eu.ailao.hub.traffic.analyze.dataclases.TrafficTopic;
 import eu.ailao.hub.traffic.hereapi.TrafficInformationGetter;
 import eu.ailao.hub.traffic.hereapi.dataclasses.*;
 import eu.ailao.hub.traffic.output.AnswerTextGenerator;

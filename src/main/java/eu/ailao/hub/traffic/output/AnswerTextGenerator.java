@@ -1,6 +1,6 @@
 package eu.ailao.hub.traffic.output;
 
-import eu.ailao.hub.traffic.analyze.TrafficTopic;
+import eu.ailao.hub.traffic.analyze.dataclases.TrafficTopic;
 import eu.ailao.hub.traffic.hereapi.dataclasses.*;
 
 import java.util.ArrayList;

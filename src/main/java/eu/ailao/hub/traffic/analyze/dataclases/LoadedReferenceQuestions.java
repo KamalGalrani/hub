@@ -1,23 +1,24 @@
 package eu.ailao.hub.traffic.analyze.dataclases;
 
-import eu.ailao.hub.traffic.analyze.TrafficTopic;
-
 import java.io.*;
 import java.util.ArrayList;
 
 /**
  * Created by Petr Marek on 4/11/2016.
  * SINGLETON
+ * Loads reference question from tsv file
  */
 public class LoadedReferenceQuestions {
 
 	private static LoadedReferenceQuestions instance = null;
+
 	private LoadedReferenceQuestions() {
 		// Exists only to defeat instantiation.
 	}
+
 	public static LoadedReferenceQuestions getInstance() {
-		if(instance == null) {
-			loadedDataset=loadDataset();
+		if (instance == null) {
+			loadedDataset = loadReferenceQuestions();
 			instance = new LoadedReferenceQuestions();
 		}
 		return instance;
@@ -37,11 +38,15 @@ public class LoadedReferenceQuestions {
 		return TrafficTopic.valueOf(loadedDataset.get(i)[1]);
 	}
 
-	public int size(){
+	public int size() {
 		return loadedDataset.size();
 	}
 
-	private static ArrayList<String[]> loadDataset() {
+	/**
+	 * Load reference question
+	 * @return
+	 */
+	private static ArrayList<String[]> loadReferenceQuestions() {
 		ArrayList<String[]> loadedDataset = new ArrayList<>();
 		BufferedReader TSVFile = null;
 		try {
@@ -50,7 +55,7 @@ public class LoadedReferenceQuestions {
 			String dataRow = TSVFile.readLine();
 			while (dataRow != null) {
 				String[] dataArray = dataRow.split("\t");
-				loadedDataset.add(new String[]{dataArray[0],dataArray[1]});
+				loadedDataset.add(new String[]{dataArray[0], dataArray[1]});
 				dataRow = TSVFile.readLine();
 			}
 			TSVFile.close();

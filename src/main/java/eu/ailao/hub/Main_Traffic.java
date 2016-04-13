@@ -1,7 +1,7 @@
 package eu.ailao.hub;
 
 import eu.ailao.hub.traffic.analyze.QuestionAnalyzer;
-import eu.ailao.hub.traffic.analyze.TrafficQuestionInfo;
+import eu.ailao.hub.traffic.analyze.dataclases.TrafficQuestionInfo;
 
 /**
  * Created by Petr Marek on 14.03.2016.
