@@ -22,6 +22,9 @@ public class Main_TrafficTresholds {
 	private final int MIN_TOPIC_TRESHOLD = 1;
 	private final int MAX_DISTANCE_TRESHOLD = 2;
 
+	private final int BEST_TRESHOLD = 0;
+	private final int MAX_ACCURACY = 1;
+
 	public static void main(String[] args) {
 		if (args.length < 6) {
 			System.err.println("Insert test question .tsv file, Lookup Service URL, Dataset-STS URL, reference questions TSV file and mode as arguments please.");
@@ -75,6 +78,11 @@ public class Main_TrafficTresholds {
 		if (mode == main_trafficTresholds.STREET_ONLY || mode == main_trafficTresholds.TOPIC_AND_STREET) {
 			System.out.println("Min movie distance = " + main_trafficTresholds.getMin(moviesStreetDistance) + " Max traffic distance= " + main_trafficTresholds.getMax(trafficStreetDistance));
 		}
+		main_trafficTresholds.printMistakes(mode, tresholds[main_trafficTresholds.MIN_TOPIC_TRESHOLD],
+				tresholds[main_trafficTresholds.MAX_DISTANCE_TRESHOLD],
+				trafficTopicProbabilities, moviesTopicProbabilities,
+				trafficStreetDistance,moviesStreetDistance,
+				trafficQuestions, moviesQuestions);
 	}
 
 	private ArrayList<String> loadTrafficDataset(String tsvFile) {
@@ -163,13 +171,13 @@ public class Main_TrafficTresholds {
 		return distances;
 	}
 
-	private float accuracy(int mode,ArrayList<Double> trafficProbabilities, ArrayList<Double> moviesProbabilities,
+	private float accuracy(int mode, ArrayList<Double> trafficProbabilities, ArrayList<Double> moviesProbabilities,
 						   ArrayList<Double> trafficStreetDistance, ArrayList<Double> moviesStreetDistance,
 						   double treshold, double distance) {
 		int TTraffic = 0;
 		int TMovies = 0;
 
-		switch (mode){
+		switch (mode) {
 			case TOPIC_AND_STREET:
 				for (int i = 0; i < trafficProbabilities.size(); i++) {
 					if (trafficProbabilities.get(i) >= treshold && trafficStreetDistance.get(i) <= distance) {
@@ -197,13 +205,13 @@ public class Main_TrafficTresholds {
 				}
 				break;
 			case STREET_ONLY:
-				for (int i = 0; i < trafficProbabilities.size(); i++) {
+				for (int i = 0; i < trafficStreetDistance.size(); i++) {
 					if (trafficStreetDistance.get(i) <= distance) {
 						TTraffic++;
 					}
 				}
 
-				for (int i = 0; i < moviesProbabilities.size(); i++) {
+				for (int i = 0; i < moviesStreetDistance.size(); i++) {
 					if (moviesStreetDistance.get(i) > distance) {
 						TMovies++;
 					}
@@ -211,7 +219,15 @@ public class Main_TrafficTresholds {
 				break;
 		}
 
-		return ((float) (TTraffic + TMovies)) / ((float) (trafficProbabilities.size() + moviesProbabilities.size()));
+		switch (mode) {
+			case TOPIC_ONLY:
+				return ((float) (TTraffic + TMovies)) / ((float) (trafficProbabilities.size() + moviesProbabilities.size()));
+			case STREET_ONLY:
+				return ((float) (TTraffic + TMovies)) / ((float) (trafficStreetDistance.size() + moviesStreetDistance.size()));
+			default:
+				return ((float) (TTraffic + TMovies)) / ((float) (trafficProbabilities.size() + moviesProbabilities.size()));
+		}
+
 	}
 
 	private double getMax(ArrayList<Double> arrayList) {
@@ -236,43 +252,125 @@ public class Main_TrafficTresholds {
 
 	private double[] findTresholds(int mode, ArrayList<Double> trafficTopicProbabilities, ArrayList<Double> moviesTopicProbabilities,
 								   ArrayList<Double> trafficStreetDistance, ArrayList<Double> moviesStreetDistance) {
-		double maxAccuracy = 0;
-		double bestTreshold = 0;
-		double bestDistance = 0;
+		double results[] = null;
+		double resultsFirst[];
 		switch (mode) {
 			case TOPIC_AND_STREET:
-				for (float i = 0; i < 1; i += 0.0000001f) {
-					for (float j = 0; j < 10; j += 0.5) {
-						double acc = this.accuracy(mode, trafficTopicProbabilities, moviesTopicProbabilities, trafficStreetDistance, moviesStreetDistance, i, j);
-						if (maxAccuracy < acc) {
-							maxAccuracy = acc;
-							bestTreshold = i;
-							bestDistance = j;
-						}
+				resultsFirst = findMaximumAccuracy(TOPIC_ONLY, trafficTopicProbabilities, moviesTopicProbabilities, trafficStreetDistance, moviesStreetDistance, 0, 10000, 1);
+				results = findMaximumAccuracy(STREET_ONLY, trafficTopicProbabilities, moviesTopicProbabilities, trafficStreetDistance, moviesStreetDistance, resultsFirst[BEST_TRESHOLD], 1000, 10);
+				return new double[]{results[MAX_ACCURACY], resultsFirst[BEST_TRESHOLD], results[BEST_TRESHOLD]};
+			case TOPIC_ONLY:
+				results = findMaximumAccuracy(mode, trafficTopicProbabilities, moviesTopicProbabilities, trafficStreetDistance, moviesStreetDistance, 0, 10000, 1);
+				return new double[]{results[MAX_ACCURACY], results[BEST_TRESHOLD], 0};
+			case STREET_ONLY:
+				results = findMaximumAccuracy(mode, trafficTopicProbabilities, moviesTopicProbabilities, trafficStreetDistance, moviesStreetDistance, 0, 1000, 10);
+				return new double[]{results[MAX_ACCURACY], 0, results[BEST_TRESHOLD]};
+			default:
+				return new double[]{0, 0, 0};
+		}
+	}
+
+	private double[] findMaximumAccuracy(int mode, ArrayList<Double> trafficTopicProbabilities, ArrayList<Double> moviesTopicProbabilities,
+										 ArrayList<Double> trafficStreetDistance, ArrayList<Double> moviesStreetDistance,
+										 double secondTreshold, int iterations, double upper_bound) {
+		double maxBestTreshold = 0;
+		double lower_bound = 0;
+		double step = 0.1f;
+		double max = 0;
+		double maxAccuracy = 0;
+		double minBestTreshold = 0;
+		int k = 0;
+		for (double i = lower_bound; k < iterations && i < upper_bound; i += step) {
+			if (i > upper_bound) {
+				i = lower_bound;
+				step = step / 10;
+			}
+			double acc = 0;
+			if (mode == TOPIC_ONLY) {
+				acc = this.accuracy(mode, trafficTopicProbabilities, moviesTopicProbabilities, trafficStreetDistance, moviesStreetDistance, i, secondTreshold);
+			} else if (mode == STREET_ONLY) {
+				acc = this.accuracy(mode, trafficTopicProbabilities, moviesTopicProbabilities, trafficStreetDistance, moviesStreetDistance, secondTreshold, i);
+			}
+			if (max < acc) {
+				max = acc;
+				lower_bound = i;
+
+				maxAccuracy = acc;
+				maxBestTreshold = i;
+				minBestTreshold = i;
+			} else if (max == acc) {
+				maxAccuracy = acc;
+				maxBestTreshold = i;
+			} else {
+				upper_bound = i;
+				i = lower_bound;
+				step = step / 10;
+			}
+			k++;
+		}
+		double bestTreshold = (maxBestTreshold + minBestTreshold) / 2;
+		return new double[]{bestTreshold, maxAccuracy};
+	}
+
+	//TODO bad evaluation of misstakes
+	private void printMistakes(int mode, double probabilityTreshold, double distanceTreshold,
+							   ArrayList<Double> trafficProbabilities, ArrayList<Double> moviesProbabilities,
+							   ArrayList<Double> trafficStreetDistance, ArrayList<Double> moviesStreetDistance,
+							   ArrayList<String> trafficQuestions, ArrayList<String> moviesQuestions) {
+		ArrayList<Integer> mistakesTraffic = new ArrayList<>();
+		ArrayList<Integer> mistakesMovies = new ArrayList<>();
+		switch (mode) {
+			case TOPIC_AND_STREET:
+				for (int i = 0; i < trafficProbabilities.size(); i++) {
+					if (trafficProbabilities.get(i) < probabilityTreshold || trafficStreetDistance.get(i) > distanceTreshold) {
+						mistakesTraffic.add(i);
+					}
+				}
+
+				for (int i = 0; i < moviesProbabilities.size(); i++) {
+					if (moviesProbabilities.get(i) >= probabilityTreshold || moviesStreetDistance.get(i) < distanceTreshold) {
+						mistakesMovies.add(i);
 					}
 				}
 				break;
 			case TOPIC_ONLY:
-				for (float i = 0; i < 1; i += 0.0000001f) {
-					double acc = this.accuracy(mode, trafficTopicProbabilities, moviesTopicProbabilities, trafficStreetDistance, moviesStreetDistance, i, 0);
-					if (maxAccuracy < acc) {
-						maxAccuracy = acc;
-						bestTreshold = i;
+				for (int i = 0; i < trafficProbabilities.size(); i++) {
+					if (trafficProbabilities.get(i) < probabilityTreshold) {
+						mistakesTraffic.add(i);
+					}
+				}
 
+				for (int i = 0; i < moviesProbabilities.size(); i++) {
+					if (moviesProbabilities.get(i) > probabilityTreshold) {
+						mistakesMovies.add(i);
 					}
 				}
 				break;
 			case STREET_ONLY:
-				for (float j = 0; j < 10; j += 0.5) {
-					double acc = this.accuracy(mode, trafficTopicProbabilities, moviesTopicProbabilities, trafficStreetDistance, moviesStreetDistance, 0, j);
-					if (maxAccuracy < acc) {
-						maxAccuracy = acc;
-						bestDistance = j;
+				for (int i = 0; i < trafficStreetDistance.size(); i++) {
+					if (trafficStreetDistance.get(i) > distanceTreshold) {
+						mistakesTraffic.add(i);
+					}
+				}
+
+				for (int i = 0; i < moviesStreetDistance.size(); i++) {
+					if (moviesStreetDistance.get(i) <= distanceTreshold) {
+						mistakesMovies.add(i);
 					}
 				}
 				break;
 		}
 
-		return new double[]{maxAccuracy, bestTreshold, bestDistance};
+		System.out.println();
+		System.out.println("TRAFFIC MISTAKES");
+		for (int i = 0; i < mistakesTraffic.size(); i++) {
+			System.out.println(trafficQuestions.get(mistakesTraffic.get(i)));
+		}
+
+		System.out.println();
+		System.out.println("MOVIES MISTAKES");
+		for (int i = 0; i < mistakesMovies.size(); i++) {
+			System.out.println(moviesQuestions.get(mistakesMovies.get(i)));
+		}
 	}
 }
