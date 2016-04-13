@@ -36,6 +36,26 @@ public class StreetAnalyzer {
 	}
 
 	/**
+	 * Get street candidate from the question with the lowest distance
+	 * @param question Question
+	 * @return street candidate with the smallest distance
+	 */
+	public StreetCandidate getStreetCandidate(String question){
+		String[] tokens = tokenization(question);
+		StreetCandidate streetCandidate = null;
+		for (int i = 1; i < MAXIMUM_STREET_NAME_WORDS; i++) {
+			streetCandidate = findStreetCandidate(tokens, i, streetCandidate);
+			if (streetCandidate != null && streetCandidate.getDistance() == 0) {
+				return streetCandidate;
+			}
+		}
+		if (streetCandidate == null) {
+			return null;
+		}
+		return streetCandidate;
+	}
+
+	/**
 	 * Finds street name with length of "number of Words"
 	 * @param words Words of question
 	 * @param numberOfWords length of street name
