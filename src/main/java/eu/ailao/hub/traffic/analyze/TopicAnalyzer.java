@@ -20,7 +20,7 @@ import java.text.Normalizer;
  */
 public class TopicAnalyzer {
 
-	private double TRESHOLD = 0.839827;
+	private double TRESHOLD = 0.9000000134110451;
 
 	/**
 	 * Analyze topic of the traffic question
