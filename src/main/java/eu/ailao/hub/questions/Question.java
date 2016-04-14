@@ -1,10 +1,12 @@
 package eu.ailao.hub.questions;
 
 import eu.ailao.hub.Statics;
+import eu.ailao.hub.dialog.Dialog;
 import eu.ailao.hub.transformations.Transformation;
 import org.json.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import spark.Request;
 
 import java.util.ArrayList;
 
@@ -20,6 +22,8 @@ public class Question {
 	private String transformedQuestionText;
 	private ArrayList<Transformation> transformations = new ArrayList<>();
 	private Statics.Services service;
+	private Request request;
+	private Dialog dialog;
 
 	public Question(String questionText) {
 		this.originalQuestionText = questionText;
@@ -56,6 +60,22 @@ public class Question {
 
 	public void setService(Statics.Services service) {
 		this.service = service;
+	}
+
+	public Request getRequest() {
+		return request;
+	}
+
+	public Dialog getDialog() {
+		return dialog;
+	}
+
+	public void setRequest(Request request) {
+		this.request = request;
+	}
+
+	public void setDialog(Dialog dialog) {
+		this.dialog = dialog;
 	}
 
 	/***

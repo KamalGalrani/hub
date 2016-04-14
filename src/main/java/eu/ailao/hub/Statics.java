@@ -23,6 +23,7 @@ public final class Statics {
 	}
 
 	public enum Services {
+		NOT_KNOWN_YET,
 		YODA_QA,
 		TRAFFIC
 	}

@@ -98,7 +98,7 @@ public class Traffic {
 			case FASTEST_ROUTE:
 				Position fromPoint = trafficInformationGetter.getStreetPosition(streetNameFrom);
 				Position toPoint = trafficInformationGetter.getStreetPosition(streetNameTo);
-				FastestRouteInfo fastestRouteInfo = trafficInformationGetter.getFastestRouteInfo(fromPoint,toPoint);
+				FastestRouteInfo fastestRouteInfo = trafficInformationGetter.getFastestRouteInfo(fromPoint, toPoint);
 				answerText = new AnswerTextGenerator().generateAnswerText(topic, fastestRouteInfo);
 				break;
 		}
@@ -125,21 +125,42 @@ public class Traffic {
 	 */
 	public JSONObject getAnswer(int id, Question question) {
 		JSONObject answer = new JSONObject();
-		answer.put("sources", new JSONObject());
-		answer.put("gen_answers", 1);
-		answer.put("snippets", new JSONObject());
 
-		JSONArray answers = new JSONArray();
-		answers.put(createAnswerJSONObject(question.getServiceQuestionID()));
+		JSONObject answ = createAnswerJSONObject(question.getServiceQuestionID());
 
-		answer.put("answers", answers);
-		answer.put("gen_sources", 0);
-		answer.put("finished", true);
+		if (answ.has("text")) {
+			answer.put("sources", new JSONObject());
+			answer.put("gen_answers", 1);
+			answer.put("snippets", new JSONObject());
 
-		answer.put("id", id);
-		answer.put("text", question.getOriginalQuestionText());
-		answer.put("hasOnlyArtificialConcept", false);
-		answer.put("artificialConcepts", new JSONArray());
+			JSONArray answers = new JSONArray();
+
+			answers.put(answ);
+
+			answer.put("answers", answers);
+			answer.put("gen_sources", 0);
+			answer.put("finished", true);
+
+			answer.put("id", id);
+			answer.put("text", question.getOriginalQuestionText());
+			answer.put("hasOnlyArtificialConcept", false);
+			answer.put("artificialConcepts", new JSONArray());
+		}else{
+			answer.put("sources", new JSONObject());
+			answer.put("gen_answers", 0);
+			answer.put("snippets", new JSONObject());
+
+			JSONArray answers = new JSONArray();
+
+			answer.put("answers", answers);
+			answer.put("gen_sources", 0);
+			answer.put("finished", false);
+
+			answer.put("id", id);
+			answer.put("text", question.getOriginalQuestionText());
+			answer.put("hasOnlyArtificialConcept", false);
+			answer.put("artificialConcepts", new JSONArray());
+		}
 		return answer;
 	}
 

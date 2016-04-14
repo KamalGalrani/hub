@@ -6,14 +6,12 @@ package eu.ailao.hub.communication;
 
 import eu.ailao.hub.AnswerSentenceGenerator;
 import eu.ailao.hub.Statics;
-import eu.ailao.hub.corefresol.concepts.Concept;
 import eu.ailao.hub.dialog.Dialog;
 import eu.ailao.hub.dialog.DialogMemorizer;
 import eu.ailao.hub.questions.Question;
 import eu.ailao.hub.questions.QuestionMapper;
+import eu.ailao.hub.traffic.QuestionProcessor;
 import eu.ailao.hub.traffic.Traffic;
-import eu.ailao.hub.transformations.Transformation;
-import eu.ailao.hub.transformations.TransformationArray;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.slf4j.Logger;
@@ -28,7 +26,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ExecutionException;
 
-import static eu.ailao.hub.Statics.isContain;
 import static spark.Spark.*;
 
 
@@ -41,6 +38,7 @@ public class WebInterface implements Runnable {
 	private AnswerSentenceGenerator answerSentenceGenerator;
 	private DialogMemorizer dialogMemorizer;
 	private Traffic traffic;
+	private ArrayDeque<Question> notYetHandledQuestions;
 
 
 	private static final String USER_ID = "userID";
@@ -52,6 +50,9 @@ public class WebInterface implements Runnable {
 		this.answerSentenceGenerator = new AnswerSentenceGenerator();
 		this.dialogMemorizer = new DialogMemorizer();
 		this.traffic = new Traffic();
+		notYetHandledQuestions = new ArrayDeque<>();
+		QuestionProcessor questionProcessor = new QuestionProcessor(traffic, yodaQAURL, this);
+		questionProcessor.start();
 	}
 
 	/***
@@ -89,14 +90,11 @@ public class WebInterface implements Runnable {
 		Dialog dialog = dialogMemorizer.getDialog(dialogID);
 		dialog.addQuestion(question);
 
-		int questionID;
-		questionID = askQuestionTraffic(question);
-		//Traffic can't help, ask YodaQA
-		if (questionID == -1) {
-			questionID = askQuestionYodaQA(question, request, dialog);
-		}
+		question.setRequest(request);
+		question.setDialog(dialog);
+		question.setService(Statics.Services.NOT_KNOWN_YET);
 
-		question.setServiceQuestionID(questionID);
+		notYetHandledQuestions.add(question);
 
 		int clientQuestionID = questionMapper.addQuestion(question);
 
@@ -107,31 +105,8 @@ public class WebInterface implements Runnable {
 		return answer.toString();
 	}
 
-	/**
-	 * Ask yodaQA
-	 * @param question Question to ask
-	 * @param request Incoming request
-	 * @param dialog Dialog in which question is
-	 * @return service ID
-	 */
-	private int askQuestionYodaQA(Question question, Request request, Dialog dialog) {
-		transformQuestion(question);
-		dialog.getConceptMemorizer().updateConceptsDuringAsking(request.queryMap().toMap());
-
-		String questionID = askQuestion(question, request, dialog);
-		question.setService(Statics.Services.YODA_QA);
-		int questionIDint = getQuestionIDFromAnswer(questionID);
-		return questionIDint;
-	}
-
-	/**
-	 * Ask traffic
-	 * @param question question to ask
-	 * @return service ID
-	 */
-	private int askQuestionTraffic(Question question) {
-		question.setService(Statics.Services.TRAFFIC);
-		return traffic.askQuestion(question.getTransformedQuestionText());
+	public ArrayDeque<Question> getNotYetHandledQuestions() {
+		return notYetHandledQuestions;
 	}
 
 	/***
@@ -148,7 +123,7 @@ public class WebInterface implements Runnable {
 		String stringID = request.splat()[0];
 		int id = Integer.parseInt(stringID);
 
-		Question question = questionMapper.getQuestionByID(id);
+		Question question = questionMapper.getQuestionByClientID(id);
 
 		String dialogID = request.splat()[1];
 		Dialog dialog = dialogMemorizer.getDialog(dialogID);
@@ -157,10 +132,20 @@ public class WebInterface implements Runnable {
 		}
 
 		JSONObject answer;
-		if (question.getService().equals(Statics.Services.YODA_QA)) {
-			answer = getAnswer(id, dialog);
-		} else {
-			answer = traffic.getAnswer(id, question);
+		switch (question.getService()) {
+			case YODA_QA:
+				answer = getAnswer(id, dialog);
+				break;
+			case TRAFFIC:
+				answer = traffic.getAnswer(id, question);
+				break;
+			default:
+				answer = new JSONObject("{\"summary\":{\"lats\":[],\"concepts\":[]},\"sources\":{},\"answers\":[]," +
+						"\"snippets\":{},\"finished\":false,\"artificialConcepts\":[],\"hasOnlyArtificialConcept\":false," +
+						"\"gen_sources\":0,\"gen_answers\":0}");
+				answer.put("id", question.getClientQuestionID());
+				answer.put("text",question.getOriginalQuestionText());
+				break;
 		}
 
 		answer.put("dialogID", dialog.getId());
@@ -198,7 +183,7 @@ public class WebInterface implements Runnable {
 	 */
 	private JSONObject getAnswer(int id, Dialog dialog) {
 		CommunicationHandler communicationHandler = new CommunicationHandler();
-		Question question = questionMapper.getQuestionByID(id);
+		Question question = questionMapper.getQuestionByClientID(id);
 		int serviceID = question.getServiceQuestionID();
 		String GETResponse = communicationHandler.getGETResponse(yodaQAURL + "q/" + serviceID);
 		JSONObject answer = new JSONObject(GETResponse);
@@ -248,60 +233,6 @@ public class WebInterface implements Runnable {
 	}
 
 	/***
-	 * Detect third person pronoun in question. If it is presented, it uses concepts from older questions
-	 * @param question Text of question
-	 * @param request Request from web interface
-	 * @return response of yodaQA
-	 */
-	private String askQuestion(Question question, Request request, Dialog dialog) {
-		ArrayDeque<Concept> _concepts = new ArrayDeque<>();
-		String artificialClue = "";
-		if (isThirdPersonPronouns(question.getTransformedQuestionText())) {
-			logger.info("Coreference resolurion used for: {}", question.getTransformedQuestionText());
-			_concepts = dialog.getConceptMemorizer().getConcepts();
-			artificialClue = dialog.getClueMemorizer().getClue();
-		}
-		CommunicationHandler communicationHandler = new CommunicationHandler();
-		return communicationHandler.getPOSTResponse(yodaQAURL + "/q", request, question.getTransformedQuestionText(), _concepts, artificialClue);
-	}
-
-	/***
-	 * Detects if there is pronouns in the third person in question text.
-	 * @param question Question to check for pronoun
-	 * @return TRUE if there is third person pronoun in question
-	 */
-	private boolean isThirdPersonPronouns(String question) {
-		String[] thirdPersonPronouns = {"he", "she", "it", "its", "his", "hers", "him", "her", "they", "them", "their", "theirs"};
-		for (int i = 0; i < thirdPersonPronouns.length; i++) {
-			if (isContain(question.toLowerCase(), thirdPersonPronouns[i])) {
-				return true;
-			}
-		}
-		return false;
-	}
-
-	/***
-	 * Gets ID of question from YodaQA's answer to this question
-	 * @param answer YodaQA's answer
-	 * @return id of question
-	 */
-	private int getQuestionIDFromAnswer(String answer) {
-		return Integer.parseInt(answer.replaceAll("[\\D]", ""));
-	}
-
-	/***
-	 * Applies transformations to question
-	 * Change question text according to transformations defined in TransformationArray.transformationsList
-	 * @param question Question to transform
-	 * @return Transformed question
-	 */
-	private void transformQuestion(Question question) {
-		for (Transformation transformation : TransformationArray.transformationsList) {
-			question.applyTransformationIfUseful(transformation);
-		}
-	}
-
-	/***
 	 * Transforms answer back
 	 * Applies back transformations in reverse order to answer
 	 * @param id id of question
@@ -309,7 +240,7 @@ public class WebInterface implements Runnable {
 	 * @return Answer transformed back
 	 */
 	private JSONObject transformBack(int id, JSONObject answer) {
-		Question question = questionMapper.getQuestionByID(id);
+		Question question = questionMapper.getQuestionByClientID(id);
 		return question.transformBack(answer);
 	}
 
@@ -321,7 +252,7 @@ public class WebInterface implements Runnable {
 	 * @return sentence transformed back
 	 */
 	private String transformBackAnswerSentence(int id, String answerSentence) {
-		Question question = questionMapper.getQuestionByID(id);
+		Question question = questionMapper.getQuestionByClientID(id);
 		return question.transformBackAnswerSentence(answerSentence);
 	}
 

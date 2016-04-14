@@ -30,10 +30,10 @@ public class StreetAnalyzer {
 				return streetCandidate.getStreetName();
 			}
 		}
-		if (streetCandidate.getDistance()>DISTANCE_TRESHOLD){
+		if (streetCandidate == null) {
 			return null;
 		}
-		if (streetCandidate == null) {
+		if (streetCandidate.getDistance() > DISTANCE_TRESHOLD) {
 			return null;
 		}
 		return streetCandidate.getStreetName();
@@ -44,7 +44,7 @@ public class StreetAnalyzer {
 	 * @param question Question
 	 * @return street candidate with the smallest distance
 	 */
-	public StreetCandidate getStreetCandidate(String question){
+	public StreetCandidate getStreetCandidate(String question) {
 		String[] tokens = tokenization(question);
 		StreetCandidate streetCandidate = null;
 		for (int i = 1; i < MAXIMUM_STREET_NAME_WORDS; i++) {

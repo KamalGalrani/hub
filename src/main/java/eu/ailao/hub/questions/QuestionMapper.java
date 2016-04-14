@@ -1,7 +1,6 @@
 package eu.ailao.hub.questions;
 
 import java.util.HashMap;
-import java.util.Queue;
 import java.util.Random;
 
 /**
@@ -12,7 +11,7 @@ public class QuestionMapper {
 	private Random idgen=new Random();
 	HashMap<Integer, Question> questionMap=new HashMap<>();
 
-	public Question getQuestionByID(int id){
+	public Question getQuestionByClientID(int id){
 		Question question=questionMap.get(id);
 		return question;
 	}
