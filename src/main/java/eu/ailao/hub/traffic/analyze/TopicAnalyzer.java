@@ -20,7 +20,7 @@ import java.text.Normalizer;
  */
 public class TopicAnalyzer {
 
-	private double TRESHOLD = 0.9000000134110451;
+	private double THRESHOLD = 0.9000000134110451;
 
 	/**
 	 * Analyze topic of the traffic question
@@ -107,7 +107,7 @@ public class TopicAnalyzer {
 		double biggestProbability = -1;
 		LoadedReferenceQuestions loadedReferenceQuestions = LoadedReferenceQuestions.getInstance();
 		for (int i = 0; i < probabilities.length; i++) {
-			if (probabilities[i] < TRESHOLD) {
+			if (probabilities[i] < THRESHOLD) {
 				continue;
 			}
 			if (probabilities[i] > biggestProbability) {

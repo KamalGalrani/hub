@@ -1,0 +1,6927 @@
+﻿﻿1. máje	NULL	NULL	1
+17. listopadu	NULL	NULL	1
+28. pluku	NULL	NULL	1
+28. října	NULL	NULL	1
+5. května	NULL	NULL	1
+5. máje	NULL	NULL	1
+50.0750733N, 14.4289467E	NULL	NULL	1
+7. Května	NULL	NULL	1
+8 schodů	NULL	NULL	1
+8. listopadu	NULL	NULL	1
+9. května	NULL	NULL	1
+A1	NULL	NULL	1
+A2	NULL	NULL	1
+A3	NULL	NULL	1
+A4	NULL	NULL	1
+A5	NULL	NULL	1
+A6	NULL	NULL	1
+Adamova	NULL	NULL	1
+Adamovská	NULL	NULL	1
+Adlerova	NULL	NULL	1
+Africká	NULL	NULL	1
+Akademická	NULL	NULL	1
+Akátová	NULL	NULL	1
+Aksamitova	NULL	NULL	1
+Alabastrová	NULL	NULL	1
+Albánská	NULL	NULL	1
+Albertov	NULL	NULL	1
+Albíny Hochové	NULL	NULL	1
+Albrechtická	NULL	NULL	1
+Aldašínská	NULL	NULL	1
+Alej Českých exulantů	NULL	NULL	1
+Aloisovská	NULL	NULL	1
+Alšova	NULL	NULL	1
+Alšovo nábřeží	NULL	NULL	1
+Altajská	NULL	NULL	1
+Alžírská	NULL	NULL	1
+Ambrožova	NULL	NULL	1
+Americká	NULL	NULL	1
+Amforová	NULL	NULL	1
+Amortova	NULL	NULL	1
+Ampérova	NULL	NULL	1
+Amurská	NULL	NULL	1
+Anastázova	NULL	NULL	1
+Andělova	NULL	NULL	1
+Anderleho	NULL	NULL	1
+Andersenova	NULL	NULL	1
+Andrštova	NULL	NULL	1
+Anenská	NULL	NULL	1
+Anežky Malé	NULL	NULL	1
+Anežská	NULL	NULL	1
+Angelovova	NULL	NULL	1
+Anglická	NULL	NULL	1
+Angolská	NULL	NULL	1
+Anhaltova	NULL	NULL	1
+Ankarská	NULL	NULL	1
+Anny Čížkové	NULL	NULL	1
+Anny Drabíkové	NULL	NULL	1
+Anny Letenské	NULL	NULL	1
+Anny Rybníčkové	NULL	NULL	1
+Antala Staška	NULL	NULL	1
+Antonína Čermáka	NULL	NULL	1
+Antonína Hodného	NULL	NULL	1
+Antonínská	NULL	NULL	1
+Anýzová	NULL	NULL	1
+Apolinářská	NULL	NULL	1
+Arabská	NULL	NULL	1
+Arbesovo náměstí	NULL	NULL	1
+Archangelská	NULL	NULL	1
+Archeologická	NULL	NULL	1
+Archimédova	NULL	NULL	1
+Archivní	NULL	NULL	1
+Argentinská	NULL	NULL	1
+Aristotelova	NULL	NULL	1
+Arkalycká	NULL	NULL	1
+Armádní	NULL	NULL	1
+Armádního sboru	NULL	NULL	1
+Armády	NULL	NULL	1
+Arménská	NULL	NULL	1
+Arnošta Valenty	NULL	NULL	1
+Áronová	NULL	NULL	1
+Ašská	NULL	NULL	1
+Astlova	NULL	NULL	1
+Athénská	NULL	NULL	1
+Atletická	NULL	NULL	1
+Aubrechtové	NULL	NULL	1
+Augustinova	NULL	NULL	1
+Augustova	NULL	NULL	1
+Austova	NULL	NULL	1
+autobusové nádraží Českomoravská	NULL	NULL	1
+Autobusové nádraží Depo Hostivař	NULL	NULL	1
+Autobusové nádraží Zličín	NULL	NULL	1
+Aviatická	NULL	NULL	1
+Azalková	NULL	NULL	1
+Azuritová	NULL	NULL	1
+B. Němcové	NULL	NULL	1
+B2	NULL	NULL	1
+B3	NULL	NULL	1
+B4	NULL	NULL	1
+B5	NULL	NULL	1
+B6	NULL	NULL	1
+B7	NULL	NULL	1
+B8	NULL	NULL	1
+Baarova	NULL	NULL	1
+Babákova	NULL	NULL	1
+Babická	NULL	NULL	1
+Babočková	NULL	NULL	1
+Babská	NULL	NULL	1
+Babylonská	NULL	NULL	1
+Bacháčkova	NULL	NULL	1
+Bachmačské náměstí	NULL	NULL	1
+Bachova	NULL	NULL	1
+Badeniho	NULL	NULL	1
+Bajgarova	NULL	NULL	1
+Bajkalská	NULL	NULL	1
+Bajkonurská	NULL	NULL	1
+Bakalářská	NULL	NULL	1
+Bakovská	NULL	NULL	1
+Bakurinova	NULL	NULL	1
+Balabánova	NULL	NULL	1
+Balbínova	NULL	NULL	1
+Banskobystrická	NULL	NULL	1
+Barákova	NULL	NULL	1
+Baranova	NULL	NULL	1
+Barrandova	NULL	NULL	1
+Barrandovská	NULL	NULL	1
+Barrandovský most	NULL	NULL	1
+Bartákova	NULL	NULL	1
+Bartolomějská	NULL	NULL	1
+Bartoňkova	NULL	NULL	1
+Bartoškova	NULL	NULL	1
+Bartůňkova	NULL	NULL	1
+Barunčina	NULL	NULL	1
+Barvířská	NULL	NULL	1
+Basilejské náměstí	NULL	NULL	1
+Baškirská	NULL	NULL	1
+Bassova	NULL	NULL	1
+Bašteckého	NULL	NULL	1
+Bášťská	NULL	NULL	1
+Baštýřská	NULL	NULL	1
+Batelovská	NULL	NULL	1
+Batličkova	NULL	NULL	1
+Bavorovská	NULL	NULL	1
+Bavorská	NULL	NULL	1
+Bažantní	NULL	NULL	1
+Bazovského	NULL	NULL	1
+Bechlínská	NULL	NULL	1
+Běchorská	NULL	NULL	1
+Běchovická	NULL	NULL	1
+Bechyňova	NULL	NULL	1
+Bechyňská	NULL	NULL	1
+Beckovská	NULL	NULL	1
+Bečovská	NULL	NULL	1
+Bečvářova	NULL	NULL	1
+Bedlová	NULL	NULL	1
+Bednářská	NULL	NULL	1
+Bedřichovská	NULL	NULL	1
+Bedrnova	NULL	NULL	1
+Beethovenova	NULL	NULL	1
+Běhounkova	NULL	NULL	1
+Bekova	NULL	NULL	1
+Beladova	NULL	NULL	1
+Bělásková	NULL	NULL	1
+Bělčická	NULL	NULL	1
+Bělehradská	NULL	NULL	1
+Belgická	NULL	NULL	1
+Bělina	NULL	NULL	1
+Bělinského	NULL	NULL	1
+Bellova	NULL	NULL	1
+Bellušova	NULL	NULL	1
+Bělocerkevská	NULL	NULL	1
+Bělocká	NULL	NULL	1
+Bělohorská	NULL	NULL	1
+Bělomlýnská	NULL	NULL	1
+Běloveská	NULL	NULL	1
+Běluňská	NULL	NULL	1
+Benáčanova	NULL	NULL	1
+Benákova	NULL	NULL	1
+Benátská	NULL	NULL	1
+Bendlova	NULL	NULL	1
+Bendova	NULL	NULL	1
+Benecká	NULL	NULL	1
+Benedikta Roezla	NULL	NULL	1
+Benediktská	NULL	NULL	1
+Benešovská	NULL	NULL	1
+Benická	NULL	NULL	1
+Beníškové	NULL	NULL	1
+Benkova	NULL	NULL	1
+Beránecká	NULL	NULL	1
+Beranových	NULL	NULL	1
+Bergerova	NULL	NULL	1
+Bergmanova	NULL	NULL	1
+Beřkovická	NULL	NULL	1
+Berkovská	NULL	NULL	1
+Berlínská	NULL	NULL	1
+Bermanova	NULL	NULL	1
+Bernatická	NULL	NULL	1
+Bernolákova	NULL	NULL	1
+Berounská	NULL	NULL	1
+Bertrámová	NULL	NULL	1
+Berylová	NULL	NULL	1
+Besední	NULL	NULL	1
+Beskydská	NULL	NULL	1
+Bessemerova	NULL	NULL	1
+Bešťákova	NULL	NULL	1
+Betáňská	NULL	NULL	1
+Betlémská	NULL	NULL	1
+Betlémské náměstí	NULL	NULL	1
+Bezdrevská	NULL	NULL	1
+Běžecká	NULL	NULL	1
+Bezejmenná	NULL	NULL	1
+Běžná	NULL	NULL	1
+Bezová	NULL	NULL	1
+Bezprašná	NULL	NULL	1
+Bezručova	NULL	NULL	1
+Bicanova	NULL	NULL	1
+Bieblova	NULL	NULL	1
+Bílá	NULL	NULL	1
+Bílčická	NULL	NULL	1
+Bílenecké Náměstí	NULL	NULL	1
+Bílinská	NULL	NULL	1
+Bílkova	NULL	NULL	1
+Bílovská	NULL	NULL	1
+Binarova	NULL	NULL	1
+Bínova	NULL	NULL	1
+Biskupcova	NULL	NULL	1
+Biskupská	NULL	NULL	1
+Biskupský dvůr	NULL	NULL	1
+Bítovská	NULL	NULL	1
+Blachutova	NULL	NULL	1
+Blahníkova	NULL	NULL	1
+Blahoslavova	NULL	NULL	1
+Blanická	NULL	NULL	1
+Blatenská	NULL	NULL	1
+Blatovská	NULL	NULL	1
+Blatská	NULL	NULL	1
+Blattného	NULL	NULL	1
+Blažíčkova	NULL	NULL	1
+Blažimská	NULL	NULL	1
+Blériotova	NULL	NULL	1
+Blodkova	NULL	NULL	1
+Blšanecká	NULL	NULL	1
+Bludovická	NULL	NULL	1
+Bobkova	NULL	NULL	1
+Bochníčkova	NULL	NULL	1
+Bochovská	NULL	NULL	1
+Boční	NULL	NULL	1
+Boční I	NULL	NULL	1
+Boční II	NULL	NULL	1
+Bodláková	NULL	NULL	1
+Boháčova	NULL	NULL	1
+Bohdalec	NULL	NULL	1
+Bohdalecká	NULL	NULL	1
+Bohdanečská	NULL	NULL	1
+Böhmova	NULL	NULL	1
+Bohnická	NULL	NULL	1
+Bohrova	NULL	NULL	1
+Bohumila Kavky	NULL	NULL	1
+Bohumínská	NULL	NULL	1
+Bohúňova	NULL	NULL	1
+Bohuslava Martinů	NULL	NULL	1
+Bohuslava ze Švamberka	NULL	NULL	1
+Bohuslavická	NULL	NULL	1
+Bohušovická	NULL	NULL	1
+Bojanovická	NULL	NULL	1
+Bojasova	NULL	NULL	1
+Bojčenkova	NULL	NULL	1
+Bojetická	NULL	NULL	1
+Bojínková	NULL	NULL	1
+Bojovská	NULL	NULL	1
+Bolebořská	NULL	NULL	1
+Boleslavova	NULL	NULL	1
+Boleslavská	NULL	NULL	1
+Boletická	NULL	NULL	1
+Bolevecká	NULL	NULL	1
+Bolínská	NULL	NULL	1
+Bolívarova	NULL	NULL	1
+Boloňská	NULL	NULL	1
+Bolzanova	NULL	NULL	1
+Bondyho	NULL	NULL	1
+Bořanovická	NULL	NULL	1
+Borecká	NULL	NULL	1
+Borečkova	NULL	NULL	1
+Bořetínská	NULL	NULL	1
+Boříkova	NULL	NULL	1
+Bořivojova	NULL	NULL	1
+Borodinská	NULL	NULL	1
+Borošova	NULL	NULL	1
+Borotická	NULL	NULL	1
+Borotínská	NULL	NULL	1
+Borová	NULL	NULL	1
+Borovanská	NULL	NULL	1
+Borovanského	NULL	NULL	1
+Borovnická	NULL	NULL	1
+Borská	NULL	NULL	1
+Borského	NULL	NULL	1
+Boršov	NULL	NULL	1
+Boršovská	NULL	NULL	1
+Borůvková	NULL	NULL	1
+Boseňská	NULL	NULL	1
+Bošická	NULL	NULL	1
+Bošilecká	NULL	NULL	1
+Bošínská	NULL	NULL	1
+Botevova	NULL	NULL	1
+Botičská	NULL	NULL	1
+Boučkova	NULL	NULL	1
+Bouřilova	NULL	NULL	1
+Bousovská	NULL	NULL	1
+Božanovská	NULL	NULL	1
+Bozděchova	NULL	NULL	1
+Božecká	NULL	NULL	1
+Božejovická	NULL	NULL	1
+Boženy Němcové	NULL	NULL	1
+Božetěchova	NULL	NULL	1
+Božetická	NULL	NULL	1
+Božidarská	NULL	NULL	1
+Božkova	NULL	NULL	1
+Božkovská	NULL	NULL	1
+Brabcova	NULL	NULL	1
+Bramboříková	NULL	NULL	1
+Branaldova	NULL	NULL	1
+Brandejsova	NULL	NULL	1
+Brandejsovo náměstí	NULL	NULL	1
+Brandlova	NULL	NULL	1
+Brandýská	NULL	NULL	1
+Branická	NULL	NULL	1
+Branické náměstí	NULL	NULL	1
+Branislavova	NULL	NULL	1
+Branská	NULL	NULL	1
+Braškovská	NULL	NULL	1
+Bratislavská	NULL	NULL	1
+bratranců Veverkových	NULL	NULL	1
+Bratří Čapků	NULL	NULL	1
+Bratří Dohalských	NULL	NULL	1
+Bratří Dohanských	NULL	NULL	1
+Bratří Venclíků	NULL	NULL	1
+Bratříkovská	NULL	NULL	1
+Braunerova	NULL	NULL	1
+Braunova	NULL	NULL	1
+Brázdimská	NULL	NULL	1
+Brdecká	NULL	NULL	1
+Brdičkova	NULL	NULL	1
+Brdlíkova	NULL	NULL	1
+Brechtova	NULL	NULL	1
+Břečťanová	NULL	NULL	1
+Brehmova	NULL	NULL	1
+Břehová	NULL	NULL	1
+Breitcetlova	NULL	NULL	1
+Břetislavova	NULL	NULL	1
+Břevnovská	NULL	NULL	1
+Břežánecká	NULL	NULL	1
+Březanova	NULL	NULL	1
+Břežanská	NULL	NULL	1
+Březecká	NULL	NULL	1
+Březiněveská	NULL	NULL	1
+Březinova	NULL	NULL	1
+Březnická	NULL	NULL	1
+Březnová	NULL	NULL	1
+Březová	NULL	NULL	1
+Březovická	NULL	NULL	1
+Březovského	NULL	NULL	1
+Brichtova	NULL	NULL	1
+Břidličná	NULL	NULL	1
+Břidlicová	NULL	NULL	1
+Brigádnická	NULL	NULL	1
+Brigádníků	NULL	NULL	1
+Bříšťanská	NULL	NULL	1
+Brixiho	NULL	NULL	1
+Brodecká	NULL	NULL	1
+Brodského	NULL	NULL	1
+Bronzová	NULL	NULL	1
+Broumarská	NULL	NULL	1
+Broumovská	NULL	NULL	1
+Brozánská	NULL	NULL	1
+Brožíkova	NULL	NULL	1
+Brtnická	NULL	NULL	1
+Brumlovka	NULL	NULL	1
+Brumlovka, Za Betou	NULL	NULL	1
+Brumovická	NULL	NULL	1
+Brunclíkova	NULL	NULL	1
+Brunelova	NULL	NULL	1
+Brunnerova	NULL	NULL	1
+Bruntálská	NULL	NULL	1
+Bruselská	NULL	NULL	1
+Brusinková	NULL	NULL	1
+Bruslařská	NULL	NULL	1
+Brusnický tunel	NULL	NULL	1
+Bryknarova	NULL	NULL	1
+Bryksova	NULL	NULL	1
+Brzorádových	NULL	NULL	1
+Bubenečská	NULL	NULL	1
+Bubenečský tunel	NULL	NULL	1
+Bubeníčkova	NULL	NULL	1
+Bubenská	NULL	NULL	1
+Bubenské nábřeží	NULL	NULL	1
+Bublíkova	NULL	NULL	1
+Bubnova	NULL	NULL	1
+Bucharova	NULL	NULL	1
+Buchlovská	NULL	NULL	1
+Buchovcova	NULL	NULL	1
+Budapešťská	NULL	NULL	1
+Budečská	NULL	NULL	1
+Budějovická	NULL	NULL	1
+Budilova	NULL	NULL	1
+Budilovská	NULL	NULL	1
+Budínova	NULL	NULL	1
+Budovatelská	NULL	NULL	1
+Budyňská	NULL	NULL	1
+Budyšínská	NULL	NULL	1
+Bukolská	NULL	NULL	1
+Buková	NULL	NULL	1
+Bukovanská	NULL	NULL	1
+Bukovecká	NULL	NULL	1
+Bukovinská	NULL	NULL	1
+Bulharská	NULL	NULL	1
+Buližníková	NULL	NULL	1
+Bulovka	NULL	NULL	1
+Burdova	NULL	NULL	1
+Burešova	NULL	NULL	1
+Burianova	NULL	NULL	1
+Buštěhradská	NULL	NULL	1
+Butovická	NULL	NULL	1
+Buzulucká	NULL	NULL	1
+Býčí schodiště	NULL	NULL	1
+Bydhošťská	NULL	NULL	1
+Bydžovského	NULL	NULL	1
+Bylanská	NULL	NULL	1
+Byšická	NULL	NULL	1
+Byškovická	NULL	NULL	1
+Bystrá	NULL	NULL	1
+Bystřická	NULL	NULL	1
+Bystřičná	NULL	NULL	1
+Čábelecká	NULL	NULL	1
+Cafourkova	NULL	NULL	1
+Čajkovského	NULL	NULL	1
+Čakovická	NULL	NULL	1
+Čapkova	NULL	NULL	1
+Čáslavská	NULL	NULL	1
+Častavina	NULL	NULL	1
+Čečelická	NULL	NULL	1
+Čechova	NULL	NULL	1
+Cechovní	NULL	NULL	1
+Čechtická	NULL	NULL	1
+Čechurova	NULL	NULL	1
+Čechův most	NULL	NULL	1
+Cedrová	NULL	NULL	1
+Čejetická	NULL	NULL	1
+Čekanková	NULL	NULL	1
+Čelakovická	NULL	NULL	1
+Čelakovského sady	NULL	NULL	1
+Celetná	NULL	NULL	1
+Čeljabinská	NULL	NULL	1
+Čelná	NULL	NULL	1
+Celniční	NULL	NULL	1
+Celsiova	NULL	NULL	1
+Cementářská	NULL	NULL	1
+Čenětická	NULL	NULL	1
+Čeňkova	NULL	NULL	1
+Čenkovská	NULL	NULL	1
+Centrifuga	NULL	NULL	1
+Čeperská	NULL	NULL	1
+Ceplechova	NULL	NULL	1
+Čeradická	NULL	NULL	1
+Čerčanská	NULL	NULL	1
+Čerchovská	NULL	NULL	1
+Cerhenická	NULL	NULL	1
+Čermákova	NULL	NULL	1
+Černá	NULL	NULL	1
+Černého	NULL	NULL	1
+Černická	NULL	NULL	1
+Černičná	NULL	NULL	1
+Černínova	NULL	NULL	1
+Černínská	NULL	NULL	1
+Černochova	NULL	NULL	1
+Černockého	NULL	NULL	1
+Černohorského	NULL	NULL	1
+Černokostelecká	NULL	NULL	1
+Černomořská	NULL	NULL	1
+Černotínská	NULL	NULL	1
+Černovická	NULL	NULL	1
+Černovolská	NULL	NULL	1
+Černý Most	NULL	NULL	1
+Čerpadlová	NULL	NULL	1
+Čertouská	NULL	NULL	1
+Čertův vršek	NULL	NULL	1
+Červená	NULL	NULL	1
+Červená báň	NULL	NULL	1
+Červeňanského	NULL	NULL	1
+Červencová	NULL	NULL	1
+Červenkova	NULL	NULL	1
+Červnová	NULL	NULL	1
+Česákova	NULL	NULL	1
+Česká	NULL	NULL	1
+České Družiny	NULL	NULL	1
+Českobratrská	NULL	NULL	1
+Českobrodská	NULL	NULL	1
+Českodubská	NULL	NULL	1
+Českolipská	NULL	NULL	1
+Českomalínská	NULL	NULL	1
+Českomoravská	NULL	NULL	1
+Československé armády	NULL	NULL	1
+Československé lidové armády	NULL	NULL	1
+Československého Exilu	NULL	NULL	1
+Cesmínová	NULL	NULL	1
+Češovská	NULL	NULL	1
+Čestlická	NULL	NULL	1
+Čestmírova	NULL	NULL	1
+Cetyňská	NULL	NULL	1
+Chabařovická	NULL	NULL	1
+Chaberská	NULL	NULL	1
+Chabská	NULL	NULL	1
+Chalabalova	NULL	NULL	1
+Chaloupeckého	NULL	NULL	1
+Chaloupky	NULL	NULL	1
+Chaltická	NULL	NULL	1
+Chalupkova	NULL	NULL	1
+Chalupnická	NULL	NULL	1
+Chaplinovo náměstí	NULL	NULL	1
+Charkovská	NULL	NULL	1
+Charlese de Gaulla	NULL	NULL	1
+Charvátova	NULL	NULL	1
+Chatová	NULL	NULL	1
+Chebská	NULL	NULL	1
+Chelčického	NULL	NULL	1
+Chemická	NULL	NULL	1
+Chilská	NULL	NULL	1
+Chittussiho	NULL	NULL	1
+Chladírenská	NULL	NULL	1
+Chládkova	NULL	NULL	1
+Chlebovická	NULL	NULL	1
+Chlumčanského	NULL	NULL	1
+Chlumecká	NULL	NULL	1
+Chlumínská	NULL	NULL	1
+Chlumova	NULL	NULL	1
+Chlupáčova	NULL	NULL	1
+Chlupova	NULL	NULL	1
+Chmelařská	NULL	NULL	1
+Chmelířova	NULL	NULL	1
+Chmelová	NULL	NULL	1
+Choceňská	NULL	NULL	1
+Choceradská	NULL	NULL	1
+Chocholouškova	NULL	NULL	1
+Chocholova	NULL	NULL	1
+Chodecká	NULL	NULL	1
+Chodov	NULL	NULL	1
+Chodovec	NULL	NULL	1
+Chodovecké náměstí	NULL	NULL	1
+Chodovická	NULL	NULL	1
+Chodovská	NULL	NULL	1
+Chodovská tvrz	NULL	NULL	1
+Chodská	NULL	NULL	1
+Cholupická	NULL	NULL	1
+Chomutovická	NULL	NULL	1
+Chomutovská	NULL	NULL	1
+Chopinova	NULL	NULL	1
+Choratická	NULL	NULL	1
+Chorošová	NULL	NULL	1
+Chorušická	NULL	NULL	1
+Chorvatská	NULL	NULL	1
+Chotěbuzská	NULL	NULL	1
+Chotečská	NULL	NULL	1
+Chotěšovská	NULL	NULL	1
+Chotkova	NULL	NULL	1
+Chotouňská	NULL	NULL	1
+Chotovická	NULL	NULL	1
+Chotutická	NULL	NULL	1
+Chrášťanská	NULL	NULL	1
+Chrastavská	NULL	NULL	1
+Chřibská	NULL	NULL	1
+Chrpová	NULL	NULL	1
+Chrudimská	NULL	NULL	1
+Chuchelská	NULL	NULL	1
+Chudenická	NULL	NULL	1
+Churáňovská	NULL	NULL	1
+Churnajevova	NULL	NULL	1
+Chvaletická	NULL	NULL	1
+Chvalkovická	NULL	NULL	1
+Chvalova	NULL	NULL	1
+Chvalská	NULL	NULL	1
+Chvatěrubská	NULL	NULL	1
+Chvojenecká	NULL	NULL	1
+Chýnická	NULL	NULL	1
+Chýnovská	NULL	NULL	1
+Chýňská	NULL	NULL	1
+Cidlinska	NULL	NULL	1
+Cigánkova	NULL	NULL	1
+Cíglerova	NULL	NULL	1
+Čihákova	NULL	NULL	1
+Cihelná	NULL	NULL	1
+Cihlářova	NULL	NULL	1
+Cihlářská	NULL	NULL	1
+Čiklova	NULL	NULL	1
+Cílkova	NULL	NULL	1
+Čílova	NULL	NULL	1
+Cimburkova	NULL	NULL	1
+Čimelická	NULL	NULL	1
+Čimická	NULL	NULL	1
+Cínovecká	NULL	NULL	1
+Čínská	NULL	NULL	1
+Ciolkovského	NULL	NULL	1
+Církova	NULL	NULL	1
+Církvičná	NULL	NULL	1
+Čirůvková	NULL	NULL	1
+Cisařská louka	NULL	NULL	1
+Čistovická	NULL	NULL	1
+Citolibská	NULL	NULL	1
+Cítovská	NULL	NULL	1
+Coriových	NULL	NULL	1
+Čs. tankistů	NULL	NULL	1
+Čsl. armády	NULL	NULL	1
+Ctěnická	NULL	NULL	1
+Ctiborova	NULL	NULL	1
+Ctiradova	NULL	NULL	1
+Čtyřdílná	NULL	NULL	1
+Čtyřkolská	NULL	NULL	1
+Cukerní	NULL	NULL	1
+Cukrovarnická	NULL	NULL	1
+Cukrovarská	NULL	NULL	1
+Čumpelíkova	NULL	NULL	1
+Čuprova	NULL	NULL	1
+Cuřínova	NULL	NULL	1
+Cvičebná	NULL	NULL	1
+Cvikovská	NULL	NULL	1
+Cvrčkova	NULL	NULL	1
+Cyklostezka	NULL	NULL	1
+cyklostezka Staré spojení	NULL	NULL	1
+Cyklostezka Vestec-Hrnčíře	NULL	NULL	1
+Cyklostezka Vestec-Kunratice	NULL	NULL	1
+Cyprichova	NULL	NULL	1
+D10	NULL	NULL	1
+Ďáblická	NULL	NULL	1
+Dačická	NULL	NULL	1
+Dačického	NULL	NULL	1
+Daimlerova	NULL	NULL	1
+Dalejská	NULL	NULL	1
+Dalešická	NULL	NULL	1
+Daliborova	NULL	NULL	1
+Dalimilova	NULL	NULL	1
+Dalovická	NULL	NULL	1
+Dandova	NULL	NULL	1
+Danielova	NULL	NULL	1
+Daňkova	NULL	NULL	1
+Dany Medřické	NULL	NULL	1
+Dářská	NULL	NULL	1
+Darwinova	NULL	NULL	1
+Dašická	NULL	NULL	1
+Daškova	NULL	NULL	1
+Dasnická	NULL	NULL	1
+Davídkova	NULL	NULL	1
+Děbolínská	NULL	NULL	1
+Děčínská	NULL	NULL	1
+Dědinova	NULL	NULL	1
+Dědinská	NULL	NULL	1
+Dejvická	NULL	NULL	1
+Dejvický tunel	NULL	NULL	1
+Děkanská	NULL	NULL	1
+Děkanská vinice I	NULL	NULL	1
+Děkanská Vinice II	NULL	NULL	1
+Dělená	NULL	NULL	1
+Dělnická	NULL	NULL	1
+Dělostřelecká	NULL	NULL	1
+Demlova	NULL	NULL	1
+Demoliční	NULL	NULL	1
+Desenská	NULL	NULL	1
+Destinové	NULL	NULL	1
+Dešťová	NULL	NULL	1
+Dětenická	NULL	NULL	1
+Dětská	NULL	NULL	1
+Dětská nemocnice Karlov	NULL	NULL	1
+Děvínská	NULL	NULL	1
+Devonská	NULL	NULL	1
+Diabasová	NULL	NULL	1
+Diamantová	NULL	NULL	1
+Diblíkova	NULL	NULL	1
+Dienzenhoferovy sady	NULL	NULL	1
+Dieselova	NULL	NULL	1
+Diskařská	NULL	NULL	1
+Dismanova	NULL	NULL	1
+Dittrichova	NULL	NULL	1
+Divadelní	NULL	NULL	1
+Divišova	NULL	NULL	1
+Divišovská	NULL	NULL	1
+Diviznová	NULL	NULL	1
+Dlabačov	NULL	NULL	1
+Dlážděná	NULL	NULL	1
+Dlouhá	NULL	NULL	1
+Dlouhá cesta	NULL	NULL	1
+Do Blatin	NULL	NULL	1
+Do Borovin	NULL	NULL	1
+Do Čertous	NULL	NULL	1
+Do Chuchle	NULL	NULL	1
+Do Čtvrti	NULL	NULL	1
+Do Dubče	NULL	NULL	1
+Do dubin	NULL	NULL	1
+Do Hlinek	NULL	NULL	1
+Do Horoměřic	NULL	NULL	1
+Do Klukovic	NULL	NULL	1
+Do Kopečka	NULL	NULL	1
+Do Koutů	NULL	NULL	1
+Do Lipin	NULL	NULL	1
+Do Oříšků	NULL	NULL	1
+Do Panenek	NULL	NULL	1
+Do Píšovic	NULL	NULL	1
+Do Polí	NULL	NULL	1
+Do Potoků	NULL	NULL	1
+Do Říčan	NULL	NULL	1
+Do Roklí	NULL	NULL	1
+Do Rybníčků	NULL	NULL	1
+Do Svépravic	NULL	NULL	1
+Do Údolí	NULL	NULL	1
+Do Újezda	NULL	NULL	1
+Do Vozovny	NULL	NULL	1
+Do vrchu	NULL	NULL	1
+Do Vršku	NULL	NULL	1
+Do Zahrádek I	NULL	NULL	1
+Do Zahrádek II	NULL	NULL	1
+Dobevská	NULL	NULL	1
+Dobnerova	NULL	NULL	1
+Dobratická	NULL	NULL	1
+Dobřejovická	NULL	NULL	1
+Dobříšská	NULL	NULL	1
+Dobročovická	NULL	NULL	1
+Dobronická	NULL	NULL	1
+Dobropolská	NULL	NULL	1
+Dobrošovská	NULL	NULL	1
+Dobrovízská	NULL	NULL	1
+Dobrovolného	NULL	NULL	1
+Dobrovolského	NULL	NULL	1
+Dobrovského	NULL	NULL	1
+Dobrušská	NULL	NULL	1
+Dobšická	NULL	NULL	1
+Dobšínská	NULL	NULL	1
+Doksanská	NULL	NULL	1
+Dolákova	NULL	NULL	1
+Dolanská	NULL	NULL	1
+Dolejškova	NULL	NULL	1
+Doležalova	NULL	NULL	1
+Dolina	NULL	NULL	1
+Dolňanská	NULL	NULL	1
+Dolní	NULL	NULL	1
+Dolní Chaloupky	NULL	NULL	1
+Dolní Měcholupy	NULL	NULL	1
+Dolní náves	NULL	NULL	1
+Dolnobranská	NULL	NULL	1
+Dolnobřežanská	NULL	NULL	1
+Dolnocholupická	NULL	NULL	1
+Dolnojirčanská	NULL	NULL	1
+Dolnokrčská	NULL	NULL	1
+Dolnokřeslická	NULL	NULL	1
+Dolnoměcholupská	NULL	NULL	1
+Dolnomlýnská	NULL	NULL	1
+Dolnopočernická	NULL	NULL	1
+Dolomitová	NULL	NULL	1
+Dolská	NULL	NULL	1
+Domašínská	NULL	NULL	1
+Domažlická	NULL	NULL	1
+Dominínská	NULL	NULL	1
+Dominova	NULL	NULL	1
+Domkářská	NULL	NULL	1
+Domkovská	NULL	NULL	1
+Domousnická	NULL	NULL	1
+Donatellova	NULL	NULL	1
+Donátova	NULL	NULL	1
+Donovalská	NULL	NULL	1
+Donská	NULL	NULL	1
+Dopplerova	NULL	NULL	1
+Dopraváků	NULL	NULL	1
+Dopravní	NULL	NULL	1
+Dopravní hřiště	NULL	NULL	1
+Dostihová	NULL	NULL	1
+Dostojevského	NULL	NULL	1
+Doubecká	NULL	NULL	1
+Doubická	NULL	NULL	1
+Doubravčická	NULL	NULL	1
+Doubravická	NULL	NULL	1
+Doubravínova	NULL	NULL	1
+Doubravská	NULL	NULL	1
+Doudlebská	NULL	NULL	1
+Doudova	NULL	NULL	1
+Doupovská	NULL	NULL	1
+Dr. Marodyho	NULL	NULL	1
+dr. Zikmunda Wintra	NULL	NULL	1
+Dragounská	NULL	NULL	1
+Drahanská	NULL	NULL	1
+Draháňské údolí	NULL	NULL	1
+Drahelčická	NULL	NULL	1
+Drahelická	NULL	NULL	1
+Drahobejlova	NULL	NULL	1
+Drahoňovského	NULL	NULL	1
+Drahorádova	NULL	NULL	1
+Drahotická	NULL	NULL	1
+Drahotínská	NULL	NULL	1
+Drahovská	NULL	NULL	1
+Draženovská	NULL	NULL	1
+Dražetická	NULL	NULL	1
+Dražického	NULL	NULL	1
+Dražkovská	NULL	NULL	1
+Drážní	NULL	NULL	1
+Dřevařská	NULL	NULL	1
+Dřevčická	NULL	NULL	1
+Dřevná	NULL	NULL	1
+Dřevnická	NULL	NULL	1
+Dreyerova	NULL	NULL	1
+Drimlova	NULL	NULL	1
+Dřínová	NULL	NULL	1
+Dřínovská	NULL	NULL	1
+Dřítenská	NULL	NULL	1
+Drnovská	NULL	NULL	1
+Drobná	NULL	NULL	1
+Drtikolova	NULL	NULL	1
+Drtinova	NULL	NULL	1
+Drůbežářská	NULL	NULL	1
+Drůbežnická	NULL	NULL	1
+Druhého odboje	NULL	NULL	1
+Družicová	NULL	NULL	1
+Družná	NULL	NULL	1
+Družnosti	NULL	NULL	1
+Družstevní	NULL	NULL	1
+Družstevní ochoz	NULL	NULL	1
+Dubanská	NULL	NULL	1
+Dubeček	NULL	NULL	1
+Dubečská	NULL	NULL	1
+Dubenecká	NULL	NULL	1
+Dubnická	NULL	NULL	1
+Dubnova	NULL	NULL	1
+Dubová	NULL	NULL	1
+Dubovická	NULL	NULL	1
+Dubrovnická	NULL	NULL	1
+Dubská	NULL	NULL	1
+Duchcovská	NULL	NULL	1
+Duchoslávka	NULL	NULL	1
+Dudínská	NULL	NULL	1
+Dudkova	NULL	NULL	1
+Duhová	NULL	NULL	1
+Dukelská	NULL	NULL	1
+Dukelských hrdinů	NULL	NULL	1
+Dunajecká	NULL	NULL	1
+Dunajevského	NULL	NULL	1
+Dunajská	NULL	NULL	1
+Dunická	NULL	NULL	1
+Dunovická	NULL	NULL	1
+Dunovského	NULL	NULL	1
+Dürerova	NULL	NULL	1
+Durychova	NULL	NULL	1
+Dusíkova	NULL	NULL	1
+Duškova	NULL	NULL	1
+Dušní	NULL	NULL	1
+Dvořákova	NULL	NULL	1
+Dvořákovo nábřeží	NULL	NULL	1
+Dvorecká	NULL	NULL	1
+Dvorecké náměstí	NULL	NULL	1
+Dvořeckého	NULL	NULL	1
+Dvořišťská	NULL	NULL	1
+Dvorní	NULL	NULL	1
+Dvorská	NULL	NULL	1
+Dvoudílná	NULL	NULL	1
+Dvouletky	NULL	NULL	1
+Dvouramenná	NULL	NULL	1
+Dygrýnova	NULL	NULL	1
+Dyjská	NULL	NULL	1
+Dykova	NULL	NULL	1
+Dýšinská	NULL	NULL	1
+Eberlova	NULL	NULL	1
+Ebrova	NULL	NULL	1
+Edisonova	NULL	NULL	1
+Edvarda Beneše	NULL	NULL	1
+Edvardova	NULL	NULL	1
+Egyptská	NULL	NULL	1
+Eichlerova	NULL	NULL	1
+Einsteinova	NULL	NULL	1
+Ejpovická	NULL	NULL	1
+Ekonomická	NULL	NULL	1
+Eledrova	NULL	NULL	1
+Elektrárenská	NULL	NULL	1
+Eliášova	NULL	NULL	1
+Elišky Junkové	NULL	NULL	1
+Elišky Krásnohorské	NULL	NULL	1
+Elišky Peškové	NULL	NULL	1
+Elsnicovo náměstí	NULL	NULL	1
+Emilie Hyblerové	NULL	NULL	1
+Emlerova	NULL	NULL	1
+Emy Destinnové	NULL	NULL	1
+Engelmüllerova	NULL	NULL	1
+Engelova	NULL	NULL	1
+Erbenova	NULL	NULL	1
+Estonská	NULL	NULL	1
+Etiopská	NULL	NULL	1
+Euklidova	NULL	NULL	1
+Evropská	NULL	NULL	1
+Evy Olmerové	NULL	NULL	1
+Exnárova	NULL	NULL	1
+F. V. Veselého	NULL	NULL	1
+Fabiánova	NULL	NULL	1
+Fabiánská	NULL	NULL	1
+Fadějevova	NULL	NULL	1
+Fajmanové	NULL	NULL	1
+Fajtlova	NULL	NULL	1
+Falcká	NULL	NULL	1
+Famfulíkova	NULL	NULL	1
+Fantova	NULL	NULL	1
+Faradayova	NULL	NULL	1
+Farní	NULL	NULL	1
+Farská	NULL	NULL	1
+Farského	NULL	NULL	1
+Fastrova	NULL	NULL	1
+Federova	NULL	NULL	1
+Fejfarova	NULL	NULL	1
+Fenyklová	NULL	NULL	1
+Feřtekova	NULL	NULL	1
+Fetrovská	NULL	NULL	1
+Fialková	NULL	NULL	1
+Fibichova	NULL	NULL	1
+Fikerova	NULL	NULL	1
+Filadelfie	NULL	NULL	1
+Filipíny Welserové	NULL	NULL	1
+Filipova	NULL	NULL	1
+Filipovského	NULL	NULL	1
+Fillova	NULL	NULL	1
+Filmařská	NULL	NULL	1
+Filosofská	NULL	NULL	1
+Fingerova	NULL	NULL	1
+Finkovská	NULL	NULL	1
+Finská	NULL	NULL	1
+Firkušného	NULL	NULL	1
+Fišerova	NULL	NULL	1
+Flájská	NULL	NULL	1
+Flemingovo náměstí	NULL	NULL	1
+Flöglova	NULL	NULL	1
+Foerstrova	NULL	NULL	1
+Folmavská	NULL	NULL	1
+Formánkova	NULL	NULL	1
+Formanská	NULL	NULL	1
+Fořtova	NULL	NULL	1
+Fragnerova	NULL	NULL	1
+Frančíkova	NULL	NULL	1
+Francouzská	NULL	NULL	1
+Fráni Šrámka	NULL	NULL	1
+Františka Černého	NULL	NULL	1
+Františka Červeného	NULL	NULL	1
+Františka Diviše	NULL	NULL	1
+Františka Janečka	NULL	NULL	1
+Františka Jansy	NULL	NULL	1
+Františka Kadlece	NULL	NULL	1
+Františka Krause	NULL	NULL	1
+Františka Křížka	NULL	NULL	1
+Františka Landovského	NULL	NULL	1
+Františka Šimáčka	NULL	NULL	1
+Františka Zemana	NULL	NULL	1
+Františka Zemana I	NULL	NULL	1
+Františkova	NULL	NULL	1
+Franty Kocourka	NULL	NULL	1
+Freyova	NULL	NULL	1
+Frézařská	NULL	NULL	1
+Fričova	NULL	NULL	1
+Frimlova	NULL	NULL	1
+Froncova	NULL	NULL	1
+Frostova	NULL	NULL	1
+Fruta	NULL	NULL	1
+Fryčovická	NULL	NULL	1
+Frýdecká	NULL	NULL	1
+Frýdlantská	NULL	NULL	1
+Frydrychova	NULL	NULL	1
+Fügnerovo náměstí	NULL	NULL	1
+Gabčíkova	NULL	NULL	1
+Gabinova	NULL	NULL	1
+Gagarinova	NULL	NULL	1
+Galandova	NULL	NULL	1
+Galileova	NULL	NULL	1
+Gallašova	NULL	NULL	1
+Galvaniho	NULL	NULL	1
+Gaussova	NULL	NULL	1
+Gdaňská	NULL	NULL	1
+Generála Janouška	NULL	NULL	1
+Generála Lázaro Cárdenase	NULL	NULL	1
+Generála Píky	NULL	NULL	1
+Generála Šišky	NULL	NULL	1
+Gensovská	NULL	NULL	1
+Geologická	NULL	NULL	1
+Geostezka	NULL	NULL	1
+Gercenova	NULL	NULL	1
+Gerstnerova	NULL	NULL	1
+Glazounovova	NULL	NULL	1
+Glinkova	NULL	NULL	1
+Glowackého	NULL	NULL	1
+Gočárova	NULL	NULL	1
+Goetheho	NULL	NULL	1
+Gogolova	NULL	NULL	1
+Golčova	NULL	NULL	1
+Golfová	NULL	NULL	1
+Gollova	NULL	NULL	1
+Gončarenkova	NULL	NULL	1
+Gorazdova	NULL	NULL	1
+Gotthardská	NULL	NULL	1
+Goyova	NULL	NULL	1
+Grafická	NULL	NULL	1
+Grammova	NULL	NULL	1
+Granátnická	NULL	NULL	1
+Granátová	NULL	NULL	1
+Gregorova	NULL	NULL	1
+ground	NULL	NULL	1
+Grussova	NULL	NULL	1
+Gruzínská	NULL	NULL	1
+Gutova	NULL	NULL	1
+Gymnasijní	NULL	NULL	1
+Gymnastická	NULL	NULL	1
+Habartická	NULL	NULL	1
+Habartovská	NULL	NULL	1
+Haberfeldova	NULL	NULL	1
+Hábova	NULL	NULL	1
+Habrová	NULL	NULL	1
+Hackerova	NULL	NULL	1
+Hadovitá	NULL	NULL	1
+Hájčí	NULL	NULL	1
+Háje	NULL	NULL	1
+Hájecká	NULL	NULL	1
+Hájenská	NULL	NULL	1
+Hájkova	NULL	NULL	1
+Hajní	NULL	NULL	1
+Hakenova	NULL	NULL	1
+Hákova	NULL	NULL	1
+Halasova	NULL	NULL	1
+Halenkovská	NULL	NULL	1
+Hálkova	NULL	NULL	1
+Hálova	NULL	NULL	1
+Halštatská	NULL	NULL	1
+Hálův statek	NULL	NULL	1
+Hamerská	NULL	NULL	1
+Hamrová	NULL	NULL	1
+Hamsíkova	NULL	NULL	1
+Hankova	NULL	NULL	1
+Hanouškova	NULL	NULL	1
+Hanusova	NULL	NULL	1
+Hanušova	NULL	NULL	1
+Hany Maškové	NULL	NULL	1
+Hanzelkova	NULL	NULL	1
+Hanzlíkova	NULL	NULL	1
+Harantova	NULL	NULL	1
+Harcovská	NULL	NULL	1
+Harlacherova	NULL	NULL	1
+Harmonická	NULL	NULL	1
+Harrachovská	NULL	NULL	1
+Hartenberská	NULL	NULL	1
+Hasičská	NULL	NULL	1
+Hasičů	NULL	NULL	1
+Haškova	NULL	NULL	1
+Hašlerova	NULL	NULL	1
+Hasova	NULL	NULL	1
+Haštalská	NULL	NULL	1
+Haštalské náměstí	NULL	NULL	1
+Hastrmanská	NULL	NULL	1
+Haunerova	NULL	NULL	1
+Hausmannova	NULL	NULL	1
+Havanská	NULL	NULL	1
+Havelská	NULL	NULL	1
+Havelská ulička	NULL	NULL	1
+Havířovská	NULL	NULL	1
+Havířská	NULL	NULL	1
+Havlíčkova	NULL	NULL	1
+Havlíčkovo náměstí	NULL	NULL	1
+Havlínova	NULL	NULL	1
+Havlovického	NULL	NULL	1
+Havlovská	NULL	NULL	1
+Havlůjové	NULL	NULL	1
+Havraní	NULL	NULL	1
+Havránkova	NULL	NULL	1
+Hečkova	NULL	NULL	1
+Heineho	NULL	NULL	1
+Heinemanova	NULL	NULL	1
+Hejnická	NULL	NULL	1
+Hejplíkova	NULL	NULL	1
+Hejtmánkova	NULL	NULL	1
+Hejtmanská	NULL	NULL	1
+Hekova	NULL	NULL	1
+Hekrova	NULL	NULL	1
+Heldova	NULL	NULL	1
+Helénská	NULL	NULL	1
+Heleny Malířové	NULL	NULL	1
+Hellichova	NULL	NULL	1
+Helmova	NULL	NULL	1
+Helsinská	NULL	NULL	1
+Hennerova	NULL	NULL	1
+Herálecká I	NULL	NULL	1
+Herálecká II	NULL	NULL	1
+Herálecká III	NULL	NULL	1
+Herálecká IV	NULL	NULL	1
+Heranova	NULL	NULL	1
+Herbenova	NULL	NULL	1
+Herdovská	NULL	NULL	1
+Herlíkovická	NULL	NULL	1
+Hermanická	NULL	NULL	1
+Heřmánková	NULL	NULL	1
+Heřmanova	NULL	NULL	1
+Hermelínská	NULL	NULL	1
+Heroldovy sady	NULL	NULL	1
+Herrmannova	NULL	NULL	1
+Herrova	NULL	NULL	1
+Hertzova	NULL	NULL	1
+Hevlínská	NULL	NULL	1
+Heydukova	NULL	NULL	1
+Heyrovského náměstí	NULL	NULL	1
+Hildy Čihákové	NULL	NULL	1
+Hillebrantova	NULL	NULL	1
+Hilmarova	NULL	NULL	1
+Himrova	NULL	NULL	1
+Hiršlova	NULL	NULL	1
+Hládkov	NULL	NULL	1
+Hlaďova	NULL	NULL	1
+Hlaváčkova	NULL	NULL	1
+Hlaváčova	NULL	NULL	1
+Hlavatého	NULL	NULL	1
+Hlavenecká	NULL	NULL	1
+Hlávkova	NULL	NULL	1
+Hlávkův most	NULL	NULL	1
+Hlavní	NULL	NULL	1
+Hlavova	NULL	NULL	1
+Hlavsova	NULL	NULL	1
+Hledíková	NULL	NULL	1
+Hlinská	NULL	NULL	1
+Hlivická	NULL	NULL	1
+Hlívová	NULL	NULL	1
+Hlohová	NULL	NULL	1
+Hloubětínská	NULL	NULL	1
+Hlubočepská	NULL	NULL	1
+Hlubocká	NULL	NULL	1
+Hluboká	NULL	NULL	1
+Hlušičkova	NULL	NULL	1
+Hněvkovská	NULL	NULL	1
+Hněvkovského	NULL	NULL	1
+Hnězdenská	NULL	NULL	1
+Hoblířská	NULL	NULL	1
+Hodčina	NULL	NULL	1
+Hodějovská	NULL	NULL	1
+Hoděšovická	NULL	NULL	1
+Hodkovická	NULL	NULL	1
+Hodonínská	NULL	NULL	1
+Hofbauerova	NULL	NULL	1
+Hoffmannova	NULL	NULL	1
+Hogerova	NULL	NULL	1
+Hokejová	NULL	NULL	1
+Hokešovo náměstí	NULL	NULL	1
+Holandská	NULL	NULL	1
+Holátova	NULL	NULL	1
+Holčovická	NULL	NULL	1
+Holečkova	NULL	NULL	1
+Holenická	NULL	NULL	1
+Holenská	NULL	NULL	1
+Holická	NULL	NULL	1
+Hollarovo náměstí	NULL	NULL	1
+Holotínská	NULL	NULL	1
+Holoubkova	NULL	NULL	1
+Holoubkovská	NULL	NULL	1
+Holubí	NULL	NULL	1
+Holubická	NULL	NULL	1
+Holubinková	NULL	NULL	1
+Holubkova	NULL	NULL	1
+Holubova	NULL	NULL	1
+Holušická	NULL	NULL	1
+Holyňská	NULL	NULL	1
+Holýšovská	NULL	NULL	1
+Homérova	NULL	NULL	1
+Homolová	NULL	NULL	1
+Honzíkova	NULL	NULL	1
+Horáčkova	NULL	NULL	1
+Horákova	NULL	NULL	1
+Hořanská	NULL	NULL	1
+Horčičkova	NULL	NULL	1
+Hořejší nábřeží	NULL	NULL	1
+Hořelická	NULL	NULL	1
+Hořická	NULL	NULL	1
+Hořínecká	NULL	NULL	1
+Horňátecká	NULL	NULL	1
+Horní	NULL	NULL	1
+Horní Chaloupky	NULL	NULL	1
+Horní Hrdlořezská	NULL	NULL	1
+Horní náves	NULL	NULL	1
+Horní Stromky	NULL	NULL	1
+Hornická	NULL	NULL	1
+Horníčkova	NULL	NULL	1
+Hornocholupická	NULL	NULL	1
+Hornofova	NULL	NULL	1
+Hornokrčská	NULL	NULL	1
+Hornokřeslická	NULL	NULL	1
+Hornoměcholupská	NULL	NULL	1
+Hornomlýnská	NULL	NULL	1
+Hornopočernická	NULL	NULL	1
+Horolezecká	NULL	NULL	1
+Horoměřická	NULL	NULL	1
+Horoušanská	NULL	NULL	1
+Horova	NULL	NULL	1
+Horovo náměstí	NULL	NULL	1
+Hořovského	NULL	NULL	1
+Horská	NULL	NULL	1
+Horšovská	NULL	NULL	1
+Horusická	NULL	NULL	1
+Hoškova	NULL	NULL	1
+Hošťálkova	NULL	NULL	1
+Hostavice	NULL	NULL	1
+Hostavická	NULL	NULL	1
+Hoštická	NULL	NULL	1
+Hostinského	NULL	NULL	1
+Hostišovská	NULL	NULL	1
+Hostivařská	NULL	NULL	1
+Hostivařské náměstí	NULL	NULL	1
+Hostivítova	NULL	NULL	1
+Hostouňská	NULL	NULL	1
+Hostýnská	NULL	NULL	1
+Houbařská	NULL	NULL	1
+Houdova	NULL	NULL	1
+Hovorčovická	NULL	NULL	1
+Hrabačovská	NULL	NULL	1
+Hrabákova	NULL	NULL	1
+Hradčanské náměstí	NULL	NULL	1
+Hradební	NULL	NULL	1
+Hradecká	NULL	NULL	1
+Hradečkova	NULL	NULL	1
+Hradeckých	NULL	NULL	1
+Hradešínská	NULL	NULL	1
+Hradní	NULL	NULL	1
+Hraniční	NULL	NULL	1
+Hráského	NULL	NULL	1
+Hřbitovní	NULL	NULL	1
+Hrdinova	NULL	NULL	1
+Hrdinů	NULL	NULL	1
+Hrdličkova	NULL	NULL	1
+Hrdlořezská	NULL	NULL	1
+Hrdoňovická	NULL	NULL	1
+Hřebenová	NULL	NULL	1
+Hřebíkova	NULL	NULL	1
+Hřenská	NULL	NULL	1
+Hříbková	NULL	NULL	1
+Hřibojedská	NULL	NULL	1
+Hřibská	NULL	NULL	1
+Hřídelecká	NULL	NULL	1
+Hroncova	NULL	NULL	1
+Hronětická	NULL	NULL	1
+Hronovská	NULL	NULL	1
+Hrozenkovská	NULL	NULL	1
+Hrozného	NULL	NULL	1
+Hroznová	NULL	NULL	1
+Hrubého	NULL	NULL	1
+Hrubínova	NULL	NULL	1
+Hrudičkova	NULL	NULL	1
+Hrusická	NULL	NULL	1
+Hrušínského	NULL	NULL	1
+Hrušková	NULL	NULL	1
+Hruškovská	NULL	NULL	1
+Hrušňová	NULL	NULL	1
+Hrušovanské náměstí	NULL	NULL	1
+Hrušovická	NULL	NULL	1
+Hubáčkova	NULL	NULL	1
+Huberova	NULL	NULL	1
+Hubičkova	NULL	NULL	1
+Hübnerové	NULL	NULL	1
+Huculská stezka	NULL	NULL	1
+Hudečkova	NULL	NULL	1
+Hugo Haase	NULL	NULL	1
+Hulanova	NULL	NULL	1
+Hůlkova	NULL	NULL	1
+Humenecká	NULL	NULL	1
+Humna	NULL	NULL	1
+Humpolecká	NULL	NULL	1
+Huntířovská	NULL	NULL	1
+Hurbanova	NULL	NULL	1
+Hůrská	NULL	NULL	1
+Husařská	NULL	NULL	1
+Husinecká	NULL	NULL	1
+Husitská	NULL	NULL	1
+Husníkova	NULL	NULL	1
+Husova	NULL	NULL	1
+Husovo náměstí	NULL	NULL	1
+Hutnická	NULL	NULL	1
+Huťská	NULL	NULL	1
+Hvězdářská	NULL	NULL	1
+Hvězdonická	NULL	NULL	1
+Hvězdova	NULL	NULL	1
+Hviezdoslavova	NULL	NULL	1
+Hvožďanská	NULL	NULL	1
+Hvozdecká	NULL	NULL	1
+Hvozdíková	NULL	NULL	1
+Hvozdnická	NULL	NULL	1
+Hyacintová	NULL	NULL	1
+Hybernská	NULL	NULL	1
+Hybešova	NULL	NULL	1
+Hynaisova	NULL	NULL	1
+Hynka Puce	NULL	NULL	1
+Hypšmanova	NULL	NULL	1
+Ibsenova	NULL	NULL	1
+IKEM	NULL	NULL	1
+Imrychova	NULL	NULL	1
+Ingrišova	NULL	NULL	1
+Internacionální	NULL	NULL	1
+Irkutská	NULL	NULL	1
+Irská	NULL	NULL	1
+Irvingova	NULL	NULL	1
+Italská	NULL	NULL	1
+Ivančická	NULL	NULL	1
+Izraelská	NULL	NULL	1
+J. K. Tyla	NULL	NULL	1
+J. Š. Baara	NULL	NULL	1
+Jabkenická	NULL	NULL	1
+Jablonecká	NULL	NULL	1
+Jabloňová	NULL	NULL	1
+Jablonského	NULL	NULL	1
+Jablunkovská	NULL	NULL	1
+Jáchymova	NULL	NULL	1
+Jáchymovská	NULL	NULL	1
+Jagellonská	NULL	NULL	1
+Jahodnice	NULL	NULL	1
+Jahodnická	NULL	NULL	1
+Jahodová	NULL	NULL	1
+Jakobiho	NULL	NULL	1
+Jakubovská	NULL	NULL	1
+Jakubská	NULL	NULL	1
+Jakutská	NULL	NULL	1
+Jalodvorská	NULL	NULL	1
+Jalovcová	NULL	NULL	1
+Jaltská	NULL	NULL	1
+Jamborova	NULL	NULL	1
+Jamská	NULL	NULL	1
+Jana Bílka	NULL	NULL	1
+Jana Karafiáta	NULL	NULL	1
+Jana Kašpara	NULL	NULL	1
+Jana Marka	NULL	NULL	1
+Jana Masaryka	NULL	NULL	1
+Jana Ouřady	NULL	NULL	1
+Jana Přibíka	NULL	NULL	1
+Jana Růžičky	NULL	NULL	1
+Jana Srba	NULL	NULL	1
+Jana Zajíce	NULL	NULL	1
+Jana Želivského	NULL	NULL	1
+Janáčkova	NULL	NULL	1
+Janáčkovo nábřeží	NULL	NULL	1
+Janákova	NULL	NULL	1
+Jančova	NULL	NULL	1
+Janderova	NULL	NULL	1
+Jandova	NULL	NULL	1
+Janečkova	NULL	NULL	1
+Jankovcova	NULL	NULL	1
+Jankovská	NULL	NULL	1
+Jánošíkova	NULL	NULL	1
+Janouchova	NULL	NULL	1
+Janouškova	NULL	NULL	1
+Janovická	NULL	NULL	1
+Janovská	NULL	NULL	1
+Janovského	NULL	NULL	1
+Jánská	NULL	NULL	1
+Janského	NULL	NULL	1
+Jánský vršek	NULL	NULL	1
+Jansova	NULL	NULL	1
+Jantarová	NULL	NULL	1
+Janýrova	NULL	NULL	1
+Jarešova	NULL	NULL	1
+Jarmily Novotné	NULL	NULL	1
+Jarní	NULL	NULL	1
+Jarníkova	NULL	NULL	1
+Jaroměřská	NULL	NULL	1
+Jaromíra Jindry	NULL	NULL	1
+Jaromírova	NULL	NULL	1
+Jaroslava Foglara	NULL	NULL	1
+Jaroslavická	NULL	NULL	1
+Jasanová	NULL	NULL	1
+Jaselská	NULL	NULL	1
+Jasenná	NULL	NULL	1
+Jašíkova	NULL	NULL	1
+Jasmínová	NULL	NULL	1
+Jasná I	NULL	NULL	1
+Jasná II	NULL	NULL	1
+Jateční	NULL	NULL	1
+Jaurisova	NULL	NULL	1
+Javornická	NULL	NULL	1
+Javorová	NULL	NULL	1
+Javorská	NULL	NULL	1
+Jažlovická	NULL	NULL	1
+Ječná	NULL	NULL	1
+Jeden schod	NULL	NULL	1
+Jedlová	NULL	NULL	1
+Jednořadá	NULL	NULL	1
+Jednostranná	NULL	NULL	1
+Jelení	NULL	NULL	1
+Jelínkova	NULL	NULL	1
+Jemenská	NULL	NULL	1
+Jemnická	NULL	NULL	1
+Jenečská	NULL	NULL	1
+Jenišovská	NULL	NULL	1
+Jenštejnská	NULL	NULL	1
+Jeřabinová	NULL	NULL	1
+Jeřábkova	NULL	NULL	1
+Jeřábnická	NULL	NULL	1
+Jeřábová	NULL	NULL	1
+Jeremenkova	NULL	NULL	1
+Jeremiášova	NULL	NULL	1
+Jerevanská	NULL	NULL	1
+Jeřická	NULL	NULL	1
+Jeronýmova	NULL	NULL	1
+Jeruzalémská	NULL	NULL	1
+Jesenická	NULL	NULL	1
+Jeseniova	NULL	NULL	1
+Ješetická	NULL	NULL	1
+Ještědská	NULL	NULL	1
+Jestřebická	NULL	NULL	1
+Jetelová	NULL	NULL	1
+Jetřichovická	NULL	NULL	1
+Jevanská	NULL	NULL	1
+Jezdecká	NULL	NULL	1
+Jezdovická	NULL	NULL	1
+Jezerní	NULL	NULL	1
+Jezerská	NULL	NULL	1
+Jezevčí	NULL	NULL	1
+Ježkova	NULL	NULL	1
+Jíchova	NULL	NULL	1
+Jičínská	NULL	NULL	1
+Jihlavská	NULL	NULL	1
+Jihočeská	NULL	NULL	1
+Jihovýchodní I	NULL	NULL	1
+Jihovýchodní II	NULL	NULL	1
+Jihovýchodní III	NULL	NULL	1
+Jihovýchodní IV	NULL	NULL	1
+Jihovýchodní IX	NULL	NULL	1
+Jihovýchodní V	NULL	NULL	1
+Jihovýchodní VI	NULL	NULL	1
+Jihovýchodní VII	NULL	NULL	1
+Jihovýchodní VIII	NULL	NULL	1
+Jihozápadní I	NULL	NULL	1
+Jihozápadní II	NULL	NULL	1
+Jihozápadní III	NULL	NULL	1
+Jihozápadní IV	NULL	NULL	1
+Jihozápadní V	NULL	NULL	1
+Jihozápadní VI	NULL	NULL	1
+Jilemnická	NULL	NULL	1
+Jilemnického	NULL	NULL	1
+Jílkova	NULL	NULL	1
+Jilmová	NULL	NULL	1
+Jílová	NULL	NULL	1
+Jílovská	NULL	NULL	1
+Jilská	NULL	NULL	1
+Jindřicha Jindřicha	NULL	NULL	1
+Jindřicha Plachty	NULL	NULL	1
+Jindřichova	NULL	NULL	1
+Jindřišská	NULL	NULL	1
+Jindřišská pasáž	NULL	NULL	1
+Jindrova	NULL	NULL	1
+Jinočanská	NULL	NULL	1
+Jinolická	NULL	NULL	1
+Jinonická	NULL	NULL	1
+Jiráskovo náměstí	NULL	NULL	1
+Jiráskův most	NULL	NULL	1
+Jirčanská	NULL	NULL	1
+Jirečkova	NULL	NULL	1
+Jirenská	NULL	NULL	1
+Jiřetínská	NULL	NULL	1
+Jiřická	NULL	NULL	1
+Jiřičkové	NULL	NULL	1
+Jiřího Červeného	NULL	NULL	1
+Jiřího Jandy	NULL	NULL	1
+Jiřího ze Vtelna	NULL	NULL	1
+Jiřinková	NULL	NULL	1
+Jirkovská	NULL	NULL	1
+Jírova	NULL	NULL	1
+Jirsíkova	NULL	NULL	1
+Jiřská	NULL	NULL	1
+Jiskrova	NULL	NULL	1
+Jistebnická	NULL	NULL	1
+Jitravská	NULL	NULL	1
+Jitřní	NULL	NULL	1
+Jitrocelová	NULL	NULL	1
+Jívanská	NULL	NULL	1
+Jivenská	NULL	NULL	1
+Jívová	NULL	NULL	1
+Jizbicka	NULL	NULL	1
+Jizerská	NULL	NULL	1
+Jižní I	NULL	NULL	1
+Jižní II	NULL	NULL	1
+Jižní III	NULL	NULL	1
+Jižní IV	NULL	NULL	1
+Jižní IX	NULL	NULL	1
+Jižní náměstí	NULL	NULL	1
+Jižní spojka	NULL	NULL	1
+Jižní V	NULL	NULL	1
+Jižní VI	NULL	NULL	1
+Jižní VII	NULL	NULL	1
+Jižní VIII	NULL	NULL	1
+Jižní X	NULL	NULL	1
+Jižní XII	NULL	NULL	1
+Jižní XIII	NULL	NULL	1
+Jižní XIV	NULL	NULL	1
+Jižní XV	NULL	NULL	1
+Jižní XVI	NULL	NULL	1
+Jižní XVII	NULL	NULL	1
+Jordana Jovkova	NULL	NULL	1
+Jordánská	NULL	NULL	1
+José Martího	NULL	NULL	1
+Josefa Bíbrdlíka	NULL	NULL	1
+Josefa Němce	NULL	NULL	1
+Josefa Šacha	NULL	NULL	1
+Josefa Šimůnka	NULL	NULL	1
+Josefa Vašíčka	NULL	NULL	1
+Josefská	NULL	NULL	1
+Juárezova	NULL	NULL	1
+Jugoslávská	NULL	NULL	1
+Jugoslávských partyzánů	NULL	NULL	1
+Junácká	NULL	NULL	1
+Jungmannova	NULL	NULL	1
+Jungmannovo náměstí	NULL	NULL	1
+Jupiterova	NULL	NULL	1
+Jurkovičova	NULL	NULL	1
+K Austisu	NULL	NULL	1
+K Avii	NULL	NULL	1
+K Barrandovu	NULL	NULL	1
+K Bateriím	NULL	NULL	1
+K Bažantnici	NULL	NULL	1
+K Beránku	NULL	NULL	1
+K Beranovu	NULL	NULL	1
+K Betáni	NULL	NULL	1
+K Betonárně	NULL	NULL	1
+K Bohnicím	NULL	NULL	1
+K Borovíčku	NULL	NULL	1
+K Botiči	NULL	NULL	1
+K Brance	NULL	NULL	1
+K Brnkám	NULL	NULL	1
+K Brůdku	NULL	NULL	1
+K Brusce	NULL	NULL	1
+K Bytovkám	NULL	NULL	1
+K Celinám	NULL	NULL	1
+K Cementárně	NULL	NULL	1
+K Červenému dvoru	NULL	NULL	1
+K Červenému vrchu	NULL	NULL	1
+K Čestlicům	NULL	NULL	1
+K Chabům	NULL	NULL	1
+K chaloupce	NULL	NULL	1
+K Chaloupkám	NULL	NULL	1
+K Chatám	NULL	NULL	1
+K Chmelnici	NULL	NULL	1
+K Chotolu	NULL	NULL	1
+K Chumberku	NULL	NULL	1
+K Čihadlům	NULL	NULL	1
+K Cihelně	NULL	NULL	1
+K Cikánce	NULL	NULL	1
+K Cíli	NULL	NULL	1
+K Ďáblicům	NULL	NULL	1
+K Dalejím	NULL	NULL	1
+K dálnici	NULL	NULL	1
+K Děrám	NULL	NULL	1
+K Dobré vodě	NULL	NULL	1
+K Dobřejovicům	NULL	NULL	1
+K Dolům	NULL	NULL	1
+K Drahani	NULL	NULL	1
+K Drazdům	NULL	NULL	1
+K Drsnici	NULL	NULL	1
+K Dubči	NULL	NULL	1
+K Dubečku	NULL	NULL	1
+K Dubinám	NULL	NULL	1
+K Dubovému mlýnu	NULL	NULL	1
+K Dubu	NULL	NULL	1
+K Fantovu mlýnu	NULL	NULL	1
+K Farkám	NULL	NULL	1
+K Fialce	NULL	NULL	1
+K Habrovce	NULL	NULL	1
+K Habru	NULL	NULL	1
+K Hádku	NULL	NULL	1
+K Háječku	NULL	NULL	1
+K háji	NULL	NULL	1
+K Hájovně	NULL	NULL	1
+K Hájům	NULL	NULL	1
+K Haltýři	NULL	NULL	1
+K Hárunce	NULL	NULL	1
+K Haštalu	NULL	NULL	1
+K Hlásku	NULL	NULL	1
+K Hluboké cestě	NULL	NULL	1
+K Holému vrchu	NULL	NULL	1
+K Holi	NULL	NULL	1
+K Holyni	NULL	NULL	1
+K Homolce	NULL	NULL	1
+K Horkám	NULL	NULL	1
+K Horoměřicům	NULL	NULL	1
+K Hrnčířům	NULL	NULL	1
+K Hrušovu	NULL	NULL	1
+K Hutím	NULL	NULL	1
+K Jalovce	NULL	NULL	1
+K Jasánkám	NULL	NULL	1
+K Jelenám	NULL	NULL	1
+K Jelenu	NULL	NULL	1
+K Jezeru	NULL	NULL	1
+K Jezírku	NULL	NULL	1
+K Jezu	NULL	NULL	1
+K Jihu	NULL	NULL	1
+K Jinočanům	NULL	NULL	1
+K Jižnímu Městu	NULL	NULL	1
+K Juliáně	NULL	NULL	1
+K Labeškám	NULL	NULL	1
+K Ladům	NULL	NULL	1
+K Ládví	NULL	NULL	1
+K Lahovičkám	NULL	NULL	1
+K Lahovské	NULL	NULL	1
+K Lánu	NULL	NULL	1
+K Lávce	NULL	NULL	1
+K Lažance	NULL	NULL	1
+K Lesíku	NULL	NULL	1
+K Lesoparku	NULL	NULL	1
+K Lesu	NULL	NULL	1
+K Letišti	NULL	NULL	1
+K Letňanům	NULL	NULL	1
+K Libuši	NULL	NULL	1
+K Lichocevsi	NULL	NULL	1
+K Lindě	NULL	NULL	1
+K Lipám	NULL	NULL	1
+K Lipanům	NULL	NULL	1
+K Lípě	NULL	NULL	1
+K Lipinám	NULL	NULL	1
+K Lochkovu	NULL	NULL	1
+K Lomu	NULL	NULL	1
+K Louži	NULL	NULL	1
+K Lučinám	NULL	NULL	1
+K luhu	NULL	NULL	1
+K Lukám	NULL	NULL	1
+K Lužinám	NULL	NULL	1
+K Matěji	NULL	NULL	1
+K Měcholupům	NULL	NULL	1
+K Měchurce	NULL	NULL	1
+K mejtu	NULL	NULL	1
+K Metru	NULL	NULL	1
+K Milíčovu	NULL	NULL	1
+K mírám	NULL	NULL	1
+K Mlýnu	NULL	NULL	1
+K modřanskému nádraží	NULL	NULL	1
+K Mohyle	NULL	NULL	1
+K Moravině	NULL	NULL	1
+K Mostku	NULL	NULL	1
+K mostu	NULL	NULL	1
+K Motelu	NULL	NULL	1
+K Motolu	NULL	NULL	1
+K Mototechně	NULL	NULL	1
+K Nádraží	NULL	NULL	1
+K Nádrži	NULL	NULL	1
+K Náhonu	NULL	NULL	1
+K Náměstí	NULL	NULL	1
+K Náplavce	NULL	NULL	1
+K návrší	NULL	NULL	1
+K Návsi	NULL	NULL	1
+K Netlukám	NULL	NULL	1
+K Noskovně	NULL	NULL	1
+K Nové Vsi	NULL	NULL	1
+K Novému dvoru	NULL	NULL	1
+K Novému sídlišti	NULL	NULL	1
+K Obecním hájovnám	NULL	NULL	1
+K oboře	NULL	NULL	1
+K Ochozu	NULL	NULL	1
+K Ohradě	NULL	NULL	1
+K Okrouhlíku	NULL	NULL	1
+K Olympiku	NULL	NULL	1
+K Opatřilce	NULL	NULL	1
+K Oplocení	NULL	NULL	1
+K Orionce	NULL	NULL	1
+K osmidomkům	NULL	NULL	1
+K Otočce	NULL	NULL	1
+K Ovčínu	NULL	NULL	1
+K Padesátníku	NULL	NULL	1
+K Palečku	NULL	NULL	1
+K Parku	NULL	NULL	1
+K Pastvinám	NULL	NULL	1
+K Pazderkám	NULL	NULL	1
+K Pekárně	NULL	NULL	1
+K Pérovně	NULL	NULL	1
+K Pískovně	NULL	NULL	1
+K Písnici	NULL	NULL	1
+K Pitkovicům	NULL	NULL	1
+K podchodu	NULL	NULL	1
+K Podjezdu	NULL	NULL	1
+K Podolánkám	NULL	NULL	1
+K Polím	NULL	NULL	1
+K pomníku	NULL	NULL	1
+K poště	NULL	NULL	1
+K potoku	NULL	NULL	1
+K Potůčku	NULL	NULL	1
+K Prádelně	NULL	NULL	1
+K Pramenu	NULL	NULL	1
+K Přejezdu	NULL	NULL	1
+K Prelátům	NULL	NULL	1
+K Průhonicům	NULL	NULL	1
+K Průmstavu	NULL	NULL	1
+K Punčoše	NULL	NULL	1
+K Pyramidce	NULL	NULL	1
+K Radonicům	NULL	NULL	1
+K řece	NULL	NULL	1
+K Remízku	NULL	NULL	1
+K Řeporyjím	NULL	NULL	1
+K Rokli	NULL	NULL	1
+K Roklím	NULL	NULL	1
+K Rokytce	NULL	NULL	1
+K Rotundě	NULL	NULL	1
+K rovinám	NULL	NULL	1
+K Rozkoši	NULL	NULL	1
+K Rozmezí	NULL	NULL	1
+K Roztokům	NULL	NULL	1
+K Rozvodně	NULL	NULL	1
+K Rybárně	NULL	NULL	1
+K Rybníčku	NULL	NULL	1
+K Rybníčkům	NULL	NULL	1
+K Rybníku	NULL	NULL	1
+K Ryšánce	NULL	NULL	1
+K sádkám	NULL	NULL	1
+K Sadu	NULL	NULL	1
+K Safině	NULL	NULL	1
+K Šafránce	NULL	NULL	1
+K Samotě	NULL	NULL	1
+K Sanatoriu	NULL	NULL	1
+K Šancím	NULL	NULL	1
+K Šeberáku	NULL	NULL	1
+K Šeberovu	NULL	NULL	1
+K Šedivce	NULL	NULL	1
+K Sedlišti	NULL	NULL	1
+K Sídlišti	NULL	NULL	1
+K Sokolovně	NULL	NULL	1
+K Sopce	NULL	NULL	1
+K Starému Bubenči	NULL	NULL	1
+K stavebninám	NULL	NULL	1
+K Šubrtce	NULL	NULL	1
+K Sukovu	NULL	NULL	1
+K Táboru	NULL	NULL	1
+K Topírně	NULL	NULL	1
+K transformátoru	NULL	NULL	1
+K Trati	NULL	NULL	1
+K Třebonicům	NULL	NULL	1
+K Třešňovce	NULL	NULL	1
+K Trníčku	NULL	NULL	1
+K Trninám	NULL	NULL	1
+K Trnkám	NULL	NULL	1
+K Truhlářce	NULL	NULL	1
+K Tržišti	NULL	NULL	1
+K Tuchoměřicům	NULL	NULL	1
+K Tůni	NULL	NULL	1
+K Učilišti	NULL	NULL	1
+K Údolí	NULL	NULL	1
+K Uhříněvsi	NULL	NULL	1
+K Újezdu	NULL	NULL	1
+K ústavu	NULL	NULL	1
+K Úvozu	NULL	NULL	1
+K Václavce	NULL	NULL	1
+K Valu	NULL	NULL	1
+K Vápence	NULL	NULL	1
+K Váze	NULL	NULL	1
+K Velké ohradě	NULL	NULL	1
+K Velké skále	NULL	NULL	1
+K Velkému dvoru	NULL	NULL	1
+K Verneráku	NULL	NULL	1
+K Větrolamu	NULL	NULL	1
+K Viaduktu	NULL	NULL	1
+K Vidouli	NULL	NULL	1
+K Vilkám	NULL	NULL	1
+K vinici	NULL	NULL	1
+K Vinicím	NULL	NULL	1
+K Vinoři	NULL	NULL	1
+K Višňovce	NULL	NULL	1
+K višňovému sadu	NULL	NULL	1
+K Vizerce	NULL	NULL	1
+K Vltavě	NULL	NULL	1
+K Vodárně	NULL	NULL	1
+K Vodě	NULL	NULL	1
+K Vodici	NULL	NULL	1
+K Vodojemu	NULL	NULL	1
+K Vodoteči	NULL	NULL	1
+K Vrbičkám	NULL	NULL	1
+K Vrcholu	NULL	NULL	1
+K Vršíčku	NULL	NULL	1
+K Vrtilce	NULL	NULL	1
+K Vyhlídce	NULL	NULL	1
+K Vysoké cestě	NULL	NULL	1
+K Vystrkovu	NULL	NULL	1
+K Výzkumným ústavům	NULL	NULL	1
+K Zabrkům	NULL	NULL	1
+K Zadní Kopanině	NULL	NULL	1
+K zahradám	NULL	NULL	1
+K zahrádkám	NULL	NULL	1
+K Zahradnictví	NULL	NULL	1
+K Zámku	NULL	NULL	1
+K Zastávce	NULL	NULL	1
+K Zatáčce	NULL	NULL	1
+K Zátiší	NULL	NULL	1
+K Závěrce	NULL	NULL	1
+K závětinám	NULL	NULL	1
+K závodišti	NULL	NULL	1
+K Zelenči	NULL	NULL	1
+K Zelené louce	NULL	NULL	1
+K Zeleným domkům	NULL	NULL	1
+K Železnici	NULL	NULL	1
+K Žižkovu	NULL	NULL	1
+Kabeláčova	NULL	NULL	1
+Kabešova	NULL	NULL	1
+Kačerovská	NULL	NULL	1
+Kačínská	NULL	NULL	1
+Kadaňská	NULL	NULL	1
+Kadeřávkovská	NULL	NULL	1
+Kádnerova	NULL	NULL	1
+Kafkova	NULL	NULL	1
+Kaftanova	NULL	NULL	1
+Kahovská	NULL	NULL	1
+Kaizlovy sady	NULL	NULL	1
+Kakosova	NULL	NULL	1
+Kakostová	NULL	NULL	1
+Kalabisova	NULL	NULL	1
+Kalašova	NULL	NULL	1
+Kálikova	NULL	NULL	1
+Kalinová	NULL	NULL	1
+Kališnická	NULL	NULL	1
+Kališťská	NULL	NULL	1
+Kálmánova	NULL	NULL	1
+Kalvodova	NULL	NULL	1
+Kamelova	NULL	NULL	1
+Kamencová	NULL	NULL	1
+Kamenická	NULL	NULL	1
+Kameníků	NULL	NULL	1
+Kamenitá	NULL	NULL	1
+Kamenná	NULL	NULL	1
+Kamerunská	NULL	NULL	1
+Kampanova	NULL	NULL	1
+Kamýcká	NULL	NULL	1
+Kamzíková	NULL	NULL	1
+Kanadská	NULL	NULL	1
+Kandertova	NULL	NULL	1
+Kaňkova	NULL	NULL	1
+Kaňkovského	NULL	NULL	1
+Kanovnická	NULL	NULL	1
+Kaňovská	NULL	NULL	1
+Kapitána Nálepky	NULL	NULL	1
+Kapitána Stránského	NULL	NULL	1
+Kapitulní	NULL	NULL	1
+Kapitulská	NULL	NULL	1
+Kaplanova	NULL	NULL	1
+Kaplická	NULL	NULL	1
+Kapraďová	NULL	NULL	1
+Kaprova	NULL	NULL	1
+Kaprova 14/13	NULL	NULL	1
+Kapucínská	NULL	NULL	1
+Karafiátová	NULL	NULL	1
+Káranská	NULL	NULL	1
+Karasova	NULL	NULL	1
+Karasovská	NULL	NULL	1
+Kardašovská	NULL	NULL	1
+Kardausova	NULL	NULL	1
+Karenova	NULL	NULL	1
+Karfíkova	NULL	NULL	1
+Karla Engliše	NULL	NULL	1
+Karla Hlaváčka	NULL	NULL	1
+Karla IV.	NULL	NULL	1
+Karla Kamenického	NULL	NULL	1
+Karla Kryla	NULL	NULL	1
+Karla Rachůnka	NULL	NULL	1
+Karla Zicha	NULL	NULL	1
+Karlínské náměstí	NULL	NULL	1
+Karlova	NULL	NULL	1
+Karlovarská	NULL	NULL	1
+Karlovická	NULL	NULL	1
+Karlovo náměstí	NULL	NULL	1
+Karlštejnská	NULL	NULL	1
+Karlův most	NULL	NULL	1
+Karmelitská	NULL	NULL	1
+Karolinská	NULL	NULL	1
+Karoliny Světlé	NULL	NULL	1
+Karosářská	NULL	NULL	1
+Karpatská	NULL	NULL	1
+Kartounářů	NULL	NULL	1
+Kartouzská	NULL	NULL	1
+Kasalická	NULL	NULL	1
+Kašovická	NULL	NULL	1
+Kašparovo náměstí	NULL	NULL	1
+Kašperská	NULL	NULL	1
+Kaštanová	NULL	NULL	1
+Kateřinská	NULL	NULL	1
+Katovická	NULL	NULL	1
+Katusická	NULL	NULL	1
+Kavkazská	NULL	NULL	1
+Kazaňská	NULL	NULL	1
+Kazašská	NULL	NULL	1
+Kazimírova	NULL	NULL	1
+Kazínská	NULL	NULL	1
+Kaznějovská	NULL	NULL	1
+Kbelská	NULL	NULL	1
+Kdoulová	NULL	NULL	1
+Ke březině	NULL	NULL	1
+Ke Cvičišti	NULL	NULL	1
+Ke Dráze	NULL	NULL	1
+Ke Dvoru	NULL	NULL	1
+Ke Džbánu	NULL	NULL	1
+Ke Golfu	NULL	NULL	1
+Ke goniu	NULL	NULL	1
+Ke Hlásce	NULL	NULL	1
+Ke Hrádku	NULL	NULL	1
+Ke Hradu	NULL	NULL	1
+Ke Hřbitovu	NULL	NULL	1
+Ke Hřišti	NULL	NULL	1
+Ke Kablu	NULL	NULL	1
+Ke Kalinovu mlýnu	NULL	NULL	1
+Ke Kalvárii	NULL	NULL	1
+Ke Kaménce	NULL	NULL	1
+Ke Kamýku	NULL	NULL	1
+Ke Kapličce	NULL	NULL	1
+Ke Kapslovně	NULL	NULL	1
+Ke Karlovu	NULL	NULL	1
+Ke kašně	NULL	NULL	1
+Ke Kateřinkám	NULL	NULL	1
+Ke Kinu	NULL	NULL	1
+Ke Kladivům	NULL	NULL	1
+Ke Klíčovu	NULL	NULL	1
+Ke Klimentce	NULL	NULL	1
+Ke Klínku	NULL	NULL	1
+Ke klubovně	NULL	NULL	1
+Ke Koh-i-nooru	NULL	NULL	1
+Ke Kolodějskému zámku	NULL	NULL	1
+Ke Kolodějům	NULL	NULL	1
+Ke kolonii	NULL	NULL	1
+Ke Konstruktivě	NULL	NULL	1
+Ke Kopanině	NULL	NULL	1
+Ke Kopečku	NULL	NULL	1
+Ke Korunce	NULL	NULL	1
+Ke Kostelu	NULL	NULL	1
+Ke Kotlářce	NULL	NULL	1
+Ke Koulce	NULL	NULL	1
+Ke Kouli	NULL	NULL	1
+Ke Koupališti	NULL	NULL	1
+Ke Kovárně	NULL	NULL	1
+Ke Kozím hřbetům	NULL	NULL	1
+Ke Krči	NULL	NULL	1
+Ke Krčské stráni	NULL	NULL	1
+Ke Kříži	NULL	NULL	1
+Ke Křížkám	NULL	NULL	1
+Ke Křížku	NULL	NULL	1
+Ke Kulišce	NULL	NULL	1
+Ke Kulnám	NULL	NULL	1
+Ke Kulturnímu domu	NULL	NULL	1
+Ke kurtům	NULL	NULL	1
+Ke lhoteckému lesu	NULL	NULL	1
+Ke mlýnku	NULL	NULL	1
+Ke mlýnu	NULL	NULL	1
+Ke Schodům	NULL	NULL	1
+Ke skalce	NULL	NULL	1
+Ke Skále	NULL	NULL	1
+Ke Skalkám	NULL	NULL	1
+Ke Sklárně	NULL	NULL	1
+Ke Školce	NULL	NULL	1
+Ke Škole	NULL	NULL	1
+Ke Slatinám	NULL	NULL	1
+Ke Slivenci	NULL	NULL	1
+Ke Šmejkalu	NULL	NULL	1
+Ke Smíchovu	NULL	NULL	1
+Ke Smrčině	NULL	NULL	1
+Ke Špejcharu	NULL	NULL	1
+Ke Špičce	NULL	NULL	1
+Ke Splavu	NULL	NULL	1
+Ke Spofě	NULL	NULL	1
+Ke Spořilovu	NULL	NULL	1
+Ke Srážku	NULL	NULL	1
+Ke Srubům	NULL	NULL	1
+Ke stáčírně	NULL	NULL	1
+Ke Stadionu	NULL	NULL	1
+Ke Stanici	NULL	NULL	1
+Ke Starému lomu	NULL	NULL	1
+Ke Starým Rybníkům	NULL	NULL	1
+Ke Statenicím	NULL	NULL	1
+Ke Statku	NULL	NULL	1
+Ke Štěpcům	NULL	NULL	1
+Ke Stionvskému rybníku	NULL	NULL	1
+Ke Stírce	NULL	NULL	1
+Ke Stráni	NULL	NULL	1
+Ke Strašnické	NULL	NULL	1
+Ke Střelnici	NULL	NULL	1
+Ke Stříbrníku	NULL	NULL	1
+Ke Strouze	NULL	NULL	1
+Ke Strži	NULL	NULL	1
+Ke Studánce	NULL	NULL	1
+Ke Studni	NULL	NULL	1
+Ke Štvanici	NULL	NULL	1
+Ke sv. Izidoru	NULL	NULL	1
+Ke Xaverovu	NULL	NULL	1
+Ke Zbuzanům	NULL	NULL	1
+Ke Zdravotnímu středisku	NULL	NULL	1
+Ke Zlatému kopci	NULL	NULL	1
+Ke Zličínu	NULL	NULL	1
+Ke Zvoničce	NULL	NULL	1
+Ke Zvonici	NULL	NULL	1
+Keblovská	NULL	NULL	1
+Kecova	NULL	NULL	1
+Kejhova	NULL	NULL	1
+Keltská	NULL	NULL	1
+Keltů	NULL	NULL	1
+Kelvinova	NULL	NULL	1
+Kemrova	NULL	NULL	1
+Keplerova	NULL	NULL	1
+Keramická	NULL	NULL	1
+Kesnerka	NULL	NULL	1
+Keteňská	NULL	NULL	1
+Kettnerova	NULL	NULL	1
+Khodlova	NULL	NULL	1
+Kirgizská	NULL	NULL	1
+Kischova	NULL	NULL	1
+Kišiněvská	NULL	NULL	1
+Kladenská	NULL	NULL	1
+Kladinovská	NULL	NULL	1
+Kladrubská	NULL	NULL	1
+Kladská	NULL	NULL	1
+Klánova	NULL	NULL	1
+Klánovická	NULL	NULL	1
+Klapálkova	NULL	NULL	1
+Klapkova	NULL	NULL	1
+Klárov	NULL	NULL	1
+Klášterecká	NULL	NULL	1
+Klášterská	NULL	NULL	1
+Klášterského	NULL	NULL	1
+Klatovská	NULL	NULL	1
+Klausova	NULL	NULL	1
+Klečákova	NULL	NULL	1
+Klecandova	NULL	NULL	1
+Klecanská	NULL	NULL	1
+Klementova	NULL	NULL	1
+Klenečská	NULL	NULL	1
+Klenovická	NULL	NULL	1
+Klenovská	NULL	NULL	1
+Klíčanská	NULL	NULL	1
+Klíčova	NULL	NULL	1
+Klíčovská	NULL	NULL	1
+Klicperova	NULL	NULL	1
+Klidná	NULL	NULL	1
+Klihařská	NULL	NULL	1
+Klikatá	NULL	NULL	1
+Klimčina	NULL	NULL	1
+Klimentská	NULL	NULL	1
+Klímova	NULL	NULL	1
+Klínová	NULL	NULL	1
+Klínovecká	NULL	NULL	1
+Klírova	NULL	NULL	1
+Klivarova	NULL	NULL	1
+Kloboučnická	NULL	NULL	1
+Kloboukova	NULL	NULL	1
+Kloknerova	NULL	NULL	1
+Klokotská	NULL	NULL	1
+Klostermannova	NULL	NULL	1
+Klouzková	NULL	NULL	1
+Klukovická	NULL	NULL	1
+Kmochova	NULL	NULL	1
+Kněževeská	NULL	NULL	1
+Kněžická	NULL	NULL	1
+Knínická	NULL	NULL	1
+Knovízská	NULL	NULL	1
+Koberkova	NULL	NULL	1
+Kobrova	NULL	NULL	1
+Kobylákova	NULL	NULL	1
+Kobyliská	NULL	NULL	1
+Kobyliské náměstí	NULL	NULL	1
+Kobylisy	NULL	NULL	1
+Kochanova	NULL	NULL	1
+Kocianova	NULL	NULL	1
+Koclířova	NULL	NULL	1
+Kocourova	NULL	NULL	1
+Kočova	NULL	NULL	1
+Kodaňská	NULL	NULL	1
+Kodicilova	NULL	NULL	1
+Kodymova	NULL	NULL	1
+Kohoutovská	NULL	NULL	1
+Kohoutových	NULL	NULL	1
+Kojetická	NULL	NULL	1
+Kokořínská	NULL	NULL	1
+Koláčkova	NULL	NULL	1
+Koláře Kaliny	NULL	NULL	1
+Kolářova	NULL	NULL	1
+Kolátorova	NULL	NULL	1
+Kolbenova	NULL	NULL	1
+Kolčavka	NULL	NULL	1
+Koldínova	NULL	NULL	1
+Kolejní	NULL	NULL	1
+Kolektivní	NULL	NULL	1
+Kolešovská	NULL	NULL	1
+Kolínova	NULL	NULL	1
+Kolínská	NULL	NULL	1
+Kollárova	NULL	NULL	1
+Kolmá	NULL	NULL	1
+Kolmistrova	NULL	NULL	1
+Kolocova	NULL	NULL	1
+Kolodějská	NULL	NULL	1
+Kolonka	NULL	NULL	1
+Kolovečská	NULL	NULL	1
+Kolovratská	NULL	NULL	1
+Komárkova	NULL	NULL	1
+Komárovská	NULL	NULL	1
+Komenského	NULL	NULL	1
+Komenského náměstí	NULL	NULL	1
+Komerční	NULL	NULL	1
+Komořanská	NULL	NULL	1
+Komornická	NULL	NULL	1
+Komunardů	NULL	NULL	1
+Koncová	NULL	NULL	1
+Konecchlumského	NULL	NULL	1
+Konečná	NULL	NULL	1
+Konětopská	NULL	NULL	1
+Koněvova	NULL	NULL	1
+Kongresová	NULL	NULL	1
+Koníčkovo náměstí	NULL	NULL	1
+Konojedská	NULL	NULL	1
+Konopáskova	NULL	NULL	1
+Konopišťská	NULL	NULL	1
+Konopova	NULL	NULL	1
+Konšelská	NULL	NULL	1
+Konstantinova	NULL	NULL	1
+Konvalinková	NULL	NULL	1
+Konviktská	NULL	NULL	1
+Konžská	NULL	NULL	1
+Konzumní	NULL	NULL	1
+Kopalova	NULL	NULL	1
+Kopanina	NULL	NULL	1
+Kopaninská	NULL	NULL	1
+Kopanská	NULL	NULL	1
+Kopeckého	NULL	NULL	1
+Kopečná	NULL	NULL	1
+Koperníkova	NULL	NULL	1
+Kopretinová	NULL	NULL	1
+Kopřivnická	NULL	NULL	1
+Korábské schody	NULL	NULL	1
+Korandova	NULL	NULL	1
+Korčákova	NULL	NULL	1
+Kořenského	NULL	NULL	1
+Kormidelnická	NULL	NULL	1
+Korunní	NULL	NULL	1
+Korunovační	NULL	NULL	1
+Korybutova	NULL	NULL	1
+Korycanská	NULL	NULL	1
+Korytná	NULL	NULL	1
+Košalinská	NULL	NULL	1
+Kosárkovo nábřeží	NULL	NULL	1
+Košařova	NULL	NULL	1
+Kosatcová	NULL	NULL	1
+Košátecká	NULL	NULL	1
+Košická	NULL	NULL	1
+Košířské náměstí	NULL	NULL	1
+Kosmická	NULL	NULL	1
+Kosmonoská	NULL	NULL	1
+Kosořická	NULL	NULL	1
+Kosořská	NULL	NULL	1
+Kosova	NULL	NULL	1
+Košťálkova	NULL	NULL	1
+Kostečná	NULL	NULL	1
+Kostelecká	NULL	NULL	1
+Kostelní	NULL	NULL	1
+Kostelní nám.	NULL	NULL	1
+Koštířova	NULL	NULL	1
+Kostková	NULL	NULL	1
+Kostlivého	NULL	NULL	1
+Kostnické náměstí	NULL	NULL	1
+Kostomlatská	NULL	NULL	1
+Kostrbova	NULL	NULL	1
+Kostřínská	NULL	NULL	1
+Koťátkova	NULL	NULL	1
+Kotěrova	NULL	NULL	1
+Koterovská	NULL	NULL	1
+Kotevní	NULL	NULL	1
+Kotlářka	NULL	NULL	1
+Kotlaska	NULL	NULL	1
+Kotorská	NULL	NULL	1
+Kotrčová	NULL	NULL	1
+Koubkova	NULL	NULL	1
+Koulka	NULL	NULL	1
+Koulova	NULL	NULL	1
+Kounická	NULL	NULL	1
+Kouřimská	NULL	NULL	1
+Koutská	NULL	NULL	1
+Kováků	NULL	NULL	1
+Kovanecká	NULL	NULL	1
+Kováře Janovského	NULL	NULL	1
+Kovárenská	NULL	NULL	1
+Kováříkova	NULL	NULL	1
+Kovářova	NULL	NULL	1
+Kovařovicova	NULL	NULL	1
+Kovářská	NULL	NULL	1
+Kovriginova	NULL	NULL	1
+Kozácká	NULL	NULL	1
+Kozákova	NULL	NULL	1
+Kozáková	NULL	NULL	1
+Kozákovská	NULL	NULL	1
+Koželužská	NULL	NULL	1
+Kozí	NULL	NULL	1
+Kozí ocásek	NULL	NULL	1
+Kozinova	NULL	NULL	1
+Kozinovo náměstí	NULL	NULL	1
+Kožíškova	NULL	NULL	1
+Kožlanská	NULL	NULL	1
+Kozlova	NULL	NULL	1
+Kozlovská	NULL	NULL	1
+Kozmíkova	NULL	NULL	1
+Kozna	NULL	NULL	1
+Kožná	NULL	NULL	1
+Kozomínská	NULL	NULL	1
+Kpt. Stránského	NULL	NULL	1
+Krahulčí	NULL	NULL	1
+Krajánkova	NULL	NULL	1
+Krajanská	NULL	NULL	1
+Krajní	NULL	NULL	1
+Krajová	NULL	NULL	1
+Krakovská	NULL	NULL	1
+Krále Václava IV.	NULL	NULL	1
+Kralická	NULL	NULL	1
+Králodvorská	NULL	NULL	1
+Králova	NULL	NULL	1
+Královická	NULL	NULL	1
+Královny Žofie	NULL	NULL	1
+Kralupská	NULL	NULL	1
+Krameriova	NULL	NULL	1
+Kramlova	NULL	NULL	1
+Kramolínská	NULL	NULL	1
+Kramolná	NULL	NULL	1
+Krásného	NULL	NULL	1
+Krasnická	NULL	NULL	1
+Krasnojarská	NULL	NULL	1
+Krásnolipská	NULL	NULL	1
+Krásova	NULL	NULL	1
+Krátká	NULL	NULL	1
+Krátkého	NULL	NULL	1
+Krátký lán	NULL	NULL	1
+Kratochvílova	NULL	NULL	1
+Krausova	NULL	NULL	1
+Krbická	NULL	NULL	1
+Krchlebská	NULL	NULL	1
+Krčínská	NULL	NULL	1
+Krčmářovská	NULL	NULL	1
+Krčská	NULL	NULL	1
+Krčský hřbitov	NULL	NULL	1
+Krejčího	NULL	NULL	1
+Krejnická	NULL	NULL	1
+Křejpského	NULL	NULL	1
+Křelovická	NULL	NULL	1
+Křemelná	NULL	NULL	1
+Křemenáčová	NULL	NULL	1
+Křemencova	NULL	NULL	1
+Křemenná	NULL	NULL	1
+Křemílkova	NULL	NULL	1
+Kremličkova	NULL	NULL	1
+Kremnická	NULL	NULL	1
+Křenická	NULL	NULL	1
+Křenova	NULL	NULL	1
+Křepelčí	NULL	NULL	1
+Křešínská	NULL	NULL	1
+Křeslická	NULL	NULL	1
+Křesomyslova	NULL	NULL	1
+Krhanická	NULL	NULL	1
+Křičkova	NULL	NULL	1
+Křimická	NULL	NULL	1
+Křimovská	NULL	NULL	1
+Křišťálová	NULL	NULL	1
+Křišťanova	NULL	NULL	1
+Kristiánova	NULL	NULL	1
+Křivá	NULL	NULL	1
+Kriváňská	NULL	NULL	1
+Křivatcová	NULL	NULL	1
+Křivenická	NULL	NULL	1
+Křivoklátská	NULL	NULL	1
+Kříženeckého náměstí	NULL	NULL	1
+Křižíkova	NULL	NULL	1
+Křížkovského	NULL	NULL	1
+Křížová	NULL	NULL	1
+křížová cesta	NULL	NULL	1
+Křižovnická	NULL	NULL	1
+Křížovnické náměstí	NULL	NULL	1
+Krkonošská	NULL	NULL	1
+Krnovská	NULL	NULL	1
+Krnská	NULL	NULL	1
+Krocínova	NULL	NULL	1
+Krocínovská	NULL	NULL	1
+Kroftova	NULL	NULL	1
+Krohova	NULL	NULL	1
+Krokova	NULL	NULL	1
+Krolmusova	NULL	NULL	1
+Kropáčkova	NULL	NULL	1
+Krosenská	NULL	NULL	1
+Kroupova	NULL	NULL	1
+Krouzova	NULL	NULL	1
+Krškova	NULL	NULL	1
+Krteňská	NULL	NULL	1
+Křtinská	NULL	NULL	1
+Kruhová	NULL	NULL	1
+Krumlovská	NULL	NULL	1
+Krupkovo náměstí	NULL	NULL	1
+Krupská	NULL	NULL	1
+Krušovická	NULL	NULL	1
+Kružberská	NULL	NULL	1
+Krylovecká	NULL	NULL	1
+Krymská	NULL	NULL	1
+Krynická	NULL	NULL	1
+Kryšpínova	NULL	NULL	1
+Krystalová	NULL	NULL	1
+Kryštofova	NULL	NULL	1
+Kubánské nám.	NULL	NULL	1
+Kubánské náměstí	NULL	NULL	1
+Kubaštova	NULL	NULL	1
+Kubatova	NULL	NULL	1
+Kubelíkova	NULL	NULL	1
+Kubíkova	NULL	NULL	1
+Kubišova	NULL	NULL	1
+Kubištova	NULL	NULL	1
+Kubova	NULL	NULL	1
+Kučerova	NULL	NULL	1
+Kučerové	NULL	NULL	1
+Kuchařova	NULL	NULL	1
+Kudeříkové	NULL	NULL	1
+Kudrnova	NULL	NULL	1
+Kukelská	NULL	NULL	1
+Kukučínova	NULL	NULL	1
+Kukulova	NULL	NULL	1
+Kulhánkovská	NULL	NULL	1
+Kulhavého	NULL	NULL	1
+Kuncova	NULL	NULL	1
+Kundratka	NULL	NULL	1
+Kunešova	NULL	NULL	1
+Kunětická	NULL	NULL	1
+Kuní	NULL	NULL	1
+Kunická	NULL	NULL	1
+Kunínova	NULL	NULL	1
+Kunratická	NULL	NULL	1
+Kunratická škola	NULL	NULL	1
+Kunratická spojka	NULL	NULL	1
+Kupeckého	NULL	NULL	1
+Kurandové	NULL	NULL	1
+Kurčatovova	NULL	NULL	1
+Kurkova	NULL	NULL	1
+Kurta Konráda	NULL	NULL	1
+Kurzova	NULL	NULL	1
+Kusá	NULL	NULL	1
+Kusého	NULL	NULL	1
+Kutilova	NULL	NULL	1
+Kutnauerovo náměstí	NULL	NULL	1
+Kutnohorská	NULL	NULL	1
+Kuttelwascherova	NULL	NULL	1
+Kutvirtova	NULL	NULL	1
+Kuželova	NULL	NULL	1
+Kvapilova	NULL	NULL	1
+Kvestorská	NULL	NULL	1
+Květinářská	NULL	NULL	1
+Květinková	NULL	NULL	1
+Květná	NULL	NULL	1
+Květnická	NULL	NULL	1
+Květnová	NULL	NULL	1
+Květnové náměstí	NULL	NULL	1
+Květnového povstání	NULL	NULL	1
+Květnového vítězství	NULL	NULL	1
+Květnových bojů	NULL	NULL	1
+Květoslavova	NULL	NULL	1
+Květová	NULL	NULL	1
+Kyjevská	NULL	NULL	1
+Kyjovská	NULL	NULL	1
+Kyjská	NULL	NULL	1
+Kyjský Hřbitov	NULL	NULL	1
+Kykalova	NULL	NULL	1
+Kymrova	NULL	NULL	1
+Kyselova	NULL	NULL	1
+Kyslíková	NULL	NULL	1
+Kysucká	NULL	NULL	1
+Kytínská	NULL	NULL	1
+Kytlická	NULL	NULL	1
+Labětínská	NULL	NULL	1
+Labská	NULL	NULL	1
+Lačnovská	NULL	NULL	1
+Ládevská	NULL	NULL	1
+Ladislava Coňka	NULL	NULL	1
+Ladova	NULL	NULL	1
+Laglerové	NULL	NULL	1
+Lahovický most	NULL	NULL	1
+Lahovská	NULL	NULL	1
+Lamačova	NULL	NULL	1
+Langweilova	NULL	NULL	1
+Lannova	NULL	NULL	1
+Lanový most	NULL	NULL	1
+Lánská	NULL	NULL	1
+Lanýžová	NULL	NULL	1
+Lanžhotská	NULL	NULL	1
+Lanžovská	NULL	NULL	1
+Lásenická	NULL	NULL	1
+Láskova	NULL	NULL	1
+Laténská	NULL	NULL	1
+Laťka	NULL	NULL	1
+Laubova	NULL	NULL	1
+Laudonova	NULL	NULL	1
+Laudova	NULL	NULL	1
+Laurinova	NULL	NULL	1
+Lažanská	NULL	NULL	1
+Lažanského	NULL	NULL	1
+Lazarská	NULL	NULL	1
+Lázeňka	NULL	NULL	1
+Lázeňská	NULL	NULL	1
+Lebeděvova	NULL	NULL	1
+Lečkova	NULL	NULL	1
+Ledařská	NULL	NULL	1
+Ledčická	NULL	NULL	1
+Ledecká	NULL	NULL	1
+Ledečská	NULL	NULL	1
+Ledkovská	NULL	NULL	1
+Lednická	NULL	NULL	1
+Ledvinova	NULL	NULL	1
+Legerova	NULL	NULL	1
+Legií	NULL	NULL	1
+Legionářů	NULL	NULL	1
+Lehárova	NULL	NULL	1
+Lehnická	NULL	NULL	1
+Leitzova	NULL	NULL	1
+Lékařská	NULL	NULL	1
+Leknínová	NULL	NULL	1
+Lékořicová	NULL	NULL	1
+Leopoldova	NULL	NULL	1
+Lešanská	NULL	NULL	1
+Lešenská	NULL	NULL	1
+Lešetínská	NULL	NULL	1
+Leskovecká	NULL	NULL	1
+Lesného	NULL	NULL	1
+Lesní	NULL	NULL	1
+Lesnická	NULL	NULL	1
+Lešovská	NULL	NULL	1
+Lessnerova	NULL	NULL	1
+Leštínská	NULL	NULL	1
+Letců	NULL	NULL	1
+Letecká	NULL	NULL	1
+Letenská	NULL	NULL	1
+Letenské náměstí	NULL	NULL	1
+Letenský tunel	NULL	NULL	1
+Letňanská	NULL	NULL	1
+Letohradská	NULL	NULL	1
+Letovská	NULL	NULL	1
+Letzelova	NULL	NULL	1
+Levá	NULL	NULL	1
+Levinská	NULL	NULL	1
+Levobřežní	NULL	NULL	1
+Levského	NULL	NULL	1
+Lexova	NULL	NULL	1
+Lhotákova	NULL	NULL	1
+Lhotecká	NULL	NULL	1
+Lhotská	NULL	NULL	1
+Líbalova	NULL	NULL	1
+Libáňská	NULL	NULL	1
+Libčická	NULL	NULL	1
+Liběchovská	NULL	NULL	1
+Libečkova	NULL	NULL	1
+Libědická	NULL	NULL	1
+Libeňská	NULL	NULL	1
+Libeňský most	NULL	NULL	1
+Liberecká	NULL	NULL	1
+Liberijská	NULL	NULL	1
+Libeřská	NULL	NULL	1
+Liběšická	NULL	NULL	1
+Líbeznická	NULL	NULL	1
+Libichovská	NULL	NULL	1
+Libická	NULL	NULL	1
+Libínská	NULL	NULL	1
+Libišanská	NULL	NULL	1
+Libišská	NULL	NULL	1
+Libkovská	NULL	NULL	1
+Liblická	NULL	NULL	1
+Libočanská	NULL	NULL	1
+Libochovická	NULL	NULL	1
+Libocká	NULL	NULL	1
+Liboňovská	NULL	NULL	1
+Liborova	NULL	NULL	1
+Libošovická	NULL	NULL	1
+Libotovská	NULL	NULL	1
+Libovická	NULL	NULL	1
+Libuňská	NULL	NULL	1
+Libušina	NULL	NULL	1
+Libušská	NULL	NULL	1
+Lichnická	NULL	NULL	1
+Lidečská	NULL	NULL	1
+Lidická	NULL	NULL	1
+Lidického	NULL	NULL	1
+Ligasova	NULL	NULL	1
+Lihovar	NULL	NULL	1
+Lihovarská	NULL	NULL	1
+Liliová	NULL	NULL	1
+Lilková	NULL	NULL	1
+Limuzská	NULL	NULL	1
+Lindavská	NULL	NULL	1
+Lindleyova	NULL	NULL	1
+Lindnerova	NULL	NULL	1
+Lindtova pasáž	NULL	NULL	1
+Linhartova	NULL	NULL	1
+Linhartská	NULL	NULL	1
+Lipanská	NULL	NULL	1
+Lipecká	NULL	NULL	1
+Lipenská	NULL	NULL	1
+Lipenské náměstí	NULL	NULL	1
+Lipí	NULL	NULL	1
+Lipnická	NULL	NULL	1
+Lipoltická	NULL	NULL	1
+Lipová	NULL	NULL	1
+Lípová	NULL	NULL	1
+Lipová alej	NULL	NULL	1
+Lipové nám.	NULL	NULL	1
+Lipové náměstí	NULL	NULL	1
+Lipovická	NULL	NULL	1
+Lipovská	NULL	NULL	1
+Lipská	NULL	NULL	1
+Lipského	NULL	NULL	1
+Lisabonská	NULL	NULL	1
+Lišanská	NULL	NULL	1
+Liščí	NULL	NULL	1
+Lísek	NULL	NULL	1
+Liškova	NULL	NULL	1
+Lísková	NULL	NULL	1
+Lískovická	NULL	NULL	1
+Lišnická	NULL	NULL	1
+Líšnická	NULL	NULL	1
+Lišovická	NULL	NULL	1
+Listopadová	NULL	NULL	1
+Listova	NULL	NULL	1
+Lisztova	NULL	NULL	1
+Litavská	NULL	NULL	1
+Litevská	NULL	NULL	1
+Litická	NULL	NULL	1
+Litochlebská	NULL	NULL	1
+Litochlebské náměstí	NULL	NULL	1
+Litoměřická	NULL	NULL	1
+Litošická	NULL	NULL	1
+Litovická	NULL	NULL	1
+Litožnická	NULL	NULL	1
+Litvínovská	NULL	NULL	1
+Livornská	NULL	NULL	1
+Lnářská	NULL	NULL	1
+Lobečská	NULL	NULL	1
+Lochkovská	NULL	NULL	1
+Lochotínská	NULL	NULL	1
+Lodecká	NULL	NULL	1
+Loděnická	NULL	NULL	1
+Lodní mlýny	NULL	NULL	1
+Lodnická	NULL	NULL	1
+Lodžská	NULL	NULL	1
+Lohenická	NULL	NULL	1
+Lohniského	NULL	NULL	1
+Lojovická	NULL	NULL	1
+Lomená	NULL	NULL	1
+Lomnická	NULL	NULL	1
+Lomnického	NULL	NULL	1
+Lomová	NULL	NULL	1
+Londýnská	NULL	NULL	1
+Loosova	NULL	NULL	1
+Lopatecká	NULL	NULL	1
+Loretánská	NULL	NULL	1
+Loretánské náměstí	NULL	NULL	1
+Lošáková	NULL	NULL	1
+Losinská	NULL	NULL	1
+Lotyšská	NULL	NULL	1
+Loučimská	NULL	NULL	1
+Loucká	NULL	NULL	1
+Loučná	NULL	NULL	1
+Loudova	NULL	NULL	1
+Lounská	NULL	NULL	1
+Lounských	NULL	NULL	1
+Loutkářská	NULL	NULL	1
+Lovčenská	NULL	NULL	1
+Lovecká	NULL	NULL	1
+Lovosická	NULL	NULL	1
+Lubenecká	NULL	NULL	1
+Lublaňská	NULL	NULL	1
+Lublinská	NULL	NULL	1
+Lucemburská	NULL	NULL	1
+Lučištníků	NULL	NULL	1
+Luční	NULL	NULL	1
+Ludmilina	NULL	NULL	1
+Ludvíkova	NULL	NULL	1
+Luhovská	NULL	NULL	1
+Lukášova	NULL	NULL	1
+Lukavecká	NULL	NULL	1
+Lukavského	NULL	NULL	1
+Lukešova	NULL	NULL	1
+Lumiérů	NULL	NULL	1
+Lumírova	NULL	NULL	1
+Lupáčova	NULL	NULL	1
+Luštěnická	NULL	NULL	1
+Lužanská	NULL	NULL	1
+Lužecká	NULL	NULL	1
+Lužická	NULL	NULL	1
+Lužná	NULL	NULL	1
+Lužní	NULL	NULL	1
+Lužnická	NULL	NULL	1
+Lvovská	NULL	NULL	1
+Lyčkovo náměstí	NULL	NULL	1
+Lysinská	NULL	NULL	1
+Lýskova	NULL	NULL	1
+Lysolajská	NULL	NULL	1
+Lysolajské údolí	NULL	NULL	1
+Lyžařská	NULL	NULL	1
+M. Alše	NULL	NULL	1
+Macešková	NULL	NULL	1
+Macharovo náměstí	NULL	NULL	1
+Machatého	NULL	NULL	1
+Machkova	NULL	NULL	1
+Machnova	NULL	NULL	1
+Máchova	NULL	NULL	1
+Machovcova	NULL	NULL	1
+Machovská	NULL	NULL	1
+Machuldova	NULL	NULL	1
+Maďarská	NULL	NULL	1
+Madridská	NULL	NULL	1
+Mádrova	NULL	NULL	1
+Magdalény Rettigové	NULL	NULL	1
+Magistrů	NULL	NULL	1
+Magnitogorská	NULL	NULL	1
+Mahenova	NULL	NULL	1
+Mahlerovy sady	NULL	NULL	1
+Mahulenina	NULL	NULL	1
+Maiselova	NULL	NULL	1
+Majerové	NULL	NULL	1
+Majerského	NULL	NULL	1
+Májová	NULL	NULL	1
+Májovková	NULL	NULL	1
+Makedonská	NULL	NULL	1
+Maková	NULL	NULL	1
+Makovská	NULL	NULL	1
+Makovského	NULL	NULL	1
+Malá	NULL	NULL	1
+Malá Bylanská	NULL	NULL	1
+Malá Houdova	NULL	NULL	1
+Malá Klášterní	NULL	NULL	1
+Malá lada	NULL	NULL	1
+Malá Michnovka	NULL	NULL	1
+Malá Plynární	NULL	NULL	1
+Malá Štěpánská	NULL	NULL	1
+Malá Štupartská	NULL	NULL	1
+Malá Tyršovka	NULL	NULL	1
+Malá ulička	NULL	NULL	1
+Malá Xaveriova	NULL	NULL	1
+Malachitová	NULL	NULL	1
+Malátova	NULL	NULL	1
+Malé náměstí	NULL	NULL	1
+Malebná	NULL	NULL	1
+Malého	NULL	NULL	1
+Malenická	NULL	NULL	1
+Malešická	NULL	NULL	1
+Malešické náměstí	NULL	NULL	1
+Malinová	NULL	NULL	1
+Malínská	NULL	NULL	1
+Malířská	NULL	NULL	1
+Malkovského	NULL	NULL	1
+Malletova	NULL	NULL	1
+Malobřevnovská	NULL	NULL	1
+Malostranské nábřeží	NULL	NULL	1
+Malostranské náměstí	NULL	NULL	1
+Malovická	NULL	NULL	1
+Malšovské náměstí	NULL	NULL	1
+Maltézské náměstí	NULL	NULL	1
+Malý Dvůr	NULL	NULL	1
+Malý Okrouhlík	NULL	NULL	1
+Maňákova	NULL	NULL	1
+Mandova	NULL	NULL	1
+Mánesova	NULL	NULL	1
+Mánesův most	NULL	NULL	1
+Mannerova	NULL	NULL	1
+Mansfeldova	NULL	NULL	1
+Mantovská	NULL	NULL	1
+Manželů Dostálových	NULL	NULL	1
+Manželů Kotrbových	NULL	NULL	1
+Manželů Lyčkových	NULL	NULL	1
+Mařákova	NULL	NULL	1
+Mařatkova	NULL	NULL	1
+Maratónská	NULL	NULL	1
+Marciho	NULL	NULL	1
+Marešova	NULL	NULL	1
+Mariánská	NULL	NULL	1
+Mariánské hradby	NULL	NULL	1
+Mariánské náměstí	NULL	NULL	1
+Marie Cibulkové	NULL	NULL	1
+Marie Podvalové	NULL	NULL	1
+Maříkova	NULL	NULL	1
+Markétská	NULL	NULL	1
+Markova	NULL	NULL	1
+Markupova	NULL	NULL	1
+Markušova	NULL	NULL	1
+Markvartická	NULL	NULL	1
+Markyta	NULL	NULL	1
+Maroldova	NULL	NULL	1
+Márova	NULL	NULL	1
+Maršovská	NULL	NULL	1
+Martinická	NULL	NULL	1
+Martinova	NULL	NULL	1
+Martinovská	NULL	NULL	1
+Martinská	NULL	NULL	1
+Martinů	NULL	NULL	1
+Marty Krásové	NULL	NULL	1
+Marvanova	NULL	NULL	1
+Masarykovo nábřeží	NULL	NULL	1
+Mašatova	NULL	NULL	1
+Mašínova	NULL	NULL	1
+Maškova	NULL	NULL	1
+Máslova	NULL	NULL	1
+Máslovická	NULL	NULL	1
+Masná	NULL	NULL	1
+Mašovická	NULL	NULL	1
+Maštěřovského	NULL	NULL	1
+Matěchova	NULL	NULL	1
+Matějkova	NULL	NULL	1
+Matějská	NULL	NULL	1
+Matek	NULL	NULL	1
+Matenská	NULL	NULL	1
+Mateřídoušková	NULL	NULL	1
+Maternova	NULL	NULL	1
+Mateřská	NULL	NULL	1
+Matoušova	NULL	NULL	1
+Mátová	NULL	NULL	1
+Mattioliho	NULL	NULL	1
+Matúškova	NULL	NULL	1
+Maxovská	NULL	NULL	1
+Mazancova	NULL	NULL	1
+Mazovská	NULL	NULL	1
+Mazurská	NULL	NULL	1
+McDonald's drive-thru	NULL	NULL	1
+McDrive	NULL	NULL	1
+Měchenická	NULL	NULL	1
+Měcholupská	NULL	NULL	1
+Mechová	NULL	NULL	1
+Měchurka	NULL	NULL	1
+Mečíková	NULL	NULL	1
+Mečislavova	NULL	NULL	1
+Mečovská	NULL	NULL	1
+Měděnecká	NULL	NULL	1
+Medkova	NULL	NULL	1
+Medlovská	NULL	NULL	1
+Medová	NULL	NULL	1
+Meduňková	NULL	NULL	1
+Mejstříkova	NULL	NULL	1
+Melantrichova	NULL	NULL	1
+Mělická	NULL	NULL	1
+Meliorační	NULL	NULL	1
+Mělnická	NULL	NULL	1
+Melodická	NULL	NULL	1
+Melounová	NULL	NULL	1
+Menclova	NULL	NULL	1
+Mendelova	NULL	NULL	1
+Mendíků	NULL	NULL	1
+Menšíkova	NULL	NULL	1
+Menšíkovská	NULL	NULL	1
+Merhoutova	NULL	NULL	1
+Merkurova	NULL	NULL	1
+Meruňková	NULL	NULL	1
+Měšická	NULL	NULL	1
+Měsíčková	NULL	NULL	1
+Měsíční	NULL	NULL	1
+Meskářova	NULL	NULL	1
+Městská	NULL	NULL	1
+Městský okruh	NULL	NULL	1
+Meteorologická	NULL	NULL	1
+Metodějova	NULL	NULL	1
+Metujská	NULL	NULL	1
+Mexická	NULL	NULL	1
+Mezi Domky	NULL	NULL	1
+Mezi Domy	NULL	NULL	1
+Mezi Humny	NULL	NULL	1
+Mezi Lány	NULL	NULL	1
+Mezi Lysinami	NULL	NULL	1
+Mezi Poli	NULL	NULL	1
+Mezi Potoky	NULL	NULL	1
+Mezi Rolemi	NULL	NULL	1
+Mezi rybníky	NULL	NULL	1
+Mezi sklady	NULL	NULL	1
+Mezi školami	NULL	NULL	1
+Mezi Stráněmi	NULL	NULL	1
+Mezi Úvozy	NULL	NULL	1
+Mezi Vodami	NULL	NULL	1
+Mezibranská	NULL	NULL	1
+Mezichuchelská	NULL	NULL	1
+Mezihoří	NULL	NULL	1
+Mezihorská	NULL	NULL	1
+Mezilehlá	NULL	NULL	1
+Mezilesí	NULL	NULL	1
+Mezilesní	NULL	NULL	1
+Meziluží	NULL	NULL	1
+Mezipolí	NULL	NULL	1
+Meziškolská	NULL	NULL	1
+Mezitraťová	NULL	NULL	1
+Mezivrší	NULL	NULL	1
+Michaila Jurjeviče Lermontova	NULL	NULL	1
+Michalovicova	NULL	NULL	1
+Michalská	NULL	NULL	1
+Michelangelova	NULL	NULL	1
+Michelská	NULL	NULL	1
+Michnova	NULL	NULL	1
+Michnovka	NULL	NULL	1
+Mickiewiczova	NULL	NULL	1
+Míčova	NULL	NULL	1
+Mikanova	NULL	NULL	1
+Mikova	NULL	NULL	1
+Mikovcova	NULL	NULL	1
+Mikovická	NULL	NULL	1
+Mikšovského	NULL	NULL	1
+Mikulandská	NULL	NULL	1
+Mikuláše z Husi	NULL	NULL	1
+Mikulášská	NULL	NULL	1
+Mikuleckého	NULL	NULL	1
+Mikulova	NULL	NULL	1
+Mikulovická	NULL	NULL	1
+Milady Horákové	NULL	NULL	1
+Milana Kadlece	NULL	NULL	1
+Milánská	NULL	NULL	1
+Milenovská	NULL	NULL	1
+Milerova	NULL	NULL	1
+Milešovská	NULL	NULL	1
+Miletínská	NULL	NULL	1
+Milevská	NULL	NULL	1
+Milíčova	NULL	NULL	1
+Milíčovská	NULL	NULL	1
+Milínská	NULL	NULL	1
+Miloše Deyla	NULL	NULL	1
+Miloše Deyla I	NULL	NULL	1
+Milotická	NULL	NULL	1
+Mílová	NULL	NULL	1
+Milovická	NULL	NULL	1
+Mílovská	NULL	NULL	1
+Mimoňská	NULL	NULL	1
+Minaříkova	NULL	NULL	1
+Minerální	NULL	NULL	1
+Minická	NULL	NULL	1
+Minská	NULL	NULL	1
+Miranova	NULL	NULL	1
+Mirešická	NULL	NULL	1
+Miroslava Hajna	NULL	NULL	1
+Mirošovická	NULL	NULL	1
+Mirošovská	NULL	NULL	1
+Mirotická	NULL	NULL	1
+Mírová	NULL	NULL	1
+Mírového hnutí	NULL	NULL	1
+Mirovická	NULL	NULL	1
+Míšeňská	NULL	NULL	1
+Miškovická	NULL	NULL	1
+Míšovická	NULL	NULL	1
+Místecká	NULL	NULL	1
+Mistřínská	NULL	NULL	1
+Mistrovská	NULL	NULL	1
+Mladčina	NULL	NULL	1
+Mladějovská	NULL	NULL	1
+Mladenovova	NULL	NULL	1
+Mládeže	NULL	NULL	1
+Mládežnická	NULL	NULL	1
+Mládí	NULL	NULL	1
+Mládkova	NULL	NULL	1
+Mladoboleslavská	NULL	NULL	1
+Mladotická	NULL	NULL	1
+Mladých	NULL	NULL	1
+Mladých Běchovic	NULL	NULL	1
+Mlazická	NULL	NULL	1
+Mlázovická	NULL	NULL	1
+Mlékárenská	NULL	NULL	1
+Mlynářská	NULL	NULL	1
+Mlýnská	NULL	NULL	1
+Mnichovická	NULL	NULL	1
+Mochovská	NULL	NULL	1
+Modenská	NULL	NULL	1
+Modletická	NULL	NULL	1
+Modletínská	NULL	NULL	1
+Modrá	NULL	NULL	1
+Modrá škola	NULL	NULL	1
+Modřanská	NULL	NULL	1
+Modrého	NULL	NULL	1
+Modřínová	NULL	NULL	1
+Mohelnická	NULL	NULL	1
+Mohylová	NULL	NULL	1
+Mojmírova	NULL	NULL	1
+Mokrá	NULL	NULL	1
+Mokřanská	NULL	NULL	1
+Molákova	NULL	NULL	1
+Moldavská	NULL	NULL	1
+Mongolská	NULL	NULL	1
+Moravanská	NULL	NULL	1
+Moravanů	NULL	NULL	1
+Morávkova	NULL	NULL	1
+Moravská	NULL	NULL	1
+Morseova	NULL	NULL	1
+Morstadtova	NULL	NULL	1
+Morušová	NULL	NULL	1
+Moskevská	NULL	NULL	1
+Mošnova	NULL	NULL	1
+Most Barikádníků	NULL	NULL	1
+Most Legií	NULL	NULL	1
+Most Sue Ryder	NULL	NULL	1
+Mostecká	NULL	NULL	1
+Motoristická	NULL	NULL	1
+Moulíkova	NULL	NULL	1
+Moysesova	NULL	NULL	1
+Mozambická	NULL	NULL	1
+Mozartova	NULL	NULL	1
+Možného	NULL	NULL	1
+Mráčkova	NULL	NULL	1
+Mračnická	NULL	NULL	1
+Mrákovská	NULL	NULL	1
+Mramorová	NULL	NULL	1
+Mratínská	NULL	NULL	1
+Mrázovka	NULL	NULL	1
+Mrkosova	NULL	NULL	1
+Mrkvičkova	NULL	NULL	1
+Mrštíkova	NULL	NULL	1
+Mšecká	NULL	NULL	1
+Mšenská	NULL	NULL	1
+Muchomůrková	NULL	NULL	1
+Muchova	NULL	NULL	1
+Mukařovská	NULL	NULL	1
+Mukařovského	NULL	NULL	1
+Münzbergerových	NULL	NULL	1
+Murgašova	NULL	NULL	1
+Murmanská	NULL	NULL	1
+Musílkova	NULL	NULL	1
+Musilova	NULL	NULL	1
+Muškova	NULL	NULL	1
+Musorgského	NULL	NULL	1
+Mutěnínská	NULL	NULL	1
+Muzejní	NULL	NULL	1
+Muzikova	NULL	NULL	1
+Mydlářka	NULL	NULL	1
+Myjavská	NULL	NULL	1
+Mylnerovka	NULL	NULL	1
+Myšák Gallery	NULL	NULL	1
+Mysi dira pod trati	NULL	NULL	1
+Myslbekova	NULL	NULL	1
+Myslíkova	NULL	NULL	1
+Myšlínská	NULL	NULL	1
+Myslivecká	NULL	NULL	1
+Myslivečkova	NULL	NULL	1
+Mýtní	NULL	NULL	1
+N. A. Někrasova	NULL	NULL	1
+Na Babách	NULL	NULL	1
+Na Babě	NULL	NULL	1
+Na Bačálkách	NULL	NULL	1
+Na Bahnech	NULL	NULL	1
+Na Balkáně	NULL	NULL	1
+Na Barikádách	NULL	NULL	1
+Na Bartoňce	NULL	NULL	1
+Na Baště svaté Ludmily	NULL	NULL	1
+Na Baště svatého Jiří	NULL	NULL	1
+Na Baště svatého Tomáše	NULL	NULL	1
+Na Bateriích	NULL	NULL	1
+Na Bečvářce	NULL	NULL	1
+Na Bělici	NULL	NULL	1
+Na Bělidle	NULL	NULL	1
+Na Bělohorské pláni	NULL	NULL	1
+Na Bendovce	NULL	NULL	1
+Na Beránce	NULL	NULL	1
+Na Beránku I	NULL	NULL	1
+Na Beránku II	NULL	NULL	1
+Na Beránku III	NULL	NULL	1
+Na Beránku IV	NULL	NULL	1
+Na Bitevní pláni	NULL	NULL	1
+Na Blanici	NULL	NULL	1
+Na Blanseku	NULL	NULL	1
+Na Blatech	NULL	NULL	1
+Na Bohdalci	NULL	NULL	1
+Na Bojišti	NULL	NULL	1
+Na Borovém	NULL	NULL	1
+Na Botě	NULL	NULL	1
+Na Botiči	NULL	NULL	1
+Na Brabenci	NULL	NULL	1
+Na Brázdě	NULL	NULL	1
+Na Břehu	NULL	NULL	1
+Na Břevnovské pláni	NULL	NULL	1
+Na Březince	NULL	NULL	1
+Na Bučance	NULL	NULL	1
+Na Čečeličce	NULL	NULL	1
+Na Celné	NULL	NULL	1
+Na Černé hoře	NULL	NULL	1
+Na Černé strouze	NULL	NULL	1
+Na Černém vrchu	NULL	NULL	1
+Na Července	NULL	NULL	1
+Na cestě	NULL	NULL	1
+Na Chlumci	NULL	NULL	1
+Na Chmelnici	NULL	NULL	1
+Na Chobotě	NULL	NULL	1
+Na Chodovci	NULL	NULL	1
+Na Chvalce	NULL	NULL	1
+Na Chvalské tvrzi	NULL	NULL	1
+Na čihadle	NULL	NULL	1
+Na Cihelně	NULL	NULL	1
+Na Cihlářce	NULL	NULL	1
+Na Cikánce	NULL	NULL	1
+Na Cikorce	NULL	NULL	1
+Na Cimbále	NULL	NULL	1
+Na Cípu	NULL	NULL	1
+Na Císařce	NULL	NULL	1
+Na Čisté	NULL	NULL	1
+Na dědinách	NULL	NULL	1
+Na Dědince	NULL	NULL	1
+Na Děkance	NULL	NULL	1
+Na Dělostřílnách	NULL	NULL	1
+Na Dílcích	NULL	NULL	1
+Na dílech	NULL	NULL	1
+Na Dionysce	NULL	NULL	1
+Na Dlážděnce	NULL	NULL	1
+Na dlouhé mezi	NULL	NULL	1
+Na Dlouhém lánu	NULL	NULL	1
+Na Dobešce	NULL	NULL	1
+Na Dobré Vodě	NULL	NULL	1
+Na dolíku	NULL	NULL	1
+Na Dolinách	NULL	NULL	1
+Na dolnici	NULL	NULL	1
+Na Domovině	NULL	NULL	1
+Na Doubkové	NULL	NULL	1
+Na Dračkách	NULL	NULL	1
+Na Dražkách	NULL	NULL	1
+Na Drážkách	NULL	NULL	1
+Na Dubečnici	NULL	NULL	1
+Na Dubině	NULL	NULL	1
+Na Dvorcích	NULL	NULL	1
+Na Dyrince	NULL	NULL	1
+Na Farkách	NULL	NULL	1
+Na Farkáně I	NULL	NULL	1
+Na Farkáně II	NULL	NULL	1
+Na Farkáně III	NULL	NULL	1
+Na Farkáně IV	NULL	NULL	1
+Na Fialce I	NULL	NULL	1
+Na Fialce II	NULL	NULL	1
+Na Fidlovačce	NULL	NULL	1
+Na Fišerce	NULL	NULL	1
+Na Floře	NULL	NULL	1
+Na Florenci	NULL	NULL	1
+Na Folimance	NULL	NULL	1
+Na Formance	NULL	NULL	1
+Na Františku	NULL	NULL	1
+Na Groši	NULL	NULL	1
+Na Habří	NULL	NULL	1
+Na Habrovce	NULL	NULL	1
+Na Habrové	NULL	NULL	1
+Na Hádku	NULL	NULL	1
+Na háji	NULL	NULL	1
+Na Hájku	NULL	NULL	1
+Na Hanspaulce	NULL	NULL	1
+Na Harfě	NULL	NULL	1
+Na Havránce	NULL	NULL	1
+Na Hlídce	NULL	NULL	1
+Na Hlinách	NULL	NULL	1
+Na Hlinkách	NULL	NULL	1
+Na Hloubětínské vinici	NULL	NULL	1
+Na Holém vrchu	NULL	NULL	1
+Na Homolce	NULL	NULL	1
+Na Horkách	NULL	NULL	1
+Na Hrádku	NULL	NULL	1
+Na Hradním vodovodu	NULL	NULL	1
+Na Hranicích	NULL	NULL	1
+Na Hrázi	NULL	NULL	1
+Na Hřebenech II	NULL	NULL	1
+Na Hřebenkách	NULL	NULL	1
+Na Hrobci	NULL	NULL	1
+Na Hroudě	NULL	NULL	1
+Na Hubálce	NULL	NULL	1
+Na Hupech	NULL	NULL	1
+Na hutích	NULL	NULL	1
+Na Hutmance	NULL	NULL	1
+Na Hvězdárně	NULL	NULL	1
+Na Hvížďalce	NULL	NULL	1
+Na Jabloňce	NULL	NULL	1
+Na Jahodách	NULL	NULL	1
+Na Jarově	NULL	NULL	1
+Na Jelenách	NULL	NULL	1
+Na Jetelce	NULL	NULL	1
+Na Jezerách	NULL	NULL	1
+Na Jezerce	NULL	NULL	1
+Na Jílu	NULL	NULL	1
+Na Jitřence	NULL	NULL	1
+Na Jivinách	NULL	NULL	1
+Na Julisce	NULL	NULL	1
+Na Kačence	NULL	NULL	1
+Na Kačerově	NULL	NULL	1
+Na Kalvárii	NULL	NULL	1
+Na Kameni	NULL	NULL	1
+Na Kampě	NULL	NULL	1
+Na Kapličce	NULL	NULL	1
+Na Karlovce	NULL	NULL	1
+Na Kavčích horách	NULL	NULL	1
+Na Kazance	NULL	NULL	1
+Na Kindlovce	NULL	NULL	1
+Na Klášterním	NULL	NULL	1
+Na Klaudiánce	NULL	NULL	1
+Na Klebetníku	NULL	NULL	1
+Na Kleovce	NULL	NULL	1
+Na Klikovce	NULL	NULL	1
+Na Klimentce	NULL	NULL	1
+Na Klínech	NULL	NULL	1
+Na Klínku	NULL	NULL	1
+Na Knížce	NULL	NULL	1
+Na Kocínce	NULL	NULL	1
+Na Kocourkách	NULL	NULL	1
+Na Kodymce	NULL	NULL	1
+Na Kolejním statku	NULL	NULL	1
+Na Konvářce	NULL	NULL	1
+Na Kopanině	NULL	NULL	1
+Na Kopci	NULL	NULL	1
+Na Kopečku	NULL	NULL	1
+Na Kopytářce	NULL	NULL	1
+Na Korábě	NULL	NULL	1
+Na Korálově	NULL	NULL	1
+Na Korunce	NULL	NULL	1
+Na Košíku	NULL	NULL	1
+Na Košince	NULL	NULL	1
+Na Kotlářce	NULL	NULL	1
+Na Koupaliště	NULL	NULL	1
+Na Kovárně	NULL	NULL	1
+Na Kozačce	NULL	NULL	1
+Na Kozinci	NULL	NULL	1
+Na Kraji	NULL	NULL	1
+Na Královce	NULL	NULL	1
+Na Krčské stráni	NULL	NULL	1
+Na Křečku	NULL	NULL	1
+Na Křemínku	NULL	NULL	1
+Na Křenkově	NULL	NULL	1
+Na Křídle	NULL	NULL	1
+Na Křivce	NULL	NULL	1
+Na Křivině	NULL	NULL	1
+Na Krocínce	NULL	NULL	1
+Na Křtině	NULL	NULL	1
+Na Krutci	NULL	NULL	1
+Na Kuthence	NULL	NULL	1
+Na Květnici	NULL	NULL	1
+Na Kvintusce	NULL	NULL	1
+Na Labuťce I	NULL	NULL	1
+Na Labuťce II	NULL	NULL	1
+Na Labuťce III	NULL	NULL	1
+Na Labuťce IV	NULL	NULL	1
+Na Ladách	NULL	NULL	1
+Na Ládví	NULL	NULL	1
+Na Lahovské	NULL	NULL	1
+Na lánech	NULL	NULL	1
+Na Laurové	NULL	NULL	1
+Na Lávce	NULL	NULL	1
+Na Lázeňce	NULL	NULL	1
+Na Lepším	NULL	NULL	1
+Na Lhotech	NULL	NULL	1
+Na Libušince	NULL	NULL	1
+Na Líše	NULL	NULL	1
+Na Louce	NULL	NULL	1
+Na Loukoti	NULL	NULL	1
+Na Louži	NULL	NULL	1
+Na Loužku	NULL	NULL	1
+Na Lučinách	NULL	NULL	1
+Na Luka	NULL	NULL	1
+Na Lukách	NULL	NULL	1
+Na Lužci	NULL	NULL	1
+Na Luzích	NULL	NULL	1
+Na Lysinách	NULL	NULL	1
+Na Lysině	NULL	NULL	1
+Na Malé Šárce	NULL	NULL	1
+Na Malém klínu	NULL	NULL	1
+Na Malovance	NULL	NULL	1
+Na Maninách	NULL	NULL	1
+Na Manoušce	NULL	NULL	1
+Na Markvartce	NULL	NULL	1
+Na Marně	NULL	NULL	1
+Na Míčánce	NULL	NULL	1
+Na Míčánkách	NULL	NULL	1
+Na Michovkách	NULL	NULL	1
+Na Michovkách I	NULL	NULL	1
+Na Michovkách II	NULL	NULL	1
+Na Michovkách III	NULL	NULL	1
+Na Mírách	NULL	NULL	1
+Na Mlejnku	NULL	NULL	1
+Na Močále	NULL	NULL	1
+Na Moklině	NULL	NULL	1
+Na Mokřině	NULL	NULL	1
+Na Moráni	NULL	NULL	1
+Na Mrázovce	NULL	NULL	1
+Na Musilech	NULL	NULL	1
+Na Můstku	NULL	NULL	1
+Na Mýtě	NULL	NULL	1
+Na Náspu	NULL	NULL	1
+Na Návrší	NULL	NULL	1
+Na Návsi	NULL	NULL	1
+Na Neklance	NULL	NULL	1
+Na Nežárce	NULL	NULL	1
+Na Nivách	NULL	NULL	1
+Na Novině	NULL	NULL	1
+Na Odbočce	NULL	NULL	1
+Na Ohradě	NULL	NULL	1
+Na Okraji	NULL	NULL	1
+Na Okrouhlíku	NULL	NULL	1
+Na Okruhu	NULL	NULL	1
+Na Opyši	NULL	NULL	1
+Na Ořechovce	NULL	NULL	1
+Na Ostrohu	NULL	NULL	1
+Na Ostrově	NULL	NULL	1
+Na Ostrůvku	NULL	NULL	1
+Na Ovčáckém	NULL	NULL	1
+Na Ovčinách	NULL	NULL	1
+Na Ovesníku	NULL	NULL	1
+Na Padesátém	NULL	NULL	1
+Na Padesátníku I	NULL	NULL	1
+Na Padesátníku II	NULL	NULL	1
+Na Padesátníku III	NULL	NULL	1
+Na Padesátníku IV	NULL	NULL	1
+Na Pahorku	NULL	NULL	1
+Na Pahoubce	NULL	NULL	1
+Na Paloučku	NULL	NULL	1
+Na Palouku	NULL	NULL	1
+Na Pankráci	NULL	NULL	1
+Na Parcelách	NULL	NULL	1
+Na Parukářce	NULL	NULL	1
+Na Pasece	NULL	NULL	1
+Na Pastvinách	NULL	NULL	1
+Na Pavím vrchu	NULL	NULL	1
+Na Pazderce	NULL	NULL	1
+Na Pecích	NULL	NULL	1
+Na Pěkné vyhlídce	NULL	NULL	1
+Na Pernikářce	NULL	NULL	1
+Na Perštýně	NULL	NULL	1
+Na Pěšinách	NULL	NULL	1
+Na Pěšině	NULL	NULL	1
+Na Petřinách	NULL	NULL	1
+Na Petynce	NULL	NULL	1
+Na Pískách	NULL	NULL	1
+Na Pískovně	NULL	NULL	1
+Na Písku	NULL	NULL	1
+Na Plachotě	NULL	NULL	1
+Na Placích	NULL	NULL	1
+Na Pláni	NULL	NULL	1
+Na Planině	NULL	NULL	1
+Na Plískavě	NULL	NULL	1
+Na Plzeňce	NULL	NULL	1
+Na Podkovce	NULL	NULL	1
+Na Pokraji	NULL	NULL	1
+Na Polníku	NULL	NULL	1
+Na Pomezí	NULL	NULL	1
+Na Popelce	NULL	NULL	1
+Na Poříčí	NULL	NULL	1
+Na Poříčním právu	NULL	NULL	1
+Na potůčku	NULL	NULL	1
+Na Pozorce	NULL	NULL	1
+Na Pramenech	NULL	NULL	1
+Na Předevsi	NULL	NULL	1
+Na Přesypu	NULL	NULL	1
+Na Příčce	NULL	NULL	1
+Na Příčné mezi	NULL	NULL	1
+Na Přídole	NULL	NULL	1
+Na Příkopě	NULL	NULL	1
+Na přívozích	NULL	NULL	1
+Na Prosecké vyhlídce	NULL	NULL	1
+Na Proseku	NULL	NULL	1
+Na Proutcích	NULL	NULL	1
+Na Proutkách	NULL	NULL	1
+Na Provaznici	NULL	NULL	1
+Na Průhonu	NULL	NULL	1
+Na Průseku	NULL	NULL	1
+Na Pučálce	NULL	NULL	1
+Na Radosti	NULL	NULL	1
+Na rampách	NULL	NULL	1
+Na Rejdišti	NULL	NULL	1
+Na Roháčku	NULL	NULL	1
+Na Rokytce	NULL	NULL	1
+Na Rolích	NULL	NULL	1
+Na Rovinách	NULL	NULL	1
+Na Rovině	NULL	NULL	1
+Na rovném	NULL	NULL	1
+Na Rovni	NULL	NULL	1
+Na Rovnosti	NULL	NULL	1
+Na Rozcestí	NULL	NULL	1
+Na Rozdílu	NULL	NULL	1
+Na Rozhledu	NULL	NULL	1
+Na Rozhraní	NULL	NULL	1
+Na Rozvodí	NULL	NULL	1
+Na Rybářce	NULL	NULL	1
+Na Rybníčku	NULL	NULL	1
+Na Rynku	NULL	NULL	1
+Na Šachtě	NULL	NULL	1
+Na Sádce	NULL	NULL	1
+Na Sadech	NULL	NULL	1
+Na Šafránce	NULL	NULL	1
+Na Salabce	NULL	NULL	1
+Na Samotě	NULL	NULL	1
+Na Schodech	NULL	NULL	1
+Na Schůdkách	NULL	NULL	1
+Na Šedivé	NULL	NULL	1
+Na Sedlišti	NULL	NULL	1
+Na Šejdru	NULL	NULL	1
+Na Sekyrce	NULL	NULL	1
+Na Selském	NULL	NULL	1
+Na Seníku	NULL	NULL	1
+Na Sídlišti I	NULL	NULL	1
+Na Sídlišti II	NULL	NULL	1
+Na Sídlišti III	NULL	NULL	1
+Na Skalách	NULL	NULL	1
+Na Skalce	NULL	NULL	1
+Na Skále	NULL	NULL	1
+Na Sklonku	NULL	NULL	1
+Na Slatinách	NULL	NULL	1
+Na Slatince	NULL	NULL	1
+Na Slavíkově	NULL	NULL	1
+Na Slovance	NULL	NULL	1
+Na Slovanech	NULL	NULL	1
+Na Slupi	NULL	NULL	1
+Na Smetance	NULL	NULL	1
+Na Šmukýřce	NULL	NULL	1
+Na Souvrati	NULL	NULL	1
+Na Spádu	NULL	NULL	1
+Na Spáleništi	NULL	NULL	1
+Na Špejcharu	NULL	NULL	1
+Na Špitálce	NULL	NULL	1
+Na Špitálsku	NULL	NULL	1
+Na Spojce	NULL	NULL	1
+Na Sponě	NULL	NULL	1
+Na Srážku	NULL	NULL	1
+Na Srázu	NULL	NULL	1
+Na Srpečku	NULL	NULL	1
+Na Šťáhlavce	NULL	NULL	1
+Na Štamberku	NULL	NULL	1
+Na Stárce	NULL	NULL	1
+Na staré	NULL	NULL	1
+Na Staré cestě	NULL	NULL	1
+Na Staré vinici	NULL	NULL	1
+Na Štěpnici	NULL	NULL	1
+Na Stezce	NULL	NULL	1
+Na Stírce	NULL	NULL	1
+Na Stráni	NULL	NULL	1
+Na Stráži	NULL	NULL	1
+Na Střelnici	NULL	NULL	1
+Na Struze	NULL	NULL	1
+Na Strži	NULL	NULL	1
+Na stupních	NULL	NULL	1
+Na Šubě	NULL	NULL	1
+Na Šumavě	NULL	NULL	1
+Na Šutce	NULL	NULL	1
+Na Svahu	NULL	NULL	1
+Na Svěcence	NULL	NULL	1
+Na Švihance	NULL	NULL	1
+Na Sychrově	NULL	NULL	1
+Na Sypčině	NULL	NULL	1
+Na Sypkém	NULL	NULL	1
+Na Terase	NULL	NULL	1
+Na Topolce	NULL	NULL	1
+Na Třebešíně	NULL	NULL	1
+Na Truhlářce	NULL	NULL	1
+Na Tržišti	NULL	NULL	1
+Na Tykačce	NULL	NULL	1
+Na Úbočí	NULL	NULL	1
+Na úhoru	NULL	NULL	1
+Na úlehli	NULL	NULL	1
+Na Universitním statku	NULL	NULL	1
+Na Usedlosti	NULL	NULL	1
+Na Úseku	NULL	NULL	1
+Na Úspěchu	NULL	NULL	1
+Na Vackově	NULL	NULL	1
+Na Václavce	NULL	NULL	1
+Na Valech	NULL	NULL	1
+Na Valentince	NULL	NULL	1
+Na Vápence	NULL	NULL	1
+Na Vápenném	NULL	NULL	1
+Na Vartě	NULL	NULL	1
+Na Věnečku	NULL	NULL	1
+Na Veselí	NULL	NULL	1
+Na Větrníku	NULL	NULL	1
+Na Větrově	NULL	NULL	1
+Na Větru	NULL	NULL	1
+Na Vidouli	NULL	NULL	1
+Na Viktorce	NULL	NULL	1
+Na Viničce	NULL	NULL	1
+Na Vinici	NULL	NULL	1
+Na Viničních horách	NULL	NULL	1
+Na Vinobraní	NULL	NULL	1
+Na Vinohradu	NULL	NULL	1
+Na Višňovce	NULL	NULL	1
+Na Vítězné pláni	NULL	NULL	1
+Na Vlasačce	NULL	NULL	1
+Na Vlastní půdě	NULL	NULL	1
+Na Vlastním	NULL	NULL	1
+Na Vlčovce	NULL	NULL	1
+Na Vlku	NULL	NULL	1
+Na Volánové	NULL	NULL	1
+Na Vrchách	NULL	NULL	1
+Na vrchmezí	NULL	NULL	1
+Na Vrcholu	NULL	NULL	1
+Na vrchu	NULL	NULL	1
+Na Vrších	NULL	NULL	1
+Na vršku	NULL	NULL	1
+Na Vrstevnici	NULL	NULL	1
+Na Vrstvách	NULL	NULL	1
+Na Výběžku	NULL	NULL	1
+Na Výhledech	NULL	NULL	1
+Na Vyhlídce	NULL	NULL	1
+Na Výhonku	NULL	NULL	1
+Na Vypichu	NULL	NULL	1
+Na Výrovně	NULL	NULL	1
+Na Výši	NULL	NULL	1
+Na Výšinách	NULL	NULL	1
+Na Výšině	NULL	NULL	1
+Na Výsledku I	NULL	NULL	1
+Na Výsledku II	NULL	NULL	1
+Na Výsluní	NULL	NULL	1
+Na vysočanských vinicích	NULL	NULL	1
+Na Vysočině	NULL	NULL	1
+Na Vysoké I	NULL	NULL	1
+Na Vysoké II	NULL	NULL	1
+Na Výspě	NULL	NULL	1
+Na Výstupu	NULL	NULL	1
+Na Výtoni	NULL	NULL	1
+Na Zábradlí	NULL	NULL	1
+Na Zadní Kopanině	NULL	NULL	1
+Na Záhonech	NULL	NULL	1
+Na Zahrádkách	NULL	NULL	1
+Na Zájezdu	NULL	NULL	1
+Na Zámecké	NULL	NULL	1
+Na Zámkách	NULL	NULL	1
+Na Zámyšli	NULL	NULL	1
+Na Zástřelu	NULL	NULL	1
+Na Zatlance	NULL	NULL	1
+Na Zátorách	NULL	NULL	1
+Na Zátorce	NULL	NULL	1
+Na Zavadilce	NULL	NULL	1
+Na Závěji	NULL	NULL	1
+Na Zbořenci	NULL	NULL	1
+Na Zderaze	NULL	NULL	1
+Na Zedníkové	NULL	NULL	1
+Na Zemance	NULL	NULL	1
+Na Žertvách	NULL	NULL	1
+Na zlatě	NULL	NULL	1
+Na Zlatnici	NULL	NULL	1
+Na Zlatý kopec	NULL	NULL	1
+Na Zlíchově	NULL	NULL	1
+Na Zmrzlíku	NULL	NULL	1
+Na Znělci	NULL	NULL	1
+Na Žvahově	NULL	NULL	1
+Na Zvoničce	NULL	NULL	1
+Naardenská	NULL	NULL	1
+nábřeží Edvarda Beneše	NULL	NULL	1
+nábřeží Kapitána Jaroše	NULL	NULL	1
+nábřeží Ludvíka Svobody	NULL	NULL	1
+Nábřežní	NULL	NULL	1
+Náchodská	NULL	NULL	1
+Nad akáty	NULL	NULL	1
+Nad Akcízem	NULL	NULL	1
+Nad Alejí	NULL	NULL	1
+Nad Belárií	NULL	NULL	1
+Nad Belvederem	NULL	NULL	1
+Nad Bertramkou	NULL	NULL	1
+Nad Bořislavkou	NULL	NULL	1
+Nad Botičem	NULL	NULL	1
+Nad Branickým pivovarem	NULL	NULL	1
+Nad Brůdkem	NULL	NULL	1
+Nad Buďánkami II	NULL	NULL	1
+Nad Buďánkami III	NULL	NULL	1
+Nad Cementárnou	NULL	NULL	1
+Nad Chaloupkami	NULL	NULL	1
+Nad Chuchlí	NULL	NULL	1
+Nad Cihelnou	NULL	NULL	1
+Nad Dalejským Údolím	NULL	NULL	1
+Nad dolíky	NULL	NULL	1
+Nad Doly	NULL	NULL	1
+Nad Drahání	NULL	NULL	1
+Nad Drahou	NULL	NULL	1
+Nad Elektrárnou	NULL	NULL	1
+Nad Flajšnerkou	NULL	NULL	1
+Nad Habrovkou	NULL	NULL	1
+Nad Hájem	NULL	NULL	1
+Nad Havlem	NULL	NULL	1
+Nad Helmrovkou	NULL	NULL	1
+Nad Hercovkou	NULL	NULL	1
+Nad Hliníkem	NULL	NULL	1
+Nad Horizontem	NULL	NULL	1
+Nad Hradním potokem	NULL	NULL	1
+Nad Hradním vodojemem	NULL	NULL	1
+Nad Husovými sady	NULL	NULL	1
+Nad Hutěmi	NULL	NULL	1
+Nad Jenerálkou	NULL	NULL	1
+Nad Jetelkou	NULL	NULL	1
+Nad Jezerkou	NULL	NULL	1
+Nad Jordánkem	NULL	NULL	1
+Nad Kajetánkou	NULL	NULL	1
+Nad Kaplankou	NULL	NULL	1
+Nad kapličkou	NULL	NULL	1
+Nad Kavalírkou	NULL	NULL	1
+Nad Kazankou	NULL	NULL	1
+Nad Kelerkou	NULL	NULL	1
+Nad Kesnerkou	NULL	NULL	1
+Nad Klamovkou	NULL	NULL	1
+Nad Klíčovem	NULL	NULL	1
+Nad Klikovkou	NULL	NULL	1
+Nad Kolčavkou	NULL	NULL	1
+Nad Kolonií	NULL	NULL	1
+Nad Komornickou	NULL	NULL	1
+Nad Konvářkou	NULL	NULL	1
+Nad Košíkem	NULL	NULL	1
+Nad Košinkou	NULL	NULL	1
+Nad Kostelem	NULL	NULL	1
+Nad Kotlaskou I	NULL	NULL	1
+Nad Kotlaskou II	NULL	NULL	1
+Nad Kotlaskou III	NULL	NULL	1
+Nad Kotlaskou IV	NULL	NULL	1
+Nad Kotlaskou V	NULL	NULL	1
+Nad Koulkou	NULL	NULL	1
+Nad Koupadly	NULL	NULL	1
+Nad Koupalištěm	NULL	NULL	1
+Nad Královskou oborou	NULL	NULL	1
+Nad Křížkem	NULL	NULL	1
+Nad Krocínkou	NULL	NULL	1
+Nad Kuliškou	NULL	NULL	1
+Nad Kundratkou	NULL	NULL	1
+Nad Laurovou	NULL	NULL	1
+Nad Lávkou	NULL	NULL	1
+Nad Lesem	NULL	NULL	1
+Nad Lesíkem	NULL	NULL	1
+Nad Lesním divadlem	NULL	NULL	1
+Nad Libeňským nádražím	NULL	NULL	1
+Nad Libeřským potokem	NULL	NULL	1
+Nad Libří	NULL	NULL	1
+Nad Libušským potokem	NULL	NULL	1
+Nad Lomem	NULL	NULL	1
+Nad Lomy	NULL	NULL	1
+Nad Lukami	NULL	NULL	1
+Nad Malým mýtem	NULL	NULL	1
+Nad Manovkou	NULL	NULL	1
+Nad Markytou	NULL	NULL	1
+Nad Mazankou	NULL	NULL	1
+Nad Meandry	NULL	NULL	1
+Nad Mlynářkou	NULL	NULL	1
+Nad Mlýnským potokem	NULL	NULL	1
+Nad mohylou	NULL	NULL	1
+Nad Mostem	NULL	NULL	1
+Nad Motolskou nemocnicí	NULL	NULL	1
+Nad Mrázovkou	NULL	NULL	1
+Nad Mušlovkou	NULL	NULL	1
+Nad Nádražím	NULL	NULL	1
+Nad náhonem	NULL	NULL	1
+Nad Náměstím	NULL	NULL	1
+Nad Novou Libní	NULL	NULL	1
+Nad Nuslemi	NULL	NULL	1
+Nad Obcí I	NULL	NULL	1
+Nad Obcí II	NULL	NULL	1
+Nad Octárnou	NULL	NULL	1
+Nad Odbočkou	NULL	NULL	1
+Nad Ohradou	NULL	NULL	1
+Nad Okrouhlíkem	NULL	NULL	1
+Nad Olšinami	NULL	NULL	1
+Nad Ondřejovem	NULL	NULL	1
+Nad Opatovem	NULL	NULL	1
+Nad ostrovem	NULL	NULL	1
+Nad Pahorkem	NULL	NULL	1
+Nad Palatou	NULL	NULL	1
+Nad Panenskou	NULL	NULL	1
+Nad Panskou zahradou	NULL	NULL	1
+Nad Paťankou	NULL	NULL	1
+Nad Pekařkou	NULL	NULL	1
+Nad Pentlovkou	NULL	NULL	1
+Nad Petruskou	NULL	NULL	1
+Nad Petynkou	NULL	NULL	1
+Nad Pískovnou	NULL	NULL	1
+Nad Plynovodem	NULL	NULL	1
+Nad Podbabskou skálou	NULL	NULL	1
+Nad Pomníkem	NULL	NULL	1
+Nad Popelářkou	NULL	NULL	1
+Nad Popelkou	NULL	NULL	1
+Nad Potokem	NULL	NULL	1
+Nad Potůčkem	NULL	NULL	1
+Nad Prahou	NULL	NULL	1
+Nad pramenem	NULL	NULL	1
+Nad Přehradou	NULL	NULL	1
+Nad Primaskou	NULL	NULL	1
+Nad Přívozem	NULL	NULL	1
+Nad Propustí	NULL	NULL	1
+Nad Pruhy	NULL	NULL	1
+Nad Punčochou	NULL	NULL	1
+Nad Radotínem	NULL	NULL	1
+Nad Rážákem	NULL	NULL	1
+Nad Rohatci	NULL	NULL	1
+Nad Roklí	NULL	NULL	1
+Nad Rokoskou	NULL	NULL	1
+Nad Rokytkou	NULL	NULL	1
+Nad Rybníčky	NULL	NULL	1
+Nad Rybníkem	NULL	NULL	1
+Nad Ryšánkou	NULL	NULL	1
+Nad Sadem	NULL	NULL	1
+Nad Sady	NULL	NULL	1
+Nad Šálkovnou	NULL	NULL	1
+Nad Santoškou	NULL	NULL	1
+Nad Šárkou	NULL	NULL	1
+Nad Sauerovými sady	NULL	NULL	1
+Nad schody	NULL	NULL	1
+Nad Šeberákem	NULL	NULL	1
+Nad šejdrem	NULL	NULL	1
+Nad Šestikopy	NULL	NULL	1
+Nad Šetelkou	NULL	NULL	1
+Nad Skálou	NULL	NULL	1
+Nad Školou	NULL	NULL	1
+Nad Slávií	NULL	NULL	1
+Nad Smetankou	NULL	NULL	1
+Nad Sokolovnou	NULL	NULL	1
+Nad soutokem	NULL	NULL	1
+Nad Spádem	NULL	NULL	1
+Nad spáleným mlýnem	NULL	NULL	1
+Nad Splavem	NULL	NULL	1
+Nad Stanicí	NULL	NULL	1
+Nad statkem	NULL	NULL	1
+Nad Štolou	NULL	NULL	1
+Nad Strakovkou	NULL	NULL	1
+Nad Strání	NULL	NULL	1
+Nad Strouhou	NULL	NULL	1
+Nad Studánkou	NULL	NULL	1
+Nad Šutkou	NULL	NULL	1
+Nad Svahem	NULL	NULL	1
+Nad Sýpkou	NULL	NULL	1
+Nad Tejnkou	NULL	NULL	1
+Nad teplárnou	NULL	NULL	1
+Nad Topoly	NULL	NULL	1
+Nad Tratí	NULL	NULL	1
+Nad Třebešínem I	NULL	NULL	1
+Nad Třebešínem II	NULL	NULL	1
+Nad Třebešínem III	NULL	NULL	1
+Nad Trnkovem	NULL	NULL	1
+Nad Trojou	NULL	NULL	1
+Nad Truhlářkou	NULL	NULL	1
+Nad Turbovou	NULL	NULL	1
+Nad Údolím	NULL	NULL	1
+Nad Úhorem	NULL	NULL	1
+Nad Úpadem	NULL	NULL	1
+Nad Úvozem	NULL	NULL	1
+Nad Úvozy	NULL	NULL	1
+Nad Úžlabinou	NULL	NULL	1
+Nad Václavkou	NULL	NULL	1
+Nad Vavrouškou	NULL	NULL	1
+Nad Vernerákem	NULL	NULL	1
+Nad Vinicemi	NULL	NULL	1
+Nad Vinicí	NULL	NULL	1
+Nad Vinným potokem	NULL	NULL	1
+Nad Vinohradem	NULL	NULL	1
+Nad Višňovkou	NULL	NULL	1
+Nad Vltavou	NULL	NULL	1
+Nad Vodovodem	NULL	NULL	1
+Nad Vojenským hřbitovem	NULL	NULL	1
+Nad Vokolky	NULL	NULL	1
+Nad Volyňkou	NULL	NULL	1
+Nad Vrbami	NULL	NULL	1
+Nad Vršovskou horou	NULL	NULL	1
+Nad Vrstvami	NULL	NULL	1
+Nad Vsí	NULL	NULL	1
+Nad Výpustí	NULL	NULL	1
+Nad Výšinkou	NULL	NULL	1
+Nad Vysočany	NULL	NULL	1
+Nad Zahradnictvím	NULL	NULL	1
+Nad Záložnou	NULL	NULL	1
+Nad Zámečkem	NULL	NULL	1
+Nad Zámečnicí	NULL	NULL	1
+Nad Zatáčkou	NULL	NULL	1
+Nad Zátiším	NULL	NULL	1
+Nad Zavážkou	NULL	NULL	1
+Nad Závěrkou	NULL	NULL	1
+Nad závodištěm	NULL	NULL	1
+Nad Zbrojnicí	NULL	NULL	1
+Nad Želivkou	NULL	NULL	1
+Nad Zemankou	NULL	NULL	1
+Nad Zlatnicí	NULL	NULL	1
+Nad Zlíchovem	NULL	NULL	1
+Nademlejnská	NULL	NULL	1
+Nádraží Běchovice	NULL	NULL	1
+Nádraží Horní Měcholupy	NULL	NULL	1
+Nádraží Hostivař	NULL	NULL	1
+Nádraží Kyje	NULL	NULL	1
+Nádraží Vršovice	NULL	NULL	1
+Nádražní	NULL	NULL	1
+Nádvorní	NULL	NULL	1
+Náhorní	NULL	NULL	1
+Nákupní	NULL	NULL	1
+nám. Na Lužinách	NULL	NULL	1
+nám. Plukovníka Vlčka	NULL	NULL	1
+nám. Protifašistických bojovníků	NULL	NULL	1
+nám. Smiřických	NULL	NULL	1
+nám. v Holi	NULL	NULL	1
+name	NULL	NULL	1
+náměstí 14. října	NULL	NULL	1
+náměstí 25. března	NULL	NULL	1
+náměstí Barikád	NULL	NULL	1
+náměstí Bohumila Hrabala	NULL	NULL	1
+náměstí Bořislavka	NULL	NULL	1
+náměstí Bratří Jandusů	NULL	NULL	1
+náměstí Bratří Synků	NULL	NULL	1
+náměstí Českého povstání	NULL	NULL	1
+náměstí Chuchelských bojovníků	NULL	NULL	1
+náměstí Curieových	NULL	NULL	1
+náměstí Dr. Václava Holého	NULL	NULL	1
+náměstí Franze Kafky	NULL	NULL	1
+náměstí Generála Kutlvašra	NULL	NULL	1
+náměstí Hrdinů	NULL	NULL	1
+náměstí I. P. Pavlova	NULL	NULL	1
+náměstí Interbrigády	NULL	NULL	1
+náměstí Jana Palacha	NULL	NULL	1
+náměstí Jiřího Berana	NULL	NULL	1
+náměstí Jiřího z Lobkovic	NULL	NULL	1
+náměstí Jiřího z Poděbrad	NULL	NULL	1
+náměstí Josefa Machka	NULL	NULL	1
+náměstí Kinských	NULL	NULL	1
+náměstí Mezi zahrádkami	NULL	NULL	1
+náměstí Míru	NULL	NULL	1
+náměstí Na Balabence	NULL	NULL	1
+náměstí Na Farkáně	NULL	NULL	1
+náměstí Na Santince	NULL	NULL	1
+náměstí Na stráži	NULL	NULL	1
+náměstí Omladiny	NULL	NULL	1
+náměstí Padlých	NULL	NULL	1
+náměstí Plukovníka Vlčka	NULL	NULL	1
+náměstí pod Emauzy	NULL	NULL	1
+náměstí Pod kaštany	NULL	NULL	1
+náměstí Pod lípou	NULL	NULL	1
+náměstí Pod Platanem	NULL	NULL	1
+náměstí Před bateriemi	NULL	NULL	1
+náměstí Prezidenta Masaryka	NULL	NULL	1
+Náměstí Republiky	NULL	NULL	1
+náměstí Svatopluka Čecha	NULL	NULL	1
+náměstí Svobody	NULL	NULL	1
+náměstí U lípy svobody	NULL	NULL	1
+náměstí Winstona Churchilla	NULL	NULL	1
+Náměstí Zdenky Braunerové	NULL	NULL	1
+Náplavní	NULL	NULL	1
+Náprstkova	NULL	NULL	1
+Narcisová	NULL	NULL	1
+Národní	NULL	NULL	1
+Národní obrany	NULL	NULL	1
+Národních hrdinů	NULL	NULL	1
+Nárožní	NULL	NULL	1
+Násirovo náměstí	NULL	NULL	1
+Naskové	NULL	NULL	1
+Nástrojařská	NULL	NULL	1
+Natanaelka	NULL	NULL	1
+Návazná	NULL	NULL	1
+Náves	NULL	NULL	1
+Návětrná	NULL	NULL	1
+Navigátorů	NULL	NULL	1
+Navrátilova	NULL	NULL	1
+Návršní	NULL	NULL	1
+Názovská	NULL	NULL	1
+Neapolská	NULL	NULL	1
+Nebovidská	NULL	NULL	1
+Nebušická	NULL	NULL	1
+Nechanická	NULL	NULL	1
+Nechanského	NULL	NULL	1
+Nechvílova	NULL	NULL	1
+Nečova	NULL	NULL	1
+Nedašovská	NULL	NULL	1
+Nedbalova	NULL	NULL	1
+Nedokončená	NULL	NULL	1
+Nedošínské	NULL	NULL	1
+Nedražická	NULL	NULL	1
+Nedvědická	NULL	NULL	1
+Nedvědovo náměstí	NULL	NULL	1
+Nedvězská	NULL	NULL	1
+Neffova	NULL	NULL	1
+Nefritová	NULL	NULL	1
+Neherovská	NULL	NULL	1
+Nehvizdská	NULL	NULL	1
+Nejdkova	NULL	NULL	1
+Nekázanka	NULL	NULL	1
+Neklanova	NULL	NULL	1
+Nekvasilova	NULL	NULL	1
+Nelahozeveská	NULL	NULL	1
+Němčická	NULL	NULL	1
+Nemocnice Krč	NULL	NULL	1
+Nemocnice Motol	NULL	NULL	1
+Nemocniční	NULL	NULL	1
+Nemošická	NULL	NULL	1
+Nepálská	NULL	NULL	1
+Nepelova	NULL	NULL	1
+Nepilova	NULL	NULL	1
+Nepomucká	NULL	NULL	1
+Nepomuckých	NULL	NULL	1
+Nepovolená	NULL	NULL	1
+Nepravidelná	NULL	NULL	1
+Neprůjezdná	NULL	NULL	1
+Neratovická	NULL	NULL	1
+Nerudova	NULL	NULL	1
+Nešporova	NULL	NULL	1
+Nesvadbova	NULL	NULL	1
+Netlucká	NULL	NULL	1
+Netolická	NULL	NULL	1
+Netřebická	NULL	NULL	1
+Netřebská	NULL	NULL	1
+Neustupného	NULL	NULL	1
+Nevanova	NULL	NULL	1
+Neveklovská	NULL	NULL	1
+Něvská	NULL	NULL	1
+Newton	NULL	NULL	1
+Newtonova	NULL	NULL	1
+Nezamyslova	NULL	NULL	1
+Nežárská	NULL	NULL	1
+Nezdova	NULL	NULL	1
+Niederleho	NULL	NULL	1
+Nikodémova	NULL	NULL	1
+Nikoly Tesly	NULL	NULL	1
+Nikoly Vapcarova	NULL	NULL	1
+Niská	NULL	NULL	1
+Nitranská	NULL	NULL	1
+Nobelova	NULL	NULL	1
+Nohavice	NULL	NULL	1
+Norbertov	NULL	NULL	1
+Norská	NULL	NULL	1
+Nosická	NULL	NULL	1
+Nosticova	NULL	NULL	1
+Notečská	NULL	NULL	1
+Noutonická	NULL	NULL	1
+Nouzová	NULL	NULL	1
+Nouzovské náměstí	NULL	NULL	1
+Nová	NULL	NULL	1
+Nová cesta	NULL	NULL	1
+Nová kolonie	NULL	NULL	1
+Nová Povltavská	NULL	NULL	1
+Nová Šárka	NULL	NULL	1
+Novákova	NULL	NULL	1
+Novákovo náměstí	NULL	NULL	1
+Novákových	NULL	NULL	1
+Novarská	NULL	NULL	1
+Nové domy	NULL	NULL	1
+Nové Haltýře	NULL	NULL	1
+Nové Mlýny	NULL	NULL	1
+Nové náměstí	NULL	NULL	1
+Nové Petrovice	NULL	NULL	1
+Nového	NULL	NULL	1
+Novgorodská	NULL	NULL	1
+Novobohdalecká	NULL	NULL	1
+Novoborská	NULL	NULL	1
+Novochuchelská	NULL	NULL	1
+Novodvorská	NULL	NULL	1
+Novohrádecká	NULL	NULL	1
+Novolipanská	NULL	NULL	1
+Novomeského	NULL	NULL	1
+novoměstská náplavka	NULL	NULL	1
+Novomlýnská	NULL	NULL	1
+Novopetrovická	NULL	NULL	1
+Novorossijská	NULL	NULL	1
+Novoškolská	NULL	NULL	1
+Novoštěrboholská	NULL	NULL	1
+Novostrašnická	NULL	NULL	1
+Novosuchdolská	NULL	NULL	1
+Novosvětská	NULL	NULL	1
+Novotného lávka	NULL	NULL	1
+Novoveská	NULL	NULL	1
+Novovysočanská	NULL	NULL	1
+Novozámecká	NULL	NULL	1
+Nový lesík	NULL	NULL	1
+Nový Svět	NULL	NULL	1
+Nový Zlíchov	NULL	NULL	1
+Nučická	NULL	NULL	1
+Nupacká	NULL	NULL	1
+Nuselská	NULL	NULL	1
+Nuselská radnice	NULL	NULL	1
+Nuselské schody	NULL	NULL	1
+Nuselský most	NULL	NULL	1
+Nušlova	NULL	NULL	1
+Nýdecká	NULL	NULL	1
+Nymburská	NULL	NULL	1
+Obchodní	NULL	NULL	1
+Obchodní centrum Černý Most	NULL	NULL	1
+Obchodní centrum Štěrboholy	NULL	NULL	1
+Obchodní náměstí	NULL	NULL	1
+Obětí 6. května	NULL	NULL	1
+Objízdná	NULL	NULL	1
+Oblouková	NULL	NULL	1
+Oborská	NULL	NULL	1
+Obrataňská	NULL	NULL	1
+Obrovského	NULL	NULL	1
+Obslužná	NULL	NULL	1
+Obvodová	NULL	NULL	1
+Ocelářská	NULL	NULL	1
+Ocelíkova	NULL	NULL	1
+Ocelkova	NULL	NULL	1
+Ochranovská	NULL	NULL	1
+Ocúnová	NULL	NULL	1
+Od Školy	NULL	NULL	1
+Od Vysoké	NULL	NULL	1
+Odbočná	NULL	NULL	1
+Odboje	NULL	NULL	1
+Odborů	NULL	NULL	1
+Oddělená	NULL	NULL	1
+Oderská	NULL	NULL	1
+Odlehlá	NULL	NULL	1
+Ohmova	NULL	NULL	1
+Ohnivcova	NULL	NULL	1
+Ohradní	NULL	NULL	1
+Ohradská	NULL	NULL	1
+Ohradské náměstí	NULL	NULL	1
+Ohrobecká	NULL	NULL	1
+Oistrachova	NULL	NULL	1
+Okořská	NULL	NULL	1
+Okrajní	NULL	NULL	1
+Okrajová	NULL	NULL	1
+Okrasná	NULL	NULL	1
+Okřínecká	NULL	NULL	1
+Okrouhlická	NULL	NULL	1
+Okrouhlíkova	NULL	NULL	1
+Okrová	NULL	NULL	1
+Okruhová	NULL	NULL	1
+Okružní	NULL	NULL	1
+Olbrachtova	NULL	NULL	1
+Olbramovická	NULL	NULL	1
+Oldřicha Nového	NULL	NULL	1
+Oldřichova	NULL	NULL	1
+Olešnická	NULL	NULL	1
+Olešská	NULL	NULL	1
+Olgy Havlové	NULL	NULL	1
+Olivova	NULL	NULL	1
+Olšanská	NULL	NULL	1
+Olšanské náměstí	NULL	NULL	1
+Olšová	NULL	NULL	1
+Olšovická	NULL	NULL	1
+Olštýnská	NULL	NULL	1
+Olympijská	NULL	NULL	1
+Omladinářů	NULL	NULL	1
+Omská	NULL	NULL	1
+Ondřejovská	NULL	NULL	1
+Ondříčkova	NULL	NULL	1
+Opálkova	NULL	NULL	1
+Opálová	NULL	NULL	1
+Opařanská	NULL	NULL	1
+Opatovická	NULL	NULL	1
+Opatovská	NULL	NULL	1
+Operetní	NULL	NULL	1
+Opletalova	NULL	NULL	1
+Opočenská	NULL	NULL	1
+Opočínská	NULL	NULL	1
+Opolská	NULL	NULL	1
+Opuková	NULL	NULL	1
+Oravská	NULL	NULL	1
+Ordovická	NULL	NULL	1
+Orebitská	NULL	NULL	1
+Ořechová	NULL	NULL	1
+Orelská	NULL	NULL	1
+Ořešská	NULL	NULL	1
+Orlická	NULL	NULL	1
+Ortenovo náměstí	NULL	NULL	1
+Osadní	NULL	NULL	1
+Osamocená	NULL	NULL	1
+Osecká	NULL	NULL	1
+Osetá	NULL	NULL	1
+Osická	NULL	NULL	1
+Osiková	NULL	NULL	1
+Osinalická	NULL	NULL	1
+Osnická	NULL	NULL	1
+Ostrá	NULL	NULL	1
+Ostravická	NULL	NULL	1
+Ostravská	NULL	NULL	1
+Ostrčilovo náměstí	NULL	NULL	1
+Ostředecká	NULL	NULL	1
+Ostřicová	NULL	NULL	1
+Ostromečská	NULL	NULL	1
+Ostrovní	NULL	NULL	1
+Ostrovského	NULL	NULL	1
+Ostružinová	NULL	NULL	1
+Osvětová	NULL	NULL	1
+Osvobození	NULL	NULL	1
+Otakara Vrby	NULL	NULL	1
+Otakarova	NULL	NULL	1
+Otavova	NULL	NULL	1
+Otavská	NULL	NULL	1
+Otěšínská	NULL	NULL	1
+Otevřená	NULL	NULL	1
+Otická	NULL	NULL	1
+Otlíkovská	NULL	NULL	1
+Otopašská	NULL	NULL	1
+Otovická	NULL	NULL	1
+Otradovická	NULL	NULL	1
+Otvovická	NULL	NULL	1
+Oty Pavla	NULL	NULL	1
+Ouholická	NULL	NULL	1
+Ouhrabkova	NULL	NULL	1
+Oválová	NULL	NULL	1
+Ovčárská	NULL	NULL	1
+Ovčí hájek	NULL	NULL	1
+Ovenecká	NULL	NULL	1
+Ovesná	NULL	NULL	1
+Ovocná	NULL	NULL	1
+Ovocný trh	NULL	NULL	1
+Ovsíková	NULL	NULL	1
+P2	NULL	NULL	1
+Paběnická	NULL	NULL	1
+Pacajevova	NULL	NULL	1
+Paceřická	NULL	NULL	1
+Pacovská	NULL	NULL	1
+Paculova	NULL	NULL	1
+Padovská	NULL	NULL	1
+Pajerova	NULL	NULL	1
+Pakoměřická	NULL	NULL	1
+Palackého	NULL	NULL	1
+Palackého most	NULL	NULL	1
+Palackého náměstí	NULL	NULL	1
+Paláskova	NULL	NULL	1
+Pálavská	NULL	NULL	1
+Pálkařská	NULL	NULL	1
+Palmovka	NULL	NULL	1
+Palouček	NULL	NULL	1
+Palouky	NULL	NULL	1
+Pámelníková	NULL	NULL	1
+Pampelišková	NULL	NULL	1
+Pancířova	NULL	NULL	1
+Panelová	NULL	NULL	1
+Panenská	NULL	NULL	1
+Pankrác	NULL	NULL	1
+Panská	NULL	NULL	1
+Panuškova	NULL	NULL	1
+Papírenská	NULL	NULL	1
+Papírníkova	NULL	NULL	1
+Paprsková	NULL	NULL	1
+Parašutistů	NULL	NULL	1
+Pardubická	NULL	NULL	1
+Paříkova	NULL	NULL	1
+Pařížská	NULL	NULL	1
+Park Charlotty Garrigue Masarykové	NULL	NULL	1
+Parková	NULL	NULL	1
+Parléřova	NULL	NULL	1
+Parmská	NULL	NULL	1
+Paroplavební	NULL	NULL	1
+Partyzánská	NULL	NULL	1
+pasáž Černá růže	NULL	NULL	1
+pasáž Charitas	NULL	NULL	1
+pasáž Divadla Broadway	NULL	NULL	1
+pasáž Koruna	NULL	NULL	1
+pasáž Lucerna	NULL	NULL	1
+Pasáž Oasis	NULL	NULL	1
+pasáž Rokoko	NULL	NULL	1
+pasáž Světozor	NULL	NULL	1
+pasáž Teta	NULL	NULL	1
+Pasáž Tržnice	NULL	NULL	1
+pasáž U Nováků	NULL	NULL	1
+Pasáž Vlasty Buriana	NULL	NULL	1
+Pasecká	NULL	NULL	1
+Pasteurova	NULL	NULL	1
+Pastevců	NULL	NULL	1
+Paťanka	NULL	NULL	1
+Pátkova	NULL	NULL	1
+Patočkova	NULL	NULL	1
+Pavelkova	NULL	NULL	1
+Pavla Beneše	NULL	NULL	1
+Pavla Švandy ze Semčic	NULL	NULL	1
+Pavlíkova	NULL	NULL	1
+Pavlišovská	NULL	NULL	1
+Pavlova	NULL	NULL	1
+Pavlovická	NULL	NULL	1
+Pavlovská	NULL	NULL	1
+Pávovské náměstí	NULL	NULL	1
+Pavrovského	NULL	NULL	1
+Pečárková	NULL	NULL	1
+Peceradská	NULL	NULL	1
+Pecháčkova	NULL	NULL	1
+Pecharova	NULL	NULL	1
+Pechlátova	NULL	NULL	1
+Peckova	NULL	NULL	1
+Pejevové	NULL	NULL	1
+Pekárenská	NULL	NULL	1
+Pekárkova	NULL	NULL	1
+Pekařova	NULL	NULL	1
+Pekařská	NULL	NULL	1
+Pelclova	NULL	NULL	1
+Pelechovská	NULL	NULL	1
+Pelhřimovská	NULL	NULL	1
+Pelikánova	NULL	NULL	1
+Pelléova	NULL	NULL	1
+Pelnářova	NULL	NULL	1
+Pelušková	NULL	NULL	1
+Pelyňková	NULL	NULL	1
+Penízovková	NULL	NULL	1
+Per Partes	NULL	NULL	1
+Perlitová	NULL	NULL	1
+Perlová	NULL	NULL	1
+Pernerova	NULL	NULL	1
+Peroutkova	NULL	NULL	1
+Perspektivní	NULL	NULL	1
+Perštejnská	NULL	NULL	1
+Pertoldova	NULL	NULL	1
+Perucká	NULL	NULL	1
+Perunova	NULL	NULL	1
+Pěší	NULL	NULL	1
+Pešinova	NULL	NULL	1
+Peškova	NULL	NULL	1
+Pešlova	NULL	NULL	1
+Pešova	NULL	NULL	1
+Peštukova	NULL	NULL	1
+Pětidomí	NULL	NULL	1
+Pětipeského	NULL	NULL	1
+Petra Bezruče	NULL	NULL	1
+Petra Rezka	NULL	NULL	1
+Petra Slezáka	NULL	NULL	1
+Petříkova	NULL	NULL	1
+Petříkovská	NULL	NULL	1
+Petřínská	NULL	NULL	1
+Petrklíčová	NULL	NULL	1
+Petrohradská	NULL	NULL	1
+Petrovická	NULL	NULL	1
+Petrská	NULL	NULL	1
+Petrské náměstí	NULL	NULL	1
+Petržílkova	NULL	NULL	1
+Petržílova	NULL	NULL	1
+Petýrkova	NULL	NULL	1
+Pevnostní	NULL	NULL	1
+Picassova	NULL	NULL	1
+Pihelská	NULL	NULL	1
+Pikovická	NULL	NULL	1
+Pikrtova	NULL	NULL	1
+Pilařská	NULL	NULL	1
+Pilníkovská	NULL	NULL	1
+Pilotů	NULL	NULL	1
+Pilská	NULL	NULL	1
+Pirinská	NULL	NULL	1
+Písčitá	NULL	NULL	1
+Písecká	NULL	NULL	1
+Píseckého	NULL	NULL	1
+Písečná	NULL	NULL	1
+Pískařská	NULL	NULL	1
+Písková	NULL	NULL	1
+Píškova	NULL	NULL	1
+Pískovcová	NULL	NULL	1
+Pískovna	NULL	NULL	1
+Písnická	NULL	NULL	1
+Píšovická	NULL	NULL	1
+Pištěkova	NULL	NULL	1
+Pitkovická	NULL	NULL	1
+Pitterova	NULL	NULL	1
+Pivcova	NULL	NULL	1
+Pivoňková	NULL	NULL	1
+Pivovarnická	NULL	NULL	1
+Pivovarská	NULL	NULL	1
+Plachtova	NULL	NULL	1
+Plajnerova	NULL	NULL	1
+Plamínkové	NULL	NULL	1
+Plaňanská	NULL	NULL	1
+Plánická	NULL	NULL	1
+Pláničkova	NULL	NULL	1
+Plaská	NULL	NULL	1
+Platanová	NULL	NULL	1
+Platnéřská	NULL	NULL	1
+Platónova	NULL	NULL	1
+Plavecká	NULL	NULL	1
+Plavínová	NULL	NULL	1
+Plečnikova	NULL	NULL	1
+Plevenská	NULL	NULL	1
+Plickova	NULL	NULL	1
+Plojharova	NULL	NULL	1
+Ploskovická	NULL	NULL	1
+Plošná	NULL	NULL	1
+Ploštilova	NULL	NULL	1
+Ploučnická	NULL	NULL	1
+Plovdivská	NULL	NULL	1
+Plukovníka Mráze	NULL	NULL	1
+Plutova	NULL	NULL	1
+Plynární	NULL	NULL	1
+Plzeňská	NULL	NULL	1
+Poberova	NULL	NULL	1
+Poběžovická	NULL	NULL	1
+Pobočná	NULL	NULL	1
+Pobořská	NULL	NULL	1
+Pobřežní	NULL	NULL	1
+Počátecká	NULL	NULL	1
+Počeradská	NULL	NULL	1
+Počernická	NULL	NULL	1
+Pod Akáty	NULL	NULL	1
+Pod Altánem	NULL	NULL	1
+Pod Andělkou	NULL	NULL	1
+Pod Areálem	NULL	NULL	1
+Pod Aritmou	NULL	NULL	1
+Pod Babykou	NULL	NULL	1
+Pod Balkánem	NULL	NULL	1
+Pod Bání	NULL	NULL	1
+Pod Barvířkou	NULL	NULL	1
+Pod Baštami	NULL	NULL	1
+Pod Bateriemi	NULL	NULL	1
+Pod Belárií	NULL	NULL	1
+Pod Belvederem	NULL	NULL	1
+Pod Beránkou	NULL	NULL	1
+Pod Betání	NULL	NULL	1
+Pod Bohdalcem I	NULL	NULL	1
+Pod Bohdalcem II	NULL	NULL	1
+Pod Brentovou	NULL	NULL	1
+Pod Bruskou	NULL	NULL	1
+Pod Čertovou skalou	NULL	NULL	1
+Pod Chodovem	NULL	NULL	1
+Pod Cihelnou	NULL	NULL	1
+Pod Čimickým hájem	NULL	NULL	1
+Pod Císařkou	NULL	NULL	1
+Pod Cvrčkovskou cestou	NULL	NULL	1
+Pod Dálnicí	NULL	NULL	1
+Pod Děkankou	NULL	NULL	1
+Pod Děvínem	NULL	NULL	1
+Pod Dlážděnkou	NULL	NULL	1
+Pod Domky	NULL	NULL	1
+Pod Dráhou	NULL	NULL	1
+Pod Drinopolem	NULL	NULL	1
+Pod Duby	NULL	NULL	1
+Pod Dvorem	NULL	NULL	1
+Pod Fialkou	NULL	NULL	1
+Pod Formankou	NULL	NULL	1
+Pod Fořtem	NULL	NULL	1
+Pod Garážemi	NULL	NULL	1
+Pod Habrovkou	NULL	NULL	1
+Pod Habrovou	NULL	NULL	1
+Pod hájem	NULL	NULL	1
+Pod Hájkem	NULL	NULL	1
+Pod Hajnicí	NULL	NULL	1
+Pod Hájovnou	NULL	NULL	1
+Pod Haltýřem	NULL	NULL	1
+Pod Harfou	NULL	NULL	1
+Pod Havránkou	NULL	NULL	1
+Pod Hláskem	NULL	NULL	1
+Pod Hliništěm	NULL	NULL	1
+Pod Hloubětínskou zastávkou	NULL	NULL	1
+Pod Homolkou	NULL	NULL	1
+Pod Hotelem	NULL	NULL	1
+Pod Hrachovkou	NULL	NULL	1
+Pod Hradbami	NULL	NULL	1
+Pod hranicí	NULL	NULL	1
+Pod Hrází	NULL	NULL	1
+Pod Hřbitovem	NULL	NULL	1
+Pod Hřebenem	NULL	NULL	1
+Pod Hřištěm	NULL	NULL	1
+Pod Hvězdárnou	NULL	NULL	1
+Pod Hvězdou	NULL	NULL	1
+Pod Hybšmankou	NULL	NULL	1
+Pod Jalovým dvorem	NULL	NULL	1
+Pod Jankovem	NULL	NULL	1
+Pod Jarovem	NULL	NULL	1
+Pod javory	NULL	NULL	1
+Pod Jiráskovou čtvrtí	NULL	NULL	1
+Pod Juliskou	NULL	NULL	1
+Pod Kapličkou	NULL	NULL	1
+Pod Karlovarskou silnicí	NULL	NULL	1
+Pod Karlovem	NULL	NULL	1
+Pod Kaštany	NULL	NULL	1
+Pod Kavalírkou	NULL	NULL	1
+Pod Kesnerkou	NULL	NULL	1
+Pod Kladenskou silnicí	NULL	NULL	1
+Pod Klamovkou	NULL	NULL	1
+Pod Klaudiánkou	NULL	NULL	1
+Pod Klikovkou	NULL	NULL	1
+Pod kopcem	NULL	NULL	1
+Pod Kostelem	NULL	NULL	1
+Pod Kotlářkou	NULL	NULL	1
+Pod Kotlaskou	NULL	NULL	1
+Pod Královkou	NULL	NULL	1
+Pod Krčským lesem	NULL	NULL	1
+Pod Krejcárkem	NULL	NULL	1
+Pod Křížem	NULL	NULL	1
+Pod Křížkem	NULL	NULL	1
+Pod Krocínkou	NULL	NULL	1
+Pod Kuchyňkou	NULL	NULL	1
+Pod kulturním domem	NULL	NULL	1
+Pod Kynclovkou	NULL	NULL	1
+Pod Labuťkou	NULL	NULL	1
+Pod Lahovskou	NULL	NULL	1
+Pod Lázní	NULL	NULL	1
+Pod Lesem	NULL	NULL	1
+Pod Lesíkem	NULL	NULL	1
+Pod Letištěm	NULL	NULL	1
+Pod Lipami	NULL	NULL	1
+Pod lipkami	NULL	NULL	1
+Pod Lisem	NULL	NULL	1
+Pod Lochkovem	NULL	NULL	1
+Pod Lomem	NULL	NULL	1
+Pod Lysinami	NULL	NULL	1
+Pod Marjánkou	NULL	NULL	1
+Pod Martinem	NULL	NULL	1
+Pod Meliškou	NULL	NULL	1
+Pod Mezí	NULL	NULL	1
+Pod Mlýnkem	NULL	NULL	1
+Pod Mohylou	NULL	NULL	1
+Pod Mostem	NULL	NULL	1
+Pod Náměstím	NULL	NULL	1
+Pod Napětím	NULL	NULL	1
+Pod Náplavkou	NULL	NULL	1
+Pod Náspem	NULL	NULL	1
+Pod Návsí	NULL	NULL	1
+Pod Nouzovem	NULL	NULL	1
+Pod Novou školou	NULL	NULL	1
+Pod Novým lesem	NULL	NULL	1
+Pod Nuselskými schody	NULL	NULL	1
+Pod Okrajem	NULL	NULL	1
+Pod Ořechovkou	NULL	NULL	1
+Pod Ouporem	NULL	NULL	1
+Pod Ovčínem	NULL	NULL	1
+Pod Palatou	NULL	NULL	1
+Pod Palírkou	NULL	NULL	1
+Pod Parukářkou	NULL	NULL	1
+Pod Paťankou	NULL	NULL	1
+Pod Pekařkou	NULL	NULL	1
+Pod Pekárnami	NULL	NULL	1
+Pod Petřinami	NULL	NULL	1
+Pod Písečnou	NULL	NULL	1
+Pod Plískavou	NULL	NULL	1
+Pod Plynojemem	NULL	NULL	1
+Pod Poštou	NULL	NULL	1
+Pod Pramenem	NULL	NULL	1
+Pod Přesypem	NULL	NULL	1
+Pod Prodejnou	NULL	NULL	1
+Pod Průsekem	NULL	NULL	1
+Pod Punčochou	NULL	NULL	1
+Pod Radnicí	NULL	NULL	1
+Pod Rapidem	NULL	NULL	1
+Pod remízkem	NULL	NULL	1
+Pod Rovinou	NULL	NULL	1
+Pod Rozvodnou	NULL	NULL	1
+Pod Rybníčkem	NULL	NULL	1
+Pod Rybničnou	NULL	NULL	1
+Pod rybníkem	NULL	NULL	1
+Pod Sady	NULL	NULL	1
+Pod Salabkou	NULL	NULL	1
+Pod Šancemi	NULL	NULL	1
+Pod Sídlištěm	NULL	NULL	1
+Pod Skalkou	NULL	NULL	1
+Pod Skalou	NULL	NULL	1
+Pod Skálou	NULL	NULL	1
+Pod Sklenářkou	NULL	NULL	1
+Pod Školou	NULL	NULL	1
+Pod Slovany	NULL	NULL	1
+Pod Smetankou	NULL	NULL	1
+Pod Šmukýřkou	NULL	NULL	1
+Pod Sokolovnou	NULL	NULL	1
+Pod Soutratím	NULL	NULL	1
+Pod Spalovnou	NULL	NULL	1
+Pod Spiritkou	NULL	NULL	1
+Pod Srázem	NULL	NULL	1
+Pod Stadiony	NULL	NULL	1
+Pod Stanicí	NULL	NULL	1
+Pod Starákem	NULL	NULL	1
+Pod Stárkou	NULL	NULL	1
+Pod Starou školou	NULL	NULL	1
+Pod Statky	NULL	NULL	1
+Pod Štěpem	NULL	NULL	1
+Pod Stírkou	NULL	NULL	1
+Pod Stolovou horou	NULL	NULL	1
+Pod Strání	NULL	NULL	1
+Pod Strašnickou vinicí	NULL	NULL	1
+Pod strojírnami	NULL	NULL	1
+Pod Stupni	NULL	NULL	1
+Pod Svahem	NULL	NULL	1
+Pod Sychrovem I	NULL	NULL	1
+Pod Sychrovem II	NULL	NULL	1
+Pod Táborem	NULL	NULL	1
+Pod Terasami	NULL	NULL	1
+Pod Terebkou	NULL	NULL	1
+Pod Topoly	NULL	NULL	1
+Pod Tratí	NULL	NULL	1
+Pod Třebešínem	NULL	NULL	1
+Pod Třešněmi	NULL	NULL	1
+Pod Turnovskou tratí	NULL	NULL	1
+Pod Útesy	NULL	NULL	1
+Pod Václavem	NULL	NULL	1
+Pod Valem	NULL	NULL	1
+Pod Valem I.	NULL	NULL	1
+Pod Valem II.	NULL	NULL	1
+Pod Vartou	NULL	NULL	1
+Pod Vavřincem	NULL	NULL	1
+Pod Větrolamem	NULL	NULL	1
+Pod Větrovem	NULL	NULL	1
+Pod Věží	NULL	NULL	1
+Pod Viaduktem	NULL	NULL	1
+Pod Vidoulí	NULL	NULL	1
+Pod Viktorkou	NULL	NULL	1
+Pod Vilami	NULL	NULL	1
+Pod vinicemi	NULL	NULL	1
+Pod Vinicí	NULL	NULL	1
+Pod Vinohradem	NULL	NULL	1
+Pod Vinoří	NULL	NULL	1
+Pod Višňovkou	NULL	NULL	1
+Pod Vítkovem	NULL	NULL	1
+Pod Vlachovkou	NULL	NULL	1
+Pod Vlastním krovem	NULL	NULL	1
+Pod Vlkem	NULL	NULL	1
+Pod Vodárenskou věží	NULL	NULL	1
+Pod Vodojemem	NULL	NULL	1
+Pod Vodovodem	NULL	NULL	1
+Pod Vrchem	NULL	NULL	1
+Pod Vrcholem	NULL	NULL	1
+Pod Vrškem	NULL	NULL	1
+Pod vršovickou vodárnou III	NULL	NULL	1
+Pod Vrstevnicí	NULL	NULL	1
+Pod vsí	NULL	NULL	1
+Pod Vyhlídkou	NULL	NULL	1
+Pod Vyšehradem	NULL	NULL	1
+Pod Výšinkou	NULL	NULL	1
+Pod Vysokou mezí	NULL	NULL	1
+Pod Výtopnou	NULL	NULL	1
+Pod Zahradami	NULL	NULL	1
+Pod Zahrádkami	NULL	NULL	1
+Pod Zahrady	NULL	NULL	1
+Pod Zámečkem	NULL	NULL	1
+Pod Zámkem	NULL	NULL	1
+Pod Závěrkou	NULL	NULL	1
+Pod Zemankou	NULL	NULL	1
+Pod Židovskými hřbitovy	NULL	NULL	1
+Pod Zličínem	NULL	NULL	1
+Pod Žvahovem	NULL	NULL	1
+Pod Zvonařkou	NULL	NULL	1
+Pod Zvoničkou	NULL	NULL	1
+Podbabská	NULL	NULL	1
+Podbělohorská	NULL	NULL	1
+Podchýšská	NULL	NULL	1
+Poděbradova	NULL	NULL	1
+Poděbradská	NULL	NULL	1
+Podedvorská	NULL	NULL	1
+Podél Cholupického p.	NULL	NULL	1
+Podél Cholupického p.-Lávky	NULL	NULL	1
+Podhajská pole	NULL	NULL	1
+Podholí	NULL	NULL	1
+Podhorská	NULL	NULL	1
+Podhořská	NULL	NULL	1
+Podjavorinské	NULL	NULL	1
+Podjezd	NULL	NULL	1
+Podkovářská	NULL	NULL	1
+Podkrkonošská	NULL	NULL	1
+Podkrkonošských tkalců	NULL	NULL	1
+Podle Kačerova	NULL	NULL	1
+Podle Lomu	NULL	NULL	1
+Podle Náhonu	NULL	NULL	1
+Podle trati	NULL	NULL	1
+Podlešínská	NULL	NULL	1
+Podleská	NULL	NULL	1
+Podléšková	NULL	NULL	1
+Podlipného	NULL	NULL	1
+Podlišovská	NULL	NULL	1
+Podnádražní	NULL	NULL	1
+Podohradská	NULL	NULL	1
+Podolanská	NULL	NULL	1
+Podolská	NULL	NULL	1
+Podolské nábřeží	NULL	NULL	1
+Podpěrova	NULL	NULL	1
+Podplukovníka Sochora	NULL	NULL	1
+Podskalská	NULL	NULL	1
+Podůlší	NULL	NULL	1
+Podvinný mlýn	NULL	NULL	1
+Pohnertova	NULL	NULL	1
+Pohořelec	NULL	NULL	1
+Pokojná	NULL	NULL	1
+Pokorného	NULL	NULL	1
+Pokřivená	NULL	NULL	1
+Polabská	NULL	NULL	1
+Poláčkova	NULL	NULL	1
+Polákova	NULL	NULL	1
+Polaneckého	NULL	NULL	1
+Polední	NULL	NULL	1
+Poleradská	NULL	NULL	1
+Poliklinika Budějovická	NULL	NULL	1
+Poliklinika Petrovice	NULL	NULL	1
+Politických vězňů	NULL	NULL	1
+Polívkova	NULL	NULL	1
+Poljanovova	NULL	NULL	1
+Polní	NULL	NULL	1
+Polská	NULL	NULL	1
+Polygrafická	NULL	NULL	1
+Pomezní	NULL	NULL	1
+Pomněnková	NULL	NULL	1
+Pomořanská	NULL	NULL	1
+Poncarova	NULL	NULL	1
+Poplužní	NULL	NULL	1
+Popovická	NULL	NULL	1
+Popovova	NULL	NULL	1
+Poříčanská	NULL	NULL	1
+Poslední	NULL	NULL	1
+Pöslova	NULL	NULL	1
+Pospíchalova	NULL	NULL	1
+Pospíšilova	NULL	NULL	1
+Postlova	NULL	NULL	1
+Poštovská	NULL	NULL	1
+Postranní	NULL	NULL	1
+Postřekovská	NULL	NULL	1
+Postupická	NULL	NULL	1
+Potahová	NULL	NULL	1
+Potoční	NULL	NULL	1
+Potůčková	NULL	NULL	1
+Pouchova	NULL	NULL	1
+Poupětova	NULL	NULL	1
+Poustka	NULL	NULL	1
+Povltavská	NULL	NULL	1
+Povodňová	NULL	NULL	1
+Povoznická	NULL	NULL	1
+Požárnická	NULL	NULL	1
+Požárníků	NULL	NULL	1
+Pozdeňská	NULL	NULL	1
+Poznaňská	NULL	NULL	1
+Pplk. Nováčka	NULL	NULL	1
+Prachatická	NULL	NULL	1
+Prácheňská	NULL	NULL	1
+Prachnerova	NULL	NULL	1
+Prachovická	NULL	NULL	1
+Prachovská	NULL	NULL	1
+Práčská	NULL	NULL	1
+Přádova	NULL	NULL	1
+Pramenná	NULL	NULL	1
+Prašná	NULL	NULL	1
+Prašný most	NULL	NULL	1
+Přátelství	NULL	NULL	1
+Pravá	NULL	NULL	1
+Pravoúhlá	NULL	NULL	1
+Pravská	NULL	NULL	1
+Pražačka	NULL	NULL	1
+Pražákovská	NULL	NULL	1
+Pražská	NULL	NULL	1
+Pražského	NULL	NULL	1
+Pražského povstání	NULL	NULL	1
+Pražský okruh	NULL	NULL	1
+Prchalova	NULL	NULL	1
+Přecechtělova	NULL	NULL	1
+Přechodní	NULL	NULL	1
+Před Cibulkami	NULL	NULL	1
+Před mosty	NULL	NULL	1
+Před Nádražím	NULL	NULL	1
+Před rybníkem	NULL	NULL	1
+Před Skalkami I	NULL	NULL	1
+Před Skalkami II	NULL	NULL	1
+Před Skálou	NULL	NULL	1
+Před Sokolovnou	NULL	NULL	1
+Před Tratí	NULL	NULL	1
+Před Ústavem	NULL	NULL	1
+Předbořská	NULL	NULL	1
+Předměřická	NULL	NULL	1
+Přední	NULL	NULL	1
+Předposlední	NULL	NULL	1
+Předškolní	NULL	NULL	1
+Předvoje	NULL	NULL	1
+Prefátova	NULL	NULL	1
+Preláta	NULL	NULL	1
+Prelátská	NULL	NULL	1
+Přeletová	NULL	NULL	1
+Přemyšlenská	NULL	NULL	1
+Přemyslova	NULL	NULL	1
+Přemyslovská	NULL	NULL	1
+Přerušená	NULL	NULL	1
+Přesličková	NULL	NULL	1
+Preslova	NULL	NULL	1
+Přespolní	NULL	NULL	1
+Přeštická	NULL	NULL	1
+Přeštínská	NULL	NULL	1
+Přeťatá	NULL	NULL	1
+Přetlucká	NULL	NULL	1
+Přeučilova	NULL	NULL	1
+Převoznická	NULL	NULL	1
+Přezletická	NULL	NULL	1
+Při hranici	NULL	NULL	1
+Příběnická	NULL	NULL	1
+Přibíkova	NULL	NULL	1
+Příborská	NULL	NULL	1
+Přibyslavská	NULL	NULL	1
+Příchovická	NULL	NULL	1
+Příčka	NULL	NULL	1
+Příčná	NULL	NULL	1
+Přídolská	NULL	NULL	1
+Příkrá	NULL	NULL	1
+Přílepská	NULL	NULL	1
+Přímá	NULL	NULL	1
+Primátorská	NULL	NULL	1
+Přímětická	NULL	NULL	1
+Přípotoční	NULL	NULL	1
+Přírodní	NULL	NULL	1
+Přístavní	NULL	NULL	1
+Přistoupimská	NULL	NULL	1
+Přívorská	NULL	NULL	1
+Přívozní	NULL	NULL	1
+Proboštská	NULL	NULL	1
+Procházkova	NULL	NULL	1
+Prodloužená	NULL	NULL	1
+Prokofjevova	NULL	NULL	1
+Prokopka	NULL	NULL	1
+Prokopova	NULL	NULL	1
+Prokopovo náměstí	NULL	NULL	1
+Prokopových	NULL	NULL	1
+Prokopská	NULL	NULL	1
+Prorektorská	NULL	NULL	1
+Prosecká	NULL	NULL	1
+Prosincová	NULL	NULL	1
+Prosluněná	NULL	NULL	1
+Prosná	NULL	NULL	1
+Prostřední	NULL	NULL	1
+Proti Proudu	NULL	NULL	1
+Protilehlá	NULL	NULL	1
+Protivínská	NULL	NULL	1
+Proutěná	NULL	NULL	1
+Prouzova	NULL	NULL	1
+Provaznická	NULL	NULL	1
+Provozní	NULL	NULL	1
+Průběžná	NULL	NULL	1
+Průčelní	NULL	NULL	1
+Průchodní	NULL	NULL	1
+Průchova	NULL	NULL	1
+Průhledová	NULL	NULL	1
+Průhonek	NULL	NULL	1
+Průhonice	NULL	NULL	1
+Průhonice hájovna	NULL	NULL	1
+Průhonice, Hole	NULL	NULL	1
+Průhonice, Tovární	NULL	NULL	1
+Průhonická	NULL	NULL	1
+Průhonská	NULL	NULL	1
+Průmstav	NULL	NULL	1
+Průmyslová	NULL	NULL	1
+Prunéřovská	NULL	NULL	1
+Prušánecká	NULL	NULL	1
+Prusická	NULL	NULL	1
+Prusíkova	NULL	NULL	1
+Průškova	NULL	NULL	1
+Průtažní	NULL	NULL	1
+Prvního pluku	NULL	NULL	1
+Psárská	NULL	NULL	1
+Pšenčíkova	NULL	NULL	1
+Pšeničná	NULL	NULL	1
+Psohlavců	NULL	NULL	1
+Pštrossova	NULL	NULL	1
+Pstružná	NULL	NULL	1
+Ptáčnická	NULL	NULL	1
+Puchmajerova	NULL	NULL	1
+Púchovská	NULL	NULL	1
+Pučova	NULL	NULL	1
+Půdova	NULL	NULL	1
+Pujmanové	NULL	NULL	1
+Půlkruhová	NULL	NULL	1
+Půlnoční	NULL	NULL	1
+Purkrabská	NULL	NULL	1
+Purkyňova	NULL	NULL	1
+Puškinovo náměstí	NULL	NULL	1
+Putimská	NULL	NULL	1
+Půtova	NULL	NULL	1
+Pýchavková	NULL	NULL	1
+Pyšelská	NULL	NULL	1
+R.A. Dvorského	NULL	NULL	1
+Rabakovská	NULL	NULL	1
+Rabasova	NULL	NULL	1
+Rabochova	NULL	NULL	1
+Rábská	NULL	NULL	1
+Rabyňská	NULL	NULL	1
+Račanská	NULL	NULL	1
+Řachova	NULL	NULL	1
+Račická	NULL	NULL	1
+Rackova	NULL	NULL	1
+Rackova Zahrada	NULL	NULL	1
+Radbuzská	NULL	NULL	1
+Radčina	NULL	NULL	1
+Radechovská	NULL	NULL	1
+Radešovská	NULL	NULL	1
+Radhošťská	NULL	NULL	1
+Radimova	NULL	NULL	1
+Radimovická	NULL	NULL	1
+Rádiová	NULL	NULL	1
+Radistů	NULL	NULL	1
+Radlická	NULL	NULL	1
+Radlická radiála	NULL	NULL	1
+Radniční schody	NULL	NULL	1
+Radomská	NULL	NULL	1
+Radonická	NULL	NULL	1
+Radošovická	NULL	NULL	1
+Radostná	NULL	NULL	1
+Radotínská	NULL	NULL	1
+Radouňova	NULL	NULL	1
+Radova	NULL	NULL	1
+Řadová	NULL	NULL	1
+Radovská	NULL	NULL	1
+Radúzova	NULL	NULL	1
+Radvanická	NULL	NULL	1
+Raichlova	NULL	NULL	1
+Raisova	NULL	NULL	1
+Rájecká	NULL	NULL	1
+Rajmonova	NULL	NULL	1
+Rajská	NULL	NULL	1
+Rakousova	NULL	NULL	1
+Rakovnická	NULL	NULL	1
+Rakovského	NULL	NULL	1
+Rámová	NULL	NULL	1
+Randova	NULL	NULL	1
+Rašínovo nábřeží	NULL	NULL	1
+Rašínská	NULL	NULL	1
+Řásnovka	NULL	NULL	1
+Rašova	NULL	NULL	1
+Rašovická	NULL	NULL	1
+Rašovská	NULL	NULL	1
+Ratajova	NULL	NULL	1
+Ratibořická	NULL	NULL	1
+Ratibořská	NULL	NULL	1
+Rauchova	NULL	NULL	1
+Ravennská	NULL	NULL	1
+Rážova	NULL	NULL	1
+Řečického	NULL	NULL	1
+Rečkova	NULL	NULL	1
+Řehořova	NULL	NULL	1
+Reinerova	NULL	NULL	1
+Rejchova	NULL	NULL	1
+Rejskova	NULL	NULL	1
+Rektorská	NULL	NULL	1
+Rembrandtova	NULL	NULL	1
+Remízková	NULL	NULL	1
+Renoirova	NULL	NULL	1
+Řepčická	NULL	NULL	1
+Řepíková	NULL	NULL	1
+Řepínská	NULL	NULL	1
+Řepná	NULL	NULL	1
+Řeporyjská	NULL	NULL	1
+Řeporyjské náměstí	NULL	NULL	1
+Řepová	NULL	NULL	1
+Řepská	NULL	NULL	1
+Řešetovská	NULL	NULL	1
+Řešovská	NULL	NULL	1
+Resslova	NULL	NULL	1
+Řetězokovářů	NULL	NULL	1
+Řetězová	NULL	NULL	1
+Řevnická	NULL	NULL	1
+Revoluční	NULL	NULL	1
+Révová	NULL	NULL	1
+Řezáčovo náměstí	NULL	NULL	1
+Rezedová	NULL	NULL	1
+Rezlerova	NULL	NULL	1
+Řeznická	NULL	NULL	1
+Říčanova	NULL	NULL	1
+Říčanská	NULL	NULL	1
+Richtrova	NULL	NULL	1
+Říční	NULL	NULL	1
+Riegrova	NULL	NULL	1
+Říjnová	NULL	NULL	1
+Rilská	NULL	NULL	1
+Římovská	NULL	NULL	1
+Římská	NULL	NULL	1
+Ringhofferova	NULL	NULL	1
+Řipská	NULL	NULL	1
+Rixdorfská	NULL	NULL	1
+Rižská	NULL	NULL	1
+Rochlická	NULL	NULL	1
+Rochovská	NULL	NULL	1
+Rodopská	NULL	NULL	1
+Rodvinovská	NULL	NULL	1
+Roentgenova	NULL	NULL	1
+Roháčova	NULL	NULL	1
+Rohanské nábřeží	NULL	NULL	1
+Rohatecká	NULL	NULL	1
+Rohová	NULL	NULL	1
+Roithova	NULL	NULL	1
+Rojická	NULL	NULL	1
+Rokycanova	NULL	NULL	1
+Rokycanská	NULL	NULL	1
+Rokytnická	NULL	NULL	1
+Rolní	NULL	NULL	1
+Rolnická	NULL	NULL	1
+Romaina Rollanda	NULL	NULL	1
+Ronalda Reagana	NULL	NULL	1
+Ronešova	NULL	NULL	1
+Ronkova	NULL	NULL	1
+Ronovská	NULL	NULL	1
+Rooseveltova	NULL	NULL	1
+Rorýsová	NULL	NULL	1
+Rosečská	NULL	NULL	1
+Rosická	NULL	NULL	1
+Rošických	NULL	NULL	1
+Roškotova	NULL	NULL	1
+Rostislavova	NULL	NULL	1
+Rostoklatská	NULL	NULL	1
+Rostovská	NULL	NULL	1
+Rotavská	NULL	NULL	1
+Rotenská	NULL	NULL	1
+Roudnická	NULL	NULL	1
+Rousínovská	NULL	NULL	1
+Rousovická	NULL	NULL	1
+Rovenská	NULL	NULL	1
+Rovná	NULL	NULL	1
+Rovnoběžná	NULL	NULL	1
+Rozárčina	NULL	NULL	1
+Rožďalovická	NULL	NULL	1
+Rozdělená	NULL	NULL	1
+Rozdělovská	NULL	NULL	1
+Rozkošného	NULL	NULL	1
+Rozkošská	NULL	NULL	1
+Rožmberská	NULL	NULL	1
+Rožnovská	NULL	NULL	1
+Rozřaďovák	NULL	NULL	1
+Rozrazilová	NULL	NULL	1
+Rozšířená	NULL	NULL	1
+Roztocká	NULL	NULL	1
+Roztylská	NULL	NULL	1
+Roztylské náměstí	NULL	NULL	1
+Roztylské sady	NULL	NULL	1
+Rozvadovská	NULL	NULL	1
+Rozvadovská spojka	NULL	NULL	1
+Rozvodova	NULL	NULL	1
+Rozvojová	NULL	NULL	1
+Rozýnova	NULL	NULL	1
+Rtyňská	NULL	NULL	1
+Rubensova	NULL	NULL	1
+Rubeška	NULL	NULL	1
+Rubešova	NULL	NULL	1
+Rubínová	NULL	NULL	1
+Rubličova	NULL	NULL	1
+Rudečská	NULL	NULL	1
+Rudníkovská	NULL	NULL	1
+Rudolfa Holeky	NULL	NULL	1
+Rudoltická	NULL	NULL	1
+Rujanská	NULL	NULL	1
+Rumburská	NULL	NULL	1
+Rumunská	NULL	NULL	1
+Ruprechtická	NULL	NULL	1
+Ruská	NULL	NULL	1
+Růženínová	NULL	NULL	1
+Růženínská	NULL	NULL	1
+Růžičkova	NULL	NULL	1
+Ružinovská	NULL	NULL	1
+Růžová	NULL	NULL	1
+Ruzyňská	NULL	NULL	1
+Rybalkova	NULL	NULL	1
+Rybářská	NULL	NULL	1
+Rybízová	NULL	NULL	1
+Rybná	NULL	NULL	1
+Rybničná	NULL	NULL	1
+Rybova	NULL	NULL	1
+Rychnovská	NULL	NULL	1
+Rychtáře Petříka	NULL	NULL	1
+Rychtáře Šimona	NULL	NULL	1
+Rychtářská	NULL	NULL	1
+Rýmařovská	NULL	NULL	1
+Rýnská	NULL	NULL	1
+Rypkova	NULL	NULL	1
+Ryšánka	NULL	NULL	1
+Ryšavého	NULL	NULL	1
+Rytířova	NULL	NULL	1
+Rytířská	NULL	NULL	1
+Ryzcová	NULL	NULL	1
+Ryzlinková	NULL	NULL	1
+Rýznerova	NULL	NULL	1
+S. K. Neumanna	NULL	NULL	1
+Sabinova	NULL	NULL	1
+Sadařská	NULL	NULL	1
+Sádky	NULL	NULL	1
+Sadová	NULL	NULL	1
+Sádovská	NULL	NULL	1
+Sadská	NULL	NULL	1
+Šafaříkova	NULL	NULL	1
+Šafářova	NULL	NULL	1
+Šafránecká	NULL	NULL	1
+Šafránkova	NULL	NULL	1
+Šafránová	NULL	NULL	1
+Salabova	NULL	NULL	1
+Salačova	NULL	NULL	1
+Šaldova	NULL	NULL	1
+Šaldové	NULL	NULL	1
+Salmovská	NULL	NULL	1
+Šalounova	NULL	NULL	1
+Šalounovy schody	NULL	NULL	1
+Salvátorská	NULL	NULL	1
+Šalvějová	NULL	NULL	1
+Samcova	NULL	NULL	1
+Samohelova	NULL	NULL	1
+Sámova	NULL	NULL	1
+Sáňkařská	NULL	NULL	1
+Šanovská	NULL	NULL	1
+Šantrochova	NULL	NULL	1
+Sarajevská	NULL	NULL	1
+Saratovská	NULL	NULL	1
+Šárčina	NULL	NULL	1
+Šárecká	NULL	NULL	1
+Sárská	NULL	NULL	1
+Sartoriova	NULL	NULL	1
+Sasanková	NULL	NULL	1
+Saská	NULL	NULL	1
+Satalická	NULL	NULL	1
+Šátalská	NULL	NULL	1
+Šatovák	NULL	NULL	1
+Šatrova	NULL	NULL	1
+Saturnova	NULL	NULL	1
+Saudkova	NULL	NULL	1
+Sauerova	NULL	NULL	1
+Saveljevova	NULL	NULL	1
+Sázavská	NULL	NULL	1
+Sazečská	NULL	NULL	1
+Sazovická	NULL	NULL	1
+Sbíhavá I	NULL	NULL	1
+Sbíhavá II	NULL	NULL	1
+Schengenská	NULL	NULL	1
+Schnirchova	NULL	NULL	1
+Schodišťová	NULL	NULL	1
+Schodová	NULL	NULL	1
+schody	NULL	NULL	1
+Schoellerova	NULL	NULL	1
+Schöfflerova	NULL	NULL	1
+Schulhoffova	NULL	NULL	1
+Schwaigerova	NULL	NULL	1
+Schwankova	NULL	NULL	1
+Schwarzenberská	NULL	NULL	1
+Sdružení	NULL	NULL	1
+Šeberovská	NULL	NULL	1
+Šebestiánská	NULL	NULL	1
+Šebkova	NULL	NULL	1
+Sebuzínská	NULL	NULL	1
+Sechterova	NULL	NULL	1
+Sečská	NULL	NULL	1
+Šedivého	NULL	NULL	1
+Sedlčanská	NULL	NULL	1
+Sedlecká	NULL	NULL	1
+Sedlecká cesta	NULL	NULL	1
+Sedlovická	NULL	NULL	1
+Sedmidomky	NULL	NULL	1
+Šedova	NULL	NULL	1
+Seidlova	NULL	NULL	1
+Seifertova	NULL	NULL	1
+Šejbalové	NULL	NULL	1
+Sekaninova	NULL	NULL	1
+Sekeřická	NULL	NULL	1
+Sekorova	NULL	NULL	1
+Selmická	NULL	NULL	1
+Selská	NULL	NULL	1
+Selských baterií	NULL	NULL	1
+Semanského	NULL	NULL	1
+Šemberova	NULL	NULL	1
+Semčická	NULL	NULL	1
+Semická	NULL	NULL	1
+Semilská	NULL	NULL	1
+Seminární	NULL	NULL	1
+Seminářská	NULL	NULL	1
+Semonická	NULL	NULL	1
+Semtínská	NULL	NULL	1
+Senegalská	NULL	NULL	1
+Senohrabská	NULL	NULL	1
+Senovážná	NULL	NULL	1
+Senovážné náměstí	NULL	NULL	1
+Šenovská	NULL	NULL	1
+Senožatská	NULL	NULL	1
+Šeříková	NULL	NULL	1
+Šermířská	NULL	NULL	1
+Šestajovická	NULL	NULL	1
+Šestidomí	NULL	NULL	1
+Sestupná	NULL	NULL	1
+Setbová	NULL	NULL	1
+Sevastopolská	NULL	NULL	1
+Ševce Matouše	NULL	NULL	1
+Ševčenkova	NULL	NULL	1
+Ševčíkova	NULL	NULL	1
+Severní	NULL	NULL	1
+Severní I	NULL	NULL	1
+Severní II	NULL	NULL	1
+Severní III	NULL	NULL	1
+Severní IV	NULL	NULL	1
+Severní IX	NULL	NULL	1
+Severní V	NULL	NULL	1
+Severní VI	NULL	NULL	1
+Severní VII	NULL	NULL	1
+Severní VIII	NULL	NULL	1
+Severní X	NULL	NULL	1
+Severní XI	NULL	NULL	1
+Severovýchodní I	NULL	NULL	1
+Severovýchodní II	NULL	NULL	1
+Severovýchodní III	NULL	NULL	1
+Severovýchodní IV	NULL	NULL	1
+Severovýchodní V	NULL	NULL	1
+Severovýchodní VI	NULL	NULL	1
+Severozápadní	NULL	NULL	1
+Severozápadní I	NULL	NULL	1
+Severozápadní II	NULL	NULL	1
+Severozápadní III	NULL	NULL	1
+Severozápadní IV	NULL	NULL	1
+Severozápadní V	NULL	NULL	1
+Severozápadní VI	NULL	NULL	1
+Severýnova	NULL	NULL	1
+Sevřená	NULL	NULL	1
+Seydlerova	NULL	NULL	1
+Sezemická	NULL	NULL	1
+Sezemínská	NULL	NULL	1
+Sezimova	NULL	NULL	1
+Sibeliova	NULL	NULL	1
+Sibiřské náměstí	NULL	NULL	1
+Šibřinská	NULL	NULL	1
+Sicherova	NULL	NULL	1
+Sichrovského	NULL	NULL	1
+Sídliště Pankrác	NULL	NULL	1
+Sídliště Petrovice	NULL	NULL	1
+Sídlištní	NULL	NULL	1
+Siemensova	NULL	NULL	1
+Šífařská	NULL	NULL	1
+Šikmá	NULL	NULL	1
+Silurská	NULL	NULL	1
+Šimáčkova	NULL	NULL	1
+Šimanovská	NULL	NULL	1
+Šimkova	NULL	NULL	1
+Šimonova	NULL	NULL	1
+Šímova	NULL	NULL	1
+Šimůnkova	NULL	NULL	1
+Sinkulova	NULL	NULL	1
+Šípková	NULL	NULL	1
+Šircova	NULL	NULL	1
+Široká	NULL	NULL	1
+Šiškova	NULL	NULL	1
+Šítkova	NULL	NULL	1
+Sitteho	NULL	NULL	1
+Siwiecova	NULL	NULL	1
+Škábova	NULL	NULL	1
+Skaláků	NULL	NULL	1
+Skalecká	NULL	NULL	1
+Skalka	NULL	NULL	1
+Skalnatá	NULL	NULL	1
+Skalní	NULL	NULL	1
+Skalnická	NULL	NULL	1
+Skálova	NULL	NULL	1
+Skalská	NULL	NULL	1
+Skandinávská	NULL	NULL	1
+Skautská	NULL	NULL	1
+Sklářská	NULL	NULL	1
+Sklenská	NULL	NULL	1
+Skloněná	NULL	NULL	1
+Skokanská	NULL	NULL	1
+Škola Dubeč	NULL	NULL	1
+Škola Štěrboholy	NULL	NULL	1
+Školní	NULL	NULL	1
+školní cesta	NULL	NULL	1
+Školská	NULL	NULL	1
+Skořepka	NULL	NULL	1
+Skořicová	NULL	NULL	1
+Skorkovská	NULL	NULL	1
+Skotská	NULL	NULL	1
+Škrétova	NULL	NULL	1
+Skřivanova	NULL	NULL	1
+Skřivanská	NULL	NULL	1
+Škroupova	NULL	NULL	1
+Škroupovo náměstí	NULL	NULL	1
+Skupova	NULL	NULL	1
+Skuteckého	NULL	NULL	1
+Škvorecká	NULL	NULL	1
+Sládkova	NULL	NULL	1
+Sládkovičova	NULL	NULL	1
+Sladkovského náměstí	NULL	NULL	1
+Sladovnická	NULL	NULL	1
+Slaná	NULL	NULL	1
+Slancova	NULL	NULL	1
+Slánská	NULL	NULL	1
+Slapská	NULL	NULL	1
+Slatiňanská	NULL	NULL	1
+Slatinová	NULL	NULL	1
+Slavatova	NULL	NULL	1
+Slavičínská	NULL	NULL	1
+Slavická	NULL	NULL	1
+Slavíčkova	NULL	NULL	1
+Slavíkova	NULL	NULL	1
+Slavínského	NULL	NULL	1
+Slavníkova	NULL	NULL	1
+Slavojova	NULL	NULL	1
+Slavonická	NULL	NULL	1
+Slávy Horníka	NULL	NULL	1
+Šlejnická	NULL	NULL	1
+Slepá	NULL	NULL	1
+Slepá I	NULL	NULL	1
+Slepá II	NULL	NULL	1
+slepičí cestička	NULL	NULL	1
+Slévačská	NULL	NULL	1
+Slezanů	NULL	NULL	1
+Slezská	NULL	NULL	1
+Sliačská	NULL	NULL	1
+Slibná	NULL	NULL	1
+Šlikova	NULL	NULL	1
+Slivenecká	NULL	NULL	1
+Slívová	NULL	NULL	1
+Slovačíkova	NULL	NULL	1
+Slovanská	NULL	NULL	1
+Slovenská	NULL	NULL	1
+Slovinská	NULL	NULL	1
+Šluknovská	NULL	NULL	1
+Slunečná	NULL	NULL	1
+Sluneční	NULL	NULL	1
+Slunečnicová	NULL	NULL	1
+Slunná	NULL	NULL	1
+Sluštická	NULL	NULL	1
+Služeb	NULL	NULL	1
+Služská	NULL	NULL	1
+Smaragdová	NULL	NULL	1
+Šmeralova	NULL	NULL	1
+Smetáčkova	NULL	NULL	1
+Smetanova	NULL	NULL	1
+Smetanovo nábřeží	NULL	NULL	1
+Smíchovská	NULL	NULL	1
+Smíchovská náplavka	NULL	NULL	1
+Smíchovské nádraží	NULL	NULL	1
+Smikova	NULL	NULL	1
+Šmilovského	NULL	NULL	1
+Smírná	NULL	NULL	1
+Smolenská	NULL	NULL	1
+Smolíkova	NULL	NULL	1
+Šmolíkova	NULL	NULL	1
+Smolkova	NULL	NULL	1
+Smotlachova	NULL	NULL	1
+Smrčinská	NULL	NULL	1
+Smrčkova	NULL	NULL	1
+Smrková	NULL	NULL	1
+Smržová	NULL	NULL	1
+Sněmovní	NULL	NULL	1
+Sněženková	NULL	NULL	1
+Snopkova	NULL	NULL	1
+Soběslavova	NULL	NULL	1
+Soběslavská	NULL	NULL	1
+Sobětická	NULL	NULL	1
+Sobínská	NULL	NULL	1
+Sobolákova	NULL	NULL	1
+Soborská	NULL	NULL	1
+Sobotecká	NULL	NULL	1
+Socháňova	NULL	NULL	1
+Sochařská	NULL	NULL	1
+Sodomkova	NULL	NULL	1
+Sojčí	NULL	NULL	1
+Sojkovská	NULL	NULL	1
+Sojovická	NULL	NULL	1
+Sokolovská	NULL	NULL	1
+Sokolská	NULL	NULL	1
+Sokratova	NULL	NULL	1
+Solidarity	NULL	NULL	1
+Šolínova	NULL	NULL	1
+Solná	NULL	NULL	1
+Sopotská	NULL	NULL	1
+Sosnovecká	NULL	NULL	1
+Šostakovičovo náměstí	NULL	NULL	1
+Souběžná	NULL	NULL	1
+Souběžná I	NULL	NULL	1
+Souběžná II	NULL	NULL	1
+Souběžná III	NULL	NULL	1
+Souběžná IV	NULL	NULL	1
+Součkova	NULL	NULL	1
+Soudní	NULL	NULL	1
+Soukalova	NULL	NULL	1
+Soukenická	NULL	NULL	1
+Soukupova	NULL	NULL	1
+Soumarská	NULL	NULL	1
+Sousedíkova	NULL	NULL	1
+Sousední	NULL	NULL	1
+Sousedská	NULL	NULL	1
+Soustružnická	NULL	NULL	1
+Souvratní	NULL	NULL	1
+Sovákova	NULL	NULL	1
+Sovenická	NULL	NULL	1
+Soví vršek	NULL	NULL	1
+Sovova	NULL	NULL	1
+Špačkova	NULL	NULL	1
+Spádná	NULL	NULL	1
+Spádová	NULL	NULL	1
+Spálená	NULL	NULL	1
+Spálený mlýn	NULL	NULL	1
+Špálova	NULL	NULL	1
+Španělská	NULL	NULL	1
+Španielova	NULL	NULL	1
+Šperlova	NULL	NULL	1
+Spinozova	NULL	NULL	1
+Spiritka	NULL	NULL	1
+Špirkova	NULL	NULL	1
+Špitálská	NULL	NULL	1
+Splavná	NULL	NULL	1
+Šplechnerova	NULL	NULL	1
+Spojená	NULL	NULL	1
+Spojenců	NULL	NULL	1
+Spojka	NULL	NULL	1
+Spojová	NULL	NULL	1
+Spojovací	NULL	NULL	1
+Společná	NULL	NULL	1
+Společná stezka pro chodce a cyklisty - Dolnokřeslická	NULL	NULL	1
+Spolská	NULL	NULL	1
+Spolupráce	NULL	NULL	1
+Spořická	NULL	NULL	1
+Spořilovská	NULL	NULL	1
+Šporkova	NULL	NULL	1
+Sportovců	NULL	NULL	1
+Sportovní	NULL	NULL	1
+Špotzova	NULL	NULL	1
+Spytihněvova	NULL	NULL	1
+Srázná	NULL	NULL	1
+Srbínská	NULL	NULL	1
+Srbova	NULL	NULL	1
+Srbská	NULL	NULL	1
+Srnčí	NULL	NULL	1
+Šrobárova	NULL	NULL	1
+Šromova	NULL	NULL	1
+Srpnová	NULL	NULL	1
+Stachova	NULL	NULL	1
+Stadická	NULL	NULL	1
+Stallichova	NULL	NULL	1
+Stamicova	NULL	NULL	1
+Staňkova	NULL	NULL	1
+Staňkovská	NULL	NULL	1
+Stará	NULL	NULL	1
+Stará cesta	NULL	NULL	1
+Stará náves	NULL	NULL	1
+Stará obec	NULL	NULL	1
+Stará Spojovací	NULL	NULL	1
+Stará Stodůlecká	NULL	NULL	1
+Staré Haltýře	NULL	NULL	1
+Staré náměstí	NULL	NULL	1
+Staré zámecké schody	NULL	NULL	1
+Starého	NULL	NULL	1
+Stárkova	NULL	NULL	1
+Starobylá	NULL	NULL	1
+Staročeská	NULL	NULL	1
+Starochodovská	NULL	NULL	1
+Starochuchelská	NULL	NULL	1
+Starodejvická	NULL	NULL	1
+Starodubečská	NULL	NULL	1
+Starodvorská	NULL	NULL	1
+Starokošířská	NULL	NULL	1
+Starolázeňská	NULL	NULL	1
+Staroměstské náměstí	NULL	NULL	1
+Staromlýnská	NULL	NULL	1
+Staromodřanská	NULL	NULL	1
+Staropramenná	NULL	NULL	1
+Starostrašnická	NULL	NULL	1
+Starostřešovická	NULL	NULL	1
+Starosuchdolská	NULL	NULL	1
+Starý vítkovský tunel	NULL	NULL	1
+Šťastného	NULL	NULL	1
+Statenická	NULL	NULL	1
+Statková	NULL	NULL	1
+Stavbařů	NULL	NULL	1
+Stavební	NULL	NULL	1
+Stavitelská	NULL	NULL	1
+Stavovská	NULL	NULL	1
+Štěchovická	NULL	NULL	1
+Štefánikova	NULL	NULL	1
+Štefánikův most	NULL	NULL	1
+Štefkova	NULL	NULL	1
+Stehlíkova	NULL	NULL	1
+Steinerova	NULL	NULL	1
+Stejskalova	NULL	NULL	1
+Štěpanická	NULL	NULL	1
+Štěpánkova	NULL	NULL	1
+Štěpánovská	NULL	NULL	1
+Štěpánská	NULL	NULL	1
+Štěpařská	NULL	NULL	1
+Štěpničná	NULL	NULL	1
+Steps to Sokolovna	NULL	NULL	1
+Štěrboholská	NULL	NULL	1
+Štěrboholská radiála	NULL	NULL	1
+Štěrboholy	NULL	NULL	1
+Šternberkova	NULL	NULL	1
+Šternova	NULL	NULL	1
+Šternovská	NULL	NULL	1
+Štětínská	NULL	NULL	1
+Štětkova	NULL	NULL	1
+Štíbrova	NULL	NULL	1
+Štichova	NULL	NULL	1
+Štičkova	NULL	NULL	1
+Stiessova	NULL	NULL	1
+Štíhlická	NULL	NULL	1
+Stinkovská	NULL	NULL	1
+Štiplova	NULL	NULL	1
+Štiřínská	NULL	NULL	1
+Štítného	NULL	NULL	1
+Štítová	NULL	NULL	1
+Stochovská	NULL	NULL	1
+Stockholmská	NULL	NULL	1
+Stodolní	NULL	NULL	1
+Stodůlecká	NULL	NULL	1
+Stojická	NULL	NULL	1
+Štolbova	NULL	NULL	1
+Stoličkova	NULL	NULL	1
+Stoliňská	NULL	NULL	1
+Štolmířská	NULL	NULL	1
+Štorchova	NULL	NULL	1
+Štorkánova	NULL	NULL	1
+Stoupající	NULL	NULL	1
+Stradonická	NULL	NULL	1
+Strahovská	NULL	NULL	1
+Strahovské nádvoří	NULL	NULL	1
+Strahovský tunel	NULL	NULL	1
+Strakatého	NULL	NULL	1
+Strakonická	NULL	NULL	1
+Strakošová	NULL	NULL	1
+Strakova	NULL	NULL	1
+Štramberská	NULL	NULL	1
+Strančická	NULL	NULL	1
+Strašínská	NULL	NULL	1
+Strašnická	NULL	NULL	1
+Strašovská	NULL	NULL	1
+Stratovská	NULL	NULL	1
+Strážkovická	NULL	NULL	1
+Strážní	NULL	NULL	1
+Strážnická	NULL	NULL	1
+Strážovská	NULL	NULL	1
+Střední	NULL	NULL	1
+Středohorská	NULL	NULL	1
+Středová	NULL	NULL	1
+Střekovská	NULL	NULL	1
+Střelničná	NULL	NULL	1
+Střemchová	NULL	NULL	1
+Střešovická	NULL	NULL	1
+Stříbrná	NULL	NULL	1
+Stříbrského	NULL	NULL	1
+Střimelická	NULL	NULL	1
+Střížkovská	NULL	NULL	1
+Strmá	NULL	NULL	1
+Strmý vrch	NULL	NULL	1
+Strnadova	NULL	NULL	1
+Strojická	NULL	NULL	1
+Strojírenská	NULL	NULL	1
+Strojnická	NULL	NULL	1
+Stropnická	NULL	NULL	1
+Strossmayerovo náměstí	NULL	NULL	1
+Strouhalova	NULL	NULL	1
+Stroupežnického	NULL	NULL	1
+Struhařovská	NULL	NULL	1
+Strunkovská	NULL	NULL	1
+Stružky	NULL	NULL	1
+Stržná	NULL	NULL	1
+Studánková	NULL	NULL	1
+Studená	NULL	NULL	1
+Studenecká	NULL	NULL	1
+Studentská	NULL	NULL	1
+Studentské nádvoří	NULL	NULL	1
+Studnická	NULL	NULL	1
+Studničkova	NULL	NULL	1
+Štulcova	NULL	NULL	1
+Stulíková	NULL	NULL	1
+Štupartská	NULL	NULL	1
+Stupická	NULL	NULL	1
+Stupkova	NULL	NULL	1
+Stupňová	NULL	NULL	1
+Stupská	NULL	NULL	1
+Štúrova	NULL	NULL	1
+Štursova	NULL	NULL	1
+Štverákova	NULL	NULL	1
+Stýblova	NULL	NULL	1
+Štychova	NULL	NULL	1
+Šubertova	NULL	NULL	1
+Suchardova	NULL	NULL	1
+Suchdolská	NULL	NULL	1
+Suchdolské náměstí	NULL	NULL	1
+Suchý vršek	NULL	NULL	1
+Súdánská	NULL	NULL	1
+Sudkova	NULL	NULL	1
+Sudoměřská	NULL	NULL	1
+Sukova	NULL	NULL	1
+Sulanského	NULL	NULL	1
+Sulická	NULL	NULL	1
+Šultysova	NULL	NULL	1
+Šumavská	NULL	NULL	1
+Šumavského	NULL	NULL	1
+Šumberova	NULL	NULL	1
+Šumenská	NULL	NULL	1
+Šumická	NULL	NULL	1
+Sumova	NULL	NULL	1
+Šumperská	NULL	NULL	1
+Suppého	NULL	NULL	1
+Sušická	NULL	NULL	1
+Sušilova	NULL	NULL	1
+Šustalova	NULL	NULL	1
+Šustova	NULL	NULL	1
+Suttnerové	NULL	NULL	1
+Švabinského	NULL	NULL	1
+Švábky	NULL	NULL	1
+Švábova	NULL	NULL	1
+Svahova	NULL	NULL	1
+Svahová	NULL	NULL	1
+Svárovská	NULL	NULL	1
+Svatavina	NULL	NULL	1
+Svátkova	NULL	NULL	1
+Svatojánská	NULL	NULL	1
+Svatoňovická	NULL	NULL	1
+Svatoplukova	NULL	NULL	1
+Svatoslavova	NULL	NULL	1
+Svatovítská	NULL	NULL	1
+Svatovítský most	NULL	NULL	1
+Svatý Jan	NULL	NULL	1
+Svažitá	NULL	NULL	1
+Svážná	NULL	NULL	1
+Švecova	NULL	NULL	1
+Švédská	NULL	NULL	1
+Švehlova	NULL	NULL	1
+Švejcarovo náměstí	NULL	NULL	1
+Švejkova	NULL	NULL	1
+Svémyslická	NULL	NULL	1
+Svépomocná	NULL	NULL	1
+Svépravická	NULL	NULL	1
+Švestková	NULL	NULL	1
+Světická	NULL	NULL	1
+Světova	NULL	NULL	1
+Světská	NULL	NULL	1
+Svídnická	NULL	NULL	1
+Švihovská	NULL	NULL	1
+Svijanská	NULL	NULL	1
+Svinovská	NULL	NULL	1
+Svitákova	NULL	NULL	1
+Svitavská	NULL	NULL	1
+Svobodova	NULL	NULL	1
+Svobody	NULL	NULL	1
+Svojetická	NULL	NULL	1
+Svojsíkova	NULL	NULL	1
+Svojsíkovy sady	NULL	NULL	1
+Svojšovická	NULL	NULL	1
+Svornosti	NULL	NULL	1
+Svratecká	NULL	NULL	1
+Sychrovská	NULL	NULL	1
+Sýkovecká	NULL	NULL	1
+Symfonická	NULL	NULL	1
+Synkovská	NULL	NULL	1
+Syrská	NULL	NULL	1
+T. G. Masaryka	NULL	NULL	1
+Táboritská	NULL	NULL	1
+Táborská	NULL	NULL	1
+Tachlovská	NULL	NULL	1
+Tádžická	NULL	NULL	1
+Táhlá	NULL	NULL	1
+Tajovského	NULL	NULL	1
+Talafúsova	NULL	NULL	1
+Talichova	NULL	NULL	1
+Tálínská	NULL	NULL	1
+Tanvaldská	NULL	NULL	1
+Tařicová	NULL	NULL	1
+Taškentská	NULL	NULL	1
+Tasovská	NULL	NULL	1
+Tatarkova	NULL	NULL	1
+Tatranská	NULL	NULL	1
+Tauerova	NULL	NULL	1
+Tauferova	NULL	NULL	1
+Taussigova	NULL	NULL	1
+Tavolníková	NULL	NULL	1
+Technická	NULL	NULL	1
+Technologická	NULL	NULL	1
+Tehovská	NULL	NULL	1
+Tejnická	NULL	NULL	1
+Tejnka	NULL	NULL	1
+Telčická	NULL	NULL	1
+Telčská	NULL	NULL	1
+Tělovýchovná	NULL	NULL	1
+Templová	NULL	NULL	1
+Tenisová	NULL	NULL	1
+Teplárenská	NULL	NULL	1
+Teplická	NULL	NULL	1
+Terasovitá	NULL	NULL	1
+Tererova	NULL	NULL	1
+Terezínská	NULL	NULL	1
+Těrlická	NULL	NULL	1
+Terronská	NULL	NULL	1
+Tesaříkova	NULL	NULL	1
+Těšíkova	NULL	NULL	1
+Těšínská	NULL	NULL	1
+Těšnov	NULL	NULL	1
+Těšnovský tunel	NULL	NULL	1
+Tetínská	NULL	NULL	1
+Thákurova	NULL	NULL	1
+Thámova	NULL	NULL	1
+Theinova	NULL	NULL	1
+Thomayerova	NULL	NULL	1
+Thunovská	NULL	NULL	1
+Thurnova	NULL	NULL	1
+Tibetská	NULL	NULL	1
+Tichá	NULL	NULL	1
+Tiché údolí	NULL	NULL	1
+Tichého	NULL	NULL	1
+Tichnova	NULL	NULL	1
+Tichonická	NULL	NULL	1
+Tigridova	NULL	NULL	1
+Tilschové	NULL	NULL	1
+Tišická	NULL	NULL	1
+Tiskařská	NULL	NULL	1
+Tismická	NULL	NULL	1
+Tlumačovská	NULL	NULL	1
+Tobrucká	NULL	NULL	1
+Točenská	NULL	NULL	1
+Točitá	NULL	NULL	1
+Tolstého	NULL	NULL	1
+Tomanova	NULL	NULL	1
+Tomáškova	NULL	NULL	1
+Tomášská	NULL	NULL	1
+Tomická	NULL	NULL	1
+Tomíčkova	NULL	NULL	1
+Tomkova	NULL	NULL	1
+Tomsova	NULL	NULL	1
+Topasová	NULL	NULL	1
+Topolová	NULL	NULL	1
+Toruňská	NULL	NULL	1
+Toulovská	NULL	NULL	1
+Toušeňská	NULL	NULL	1
+Toužimská	NULL	NULL	1
+Tovačovského	NULL	NULL	1
+Tovární	NULL	NULL	1
+Tovarova	NULL	NULL	1
+Trabantská	NULL	NULL	1
+Trachtova	NULL	NULL	1
+Trampotova	NULL	NULL	1
+Třanovského	NULL	NULL	1
+Travná	NULL	NULL	1
+Travnatá	NULL	NULL	1
+Trávníčkova	NULL	NULL	1
+Třebějická	NULL	NULL	1
+Třebenická	NULL	NULL	1
+Třebešovská	NULL	NULL	1
+Třebihošťská	NULL	NULL	1
+Třebízského	NULL	NULL	1
+Třebohostická	NULL	NULL	1
+Třebonická	NULL	NULL	1
+Třeboňská	NULL	NULL	1
+Třeboradická	NULL	NULL	1
+Třebotovská	NULL	NULL	1
+Tréglova	NULL	NULL	1
+Trenčínská	NULL	NULL	1
+Třešňová	NULL	NULL	1
+Třešnovka	NULL	NULL	1
+Třešňovka	NULL	NULL	1
+Trhanovské náměstí	NULL	NULL	1
+Třídomá	NULL	NULL	1
+Třinecká	NULL	NULL	1
+Třístoličná	NULL	NULL	1
+Trmická	NULL	NULL	1
+Trnavská	NULL	NULL	1
+Trní	NULL	NULL	1
+Trnková	NULL	NULL	1
+Trnovanská	NULL	NULL	1
+Trocnovská	NULL	NULL	1
+Troilova	NULL	NULL	1
+Trojanova	NULL	NULL	1
+Trojdílná	NULL	NULL	1
+Trojická	NULL	NULL	1
+Trojmezní	NULL	NULL	1
+Trojská	NULL	NULL	1
+Trojská lávka	NULL	NULL	1
+Trojský most	NULL	NULL	1
+Troskovická	NULL	NULL	1
+Trousilova	NULL	NULL	1
+Třtinová	NULL	NULL	1
+Truhlářka	NULL	NULL	1
+Truhlářova	NULL	NULL	1
+Truhlářská	NULL	NULL	1
+Trutnovská	NULL	NULL	1
+Tryskovická	NULL	NULL	1
+Trytova	NULL	NULL	1
+Tržiště	NULL	NULL	1
+Tuchoměřická	NULL	NULL	1
+Tuchorazská	NULL	NULL	1
+Tučňákova	NULL	NULL	1
+Tuháňská	NULL	NULL	1
+Tuklatská	NULL	NULL	1
+Tulešická	NULL	NULL	1
+Tulipánová	NULL	NULL	1
+Tulkova	NULL	NULL	1
+Tulská	NULL	NULL	1
+Tůmova	NULL	NULL	1
+Tunel Lochkov	NULL	NULL	1
+Tunel Mrázovka	NULL	NULL	1
+Tuniská	NULL	NULL	1
+Tupolevova	NULL	NULL	1
+Turgeněvova	NULL	NULL	1
+Tuřická	NULL	NULL	1
+Turínská	NULL	NULL	1
+Turistická	NULL	NULL	1
+Turkmenská	NULL	NULL	1
+Türkova	NULL	NULL	1
+Turkovská	NULL	NULL	1
+Turnovská	NULL	NULL	1
+Turnovského	NULL	NULL	1
+Turská	NULL	NULL	1
+Tusarova	NULL	NULL	1
+Tušimická	NULL	NULL	1
+Tužebníková	NULL	NULL	1
+Tvrdého	NULL	NULL	1
+Tvrdonická	NULL	NULL	1
+Tychonova	NULL	NULL	1
+Tylišovská	NULL	NULL	1
+Tylova pasáž	NULL	NULL	1
+Tylovická	NULL	NULL	1
+Týmlova	NULL	NULL	1
+Týn	NULL	NULL	1
+Týnská	NULL	NULL	1
+Týnská ulička	NULL	NULL	1
+Tyrkysová	NULL	NULL	1
+Tyršova	NULL	NULL	1
+U Akademie	NULL	NULL	1
+U Akátů	NULL	NULL	1
+U Albrechtova vrchu	NULL	NULL	1
+U Andělky	NULL	NULL	1
+U Arborky	NULL	NULL	1
+U bakaláře	NULL	NULL	1
+U Balabenky	NULL	NULL	1
+U Bažantnice	NULL	NULL	1
+U bazénu	NULL	NULL	1
+U Beránky	NULL	NULL	1
+U Bílého Mlýnku	NULL	NULL	1
+U Blaženky	NULL	NULL	1
+U Borovic	NULL	NULL	1
+U Boroviček	NULL	NULL	1
+U Botiče	NULL	NULL	1
+U Božích bojovníků	NULL	NULL	1
+U Branek	NULL	NULL	1
+U Břehu	NULL	NULL	1
+U Bruských kasáren	NULL	NULL	1
+U Brusnice	NULL	NULL	1
+U Bubce	NULL	NULL	1
+U Bulhara	NULL	NULL	1
+U Čekárny	NULL	NULL	1
+U Černé rokle	NULL	NULL	1
+U Červeného mlýnku	NULL	NULL	1
+U Českých loděnic	NULL	NULL	1
+U chaloupek	NULL	NULL	1
+U chmelnice	NULL	NULL	1
+U Chodovského hřbitova	NULL	NULL	1
+U Chundelů	NULL	NULL	1
+U cihelny	NULL	NULL	1
+U Cikánky	NULL	NULL	1
+U Císařské cesty	NULL	NULL	1
+U Čističky	NULL	NULL	1
+U Čokoládoven	NULL	NULL	1
+U Ctěnického Potoka	NULL	NULL	1
+U Čtvrté baterie	NULL	NULL	1
+U Čtyř domů	NULL	NULL	1
+U cukrovaru	NULL	NULL	1
+U dálnice	NULL	NULL	1
+U Dejvického rybníčku	NULL	NULL	1
+U Děkanky	NULL	NULL	1
+U Dělnického cvičiště	NULL	NULL	1
+U Demartinky	NULL	NULL	1
+U Dětského domova	NULL	NULL	1
+U Dětského Hřiště	NULL	NULL	1
+U Divadla	NULL	NULL	1
+U Dívčích hradů	NULL	NULL	1
+U Dobešky	NULL	NULL	1
+U Dobráků	NULL	NULL	1
+U Dobřenských	NULL	NULL	1
+U Domu služeb	NULL	NULL	1
+U Drahaně	NULL	NULL	1
+U Dráhy	NULL	NULL	1
+U Drůbežárny	NULL	NULL	1
+U Druhé baterie	NULL	NULL	1
+U Drupolu	NULL	NULL	1
+U Družstev	NULL	NULL	1
+U Družstva Ideál	NULL	NULL	1
+U Družstva Práce	NULL	NULL	1
+U družstva Tempo	NULL	NULL	1
+U Družstva Život	NULL	NULL	1
+U Dubečské tvrze	NULL	NULL	1
+U Dubu	NULL	NULL	1
+U Dvojdomů	NULL	NULL	1
+U Dvora	NULL	NULL	1
+U Dvou srpů	NULL	NULL	1
+U Elektrárny	NULL	NULL	1
+U Elektry	NULL	NULL	1
+U Fořta	NULL	NULL	1
+U Gabrielky	NULL	NULL	1
+U Garáží	NULL	NULL	1
+U geofyzikálního ústavu	NULL	NULL	1
+U Golfu	NULL	NULL	1
+U Gymnázia	NULL	NULL	1
+U Habrovky	NULL	NULL	1
+U Hadovky	NULL	NULL	1
+U Háje	NULL	NULL	1
+U hájku	NULL	NULL	1
+U Hájků	NULL	NULL	1
+U Hájovny	NULL	NULL	1
+U Harfy	NULL	NULL	1
+U Hasičské zbrojnice	NULL	NULL	1
+U Havlíčkových sadů	NULL	NULL	1
+U Házů	NULL	NULL	1
+U Hellady	NULL	NULL	1
+U Hercovky	NULL	NULL	1
+U hlásky	NULL	NULL	1
+U Hliníku	NULL	NULL	1
+U Hodin	NULL	NULL	1
+U Hostavického potoka	NULL	NULL	1
+U Hostivařského nádraží	NULL	NULL	1
+U hotelu	NULL	NULL	1
+U Hranic	NULL	NULL	1
+U Hráze	NULL	NULL	1
+U Hřbitovů	NULL	NULL	1
+U Hřiště	NULL	NULL	1
+U Hrnčíř	NULL	NULL	1
+U Hrnčířského rybníka	NULL	NULL	1
+U Hrocha	NULL	NULL	1
+U Hrušky	NULL	NULL	1
+U Hvězdy	NULL	NULL	1
+U Hvozdu	NULL	NULL	1
+U Invalidovny	NULL	NULL	1
+U Jarku	NULL	NULL	1
+U Javoru	NULL	NULL	1
+U Jedličkova ústavu	NULL	NULL	1
+U Jednoty	NULL	NULL	1
+U jeslí	NULL	NULL	1
+U jezera	NULL	NULL	1
+U Jezerky	NULL	NULL	1
+U Jezírka	NULL	NULL	1
+U Jezu	NULL	NULL	1
+U Jinonického rybníčka	NULL	NULL	1
+U Jirkovské	NULL	NULL	1
+U jizby	NULL	NULL	1
+U Jízdárny	NULL	NULL	1
+U Kabelovny	NULL	NULL	1
+U Kaménky	NULL	NULL	1
+U Kamýku	NULL	NULL	1
+U Kanálky	NULL	NULL	1
+U Kapliček	NULL	NULL	1
+U kapličky	NULL	NULL	1
+U Kasáren	NULL	NULL	1
+U Kašny	NULL	NULL	1
+U Kaštanu	NULL	NULL	1
+U Kavalírky	NULL	NULL	1
+U Kempinku	NULL	NULL	1
+U Kina	NULL	NULL	1
+U Klavírky	NULL	NULL	1
+U Klikovky	NULL	NULL	1
+U Klimentky	NULL	NULL	1
+U Kloubových domů	NULL	NULL	1
+U klubu	NULL	NULL	1
+U Kněžské louky	NULL	NULL	1
+U Kola	NULL	NULL	1
+U Kolejí	NULL	NULL	1
+U Kolonie	NULL	NULL	1
+U Komárova	NULL	NULL	1
+U Kombinátu	NULL	NULL	1
+U Konečné	NULL	NULL	1
+U Koní	NULL	NULL	1
+U Kopečku	NULL	NULL	1
+U Košíku	NULL	NULL	1
+U kostela	NULL	NULL	1
+U Kotlářky	NULL	NULL	1
+U Koupadel	NULL	NULL	1
+U kovárny	NULL	NULL	1
+U Královské louky	NULL	NULL	1
+U Krbu	NULL	NULL	1
+U Krčské vodárny	NULL	NULL	1
+U Krčského nádraží	NULL	NULL	1
+U Kreiovy studánky	NULL	NULL	1
+U Kříže	NULL	NULL	1
+U Křížku	NULL	NULL	1
+U Křižovatky	NULL	NULL	1
+U kruhovky	NULL	NULL	1
+U Kublova	NULL	NULL	1
+U Kunratického lesa	NULL	NULL	1
+U Laboratoře	NULL	NULL	1
+U Labutě	NULL	NULL	1
+U Ladronky	NULL	NULL	1
+U Lanové dráhy	NULL	NULL	1
+U Lázeňky	NULL	NULL	1
+U Lázní	NULL	NULL	1
+U ledáren	NULL	NULL	1
+U Lesa	NULL	NULL	1
+U Lesíka	NULL	NULL	1
+U Letenské vodárny	NULL	NULL	1
+U Letenského sadu	NULL	NULL	1
+U letiště	NULL	NULL	1
+U Letohrádku královny Anny	NULL	NULL	1
+U Libeňského mostu	NULL	NULL	1
+U Libeňského pivovaru	NULL	NULL	1
+U Libeňského zámku	NULL	NULL	1
+U Libušiných lázní	NULL	NULL	1
+U libušské sokolovny	NULL	NULL	1
+U Lidového domu	NULL	NULL	1
+U Líhní	NULL	NULL	1
+U Lip	NULL	NULL	1
+U Lipové aleje	NULL	NULL	1
+U Lípy	NULL	NULL	1
+U Lisu	NULL	NULL	1
+U Loskotů	NULL	NULL	1
+U Louky	NULL	NULL	1
+U Lužického semináře	NULL	NULL	1
+U Makra	NULL	NULL	1
+U Malvazinky	NULL	NULL	1
+U Matěje	NULL	NULL	1
+U Mateřské školy	NULL	NULL	1
+U Menhiru I	NULL	NULL	1
+U Menhiru II	NULL	NULL	1
+U Menhiru III	NULL	NULL	1
+U Menhiru IV	NULL	NULL	1
+U Menhiru V	NULL	NULL	1
+U Menhiru VI	NULL	NULL	1
+U Měšťanského pivovaru	NULL	NULL	1
+U Měšťanských škol	NULL	NULL	1
+U Městských domů	NULL	NULL	1
+U Meteoru	NULL	NULL	1
+U Mezníku	NULL	NULL	1
+U Michelské školy	NULL	NULL	1
+U Michelského lesa	NULL	NULL	1
+U Michelského mlýna	NULL	NULL	1
+U Milosrdných	NULL	NULL	1
+U Mlýna	NULL	NULL	1
+U Mlýnského kanálu	NULL	NULL	1
+U Mlýnského rybníka	NULL	NULL	1
+U Močálu	NULL	NULL	1
+U Modřanské školy	NULL	NULL	1
+U Modré školy	NULL	NULL	1
+U Mrázovky	NULL	NULL	1
+U Mydlárny	NULL	NULL	1
+U Mýdlárny	NULL	NULL	1
+U myslivny	NULL	NULL	1
+U Nádražní lávky	NULL	NULL	1
+U Nádrže	NULL	NULL	1
+U Nadýmače	NULL	NULL	1
+U Náhonu	NULL	NULL	1
+U Nákladového nádraží	NULL	NULL	1
+U nás	NULL	NULL	1
+U Nemocenské pojišťovny	NULL	NULL	1
+U Nemocnice	NULL	NULL	1
+U Nesypky	NULL	NULL	1
+U Nikolajky	NULL	NULL	1
+U Nové dálnice	NULL	NULL	1
+U nové louky	NULL	NULL	1
+U Nové školy	NULL	NULL	1
+U Nového dvora	NULL	NULL	1
+U Nového Suchdola	NULL	NULL	1
+U Nových domů I	NULL	NULL	1
+U Nových domů II	NULL	NULL	1
+U Nových domů III	NULL	NULL	1
+U Nových vil	NULL	NULL	1
+U obce	NULL	NULL	1
+U Obecního domu	NULL	NULL	1
+U Obecního dvora	NULL	NULL	1
+U Obory	NULL	NULL	1
+U Okrouhlíku	NULL	NULL	1
+U Okruhu	NULL	NULL	1
+U Opatrovny	NULL	NULL	1
+U ovčína	NULL	NULL	1
+U Palaty	NULL	NULL	1
+U Paliárky	NULL	NULL	1
+U paloučku	NULL	NULL	1
+U Památníku	NULL	NULL	1
+U Panské Zahrady	NULL	NULL	1
+U Papírny	NULL	NULL	1
+U Parkánu	NULL	NULL	1
+U Parku	NULL	NULL	1
+U Parního mlýna	NULL	NULL	1
+U Párníků	NULL	NULL	1
+U Pastoušky	NULL	NULL	1
+U Páté baterie	NULL	NULL	1
+U Pavilónu	NULL	NULL	1
+U Pazderek	NULL	NULL	1
+U Pejřárny	NULL	NULL	1
+U Pejřavky	NULL	NULL	1
+U Pekáren	NULL	NULL	1
+U Pekařky	NULL	NULL	1
+U Pentlovky	NULL	NULL	1
+U Pergamenky	NULL	NULL	1
+U Pernikářky	NULL	NULL	1
+U Pernštejnských	NULL	NULL	1
+U Petřin	NULL	NULL	1
+U Pily	NULL	NULL	1
+U Písecké brány	NULL	NULL	1
+U Pískovce	NULL	NULL	1
+U Pískovny	NULL	NULL	1
+U Pivovaru	NULL	NULL	1
+U Plátenice	NULL	NULL	1
+U Plovárny	NULL	NULL	1
+U Plynárny	NULL	NULL	1
+U Podchodu	NULL	NULL	1
+U Podolského hřbitova	NULL	NULL	1
+U Podolského sanatoria	NULL	NULL	1
+U Pohádky	NULL	NULL	1
+U Pojišťovny	NULL	NULL	1
+U Pomníku	NULL	NULL	1
+U Poštovky	NULL	NULL	1
+U Pošty	NULL	NULL	1
+U Potoka	NULL	NULL	1
+U Potůčku	NULL	NULL	1
+U Pramene	NULL	NULL	1
+U Prašné brány	NULL	NULL	1
+U Prašného mostu	NULL	NULL	1
+U Pražských lomů	NULL	NULL	1
+U Přechodu	NULL	NULL	1
+U Prefy	NULL	NULL	1
+U Přehrady	NULL	NULL	1
+U Přejezdu	NULL	NULL	1
+U Prioru	NULL	NULL	1
+U Prknovky	NULL	NULL	1
+U Prodejny	NULL	NULL	1
+U Propusti	NULL	NULL	1
+U Prosecké školy	NULL	NULL	1
+U Proseckého kostela	NULL	NULL	1
+U Průhonu	NULL	NULL	1
+U Průseku	NULL	NULL	1
+U První baterie	NULL	NULL	1
+U Půjčovny	NULL	NULL	1
+U Pyramidy	NULL	NULL	1
+U Radiály	NULL	NULL	1
+U Radnice	NULL	NULL	1
+U Rajské zahrady	NULL	NULL	1
+U Rakovky	NULL	NULL	1
+U Řempa	NULL	NULL	1
+U Říčanky	NULL	NULL	1
+U Roháčových kasáren	NULL	NULL	1
+U Rokytky	NULL	NULL	1
+U Rozkoše	NULL	NULL	1
+U Roztockého háje	NULL	NULL	1
+U Rustonky	NULL	NULL	1
+U Rybářství	NULL	NULL	1
+U Rybníčka	NULL	NULL	1
+U Rybníčků	NULL	NULL	1
+U Rybníka	NULL	NULL	1
+U Rychty	NULL	NULL	1
+U Ryšánky	NULL	NULL	1
+U Sadu	NULL	NULL	1
+U Šalamounky	NULL	NULL	1
+U Šálkovny	NULL	NULL	1
+U Sanatoria	NULL	NULL	1
+U Sanopzu	NULL	NULL	1
+U Santošky	NULL	NULL	1
+U Schodů	NULL	NULL	1
+U Sedlecké školy	NULL	NULL	1
+U Seřadiště	NULL	NULL	1
+U Šesté baterie	NULL	NULL	1
+U Šíchů	NULL	NULL	1
+U Sídliště	NULL	NULL	1
+U Sila	NULL	NULL	1
+U Silnice	NULL	NULL	1
+U Šípků	NULL	NULL	1
+U Skalky	NULL	NULL	1
+U skály	NULL	NULL	1
+U Skládky	NULL	NULL	1
+U skladu	NULL	NULL	1
+U Školičky	NULL	NULL	1
+U školky	NULL	NULL	1
+U Školního pole	NULL	NULL	1
+U Školské zahrady	NULL	NULL	1
+U Školy	NULL	NULL	1
+U Skopců	NULL	NULL	1
+U Sladovny	NULL	NULL	1
+U Slavie	NULL	NULL	1
+U Slavoje	NULL	NULL	1
+U Slévárny	NULL	NULL	1
+U Sloupu	NULL	NULL	1
+U Slovanky	NULL	NULL	1
+U Slovanské pojišťovny	NULL	NULL	1
+U Sluncové	NULL	NULL	1
+U Smaltovny	NULL	NULL	1
+U Smetanky	NULL	NULL	1
+U Smíchovského hřbitova	NULL	NULL	1
+U Smolnic	NULL	NULL	1
+U Sokolovny	NULL	NULL	1
+U soutoku	NULL	NULL	1
+U Sovových mlýnů	NULL	NULL	1
+U Sparty	NULL	NULL	1
+U Špejcharu	NULL	NULL	1
+U Splavu	NULL	NULL	1
+U spojky	NULL	NULL	1
+U Spojů	NULL	NULL	1
+U Společenské zahrady	NULL	NULL	1
+U Spořitelny	NULL	NULL	1
+U sportoviště	NULL	NULL	1
+U Srubu	NULL	NULL	1
+U Stanice	NULL	NULL	1
+U Staré cihelny	NULL	NULL	1
+U Staré plynárny	NULL	NULL	1
+U Staré pošty	NULL	NULL	1
+U Staré skládky	NULL	NULL	1
+U Staré školy	NULL	NULL	1
+U Staré sokolovny	NULL	NULL	1
+U Staré studánky	NULL	NULL	1
+U Starého hřbitova	NULL	NULL	1
+U Starého hřiště	NULL	NULL	1
+U starého mlýna	NULL	NULL	1
+U Starého nádraží	NULL	NULL	1
+U Starého splavu	NULL	NULL	1
+U Starého židovského hřbitova	NULL	NULL	1
+U Statku	NULL	NULL	1
+U Státní dráhy	NULL	NULL	1
+U Stavoservisu	NULL	NULL	1
+U Štěpu	NULL	NULL	1
+U Stírky	NULL	NULL	1
+U Stojanu	NULL	NULL	1
+U Střediska	NULL	NULL	1
+U Střešovických hřišť	NULL	NULL	1
+U Strouhy	NULL	NULL	1
+U Strže	NULL	NULL	1
+U Studánky	NULL	NULL	1
+U Studny	NULL	NULL	1
+U Šumavěnky	NULL	NULL	1
+U Šumavy	NULL	NULL	1
+U Sušičky	NULL	NULL	1
+U Svahu	NULL	NULL	1
+U Svatého ducha	NULL	NULL	1
+U Svépomoci	NULL	NULL	1
+U Světličky	NULL	NULL	1
+U Svobodárny	NULL	NULL	1
+U Svornosti	NULL	NULL	1
+U Synagogy	NULL	NULL	1
+U Tabulky	NULL	NULL	1
+U Technoplynu	NULL	NULL	1
+U Tenisu	NULL	NULL	1
+U Teplárny	NULL	NULL	1
+U Topíren	NULL	NULL	1
+U Továren	NULL	NULL	1
+U transformační stanice	NULL	NULL	1
+U Transformátoru	NULL	NULL	1
+U Trati	NULL	NULL	1
+U Třešňovky	NULL	NULL	1
+U Třetí baterie	NULL	NULL	1
+U Trezorky	NULL	NULL	1
+U Trojice	NULL	NULL	1
+U Trojského zámku	NULL	NULL	1
+U Trpce	NULL	NULL	1
+U Tržnice	NULL	NULL	1
+U Tůně	NULL	NULL	1
+U Tvrze	NULL	NULL	1
+U Tyrše	NULL	NULL	1
+U Tyršovky	NULL	NULL	1
+U Tyršovy školy	NULL	NULL	1
+U Uhříněveské obory	NULL	NULL	1
+U Uranie	NULL	NULL	1
+U Václava	NULL	NULL	1
+U Váhy	NULL	NULL	1
+U Valu	NULL	NULL	1
+U vápenice	NULL	NULL	1
+U Vápenné skály	NULL	NULL	1
+U Velazu	NULL	NULL	1
+U Velké skály	NULL	NULL	1
+U Vesny	NULL	NULL	1
+U Větrníku	NULL	NULL	1
+U Větrolamu	NULL	NULL	1
+U Viktorky	NULL	NULL	1
+U Vinice	NULL	NULL	1
+U Vinné révy	NULL	NULL	1
+U Vinných sklepů	NULL	NULL	1
+U Vinohradské nemocnice	NULL	NULL	1
+U Vinohradského hřbitova	NULL	NULL	1
+U Višňovky	NULL	NULL	1
+U Vizerky	NULL	NULL	1
+U Vlachovky	NULL	NULL	1
+U Vlasačky	NULL	NULL	1
+U Vltavy	NULL	NULL	1
+U Voborníků	NULL	NULL	1
+U vodárny	NULL	NULL	1
+U Vodice	NULL	NULL	1
+U Vodojemu	NULL	NULL	1
+U Vodotoku	NULL	NULL	1
+U Vody	NULL	NULL	1
+U Vojanky	NULL	NULL	1
+U Vojenské nemocnice	NULL	NULL	1
+U Vojtěšky	NULL	NULL	1
+U Vokovické školy	NULL	NULL	1
+U Vorlíků	NULL	NULL	1
+U Vozovny	NULL	NULL	1
+U Vrbek	NULL	NULL	1
+U Vrbiček	NULL	NULL	1
+U Vrby	NULL	NULL	1
+U Vršovického hřbitova	NULL	NULL	1
+U Vršovického nádraží	NULL	NULL	1
+U Výkupního střediska	NULL	NULL	1
+U vysočanského cukrovaru	NULL	NULL	1
+U Vysočanského pivovaru	NULL	NULL	1
+U Výstavby	NULL	NULL	1
+U Výstaviště	NULL	NULL	1
+U Výzkumu	NULL	NULL	1
+U Waltrovky	NULL	NULL	1
+U Záběhlického zámku	NULL	NULL	1
+U Zahrádek	NULL	NULL	1
+U Zahrádkářské kolonie	NULL	NULL	1
+U Zahradnictví	NULL	NULL	1
+U Zahradního města	NULL	NULL	1
+U Zahrady	NULL	NULL	1
+U Zájezdku	NULL	NULL	1
+U Zákrutu	NULL	NULL	1
+U zámeckého parku	NULL	NULL	1
+U Zámečku	NULL	NULL	1
+U Zásobní zahrady	NULL	NULL	1
+U zastávky	NULL	NULL	1
+U Zátiší	NULL	NULL	1
+U Závodiště	NULL	NULL	1
+U Závor	NULL	NULL	1
+U Zbrojnice	NULL	NULL	1
+U Zdravotního ústavu	NULL	NULL	1
+U Zeleného ptáka	NULL	NULL	1
+U Železné lávky	NULL	NULL	1
+U Železničního mostu	NULL	NULL	1
+U Želivky	NULL	NULL	1
+U zeměpisného ústavu	NULL	NULL	1
+U Zemníku	NULL	NULL	1
+U Židovského hřbitova	NULL	NULL	1
+U Zlaté studně	NULL	NULL	1
+U Zličína	NULL	NULL	1
+U Zličínského hřiště	NULL	NULL	1
+U Zvonařky	NULL	NULL	1
+U Zvoničky	NULL	NULL	1
+Učitelská	NULL	NULL	1
+Učňovská	NULL	NULL	1
+Údlická	NULL	NULL	1
+Údolní	NULL	NULL	1
+Uhelná	NULL	NULL	1
+Uhelný trh	NULL	NULL	1
+Uherská	NULL	NULL	1
+Úhlavská	NULL	NULL	1
+Úhlová	NULL	NULL	1
+Uhříněveská	NULL	NULL	1
+Újezd	NULL	NULL	1
+Újezdská	NULL	NULL	1
+Ukončená	NULL	NULL	1
+Ukrajinská	NULL	NULL	1
+Ulčova	NULL	NULL	1
+Úlibická	NULL	NULL	1
+Uljanovská	NULL	NULL	1
+Ulrychova	NULL	NULL	1
+Umělecká	NULL	NULL	1
+Umrlčina	NULL	NULL	1
+Únětická	NULL	NULL	1
+Ungarova	NULL	NULL	1
+Unhošťská	NULL	NULL	1
+Univerzitní	NULL	NULL	1
+Úpická	NULL	NULL	1
+Upolínová	NULL	NULL	1
+Upravená	NULL	NULL	1
+Úpská	NULL	NULL	1
+Uralská	NULL	NULL	1
+Uranova	NULL	NULL	1
+Urbanická	NULL	NULL	1
+Urbánkova	NULL	NULL	1
+Urbanova	NULL	NULL	1
+Urešova	NULL	NULL	1
+Uruguayská	NULL	NULL	1
+Urxova	NULL	NULL	1
+Úslavská	NULL	NULL	1
+Ústav mateřství	NULL	NULL	1
+Ústavní	NULL	NULL	1
+Ústavy akademie věd	NULL	NULL	1
+Ústecká	NULL	NULL	1
+Ústřední	NULL	NULL	1
+Útulná	NULL	NULL	1
+Úvalská	NULL	NULL	1
+Úvoz	NULL	NULL	1
+Úvozová	NULL	NULL	1
+Uzavřená	NULL	NULL	1
+Uzbecká	NULL	NULL	1
+Úzká	NULL	NULL	1
+Užocká	NULL	NULL	1
+Uzoučká	NULL	NULL	1
+V Aleji	NULL	NULL	1
+V Alejíčkách	NULL	NULL	1
+V Americe	NULL	NULL	1
+V Babyku	NULL	NULL	1
+V Bambouskách	NULL	NULL	1
+V Benátkách	NULL	NULL	1
+V Bezpečí	NULL	NULL	1
+V Bokách I	NULL	NULL	1
+V Bokách II	NULL	NULL	1
+V Bokách III	NULL	NULL	1
+V Borovičkách	NULL	NULL	1
+V Botanice	NULL	NULL	1
+V Brance	NULL	NULL	1
+V březí	NULL	NULL	1
+V Březinkách	NULL	NULL	1
+V Břízkách	NULL	NULL	1
+V Brůdku	NULL	NULL	1
+V Bytovkách	NULL	NULL	1
+V Celnici	NULL	NULL	1
+V Čeňku	NULL	NULL	1
+V Chaloupkách	NULL	NULL	1
+V chatách	NULL	NULL	1
+V Chotejně	NULL	NULL	1
+V Cibulkách	NULL	NULL	1
+V Cihelně	NULL	NULL	1
+V Cípu	NULL	NULL	1
+V Dílcích	NULL	NULL	1
+V Dolích	NULL	NULL	1
+V Dolinách	NULL	NULL	1
+V Dolině	NULL	NULL	1
+V Domcích	NULL	NULL	1
+V Domkách	NULL	NULL	1
+V Domově	NULL	NULL	1
+V Háji	NULL	NULL	1
+V Hájích	NULL	NULL	1
+V hájkách	NULL	NULL	1
+V Hájovce	NULL	NULL	1
+V Hliništi	NULL	NULL	1
+V Hodkovičkách	NULL	NULL	1
+V Holešovičkách	NULL	NULL	1
+V honu	NULL	NULL	1
+V Horkách	NULL	NULL	1
+V Horní Stromce	NULL	NULL	1
+V Hrobech	NULL	NULL	1
+V Hruškovně	NULL	NULL	1
+V Humenci	NULL	NULL	1
+V Humnech	NULL	NULL	1
+V hůrkách	NULL	NULL	1
+V Jahodách	NULL	NULL	1
+V Jámě	NULL	NULL	1
+V Javorech	NULL	NULL	1
+V Javoříčku	NULL	NULL	1
+V jehličí	NULL	NULL	1
+V Jezerách	NULL	NULL	1
+V Jezírkách	NULL	NULL	1
+V jezírku	NULL	NULL	1
+V Jirchářích	NULL	NULL	1
+V Kališti	NULL	NULL	1
+V kálku	NULL	NULL	1
+V Kapslovně	NULL	NULL	1
+V Katovičkách	NULL	NULL	1
+V Klukovicích	NULL	NULL	1
+V Kněžívce	NULL	NULL	1
+V Kolkovně	NULL	NULL	1
+V Korytech	NULL	NULL	1
+V Kotcích	NULL	NULL	1
+V Koutě	NULL	NULL	1
+V Kratinách	NULL	NULL	1
+V Křížkách	NULL	NULL	1
+V Křovinách	NULL	NULL	1
+V Kruhu	NULL	NULL	1
+V Kuťatech	NULL	NULL	1
+V ladech	NULL	NULL	1
+V lázních	NULL	NULL	1
+V Lesíčku	NULL	NULL	1
+V Lipinách	NULL	NULL	1
+V Lipkách	NULL	NULL	1
+V Lískách	NULL	NULL	1
+V Listnáčích	NULL	NULL	1
+V Lomech	NULL	NULL	1
+V Louce	NULL	NULL	1
+V lučinách	NULL	NULL	1
+V Luhu	NULL	NULL	1
+V lukách	NULL	NULL	1
+V Lužích	NULL	NULL	1
+V Malých domech I	NULL	NULL	1
+V Malých domech II	NULL	NULL	1
+V Malých domech III	NULL	NULL	1
+V Mezihoří	NULL	NULL	1
+V Mezivrší	NULL	NULL	1
+V Mokřinách	NULL	NULL	1
+V náklích	NULL	NULL	1
+V Násypu	NULL	NULL	1
+V Nížinách	NULL	NULL	1
+V Nové čtvrti	NULL	NULL	1
+V Nové Hostivaři	NULL	NULL	1
+V Nové Vsi	NULL	NULL	1
+V Novém Hloubětíně	NULL	NULL	1
+V Nových Bohnicích	NULL	NULL	1
+V Nových domcích	NULL	NULL	1
+V Nových Vokovicích	NULL	NULL	1
+V Občanském domově	NULL	NULL	1
+V Oblouku	NULL	NULL	1
+V Obůrkách	NULL	NULL	1
+V Ochozu	NULL	NULL	1
+V Ohradě	NULL	NULL	1
+V Ohybu	NULL	NULL	1
+V Okálech	NULL	NULL	1
+V Okruží	NULL	NULL	1
+V Olšinách	NULL	NULL	1
+V Ondřejově	NULL	NULL	1
+V Opatově	NULL	NULL	1
+V Ořeší	NULL	NULL	1
+V Osikách	NULL	NULL	1
+V Ostružiní	NULL	NULL	1
+V Oudolku	NULL	NULL	1
+V Oužlabině	NULL	NULL	1
+V Pachmance	NULL	NULL	1
+V Padolině	NULL	NULL	1
+V Parcelách	NULL	NULL	1
+V Pařezinách	NULL	NULL	1
+V Parku	NULL	NULL	1
+V Pěšinkách	NULL	NULL	1
+V Pevnosti	NULL	NULL	1
+V Pískovně	NULL	NULL	1
+V Pitkovičkách	NULL	NULL	1
+V Pláni	NULL	NULL	1
+V Planinách	NULL	NULL	1
+V Podbabě	NULL	NULL	1
+V Podhájí	NULL	NULL	1
+V Podhoří	NULL	NULL	1
+V Podhradí	NULL	NULL	1
+V Podlesí	NULL	NULL	1
+V Podluží	NULL	NULL	1
+V podskalí	NULL	NULL	1
+V Podvrší	NULL	NULL	1
+V Podzámčí	NULL	NULL	1
+V Poli	NULL	NULL	1
+V Polích	NULL	NULL	1
+V potocích	NULL	NULL	1
+V Potočinách	NULL	NULL	1
+V Potočkách	NULL	NULL	1
+V Potokách	NULL	NULL	1
+V Předním Hloubětíně	NULL	NULL	1
+V Předním Veleslavíně	NULL	NULL	1
+V Předpolí	NULL	NULL	1
+V Přelomu	NULL	NULL	1
+V Přístavu	NULL	NULL	1
+V Průčelí	NULL	NULL	1
+V Průhledu	NULL	NULL	1
+V Prutinách	NULL	NULL	1
+V Ráji	NULL	NULL	1
+V rákosí	NULL	NULL	1
+V Remízku	NULL	NULL	1
+V Roháčích	NULL	NULL	1
+V Rohožníku	NULL	NULL	1
+V Rohu	NULL	NULL	1
+V Rokli	NULL	NULL	1
+V Roklích	NULL	NULL	1
+V Rovinách	NULL	NULL	1
+V Rybníčkách	NULL	NULL	1
+V Sadech	NULL	NULL	1
+V Šáreckém údolí	NULL	NULL	1
+V Sedlci	NULL	NULL	1
+V Sídlišti	NULL	NULL	1
+V Slavětíně	NULL	NULL	1
+V Štíhlách	NULL	NULL	1
+V Stráni	NULL	NULL	1
+V Středu	NULL	NULL	1
+V Sudech	NULL	NULL	1
+V Tehovičkách	NULL	NULL	1
+V Tišině	NULL	NULL	1
+V Třešňovce	NULL	NULL	1
+V Trianglu	NULL	NULL	1
+V Tůních	NULL	NULL	1
+V Údolí	NULL	NULL	1
+V úhlu	NULL	NULL	1
+V Úhoru	NULL	NULL	1
+V Uličce	NULL	NULL	1
+V Uličkách	NULL	NULL	1
+V úvalu	NULL	NULL	1
+V Úvoze	NULL	NULL	1
+V úzké	NULL	NULL	1
+V Úžlabině	NULL	NULL	1
+V žabokřiku	NULL	NULL	1
+V Záhorském	NULL	NULL	1
+V Zahradách	NULL	NULL	1
+V Zahradě	NULL	NULL	1
+V Zahrádkách	NULL	NULL	1
+V Zahradní čtvrti	NULL	NULL	1
+V záhybu	NULL	NULL	1
+V zákopech	NULL	NULL	1
+V zákoutí	NULL	NULL	1
+V Zálesí	NULL	NULL	1
+V Zálomu	NULL	NULL	1
+V Zámcích	NULL	NULL	1
+V zápolí	NULL	NULL	1
+V zatáčce	NULL	NULL	1
+V Zátiší	NULL	NULL	1
+V Zátočce	NULL	NULL	1
+V Závětří	NULL	NULL	1
+V závitu	NULL	NULL	1
+V Zeleném údolí	NULL	NULL	1
+V Zeleni	NULL	NULL	1
+V. P. Čkalova	NULL	NULL	1
+Vachkova	NULL	NULL	1
+Vacínova	NULL	NULL	1
+Vacínovská	NULL	NULL	1
+Vačkářova	NULL	NULL	1
+Vackova	NULL	NULL	1
+Václava Kovaříka	NULL	NULL	1
+Václava Sedláčka	NULL	NULL	1
+Václava Špačka	NULL	NULL	1
+Václava Trojana	NULL	NULL	1
+Václavická	NULL	NULL	1
+Václavkova	NULL	NULL	1
+Václavská	NULL	NULL	1
+Václavská pasáž	NULL	NULL	1
+Václavské náměstí	NULL	NULL	1
+Vacovská	NULL	NULL	1
+Vágnerova	NULL	NULL	1
+Vajdova	NULL	NULL	1
+Vajgarská	NULL	NULL	1
+Valčíkova	NULL	NULL	1
+Valcířská	NULL	NULL	1
+Valdická	NULL	NULL	1
+Valdštejnská	NULL	NULL	1
+Valečovská	NULL	NULL	1
+Valentinská	NULL	NULL	1
+Valentova	NULL	NULL	1
+Valšovská	NULL	NULL	1
+Valtínovská	NULL	NULL	1
+Vamberská	NULL	NULL	1
+Vančurova	NULL	NULL	1
+Vaníčkova	NULL	NULL	1
+Vaňkova	NULL	NULL	1
+Vánková	NULL	NULL	1
+Vápencová	NULL	NULL	1
+Vápeníkova	NULL	NULL	1
+Varhulíkové	NULL	NULL	1
+Varnsdorfská	NULL	NULL	1
+Varšavská	NULL	NULL	1
+Vašátkova	NULL	NULL	1
+Vášova	NULL	NULL	1
+Vavákova	NULL	NULL	1
+Vavřenova	NULL	NULL	1
+Vavřinecká	NULL	NULL	1
+Vazovova	NULL	NULL	1
+Vážská	NULL	NULL	1
+Včelařská	NULL	NULL	1
+Včelničná	NULL	NULL	1
+Ve Dvorci	NULL	NULL	1
+Ve Lhotce	NULL	NULL	1
+Ve Skalách	NULL	NULL	1
+Ve Skále	NULL	NULL	1
+Ve Skalkách	NULL	NULL	1
+Ve Smečkách	NULL	NULL	1
+Ve Smrčině	NULL	NULL	1
+Ve Štěpnici	NULL	NULL	1
+Ve Stínadlech	NULL	NULL	1
+Ve Stínu	NULL	NULL	1
+Ve Stráni	NULL	NULL	1
+Ve Střešovičkách	NULL	NULL	1
+Ve stromořadí	NULL	NULL	1
+Ve Struhách	NULL	NULL	1
+Ve Studeném	NULL	NULL	1
+Ve Svahu	NULL	NULL	1
+Ve Tvrzi	NULL	NULL	1
+Ve Vilkách	NULL	NULL	1
+Ve Višňovce	NULL	NULL	1
+Ve Vrbách	NULL	NULL	1
+Ve Vrchu	NULL	NULL	1
+Ve Vrších	NULL	NULL	1
+Ve výhledu	NULL	NULL	1
+Ve Výrech	NULL	NULL	1
+Ve Zběrušce	NULL	NULL	1
+Ve Žlíbku	NULL	NULL	1
+Ve Zliči	NULL	NULL	1
+Večerní	NULL	NULL	1
+Vedlejší	NULL	NULL	1
+Vehlovická	NULL	NULL	1
+Vejražkova	NULL	NULL	1
+Vejvanovského	NULL	NULL	1
+Vejvodova	NULL	NULL	1
+Věkova	NULL	NULL	1
+Velehradská	NULL	NULL	1
+Velemínská	NULL	NULL	1
+Velenická	NULL	NULL	1
+Velenovského	NULL	NULL	1
+Veleňská	NULL	NULL	1
+Velešínská	NULL	NULL	1
+Veleslavínova	NULL	NULL	1
+Veleslavínská	NULL	NULL	1
+Veletržní	NULL	NULL	1
+Velflíkova	NULL	NULL	1
+Velfloviců	NULL	NULL	1
+Velhartická	NULL	NULL	1
+Velichovská	NULL	NULL	1
+Velínská	NULL	NULL	1
+Velká skála	NULL	NULL	1
+Velké Kunratické	NULL	NULL	1
+Velkoborská	NULL	NULL	1
+Velkoosecká	NULL	NULL	1
+Velkopřevorské náměstí	NULL	NULL	1
+Veltěžská	NULL	NULL	1
+Veltruská	NULL	NULL	1
+Velvarská	NULL	NULL	1
+Venušina	NULL	NULL	1
+Verdiho	NULL	NULL	1
+Verdunská	NULL	NULL	1
+Verneřická	NULL	NULL	1
+Vernéřovská	NULL	NULL	1
+Veronské nám.	NULL	NULL	1
+Veronské náměstí	NULL	NULL	1
+Veselská	NULL	NULL	1
+Věšínova	NULL	NULL	1
+Vestavěná	NULL	NULL	1
+Vestecká	NULL	NULL	1
+Věstonická	NULL	NULL	1
+Větrná	NULL	NULL	1
+Větrov	NULL	NULL	1
+Větrová	NULL	NULL	1
+Větrovcova	NULL	NULL	1
+Větrušická	NULL	NULL	1
+Veverkova	NULL	NULL	1
+Vězeňská	NULL	NULL	1
+Věžická	NULL	NULL	1
+Vídeňská	NULL	NULL	1
+Vidimova	NULL	NULL	1
+Vidimská	NULL	NULL	1
+Vidlák	NULL	NULL	1
+Vidlicová	NULL	NULL	1
+Vidoulská	NULL	NULL	1
+Vidovická	NULL	NULL	1
+Vietnamská	NULL	NULL	1
+Vikářská	NULL	NULL	1
+Viklefova	NULL	NULL	1
+Vikova	NULL	NULL	1
+Viktora Huga	NULL	NULL	1
+Viktorinova	NULL	NULL	1
+Vilímovská	NULL	NULL	1
+Vilová	NULL	NULL	1
+Vinařického	NULL	NULL	1
+Vinařská	NULL	NULL	1
+Viničná	NULL	NULL	1
+Vinohradská	NULL	NULL	1
+Vinopalnická	NULL	NULL	1
+Vinořská	NULL	NULL	1
+Vinořské náměstí	NULL	NULL	1
+Vinšova	NULL	NULL	1
+Violková	NULL	NULL	1
+Vírská	NULL	NULL	1
+Višňová	NULL	NULL	1
+Višňovka	NULL	NULL	1
+Víta Nejedlého	NULL	NULL	1
+Vítězná	NULL	NULL	1
+Vítězné náměstí	NULL	NULL	1
+Vitíkova	NULL	NULL	1
+Vítkova	NULL	NULL	1
+Vítkovická	NULL	NULL	1
+Vitošská	NULL	NULL	1
+Vítovcova	NULL	NULL	1
+Vizírská	NULL	NULL	1
+Vizovická	NULL	NULL	1
+Vjezd z -1 do -2 patra	NULL	NULL	1
+Vlachova	NULL	NULL	1
+Vladimírova	NULL	NULL	1
+Vladislavova	NULL	NULL	1
+Vladivostocká	NULL	NULL	1
+Vladycká	NULL	NULL	1
+Vlárská	NULL	NULL	1
+Vlasákova	NULL	NULL	1
+Vlásenická	NULL	NULL	1
+Vlašimská	NULL	NULL	1
+Vlašská	NULL	NULL	1
+Vlastibořská	NULL	NULL	1
+Vlastina	NULL	NULL	1
+Vlastislavova	NULL	NULL	1
+Vlasty Buriana	NULL	NULL	1
+Vlasty Hilské	NULL	NULL	1
+Vlasty Průchové	NULL	NULL	1
+Vlčická	NULL	NULL	1
+Vlčkova	NULL	NULL	1
+Vlkova	NULL	NULL	1
+Vlkovická	NULL	NULL	1
+Vlnitá	NULL	NULL	1
+Vltavanů	NULL	NULL	1
+Vltavická	NULL	NULL	1
+Vltavínová	NULL	NULL	1
+Vltavská	NULL	NULL	1
+Vnější	NULL	NULL	1
+Vnislavova	NULL	NULL	1
+Vnitřní	NULL	NULL	1
+Vnoučkova	NULL	NULL	1
+Voborského	NULL	NULL	1
+Vobůrecká	NULL	NULL	1
+Vocelova	NULL	NULL	1
+Voctářova	NULL	NULL	1
+Vodácká	NULL	NULL	1
+Vodárenská	NULL	NULL	1
+Voděradská	NULL	NULL	1
+Vodická	NULL	NULL	1
+Vodičkova	NULL	NULL	1
+Vodňanská	NULL	NULL	1
+Vodňanského	NULL	NULL	1
+Vodní	NULL	NULL	1
+Vodnická	NULL	NULL	1
+Vodochodská	NULL	NULL	1
+Vojáčkova	NULL	NULL	1
+Vojenova	NULL	NULL	1
+Vojická	NULL	NULL	1
+Vojkovická	NULL	NULL	1
+Vojtěšská	NULL	NULL	1
+Vojtíškova	NULL	NULL	1
+Vojtova	NULL	NULL	1
+Vokáčova	NULL	NULL	1
+Vokovická	NULL	NULL	1
+Vokřínská	NULL	NULL	1
+Vokrojova	NULL	NULL	1
+Volarská	NULL	NULL	1
+Volavkova	NULL	NULL	1
+Voleníkova	NULL	NULL	1
+Volkova	NULL	NULL	1
+Volkovova	NULL	NULL	1
+Voltova	NULL	NULL	1
+Volutová	NULL	NULL	1
+Volyňská	NULL	NULL	1
+Vondroušova	NULL	NULL	1
+Voráčovská	NULL	NULL	1
+Vorařská	NULL	NULL	1
+Voříškova	NULL	NULL	1
+Voroněžská	NULL	NULL	1
+Voršilská	NULL	NULL	1
+Vošahlíkova	NULL	NULL	1
+Vosátkova	NULL	NULL	1
+Voskova	NULL	NULL	1
+Voskovcova	NULL	NULL	1
+Vosmíkových	NULL	NULL	1
+Vostrého	NULL	NULL	1
+Vostrovská	NULL	NULL	1
+Votická	NULL	NULL	1
+Votočkova	NULL	NULL	1
+Votuzská	NULL	NULL	1
+Vožická	NULL	NULL	1
+Vozová	NULL	NULL	1
+Vozovna Kobylisy	NULL	NULL	1
+Vraňanská	NULL	NULL	1
+Vranovská	NULL	NULL	1
+Vranská	NULL	NULL	1
+Vrátenská	NULL	NULL	1
+Vratičová	NULL	NULL	1
+Vratimovská	NULL	NULL	1
+Vratislavova	NULL	NULL	1
+Vratislavská	NULL	NULL	1
+Vrátkovská	NULL	NULL	1
+Vrátnická	NULL	NULL	1
+Vrázova	NULL	NULL	1
+Vrážská	NULL	NULL	1
+Vrbčanská	NULL	NULL	1
+Vrbenského	NULL	NULL	1
+Vrbická	NULL	NULL	1
+Vrbková	NULL	NULL	1
+Vrbova	NULL	NULL	1
+Vrbová	NULL	NULL	1
+Vrchlabská	NULL	NULL	1
+Vrchlického	NULL	NULL	1
+Vřesová	NULL	NULL	1
+Vřesovická	NULL	NULL	1
+Vršní	NULL	NULL	1
+Vršovická	NULL	NULL	1
+Vršovické náměstí	NULL	NULL	1
+Vršovka	NULL	NULL	1
+Vrútecká	NULL	NULL	1
+Všehrdova	NULL	NULL	1
+Všejanská	NULL	NULL	1
+Všelipská	NULL	NULL	1
+Všerubská	NULL	NULL	1
+Všetatská	NULL	NULL	1
+Vsetínská	NULL	NULL	1
+Vstavačová	NULL	NULL	1
+Vstupní	NULL	NULL	1
+Vybíralova	NULL	NULL	1
+Východní	NULL	NULL	1
+Východní náměstí	NULL	NULL	1
+Výchozí	NULL	NULL	1
+Vycpálkova	NULL	NULL	1
+Vyderská	NULL	NULL	1
+Vydrova	NULL	NULL	1
+Výhledová	NULL	NULL	1
+Výhledské náměstí	NULL	NULL	1
+Vyhlídkova	NULL	NULL	1
+Výjezdní	NULL	NULL	1
+Výjezdová	NULL	NULL	1
+Vykáňská	NULL	NULL	1
+Výletní	NULL	NULL	1
+Výmolova	NULL	NULL	1
+Výpadová	NULL	NULL	1
+Výrobní	NULL	NULL	1
+Vyšebrodská	NULL	NULL	1
+Vyšehradská	NULL	NULL	1
+Vyšehradský tunel	NULL	NULL	1
+Vyskočilova	NULL	NULL	1
+Vysočanská	NULL	NULL	1
+Vysočanská radiála	NULL	NULL	1
+Vysočanské náměstí	NULL	NULL	1
+Vysoká cesta	NULL	NULL	1
+Vysokoškolská	NULL	NULL	1
+Vysokovská	NULL	NULL	1
+Vyšší	NULL	NULL	1
+Výstavby	NULL	NULL	1
+Výstavní	NULL	NULL	1
+Výstupní	NULL	NULL	1
+Výtvarná	NULL	NULL	1
+Vyžlovská	NULL	NULL	1
+Vzdušná	NULL	NULL	1
+Vzestupná	NULL	NULL	1
+Vzpoury	NULL	NULL	1
+Wagnerova	NULL	NULL	1
+Waldesova	NULL	NULL	1
+Washingtonova	NULL	NULL	1
+Wassermannova	NULL	NULL	1
+Wattova	NULL	NULL	1
+Weberova	NULL	NULL	1
+Wenzigova	NULL	NULL	1
+Werichova	NULL	NULL	1
+Wichterlova	NULL	NULL	1
+Wiedermannova	NULL	NULL	1
+Wiesenthalova	NULL	NULL	1
+Wilsonova	NULL	NULL	1
+Winklerova	NULL	NULL	1
+Wolfova	NULL	NULL	1
+Wolkerova	NULL	NULL	1
+Wonkova	NULL	NULL	1
+Wuchterlova	NULL	NULL	1
+Xaveriova	NULL	NULL	1
+Xaverovská	NULL	NULL	1
+Za Archivem	NULL	NULL	1
+Za Avii	NULL	NULL	1
+Za Avií	NULL	NULL	1
+Za bažantnicí	NULL	NULL	1
+Za Botičem	NULL	NULL	1
+Za brankou	NULL	NULL	1
+Za Brodem	NULL	NULL	1
+Za Brůdkem	NULL	NULL	1
+Za Brumlovkou	NULL	NULL	1
+Za Černým Mostem	NULL	NULL	1
+Za Chalupami	NULL	NULL	1
+Za cihelnou	NULL	NULL	1
+Za Císařským mlýnem	NULL	NULL	1
+Za dálnicí	NULL	NULL	1
+Za Drahou	NULL	NULL	1
+Za Drupolem	NULL	NULL	1
+Za Dvorem	NULL	NULL	1
+Za Elektrárnou	NULL	NULL	1
+Za Farou	NULL	NULL	1
+Za fořtem	NULL	NULL	1
+Za Hájčím dvorcem	NULL	NULL	1
+Za Hájem	NULL	NULL	1
+Za hájovnou	NULL	NULL	1
+Za Halami	NULL	NULL	1
+Za Hanspaulkou	NULL	NULL	1
+Za Haštalem	NULL	NULL	1
+Za Hládkovem	NULL	NULL	1
+Za Horou	NULL	NULL	1
+Za Hospodou	NULL	NULL	1
+Za Hotelem	NULL	NULL	1
+Za Hotely	NULL	NULL	1
+Za Hřbitovem	NULL	NULL	1
+Za Humny	NULL	NULL	1
+Za Invalidovnou	NULL	NULL	1
+Za Jalovým dvorem	NULL	NULL	1
+Za Jednotou	NULL	NULL	1
+Za Kajetánkou	NULL	NULL	1
+Za kapličkou	NULL	NULL	1
+Za karlínským přístavem	NULL	NULL	1
+Za Klíčovem	NULL	NULL	1
+Za Knotkem	NULL	NULL	1
+Za Kostelem	NULL	NULL	1
+Za Kovárnou	NULL	NULL	1
+Za Kovářským rybníkem	NULL	NULL	1
+Za Křížem	NULL	NULL	1
+Za Křížkem	NULL	NULL	1
+Za Lány	NULL	NULL	1
+Za Lázeňkou	NULL	NULL	1
+Za Lesíkem	NULL	NULL	1
+Za Lidovým domem	NULL	NULL	1
+Za Luhem	NULL	NULL	1
+Za Lužinami	NULL	NULL	1
+Za Mlýnem	NULL	NULL	1
+Za Mosty	NULL	NULL	1
+Za Mototechnou	NULL	NULL	1
+Za Nadýmačem	NULL	NULL	1
+Za Návsí	NULL	NULL	1
+Za Novákovou zahradou	NULL	NULL	1
+Za Obecním úřadem	NULL	NULL	1
+Za Oborou	NULL	NULL	1
+Za Opravnou	NULL	NULL	1
+Za Ovčínem	NULL	NULL	1
+Za Panskou zahradou	NULL	NULL	1
+Za Papírnou	NULL	NULL	1
+Za parkem	NULL	NULL	1
+Za pavilonem	NULL	NULL	1
+Za pavilónem	NULL	NULL	1
+Za Pekařkou	NULL	NULL	1
+Za Pekárnou	NULL	NULL	1
+Za Pískovnou	NULL	NULL	1
+Za Pivovarem	NULL	NULL	1
+Za ploty	NULL	NULL	1
+Za Podjezdem	NULL	NULL	1
+Za Pohádkou	NULL	NULL	1
+Za Pohořelcem	NULL	NULL	1
+Za Poříčskou branou	NULL	NULL	1
+Za Poštou	NULL	NULL	1
+Za Poštovskou zahradou	NULL	NULL	1
+Za Potokem	NULL	NULL	1
+Za Prodejnou	NULL	NULL	1
+Za Pruhy	NULL	NULL	1
+Za Průsekem	NULL	NULL	1
+Za Radostí	NULL	NULL	1
+Za Rájem	NULL	NULL	1
+Za Roklí	NULL	NULL	1
+Za Rokytkou	NULL	NULL	1
+Za Rozkoší	NULL	NULL	1
+Za Rybářstvím	NULL	NULL	1
+Za Rybníčkem	NULL	NULL	1
+Za rybníčky	NULL	NULL	1
+Za Rybníkem	NULL	NULL	1
+Za Sedmidomky	NULL	NULL	1
+Za Skalkou	NULL	NULL	1
+Za Školkou	NULL	NULL	1
+Za Slatinami	NULL	NULL	1
+Za Slovankou	NULL	NULL	1
+Za Šmatlíkem	NULL	NULL	1
+Za Sokolovnou	NULL	NULL	1
+Za Špejcharem	NULL	NULL	1
+Za Stadionem	NULL	NULL	1
+Za Statkem	NULL	NULL	1
+Za Statky	NULL	NULL	1
+Za Stodolami	NULL	NULL	1
+Za Stodolou	NULL	NULL	1
+Za Strahovem	NULL	NULL	1
+Za Strašnickou vozovnou	NULL	NULL	1
+Za Střelnicí	NULL	NULL	1
+Za studánkou	NULL	NULL	1
+Za teplárnou	NULL	NULL	1
+Za Tratí	NULL	NULL	1
+Za Třebešínem	NULL	NULL	1
+Za Vackovem	NULL	NULL	1
+Za Valem	NULL	NULL	1
+Za větrem	NULL	NULL	1
+Za Viaduktem	NULL	NULL	1
+Za Vodárnou	NULL	NULL	1
+Za Vokovickou vozovnou	NULL	NULL	1
+Za Zahradami	NULL	NULL	1
+Za Zahradou	NULL	NULL	1
+Za Zámečkem	NULL	NULL	1
+Za Zastávkou	NULL	NULL	1
+Za Zelenou liškou	NULL	NULL	1
+Za železnicí	NULL	NULL	1
+Za Ženskými domovy	NULL	NULL	1
+Za Žižkovskou vozovnou	NULL	NULL	1
+Záběhlická	NULL	NULL	1
+Záblatská	NULL	NULL	1
+Žábova	NULL	NULL	1
+Zábranská	NULL	NULL	1
+Zábrodí	NULL	NULL	1
+Zacharská	NULL	NULL	1
+Zachova	NULL	NULL	1
+Žacléřská	NULL	NULL	1
+Zadní	NULL	NULL	1
+Záhořanská	NULL	NULL	1
+Záhořanského	NULL	NULL	1
+Záhorského	NULL	NULL	1
+Zahrádecká	NULL	NULL	1
+Zahrádkářů	NULL	NULL	1
+Zahradní	NULL	NULL	1
+Zahradnická	NULL	NULL	1
+Zahradníčkova	NULL	NULL	1
+Záhřebská	NULL	NULL	1
+Zaječí	NULL	NULL	1
+Zaječická	NULL	NULL	1
+Zájezdní	NULL	NULL	1
+Zakázanka	NULL	NULL	1
+Zákolanská	NULL	NULL	1
+Zákostelní	NULL	NULL	1
+Zakouřilova	NULL	NULL	1
+Žákovská	NULL	NULL	1
+Zakrytá	NULL	NULL	1
+Zakšínská	NULL	NULL	1
+Zákupská	NULL	NULL	1
+Žalanského	NULL	NULL	1
+Zálesí	NULL	NULL	1
+Zalinská	NULL	NULL	1
+Žalmanova	NULL	NULL	1
+Zalomená	NULL	NULL	1
+Žalovská	NULL	NULL	1
+Záluské	NULL	NULL	1
+Zálužanského	NULL	NULL	1
+Zálužská	NULL	NULL	1
+Zamašská	NULL	NULL	1
+Žamberská	NULL	NULL	1
+Zámecká	NULL	NULL	1
+Zámecké schody	NULL	NULL	1
+Zámečnická	NULL	NULL	1
+Zamenhofova	NULL	NULL	1
+Zámezí	NULL	NULL	1
+Zámišova	NULL	NULL	1
+Žampiónová	NULL	NULL	1
+Žandovská	NULL	NULL	1
+Zapadlá	NULL	NULL	1
+Západní	NULL	NULL	1
+Zápasnická	NULL	NULL	1
+Zapomenutá	NULL	NULL	1
+Zápotoční	NULL	NULL	1
+Zapova	NULL	NULL	1
+Zápská	NULL	NULL	1
+Zapských	NULL	NULL	1
+Zářijová	NULL	NULL	1
+Zarostlá	NULL	NULL	1
+Zárubova	NULL	NULL	1
+Zárybnická	NULL	NULL	1
+Zárybničná	NULL	NULL	1
+Zárybská	NULL	NULL	1
+Zásadská	NULL	NULL	1
+Zásmucká	NULL	NULL	1
+Zastavěná	NULL	NULL	1
+Zastrčená	NULL	NULL	1
+Žatecká	NULL	NULL	1
+Žateckých	NULL	NULL	1
+Zátiší	NULL	NULL	1
+Zátišská	NULL	NULL	1
+Zátoňská	NULL	NULL	1
+Zátopkova	NULL	NULL	1
+Zavadilova	NULL	NULL	1
+Závadova	NULL	NULL	1
+Zavátá	NULL	NULL	1
+Závěrka	NULL	NULL	1
+Záveská	NULL	NULL	1
+Závišova	NULL	NULL	1
+Závodní	NULL	NULL	1
+Závrchy	NULL	NULL	1
+Zázvorkova	NULL	NULL	1
+Zborovská	NULL	NULL	1
+Zbraslavská	NULL	NULL	1
+Zbrojnická	NULL	NULL	1
+Zbudovská	NULL	NULL	1
+Zbuzanská	NULL	NULL	1
+Zbuzkova	NULL	NULL	1
+Zdařilá	NULL	NULL	1
+Žďárská	NULL	NULL	1
+Zdaru	NULL	NULL	1
+Zdibská	NULL	NULL	1
+Zdíkovská	NULL	NULL	1
+Zdiměřická	NULL	NULL	1
+Ždírnická	NULL	NULL	1
+Zdislavická	NULL	NULL	1
+Zdobnická	NULL	NULL	1
+Zdoňovská	NULL	NULL	1
+Žehuňská	NULL	NULL	1
+Zelená	NULL	NULL	1
+Zelené domky	NULL	NULL	1
+Zelenečská	NULL	NULL	1
+Zelenkova	NULL	NULL	1
+Zelenky-Hajského	NULL	NULL	1
+Zelenohorská	NULL	NULL	1
+Zelený pruh	NULL	NULL	1
+Želetavská	NULL	NULL	1
+Železná	NULL	NULL	1
+Železničářů	NULL	NULL	1
+Železniční	NULL	NULL	1
+Železnobrodská	NULL	NULL	1
+Zelinářská	NULL	NULL	1
+Želivecká	NULL	NULL	1
+Želivská	NULL	NULL	1
+Želnavská	NULL	NULL	1
+Zemanka	NULL	NULL	1
+Zemědělská	NULL	NULL	1
+Zemské právo	NULL	NULL	1
+Zengrova	NULL	NULL	1
+Ženíškova	NULL	NULL	1
+Zenklova	NULL	NULL	1
+Žermanická	NULL	NULL	1
+Žernosecká	NULL	NULL	1
+Žernovská	NULL	NULL	1
+Žerotínova	NULL	NULL	1
+Zeyerova	NULL	NULL	1
+Zeyerova alej	NULL	NULL	1
+Žežulák	NULL	NULL	1
+Zhořelecká	NULL	NULL	1
+Židlického	NULL	NULL	1
+Zikova	NULL	NULL	1
+Žilinská	NULL	NULL	1
+Žilovská	NULL	NULL	1
+Zimákova	NULL	NULL	1
+Zimova	NULL	NULL	1
+Žinkovská	NULL	NULL	1
+Žirovnická	NULL	NULL	1
+Žitavská	NULL	NULL	1
+Žitná	NULL	NULL	1
+Žitomírská	NULL	NULL	1
+Živanická	NULL	NULL	1
+Živcová	NULL	NULL	1
+Živcových	NULL	NULL	1
+Zívrova	NULL	NULL	1
+Žižkova	NULL	NULL	1
+Žižkovo náměstí	NULL	NULL	1
+Žižkovský tunel	NULL	NULL	1
+Zkrácená	NULL	NULL	1
+Zlatá	NULL	NULL	1
+Zlatá ulička u Daliborky	NULL	NULL	1
+Zlatnice	NULL	NULL	1
+Zlatnická	NULL	NULL	1
+Zlatokorunská	NULL	NULL	1
+Zlenická	NULL	NULL	1
+Zlešická	NULL	NULL	1
+Zlíchovská	NULL	NULL	1
+Zlíchovský tunel	NULL	NULL	1
+Zličínská	NULL	NULL	1
+Zlochova	NULL	NULL	1
+Zlončická	NULL	NULL	1
+Zlonická	NULL	NULL	1
+Zlonínská	NULL	NULL	1
+Žluťásková	NULL	NULL	1
+Znojemská	NULL	NULL	1
+Zoubkova	NULL	NULL	1
+Zrzavého	NULL	NULL	1
+Ztracená	NULL	NULL	1
+Zubatého	NULL	NULL	1
+Zubrnická	NULL	NULL	1
+Žufanova	NULL	NULL	1
+Žukovského	NULL	NULL	1
+Županovická	NULL	NULL	1
+Zúžená	NULL	NULL	1
+Žvahovská	NULL	NULL	1
+Zvánovická	NULL	NULL	1
+Zvíkovská	NULL	NULL	1
+Zvolenská	NULL	NULL	1
+Zvolská	NULL	NULL	1
+Zvonařova	NULL	NULL	1
+Zvonařovská	NULL	NULL	1
+Zvoncová	NULL	NULL	1
+Zvoncovitá	NULL	NULL	1
+Zvonická	NULL	NULL	1
+Zvoníčkova	NULL	NULL	1
+Zvonková	NULL	NULL	1

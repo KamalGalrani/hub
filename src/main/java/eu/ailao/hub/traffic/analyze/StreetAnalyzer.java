@@ -14,7 +14,7 @@ public class StreetAnalyzer {
 
 	private String LABEL_LOOKUP_ADDRESS = Statics.labelLookupURL;
 	private final int MAXIMUM_STREET_NAME_WORDS = 4;
-	private final double DISTANCE_TRESHOLD = 1.4950000222772404;
+	private final double DISTANCE_THRESHOLD = 1.4950000222772404;
 
 	/**
 	 * Finds name of street contained in question by ask to label-lookup
@@ -33,7 +33,7 @@ public class StreetAnalyzer {
 		if (streetCandidate == null) {
 			return null;
 		}
-		if (streetCandidate.getDistance() > DISTANCE_TRESHOLD) {
+		if (streetCandidate.getDistance() > DISTANCE_THRESHOLD) {
 			return null;
 		}
 		return streetCandidate.getStreetName();

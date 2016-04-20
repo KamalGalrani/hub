@@ -1,0 +1,73 @@
+What is the traffic in the street?	TRAFFIC_SITUATION
+What is the traffic in the?	TRAFFIC_SITUATION
+What is the traffic in?	TRAFFIC_SITUATION
+What's traffic in?	TRAFFIC_SITUATION
+What's the traffic in the street?	TRAFFIC_SITUATION
+What's trafic in?	TRAFFIC_SITUATION
+What's the traffic street?	TRAFFIC_SITUATION
+How dense is the traffic in?	TRAFFIC_SITUATION
+How dense is traffic in street?	TRAFFIC_SITUATION
+How dense is traffic in the?	TRAFFIC_SITUATION
+How is traffic in?	TRAFFIC_SITUATION
+How is the traffic in?	TRAFFIC_SITUATION
+How is the traffic in street?	TRAFFIC_SITUATION
+How is the traffic in the street?	TRAFFIC_SITUATION
+How big is the traffic in street?	TRAFFIC_SITUATION
+How big is traffic in street?	TRAFFIC_SITUATION
+How big is the traffic in the street?	TRAFFIC_SITUATION
+How big is traffic in?	TRAFFIC_SITUATION
+Is traffic in fine?	TRAFFIC_SITUATION
+What is the traffic situation in the?	TRAFFIC_SITUATION
+What is the situation in the street?	TRAFFIC_SITUATION
+What's the traffic in the?	TRAFFIC_SITUATION
+Is traffic in the street OK?	TRAFFIC_SITUATION
+Is traffic situation in the fine?	TRAFFIC_SITUATION
+How long does it take to pass?	TRAFFIC_SITUATION
+Is there any traffic incident in?	INCIDENT
+What are the traffic incidents in street?	INCIDENT
+Is there any traffic incident in the?	INCIDENT
+What are the incidents in street?	INCIDENT
+Is there any traffic incidents in street?	INCIDENT
+Is there any traffic accident in?	INCIDENT
+Are there traffic accidents in street?	INCIDENT
+Is there accident in?	INCIDENT
+What are the accidents in?	INCIDENT
+Is there any traffic accidents in?	INCIDENT
+Is there any car crash in?	INCIDENT
+Are there any car crashes in?	INCIDENT
+Any car crashes in?	INCIDENT
+Any car accidents in?	INCIDENT
+Any traffic incident in?	INCIDENT
+Are there any traffic restrictions in the?	INCIDENT
+Is there any traffic restriction in the?	INCIDENT
+Any traffic restrictions in?	INCIDENT
+Is there any problem in the?	INCIDENT
+Did something happen in?	INCIDENT
+Is there any construction in?	CONSTRUCTION
+Are there any constructions in the?	CONSTRUCTION
+What are the construction works in the?	CONSTRUCTION
+Is there any traffic closure in street?	CLOSURE
+Is street closed?	CLOSURE
+Is closed?	CLOSURE
+Is stil closed?	CLOSURE
+Is passable?	CLOSURE
+Can I go through?	CLOSURE
+Can I ride in?	CLOSURE
+When will end the traffic restriction in the?	RESTRICTION_END
+When can I pass the street again?	RESTRICTION_END
+When will be the passable again?	RESTRICTION_END
+When will be passable?	RESTRICTION_END
+When can I go through again?	RESTRICTION_END
+When can I ride through again?	RESTRICTION_END
+How long it takes to get from to?	FASTEST_ROUTE
+How long does it take to get from to?	FASTEST_ROUTE
+How long does it takes to go from to?	FASTEST_ROUTE
+How to get from to?	FASTEST_ROUTE
+How to go from to?	FASTEST_ROUTE
+What is the fastest route from the to?	FASTEST_ROUTE
+What is the fastest route from to?	FASTEST_ROUTE
+How to go from the street to street?	FASTEST_ROUTE
+Take me from to, please.	FASTEST_ROUTE
+How to get to from?	FASTEST_ROUTE
+What is the fastest route to from?	FASTEST_ROUTE
+Take me to from.	FASTEST_ROUTE

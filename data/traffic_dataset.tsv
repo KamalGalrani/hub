@@ -1,0 +1,79 @@
+What is the traffic in the Evropská street?	TRAFFIC_SITUATION	Evropská	
+What is the traffic in the Poděbradská street?	TRAFFIC_SITUATION	Poděbradská	
+What is the traffic in the Argentinská?	TRAFFIC_SITUATION	Argentinská	
+What is the traffic in Korunovační?	TRAFFIC_SITUATION	Korunovační	
+What's traffic in Vysočanská?	TRAFFIC_SITUATION	Vysočanská	
+What's the traffic in the Komořanská street?	TRAFFIC_SITUATION	Komořanská	
+What's trafic in Dobříšská?	TRAFFIC_SITUATION	Dobříšská	
+What's the traffic Peroutkova street?	TRAFFIC_SITUATION	Peroutkova	
+How dense is the traffic in V Olšinách?	TRAFFIC_SITUATION	V Olšinách	
+How dense is traffic in 5. května street?	TRAFFIC_SITUATION	5. května	
+How dense is the traffic in K Barrandovu?	TRAFFIC_SITUATION	K Barrandovu	
+How dense is traffic in the Radlická?	TRAFFIC_SITUATION	Radlická	
+How is traffic in Patočkova?	TRAFFIC_SITUATION	Patočkova	
+How is the traffic in Povltavská?	TRAFFIC_SITUATION	Povltavská	
+How is the traffic in Kolbenova street?	TRAFFIC_SITUATION	Kolbenova	
+How is the traffic in the Generála Šišky street?	TRAFFIC_SITUATION	Generála Šišky	
+How big is the traffic in Průmyslová street?	TRAFFIC_SITUATION	Průmyslová	
+How big is traffic in Švehlova street?	TRAFFIC_SITUATION	Švehlova	
+How big is the traffic in the Práčská street?	TRAFFIC_SITUATION	Práčská	
+How big is traffic in Jižní Spojka?	TRAFFIC_SITUATION	Jižní Spojka	
+Is traffic in Novosuchdolská fine?	TRAFFIC_SITUATION	Novosuchdolská	
+What is the traffic situation in the Pod rybníčkem?	TRAFFIC_SITUATION	Pod rybníčkem	
+What is the situation in the Suchdolská street?	TRAFFIC_SITUATION	Suchdolská	
+What's the traffic in the Myslbekova street?	TRAFFIC_SITUATION	Myslbekova	
+What's the traffic in the Papírenská?	TRAFFIC_SITUATION	Papírenská	
+Is traffic in the Bucharova street OK?	TRAFFIC_SITUATION	Bucharova	
+Is traffic situation in the Radlická fine?	TRAFFIC_SITUATION	Radlická	
+How long does it take to pass Bubenečský tunnel?	TRAFFIC_SITUATION	Bubenečský tunel	
+Is there any traffic incident in Počernická?	INCIDENT	Počernická	
+What are the traffic incidents in Šolínova street?	INCIDENT	Šolínova	
+Is there any traffic incident in the Velflíkova?	INCIDENT	Velflíkova	
+What are the incidents in Terronská street?	INCIDENT	Terronská	
+Is there any traffic incidents is Antonína Čermáka street?	INCIDENT	Antonína Čermáka	
+Is there any traffic accident in Chodovská?	INCIDENT	Chodovská	
+Are there traffic accidents in Belgická street?	INCIDENT	Belgická	
+Is there accident in Bělehradská?	INCIDENT	Bělehradská	
+What are the accidents in Anglická?	INCIDENT	Anglická	
+Is there any traffic accidents in J. Masaryka street?	INCIDENT	Jana Masaryka	
+Is there any car crash in Hořejší nábřeží?	INCIDENT	Hořejší nábřeží	
+Are there any car crashes in Na Hřebenkách?	INCIDENT	Na Hřebenkách	
+Any car crashes in Nad Turbovou?	INCIDENT	Nad Turbovou	
+Any car accidents in Rozvadovská spojka?	INCIDENT	Rozvadovská spojka	
+Any traffic incident in K Vidouli?	INCIDENT	K Vidouli	
+Are there any traffic restrictions in the Strahovský tunel?	INCIDENT	Strahovský tunel	
+Is there any traffic restriction in the Elišky Peškové?	INCIDENT	Elišky Peškové	
+Any traffic restrictions in V Botanice?	INCIDENT	V Botanice	
+Is there any problem in the Za Císařským mlýnem?	INCIDENT	Za Císařským mlýnem	
+Did something happen in Tupolevova?	INCIDENT	Tupolevova	
+Is there any construction in Píseckého?	CONSTRUCTION	Píseckého	
+Are there any constructions in the Nad Kavalírkou?	CONSTRUCTION	Nad Kavalírkou	
+What are the construction works in the Jinonická?	CONSTRUCTION	Jinonická	
+Is there any traffic closure in Na Farkáně II street?	CLOSURE	Na Farkáně II	
+Is Česká street closed?	CLOSURE	Česká	
+Is U Šalamounky closed?	CLOSURE	U Šalamounky	
+Is Dušní stil closed?	CLOSURE	Dušní	
+Is Prvního Pluku passable?	CLOSURE	Prvního Pluku	
+Can I go through Vítkova?	CLOSURE	Vítkova	
+Can I ride in Pernerova?	CLOSURE	Pernerova	
+When will end the traffic restriction in the Široká?	RESTRICTION_END	Široká	
+When will end the traffic restriction in the V Kolkovně?	RESTRICTION_END	V Kolkovně	
+When can I pass the Rybná street again?	RESTRICTION_END	Rybná	
+When will be the Charlese de Gaulla passable again?	RESTRICTION_END	Charlese de Gaulla	
+When will be Pelléova passable?	RESTRICTION_END	Pelléova	
+When can I go through Kamýcká again?	RESTRICTION_END	Kamýcká	
+When can I ride through Osvobození again?	RESTRICTION_END	Osvobození	
+How long it takes to get from Ruská to Boleslavská?	FASTEST_ROUTE	Ruská	Boleslavská
+How long does it take to get from J. Želivského to Pobřežní?	FASTEST_ROUTE	Jana Želivského	Pobřežní
+How long does it takes to go from Marie Cibulkové to Hvězdova?	FASTEST_ROUTE	Marie Cibulkové	Hvězdova
+How long it takes to get from Krčská to Na Staré cestě?	FASTEST_ROUTE	Krčská	Na Staré cestě
+How to get from Franty Kocourka to K Závěrce?	FASTEST_ROUTE	Franty Kocourka	K Závěrce
+How to go from Na Václavce to Nad Santoškou?	FASTEST_ROUTE	Na Václavce	Nad Santoškou
+What is the fastest route from the Butovická to Liběšická?	FASTEST_ROUTE	Butovická	Liběšická
+What is the fastest route from Na Moklině to Žufanova?	FASTEST_ROUTE	Na Moklině	Žufanova
+How to get from U Prioru to Sobínská?	FASTEST_ROUTE	U Prioru	Sobínská
+How to go from the Františkova street to Dygrýnova street?	FASTEST_ROUTE	Františkova	Dygrýnova
+Take me from Evropská to Dobratická, please.	FASTEST_ROUTE	Evropská	Dobratická
+How to get to Na Vrších from Gutova?	FASTEST_ROUTE	Gutova	Na Vrších
+What is the fastest route to Dětská from Podle Trati?	FASTEST_ROUTE	Podle Trati	Dětská
+Take me to Malešická from Běžecká.	FASTEST_ROUTE	Běžecká	Malešická
