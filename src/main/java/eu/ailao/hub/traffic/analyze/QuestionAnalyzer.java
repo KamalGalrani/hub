@@ -21,17 +21,18 @@ public class QuestionAnalyzer {
 		StreetAnalyzer streetAnalyzer = new StreetAnalyzer();
 		TopicAnalyzer topicAnalyzer = new TopicAnalyzer();
 		TrafficTopic topic = topicAnalyzer.analyzeTrafficTopic(question);
+		String streetOne = null;
 		if (!topic.equals(TrafficTopic.FASTEST_ROUTE)) {
 			String street = streetAnalyzer.analyzeStreetName(question);
 			return new TrafficQuestionInfo(topic, street);
 		} else {
 			try {
-				String streetOne = streetAnalyzer.analyzeStreetName(question);
+				streetOne = streetAnalyzer.analyzeStreetName(question);
 				String streetTwo = streetAnalyzer.analyzeStreetName(question.replace(streetOne, ""));
 				String[] fromTo = streetAnalyzer.findOriginDestination(question, streetOne, streetTwo);
 				return new TrafficQuestionInfo(topic, fromTo[FROM], fromTo[TO]);
 			} catch (Exception e) {
-				return new TrafficQuestionInfo(topic, null);
+				return new TrafficQuestionInfo(topic, streetOne);
 			}
 		}
 	}

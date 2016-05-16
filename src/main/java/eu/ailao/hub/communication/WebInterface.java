@@ -82,6 +82,8 @@ public class WebInterface implements Runnable {
 		Map<String, String[]> queryParamsMap = request.queryMap().toMap();
 
 		String questionText = queryParamsMap.get("text")[0];
+		QuestionGoogleDocLogger questionGoogleDocLogger = new QuestionGoogleDocLogger();
+		questionGoogleDocLogger.log(questionText);
 		Question question = new Question(questionText);
 
 		logger.info("Getting id| Question asked: {}", question.getOriginalQuestionText());

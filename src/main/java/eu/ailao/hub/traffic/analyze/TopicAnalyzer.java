@@ -53,9 +53,9 @@ public class TopicAnalyzer {
 		conn.setDoOutput(true);
 		conn.setRequestMethod("POST");
 		conn.setRequestProperty("Content-Type", "application/json");
-		String input = createQuerry(question);
 		OutputStream os = conn.getOutputStream();
-		os.write(input.getBytes());
+		String input = createQuerry(question);
+		os.write(input.getBytes("UTF8"));
 		os.flush();
 
 		BufferedReader br = new BufferedReader(new InputStreamReader(
@@ -81,6 +81,7 @@ public class TopicAnalyzer {
 		for (int i = 0; i < loadedReferenceQuestions.size(); i++) {
 			jsonArray.put(stripAccents(loadedReferenceQuestions.getQuestion(i).toLowerCase().replace("?", "")));
 		}
+		question = stripAccents(question);
 		querry.put("qtext", question);
 		querry.put("atext", jsonArray);
 		return querry.toString();

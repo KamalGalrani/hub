@@ -84,7 +84,7 @@ public class Main_TrafficThresholds {
 		main_trafficThresholds.printMistakes(mode, tresholds[main_trafficThresholds.MIN_TOPIC_TRESHOLD],
 				tresholds[main_trafficThresholds.MAX_DISTANCE_TRESHOLD],
 				trafficTopicProbabilities, moviesTopicProbabilities,
-				trafficStreetDistance,moviesStreetDistance,
+				trafficStreetDistance, moviesStreetDistance,
 				trafficQuestions, moviesQuestions);
 	}
 
@@ -197,15 +197,15 @@ public class Main_TrafficThresholds {
 	/**
 	 * Calculates accuracy of decisioning with given treshold
 	 * @param mode mode of decisioning (street_only, topic_only, both)
-	 * @param trafficProbabilities list of topic probabilities for traffic questions
-	 * @param moviesProbabilities list of movies probabilities for movies questions
+	 * @param trafficTopicProbabilities list of topic probabilities for traffic questions
+	 * @param moviesTopicProbabilities list of movies probabilities for movies questions
 	 * @param trafficStreetDistance list of lexical distances of street for traffic questions
 	 * @param moviesStreetDistance list of lexical distances of street for movies questions
 	 * @param topicTreshold topic treshold
 	 * @param distanceTreshold street distance treshold
 	 * @return accuracy of decisioning
 	 */
-	private float accuracy(int mode, ArrayList<Double> trafficProbabilities, ArrayList<Double> moviesProbabilities,
+	private float accuracy(int mode, ArrayList<Double> trafficTopicProbabilities, ArrayList<Double> moviesTopicProbabilities,
 						   ArrayList<Double> trafficStreetDistance, ArrayList<Double> moviesStreetDistance,
 						   double topicTreshold, double distanceTreshold) {
 		int TTraffic = 0;
@@ -214,27 +214,27 @@ public class Main_TrafficThresholds {
 		switch (mode) {
 			case TOPIC:
 			case STREET:
-				for (int i = 0; i < trafficProbabilities.size(); i++) {
-					if (trafficProbabilities.get(i) >= topicTreshold && trafficStreetDistance.get(i) <= distanceTreshold) {
+				for (int i = 0; i < trafficTopicProbabilities.size(); i++) {
+					if (trafficTopicProbabilities.get(i) >= topicTreshold && trafficStreetDistance.get(i) <= distanceTreshold) {
 						TTraffic++;
 					}
 				}
 
-				for (int i = 0; i < moviesProbabilities.size(); i++) {
-					if (moviesProbabilities.get(i) < topicTreshold || moviesStreetDistance.get(i) > distanceTreshold) {
+				for (int i = 0; i < moviesTopicProbabilities.size(); i++) {
+					if (moviesTopicProbabilities.get(i) < topicTreshold || moviesStreetDistance.get(i) > distanceTreshold) {
 						TMovies++;
 					}
 				}
 				break;
 			case TOPIC_ONLY:
-				for (int i = 0; i < trafficProbabilities.size(); i++) {
-					if (trafficProbabilities.get(i) >= topicTreshold) {
+				for (int i = 0; i < trafficTopicProbabilities.size(); i++) {
+					if (trafficTopicProbabilities.get(i) >= topicTreshold) {
 						TTraffic++;
 					}
 				}
 
-				for (int i = 0; i < moviesProbabilities.size(); i++) {
-					if (moviesProbabilities.get(i) < topicTreshold) {
+				for (int i = 0; i < moviesTopicProbabilities.size(); i++) {
+					if (moviesTopicProbabilities.get(i) < topicTreshold) {
 						TMovies++;
 					}
 				}
@@ -256,11 +256,11 @@ public class Main_TrafficThresholds {
 
 		switch (mode) {
 			case TOPIC_ONLY:
-				return ((float) (TTraffic + TMovies)) / ((float) (trafficProbabilities.size() + moviesProbabilities.size()));
+				return ((float) (TTraffic + TMovies)) / ((float) (trafficTopicProbabilities.size() + moviesTopicProbabilities.size()));
 			case STREET_ONLY:
 				return ((float) (TTraffic + TMovies)) / ((float) (trafficStreetDistance.size() + moviesStreetDistance.size()));
 			default:
-				return ((float) (TTraffic + TMovies)) / ((float) (trafficProbabilities.size() + moviesProbabilities.size()));
+				return ((float) (TTraffic + TMovies)) / ((float) (trafficTopicProbabilities.size() + moviesTopicProbabilities.size()));
 		}
 
 	}

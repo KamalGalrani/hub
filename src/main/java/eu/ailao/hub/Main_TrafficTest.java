@@ -96,6 +96,9 @@ public class Main_TrafficTest {
 			System.out.println(questionNumber + ") " + question + " " + topic + " " + street);
 		}
 		if (streetTwo != null) {
+			if (trafficQuestionInfo.getStreetNameTo()==null){
+				System.out.println("Detected: " + trafficQuestionInfo.getTrafficTopic() + " " + trafficQuestionInfo.getStreetName());
+			}
 			System.out.println("Detected: " + trafficQuestionInfo.getTrafficTopic() + " " + trafficQuestionInfo.getStreetNameFrom() + " " + trafficQuestionInfo.getStreetNameTo());
 		} else {
 			if (trafficQuestionInfo.getStreetName() != null) {

@@ -29,6 +29,6 @@ public final class Statics {
 	}
 
 	public static String labelLookupURL = "http://[::1]:5000/";
-	public static String datasetSTSURL = "http://pichl.ailao.eu:5050/score";
+	public static String datasetSTSURL = "http://freebase.ailao.eu:5050/score";
 	public static String referenceQuestions = "";
 }
