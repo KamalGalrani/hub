@@ -34,8 +34,9 @@ public class Main_TrafficDomainTest {
 		ArrayList<Double> trafficStreetDistance = main_trafficDomainTest.getMinStreetDistance(trafficQuestions);
 		ArrayList<Double> moviesStreetDistance = main_trafficDomainTest.getMinStreetDistance(moviesQuestions);
 
-		float accuracy = main_trafficDomainTest.accuracy(trafficTopicProbabilities, moviesTopicProbabilities, trafficStreetDistance, moviesStreetDistance, 0.9000000134110451, 1.4950000222772404);
-		System.out.println(accuracy);
+		main_trafficDomainTest.accuracy(trafficTopicProbabilities, moviesTopicProbabilities, trafficStreetDistance, moviesStreetDistance, 0.9000000134110451, 1.4950000222772404);
+		main_trafficDomainTest.recall(trafficTopicProbabilities, moviesTopicProbabilities, trafficStreetDistance, moviesStreetDistance, 0.9000000134110451, 1.4950000222772404);
+		main_trafficDomainTest.precision(trafficTopicProbabilities, moviesTopicProbabilities, trafficStreetDistance, moviesStreetDistance, 0.9000000134110451, 1.4950000222772404);
 	}
 
 	/**
@@ -134,14 +135,14 @@ public class Main_TrafficDomainTest {
 		return distances;
 	}
 
-	private float accuracy(ArrayList<Double> trafficTopicProbabilities, ArrayList<Double> moviesTopicProbabilities,
+	private void accuracy(ArrayList<Double> trafficTopicProbabilities, ArrayList<Double> moviesTopicProbabilities,
 						   ArrayList<Double> trafficStreetDistance, ArrayList<Double> moviesStreetDistance,
 						   double topicTreshold, double distanceTreshold) {
 		int TTraffic = 0;
 		int TMovies = 0;
 
 		//BOTH
-		/*for (int i = 0; i < trafficTopicProbabilities.size(); i++) {
+		for (int i = 0; i < trafficTopicProbabilities.size(); i++) {
 			if (trafficTopicProbabilities.get(i) >= topicTreshold && trafficStreetDistance.get(i) <= distanceTreshold) {
 				TTraffic++;
 			}
@@ -152,10 +153,12 @@ public class Main_TrafficDomainTest {
 				TMovies++;
 			}
 		}
-		return ((float) (TTraffic + TMovies)) / ((float) (trafficTopicProbabilities.size() + moviesTopicProbabilities.size()));*/
+		System.out.println("Topic and street accuracy: " + ((float) (TTraffic + TMovies)) / ((float) (trafficTopicProbabilities.size() + moviesTopicProbabilities.size())));
 
+		TTraffic = 0;
+		TMovies = 0;
 		//TOPIC
-		/*for (int i = 0; i < trafficTopicProbabilities.size(); i++) {
+		for (int i = 0; i < trafficTopicProbabilities.size(); i++) {
 			if (trafficTopicProbabilities.get(i) >= topicTreshold) {
 				TTraffic++;
 			}
@@ -166,8 +169,10 @@ public class Main_TrafficDomainTest {
 				TMovies++;
 			}
 		}
-		return ((float) (TTraffic + TMovies)) / ((float) (trafficTopicProbabilities.size() + moviesTopicProbabilities.size()));*/
+		System.out.println("Topic accuracy: " + ((float) (TTraffic + TMovies)) / ((float) (trafficTopicProbabilities.size() + moviesTopicProbabilities.size())));
 
+		TTraffic = 0;
+		TMovies = 0;
 		//STREET
 		for (int i = 0; i < trafficStreetDistance.size(); i++) {
 			if (trafficStreetDistance.get(i) <= distanceTreshold) {
@@ -180,6 +185,94 @@ public class Main_TrafficDomainTest {
 				TMovies++;
 			}
 		}
-		return ((float) (TTraffic + TMovies)) / ((float) (trafficStreetDistance.size() + moviesStreetDistance.size()));
+		System.out.println("Street accuracy: " + ((float) (TTraffic + TMovies)) / ((float) (trafficStreetDistance.size() + moviesStreetDistance.size())));
+	}
+
+	private void recall(ArrayList<Double> trafficTopicProbabilities, ArrayList<Double> moviesTopicProbabilities,
+						   ArrayList<Double> trafficStreetDistance, ArrayList<Double> moviesStreetDistance,
+						   double topicTreshold, double distanceTreshold) {
+		int TTraffic = 0;
+
+		//BOTH
+		for (int i = 0; i < trafficTopicProbabilities.size(); i++) {
+			if (trafficTopicProbabilities.get(i) >= topicTreshold && trafficStreetDistance.get(i) <= distanceTreshold) {
+				TTraffic++;
+			}
+		}
+		System.out.println("Topic and street recall: " + ((float) TTraffic) / ((float) trafficTopicProbabilities.size()));
+
+		TTraffic = 0;
+		//TOPIC
+		for (int i = 0; i < trafficTopicProbabilities.size(); i++) {
+			if (trafficTopicProbabilities.get(i) >= topicTreshold) {
+				TTraffic++;
+
+			}
+		}
+
+		System.out.println("Topic recall: " + ((float) TTraffic) / ((float) trafficTopicProbabilities.size()));
+
+		TTraffic = 0;
+		//STREET
+		for (int i = 0; i < trafficStreetDistance.size(); i++) {
+			if (trafficStreetDistance.get(i) <= distanceTreshold) {
+				TTraffic++;
+			}
+		}
+		System.out.println("Street recall: " + ((float) TTraffic) / ((float) trafficStreetDistance.size()));
+	}
+
+	private void precision(ArrayList<Double> trafficTopicProbabilities, ArrayList<Double> moviesTopicProbabilities,
+						 ArrayList<Double> trafficStreetDistance, ArrayList<Double> moviesStreetDistance,
+						 double topicTreshold, double distanceTreshold) {
+		int TTraffic = 0;
+		int ALLTraffic = 0;
+
+		//BOTH
+		for (int i = 0; i < trafficTopicProbabilities.size(); i++) {
+			if (trafficTopicProbabilities.get(i) >= topicTreshold && trafficStreetDistance.get(i) <= distanceTreshold) {
+				TTraffic++;
+				ALLTraffic++;
+			}
+		}
+
+		for (int i = 0; i < moviesTopicProbabilities.size(); i++) {
+			if (moviesTopicProbabilities.get(i) >= topicTreshold && moviesTopicProbabilities.get(i) <= distanceTreshold) {
+				ALLTraffic++;
+			}
+		}
+		System.out.println("Topic and street precision: " + ((float) TTraffic) / ((float) ALLTraffic));
+
+		TTraffic = 0;
+		ALLTraffic = 0;
+		//TOPIC
+		for (int i = 0; i < trafficTopicProbabilities.size(); i++) {
+			if (trafficTopicProbabilities.get(i) >= topicTreshold) {
+				TTraffic++;
+				ALLTraffic++;
+			}
+		}
+		for (int i = 0; i < moviesTopicProbabilities.size(); i++) {
+			if (moviesTopicProbabilities.get(i) >= topicTreshold) {
+				ALLTraffic++;
+			}
+		}
+		System.out.println("Topic precision: " + ((float) TTraffic) / ((float) ALLTraffic));
+
+		TTraffic = 0;
+		ALLTraffic = 0;
+		//STREET
+		for (int i = 0; i < trafficStreetDistance.size(); i++) {
+			if (trafficStreetDistance.get(i) <= distanceTreshold) {
+				ALLTraffic++;
+				TTraffic++;
+			}
+		}
+		for (int i = 0; i < moviesStreetDistance.size(); i++) {
+			if (moviesStreetDistance.get(i) <= distanceTreshold) {
+				ALLTraffic++;
+			}
+		}
+		System.out.println("Street precision: " + ((float) TTraffic) / ((float) ALLTraffic));
 	}
 }
