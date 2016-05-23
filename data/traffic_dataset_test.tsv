@@ -1,0 +1,24 @@
+What is the traffic flow in the U Slovanky?	TRAFFIC_SITUATION	U Slovanky	
+What is the traffic in Zenklova street?	TRAFFIC_SITUATION	Zenklova	
+How dense is traffic in the Durychova street?	TRAFFIC_SITUATION	Durychova	
+What is the traffic situation it the Bronzová?	TRAFFIC_SITUATION	Bronzová	
+Is there any traffic incident in the Pod Hranicí?	INCIDENT	Pod Hranicí	
+Is there any car crash in the Nad Manovkou?	INCIDENT	Nad Manovkou	
+Any traffic complication in the Zeyerova alej?	INCIDENT	Zeyerova alej	
+Are there any car crashes in the Pod Novým lesem?	INCIDENT	Pod Novým lesem	
+Is there any construction work in the Pod Juslikou street?	CONSTRUCTION	Pod Juliskou	
+Are there any construction works in the Jednořadá?	CONSTRUCTION	Jednořadá	
+Is there any construction in the Osadní street?	CONSTRUCTION	Osadní	
+Are there any constructions in the U Uranie?	CONSTRUCTION	U Uranie	
+Is Koněvova closed?	CLOSURE	Koněvova	
+Is Olgy Havlové street passable?	CLOSURE	Olgy Havlové	
+Can I go through Nad Vršovskou horou?	CLOSURE	Nad Vršovskou horou	
+Is U Slatin closed?	CLOSURE	U Slatin	
+When will be Starobylá passable again?	RESTRICTION_END	Starobylá	
+When will I be able to go through Podjavorinské?	RESTRICTION_END	Podjavorinské	
+When will the restriction in the Markušova end?	RESTRICTION_END	Markušova	
+When will the restrictions end in the K Dubu?	RESTRICTION_END	K Dubu	
+How to get from Poměnková to Karafiátová?	FASTEST_ROUTE	Pomněnková	Karafiátová
+What is the fastest route from Krupská to Věšínova?	FASTEST_ROUTE	Krupská	Věšínova
+How to get to Pod Lipami from U Sluncové street?	FASTEST_ROUTE	U Sluncové	Pod Lipami
+What is the fastest route to Ocelářská from Přístavní?	FASTEST_ROUTE	Přístavní	Ocelářská
