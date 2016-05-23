@@ -54,7 +54,7 @@ be calculated. The output thresholds can be set in ``eu.ailao.hub.traffic.analyz
 (the street distance) and ``eu.ailao.hub.traffic.analyze.TopicAnalyzer.class`` ``THRESHOLD`` (the topic score).
 This test also shows the accuracy achieved and the misclassified questions.
 
-#### Precision and recall od traffic domain classification
+#### Precision and recall of traffic domain classification
 The precision and recall of domain detection on the traffic class can be calculated by running ``gradlew run_Main_TrafficTest_DomainPrecisionRecall -PexecArgs="
 [Location of .tsv file with traffic questions] [Location of .json file with movies questions] [Address of Lookup Service]
 [Address of dataset-sts scoring API] [File with reference questions] [mode]"`` Mode parameter determines, what thresholds will be used. 
