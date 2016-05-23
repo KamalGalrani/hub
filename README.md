@@ -30,6 +30,7 @@ We used these datasets:
 Traffic training and testing datasets (int the lists 1 and 3): https://docs.google.com/spreadsheets/d/1LAY6trroXwdL8OQVGbBym6EA4yPZEFdR9eHJRAOZIIY/edit?usp=sharing.
 Movies training dataset: https://github.com/brmson/dataset-factoid-movies/blob/master/moviesB/train.json
 Movies testing dataset: https://github.com/brmson/dataset-factoid-movies/blob/master/moviesB/test.json
+They are also in the /data folder.
 
 #### Traffic info 
 You can test traffic question topic and street detection by running ``gradlew run_Main_Traffic -PexecArgs="[Address of Lookup Service]
