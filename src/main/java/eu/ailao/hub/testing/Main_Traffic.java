@@ -1,5 +1,6 @@
-package eu.ailao.hub;
+package eu.ailao.hub.testing;
 
+import eu.ailao.hub.Statics;
 import eu.ailao.hub.traffic.analyze.QuestionAnalyzer;
 import eu.ailao.hub.traffic.analyze.dataclases.TrafficQuestionInfo;
 
@@ -9,7 +10,7 @@ import java.io.InputStreamReader;
 
 /**
  * Created by Petr Marek on 14.03.2016.
- * Main class for detecting question topic
+ * Main class which detects topic and street of one traffic question
  */
 public class Main_Traffic {
 	public static void main(String[] args) {

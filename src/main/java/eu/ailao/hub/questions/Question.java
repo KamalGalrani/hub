@@ -21,7 +21,7 @@ public class Question {
 	private String originalQuestionText;
 	private String transformedQuestionText;
 	private ArrayList<Transformation> transformations = new ArrayList<>();
-	private Statics.Services service;
+	private Statics.Services service = Statics.Services.NOT_KNOWN_YET;
 	private Request request;
 	private Dialog dialog;
 

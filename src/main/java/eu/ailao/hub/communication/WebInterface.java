@@ -46,7 +46,7 @@ public class WebInterface implements Runnable {
 	public WebInterface(int port, String yodaQAURL) {
 		this.port = port;
 		this.yodaQAURL = yodaQAURL;
-		this.questionMapper = new QuestionMapper();
+		this.questionMapper = QuestionMapper.getInstance();
 		this.answerSentenceGenerator = new AnswerSentenceGenerator();
 		this.dialogMemorizer = new DialogMemorizer();
 		this.traffic = new Traffic();
@@ -128,7 +128,12 @@ public class WebInterface implements Runnable {
 		Question question = questionMapper.getQuestionByClientID(id);
 
 		String dialogID = request.splat()[1];
-		Dialog dialog = dialogMemorizer.getDialog(dialogID);
+		Dialog dialog = null;
+		if (dialogID.equals("-1")) {
+			dialog = question.getDialog();
+		} else {
+			dialog = dialogMemorizer.getDialog(dialogID);
+		}
 		if (!dialog.hasQuestionWithId(id)) {
 			dialog.addQuestion(question);
 		}
@@ -146,7 +151,7 @@ public class WebInterface implements Runnable {
 						"\"snippets\":{},\"finished\":false,\"artificialConcepts\":[],\"hasOnlyArtificialConcept\":false," +
 						"\"gen_sources\":0,\"gen_answers\":0}");
 				answer.put("id", question.getClientQuestionID());
-				answer.put("text",question.getOriginalQuestionText());
+				answer.put("text", question.getOriginalQuestionText());
 				break;
 		}
 
@@ -215,10 +220,13 @@ public class WebInterface implements Runnable {
 		CommunicationHandler communicationHandler = new CommunicationHandler();
 		if (request.queryParams("toAnswer") != null) {
 			result = communicationHandler.getGETResponse(yodaQAURL + "q/?toAnswer");
+			result = translateServiceIDToClientID(result);
 		} else if (request.queryParams("inProgress") != null) {
 			result = communicationHandler.getGETResponse(yodaQAURL + "q/?inProgress");
+			result = translateServiceIDToClientID(result);
 		} else if (request.queryParams("answered") != null) {
 			result = communicationHandler.getGETResponse(yodaQAURL + "q/?answered");
+			result = translateServiceIDToClientID(result);
 		} else if (request.queryParams("dialogs") != null) {
 			ArrayList dialogs = dialogMemorizer.getDialogs();
 			List lastDialogs = dialogs.subList(0 < dialogs.size() - 6 ? dialogs.size() - 6 : 0, dialogs.size());
@@ -227,12 +235,26 @@ public class WebInterface implements Runnable {
 				JSONObject oneDialog = new JSONObject();
 				oneDialog.put("id", ((Dialog) lastDialogs.get(i)).getId());
 				oneDialog.put("dialogQuestions", createDialogAnswer((Dialog) lastDialogs.get(i)));
-				dialogArray.put(oneDialog);
+				if (oneDialog.getJSONArray("dialogQuestions").length() != 0) {
+					dialogArray.put(oneDialog);
+				}
 			}
 			result = dialogArray.toString();
 		}
+
 		return result;
 	}
+
+	private String translateServiceIDToClientID(String result) {
+		JSONArray JSONresult = new JSONArray(result);
+		for (int i = 0; i < JSONresult.length(); i++) {
+			try{
+			JSONresult.getJSONObject(i).put("id", questionMapper.getClientIdByServiceID(JSONresult.getJSONObject(i).getInt("id")));}
+			catch(Exception e){}
+		}
+		return JSONresult.toString();
+	}
+
 
 	/***
 	 * Transforms answer back
@@ -267,6 +289,9 @@ public class WebInterface implements Runnable {
 		JSONArray dialogAnswer = new JSONArray();
 		ArrayList<Question> questions = dialog.getQuestions();
 		for (int i = 0; i < questions.size(); i++) {
+			if (questions.get(i) == null) {
+				continue;
+			}
 			JSONObject question = new JSONObject();
 			question.put("id", questions.get(i).getClientQuestionID());
 			question.put("text", questions.get(i).getOriginalQuestionText());

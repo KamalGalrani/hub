@@ -19,8 +19,8 @@ run {
     systemProperties = System.getProperties()
 }
 
-task(run_traffic, dependsOn: 'classes', type: JavaExec) {
-    main = 'eu.ailao.hub.Main_Traffic'
+task(run_Main_Traffic, dependsOn: 'classes', type: JavaExec) {
+    main = 'eu.ailao.hub.testing.Main_Traffic'
     if (project.hasProperty('execArgs'))
         args(execArgs.split())
     classpath = sourceSets.main.runtimeClasspath
@@ -28,24 +28,32 @@ task(run_traffic, dependsOn: 'classes', type: JavaExec) {
     standardInput = System.in
 }
 
-task(run_trafficTest, dependsOn: 'classes', type: JavaExec) {
-    main = 'eu.ailao.hub.Main_TrafficTest'
+task(run_Main_TrafficTest_TopicStreetDetection, dependsOn: 'classes', type: JavaExec) {
+    main = 'eu.ailao.hub.testing.Main_TrafficTest_TopicStreetDetection'
     if (project.hasProperty('execArgs'))
         args(execArgs.split(' '))
     classpath = sourceSets.main.runtimeClasspath
     systemProperties = System.getProperties()
 }
 
-task(run_trafficThresholds, dependsOn: 'classes', type: JavaExec) {
-    main = 'eu.ailao.hub.Main_TrafficThresholds'
+task(run_Main_TrafficTest_DomainThresholds, dependsOn: 'classes', type: JavaExec) {
+    main = 'eu.ailao.hub.testing.Main_TrafficTest_DomainThresholds'
     if (project.hasProperty('execArgs'))
         args(execArgs.split(' '))
     classpath = sourceSets.main.runtimeClasspath
     systemProperties = System.getProperties()
 }
 
-task(run_trafficDomainTest, dependsOn: 'classes', type: JavaExec) {
-    main = 'eu.ailao.hub.Main_TrafficDomainTest'
+task(run_Main_TrafficTest_DomainPrecisionRecall, dependsOn: 'classes', type: JavaExec) {
+    main = 'eu.ailao.hub.testing.Main_TrafficTest_DomainPrecisionRecall'
+    if (project.hasProperty('execArgs'))
+        args(execArgs.split(' '))
+    classpath = sourceSets.main.runtimeClasspath
+    systemProperties = System.getProperties()
+}
+
+task(run_Main_TrafficTest_TopicPrecisionRecall, dependsOn: 'classes', type: JavaExec) {
+    main = 'eu.ailao.hub.testing.Main_TrafficTest_TopicPrecisionRecall'
     if (project.hasProperty('execArgs'))
         args(execArgs.split(' '))
     classpath = sourceSets.main.runtimeClasspath

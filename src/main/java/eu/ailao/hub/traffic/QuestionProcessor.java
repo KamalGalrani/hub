@@ -6,6 +6,7 @@ import eu.ailao.hub.communication.WebInterface;
 import eu.ailao.hub.corefresol.concepts.Concept;
 import eu.ailao.hub.dialog.Dialog;
 import eu.ailao.hub.questions.Question;
+import eu.ailao.hub.questions.QuestionMapper;
 import eu.ailao.hub.transformations.Transformation;
 import eu.ailao.hub.transformations.TransformationArray;
 import org.slf4j.Logger;
@@ -48,6 +49,8 @@ public class QuestionProcessor implements Runnable {
 					questionID = askQuestionYodaQA(question);
 				}
 				question.setServiceQuestionID(questionID);
+				QuestionMapper questionMapper = QuestionMapper.getInstance();
+				questionMapper.setServiceIdAndQuestionIDpair(question.getServiceQuestionID(),question.getClientQuestionID());
 			}
 			try {
 				Thread.sleep(10); // for 100 FPS

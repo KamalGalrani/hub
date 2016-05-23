@@ -24,30 +24,46 @@ YodaQA runs on ``http://localhost:4567/``. Lookup Service runs on ``http://local
    data/reference_questions.tsv"``. To connect
    YodaQA-client to HUB add ``?e=http://localhost:4568/`` to the end of url.
 
-####Traffic info
-You can test traffic question topic detection by running ``gradlew run_traffic -PexecArgs="[Address of Lookup Service]
+### Testing
+
+We used these datasets:
+Traffic training and testing datasets (int the lists 1 and 3): https://docs.google.com/spreadsheets/d/1LAY6trroXwdL8OQVGbBym6EA4yPZEFdR9eHJRAOZIIY/edit?usp=sharing.
+Movies training dataset: https://github.com/brmson/dataset-factoid-movies/blob/master/moviesB/train.json
+Movies testing dataset: https://github.com/brmson/dataset-factoid-movies/blob/master/moviesB/test.json
+
+#### Traffic info 
+You can test traffic question topic and street detection by running ``gradlew run_Main_Traffic -PexecArgs="[Address of Lookup Service]
 [Address of dataset-sts scoring API] [File with reference questions]"`.
 You can ask your question after running this command.
 Output will be in the form of "topic<TAB>street name". This is used for testing mainly.
 
-####Traffic info testing on dataset
-You can test traffic on dataset https://docs.google.com/spreadsheets/d/1LAY6trroXwdL8OQVGbBym6EA4yPZEFdR9eHJRAOZIIY/edit?usp=sharing. 
+#### Traffic topic and street detection 
 This dataset contains question and it's topic with street names. We usually have one street name (for questions concerning 
 only single street), however there can be multiple for questions like "How to get from Evropská to Technická".
-Download the spreadsheet as .tsv file or use the dataset in ``data/traffic_dataset.tsv``. Start test by 
-``gradlew run_trafficTest -PexecArgs="[Location of .tsv file] [Address of Lookup Service] [Address of dataset-sts scoring API]
-[File with reference questions]"`. It will evaluate
-how many questions has correctly detected topic and street name.
+Download the spreadsheet as .tsv file or use the dataset in ``data/traffic_dataset.tsv``. Start the test by 
+``gradlew run_Main_TrafficTest_TopicStreetDetection -PexecArgs="[Location of .tsv file] [Address of Lookup Service] [Address of dataset-sts scoring API]
+[File with reference questions]"`. It evaluates how many questions have correctly detected topic and street name.
 
-#### Calculating thresholds of traffic question recognition
+#### Calculating thresholds of traffic question recognition and accuracy
 There are two thresholds used to recognize the traffic question. The first is the minimal score of topic. The second is 
-the maximal distance from street name. You can run ``gradlew run_trafficThresholds -PexecArgs="
+the maximal edit distance of street name. You can run ``gradlew run_Main_TrafficTest_DomainThresholds -PexecArgs="
 [Location of .tsv file with traffic questions] [Location of .json file with movies questions] [Address of Lookup Service]
 [Address of dataset-sts scoring API] [File with reference questions] [mode]"`` Mode parameter determines, what thresholds will be used.
 0 means only topic threshold will be calculated, 1 means only street threshold will be calculated and 2 means both thresholds will
 be calculated. The output thresholds can be set in ``eu.ailao.hub.traffic.analyze.StreetAnalyzer.class`` ``DISTANCE_THRESHOLD`` 
-(the street distance) and ``eu.ailao.hub.traffic.analyze.TopicAnalyzer.class`` ``THRESHOLD``  (the topic score).
+(the street distance) and ``eu.ailao.hub.traffic.analyze.TopicAnalyzer.class`` ``THRESHOLD`` (the topic score).
+This test also shows the accuracy achieved and the misclassified questions.
 
+#### Precision and recall od traffic domain classification
+The precision and recall of domain detection on the traffic class can be calculated by running ``gradlew run_Main_TrafficTest_DomainPrecisionRecall -PexecArgs="
+[Location of .tsv file with traffic questions] [Location of .json file with movies questions] [Address of Lookup Service]
+[Address of dataset-sts scoring API] [File with reference questions] [mode]"`` Mode parameter determines, what thresholds will be used. 
+0 means only topic threshold will be used, 1 means only street threshold will be used and 2 means both thresholds will 
+be used.
+
+#### Precision and recall of traffic topic classification
+The precision and recall of topic detection on the all topics can be calculated by running ``gradlew run_Main_TrafficTest_TopicPrecisionRecall -PexecArgs="[Location of .tsv file] [Address of Lookup Service] [Address of dataset-sts scoring API]
+ [File with reference questions]"`.
 
 ##Dialog API
 Dialog API expands YodaQA's API https://github.com/brmson/yodaqa/blob/master/doc/REST-API.md. Hub gets request from

@@ -1,5 +1,6 @@
-package eu.ailao.hub;
+package eu.ailao.hub.testing;
 
+import eu.ailao.hub.Statics;
 import eu.ailao.hub.traffic.analyze.StreetAnalyzer;
 import eu.ailao.hub.traffic.analyze.TopicAnalyzer;
 import eu.ailao.hub.traffic.analyze.dataclases.StreetCandidate;
@@ -10,9 +11,11 @@ import java.util.ArrayList;
 
 /**
  * Created by Petr Marek on 4/13/2016.
- * Class for finding the best tresholds for topic probabilities and street candidate distance to recognize the traffic question
+ * Class for finding the best tresholds for topic probabilities and street candidate distance
+ * to recognize the traffic question
+ * The class also shows the misclassified questions
  */
-public class Main_TrafficThresholds {
+public class Main_TrafficTest_DomainThresholds {
 
 	private static final int TOPIC_ONLY = 0;
 	private static final int STREET_ONLY = 1;
@@ -40,10 +43,10 @@ public class Main_TrafficThresholds {
 		Statics.referenceQuestions = args[4];
 		int mode = Integer.parseInt(args[5]);
 
-		Main_TrafficThresholds main_trafficThresholds = new Main_TrafficThresholds();
+		Main_TrafficTest_DomainThresholds main_trafficTestDomainThresholds = new Main_TrafficTest_DomainThresholds();
 
-		ArrayList<String> trafficQuestions = main_trafficThresholds.loadTrafficDataset(tsvFile);
-		ArrayList<String> moviesQuestions = main_trafficThresholds.loadMoviesDataset(moviesDataset);
+		ArrayList<String> trafficQuestions = main_trafficTestDomainThresholds.loadTrafficDataset(tsvFile);
+		ArrayList<String> moviesQuestions = main_trafficTestDomainThresholds.loadMoviesDataset(moviesDataset);
 
 		ArrayList<Double> trafficTopicProbabilities = null;
 		ArrayList<Double> moviesTopicProbabilities = null;
@@ -51,38 +54,38 @@ public class Main_TrafficThresholds {
 		ArrayList<Double> moviesStreetDistance = null;
 
 		if (mode == TOPIC_ONLY || mode == TOPIC_AND_STREET) {
-			trafficTopicProbabilities = main_trafficThresholds.getMaxTopicProbabilities(trafficQuestions);
-			moviesTopicProbabilities = main_trafficThresholds.getMaxTopicProbabilities(moviesQuestions);
+			trafficTopicProbabilities = main_trafficTestDomainThresholds.getMaxTopicProbabilities(trafficQuestions);
+			moviesTopicProbabilities = main_trafficTestDomainThresholds.getMaxTopicProbabilities(moviesQuestions);
 		}
 
 		if (mode == STREET_ONLY || mode == TOPIC_AND_STREET) {
-			trafficStreetDistance = main_trafficThresholds.getMinStreetDistance(trafficQuestions);
-			moviesStreetDistance = main_trafficThresholds.getMinStreetDistance(moviesQuestions);
+			trafficStreetDistance = main_trafficTestDomainThresholds.getMinStreetDistance(trafficQuestions);
+			moviesStreetDistance = main_trafficTestDomainThresholds.getMinStreetDistance(moviesQuestions);
 		}
 
-		double[] tresholds = main_trafficThresholds.findTresholds(mode, trafficTopicProbabilities, moviesTopicProbabilities, trafficStreetDistance, moviesStreetDistance);
+		double[] tresholds = main_trafficTestDomainThresholds.findTresholds(mode, trafficTopicProbabilities, moviesTopicProbabilities, trafficStreetDistance, moviesStreetDistance);
 
 		switch (mode) {
 			case TOPIC_ONLY:
-				System.out.println("Accuracy = " + tresholds[main_trafficThresholds.ACCURACY] + " Treshold = " + tresholds[main_trafficThresholds.MIN_TOPIC_TRESHOLD]);
+				System.out.println("Accuracy = " + tresholds[main_trafficTestDomainThresholds.ACCURACY] + " Treshold = " + tresholds[main_trafficTestDomainThresholds.MIN_TOPIC_TRESHOLD]);
 				break;
 			case STREET_ONLY:
-				System.out.println("Accuracy = " + tresholds[main_trafficThresholds.ACCURACY] + " Distance = " + tresholds[main_trafficThresholds.MAX_DISTANCE_TRESHOLD]);
+				System.out.println("Accuracy = " + tresholds[main_trafficTestDomainThresholds.ACCURACY] + " Distance = " + tresholds[main_trafficTestDomainThresholds.MAX_DISTANCE_TRESHOLD]);
 				break;
 			case TOPIC_AND_STREET:
-				System.out.println("Accuracy = " + tresholds[main_trafficThresholds.ACCURACY] + " Treshold = " + tresholds[main_trafficThresholds.MIN_TOPIC_TRESHOLD] + " Distance = " + tresholds[main_trafficThresholds.MAX_DISTANCE_TRESHOLD]);
+				System.out.println("Accuracy = " + tresholds[main_trafficTestDomainThresholds.ACCURACY] + " Treshold = " + tresholds[main_trafficTestDomainThresholds.MIN_TOPIC_TRESHOLD] + " Distance = " + tresholds[main_trafficTestDomainThresholds.MAX_DISTANCE_TRESHOLD]);
 				break;
 		}
 
-		if (mode == main_trafficThresholds.TOPIC_ONLY || mode == main_trafficThresholds.TOPIC_AND_STREET) {
-			System.out.println("Max movie topic = " + main_trafficThresholds.getMax(moviesTopicProbabilities) + " Min traffic topic = " + main_trafficThresholds.getMin(trafficTopicProbabilities));
+		if (mode == main_trafficTestDomainThresholds.TOPIC_ONLY || mode == main_trafficTestDomainThresholds.TOPIC_AND_STREET) {
+			System.out.println("Max movie topic = " + main_trafficTestDomainThresholds.getMax(moviesTopicProbabilities) + " Min traffic topic = " + main_trafficTestDomainThresholds.getMin(trafficTopicProbabilities));
 		}
 
-		if (mode == main_trafficThresholds.STREET_ONLY || mode == main_trafficThresholds.TOPIC_AND_STREET) {
-			System.out.println("Min movie distance = " + main_trafficThresholds.getMin(moviesStreetDistance) + " Max traffic distance= " + main_trafficThresholds.getMax(trafficStreetDistance));
+		if (mode == main_trafficTestDomainThresholds.STREET_ONLY || mode == main_trafficTestDomainThresholds.TOPIC_AND_STREET) {
+			System.out.println("Min movie distance = " + main_trafficTestDomainThresholds.getMin(moviesStreetDistance) + " Max traffic distance= " + main_trafficTestDomainThresholds.getMax(trafficStreetDistance));
 		}
-		main_trafficThresholds.printMistakes(mode, tresholds[main_trafficThresholds.MIN_TOPIC_TRESHOLD],
-				tresholds[main_trafficThresholds.MAX_DISTANCE_TRESHOLD],
+		main_trafficTestDomainThresholds.printMistakes(mode, tresholds[main_trafficTestDomainThresholds.MIN_TOPIC_TRESHOLD],
+				tresholds[main_trafficTestDomainThresholds.MAX_DISTANCE_TRESHOLD],
 				trafficTopicProbabilities, moviesTopicProbabilities,
 				trafficStreetDistance, moviesStreetDistance,
 				trafficQuestions, moviesQuestions);

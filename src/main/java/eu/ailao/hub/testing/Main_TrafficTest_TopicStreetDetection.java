@@ -1,5 +1,6 @@
-package eu.ailao.hub;
+package eu.ailao.hub.testing;
 
+import eu.ailao.hub.Statics;
 import eu.ailao.hub.traffic.analyze.QuestionAnalyzer;
 import eu.ailao.hub.traffic.analyze.dataclases.TrafficQuestionInfo;
 
@@ -7,8 +8,9 @@ import java.io.*;
 
 /**
  * Created by Petr Marek on 3/23/2016.
+ * Class which test detection of topic and streets in traffic questions
  */
-public class Main_TrafficTest {
+public class Main_TrafficTest_TopicStreetDetection {
 	private final int TOPIC = 0;
 	private final int STREET = 1;
 
@@ -22,9 +24,9 @@ public class Main_TrafficTest {
 		Statics.datasetSTSURL = args[2];
 		Statics.referenceQuestions = args[3];
 
-		Main_TrafficTest main_trafficTest = new Main_TrafficTest();
+		Main_TrafficTest_TopicStreetDetection main_trafficTestTopicStreetDetection = new Main_TrafficTest_TopicStreetDetection();
 
-		main_trafficTest.test(tsvFile);
+		main_trafficTestTopicStreetDetection.test(tsvFile);
 	}
 
 	private void test(String tsvFile) {

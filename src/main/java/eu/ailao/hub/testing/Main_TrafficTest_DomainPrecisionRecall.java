@@ -1,5 +1,6 @@
-package eu.ailao.hub;
+package eu.ailao.hub.testing;
 
+import eu.ailao.hub.Statics;
 import eu.ailao.hub.traffic.analyze.StreetAnalyzer;
 import eu.ailao.hub.traffic.analyze.TopicAnalyzer;
 import eu.ailao.hub.traffic.analyze.dataclases.StreetCandidate;
@@ -10,8 +11,9 @@ import java.util.ArrayList;
 
 /**
  * Created by Petr Marek on 5/6/2016.
+ * The class which computes precision and recall of traffic domain
  */
-public class Main_TrafficDomainTest {
+public class Main_TrafficTest_DomainPrecisionRecall {
 
 	public static void main(String[] args) {
 		if (args.length < 5) {
@@ -24,19 +26,19 @@ public class Main_TrafficDomainTest {
 		Statics.datasetSTSURL = args[3];
 		Statics.referenceQuestions = args[4];
 
-		Main_TrafficDomainTest main_trafficDomainTest = new Main_TrafficDomainTest();
-		ArrayList<String> trafficQuestions = main_trafficDomainTest.loadTrafficDataset(trafficQuestionsFile);
-		ArrayList<String> moviesQuestions = main_trafficDomainTest.loadMoviesDataset(moviesQuestionsFile);
+		Main_TrafficTest_DomainPrecisionRecall main_trafficTestDomainPrecisionRecall = new Main_TrafficTest_DomainPrecisionRecall();
+		ArrayList<String> trafficQuestions = main_trafficTestDomainPrecisionRecall.loadTrafficDataset(trafficQuestionsFile);
+		ArrayList<String> moviesQuestions = main_trafficTestDomainPrecisionRecall.loadMoviesDataset(moviesQuestionsFile);
 
-		ArrayList<Double> trafficTopicProbabilities = main_trafficDomainTest.getMaxTopicProbabilities(trafficQuestions);
-		ArrayList<Double> moviesTopicProbabilities = main_trafficDomainTest.getMaxTopicProbabilities(moviesQuestions);
+		ArrayList<Double> trafficTopicProbabilities = main_trafficTestDomainPrecisionRecall.getMaxTopicProbabilities(trafficQuestions);
+		ArrayList<Double> moviesTopicProbabilities = main_trafficTestDomainPrecisionRecall.getMaxTopicProbabilities(moviesQuestions);
 
-		ArrayList<Double> trafficStreetDistance = main_trafficDomainTest.getMinStreetDistance(trafficQuestions);
-		ArrayList<Double> moviesStreetDistance = main_trafficDomainTest.getMinStreetDistance(moviesQuestions);
+		ArrayList<Double> trafficStreetDistance = main_trafficTestDomainPrecisionRecall.getMinStreetDistance(trafficQuestions);
+		ArrayList<Double> moviesStreetDistance = main_trafficTestDomainPrecisionRecall.getMinStreetDistance(moviesQuestions);
 
-		main_trafficDomainTest.accuracy(trafficTopicProbabilities, moviesTopicProbabilities, trafficStreetDistance, moviesStreetDistance, 0.9000000134110451, 1.4950000222772404);
-		main_trafficDomainTest.recall(trafficTopicProbabilities, moviesTopicProbabilities, trafficStreetDistance, moviesStreetDistance, 0.9000000134110451, 1.4950000222772404);
-		main_trafficDomainTest.precision(trafficTopicProbabilities, moviesTopicProbabilities, trafficStreetDistance, moviesStreetDistance, 0.9000000134110451, 1.4950000222772404);
+		main_trafficTestDomainPrecisionRecall.accuracy(trafficTopicProbabilities, moviesTopicProbabilities, trafficStreetDistance, moviesStreetDistance, 0.9000000134110451, 1.4950000222772404);
+		main_trafficTestDomainPrecisionRecall.recall(trafficTopicProbabilities, moviesTopicProbabilities, trafficStreetDistance, moviesStreetDistance, 0.9000000134110451, 1.4950000222772404);
+		main_trafficTestDomainPrecisionRecall.precision(trafficTopicProbabilities, moviesTopicProbabilities, trafficStreetDistance, moviesStreetDistance, 0.9000000134110451, 1.4950000222772404);
 	}
 
 	/**
