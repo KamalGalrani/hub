@@ -57,13 +57,11 @@ This test also shows the accuracy achieved and the misclassified questions.
 #### Precision and recall of traffic domain classification
 The precision and recall of domain detection on the traffic class can be calculated by running ``gradlew run_Main_TrafficTest_DomainPrecisionRecall -PexecArgs="
 [Location of .tsv file with traffic questions] [Location of .json file with movies questions] [Address of Lookup Service]
-[Address of dataset-sts scoring API] [File with reference questions] [mode]"`` Mode parameter determines, what thresholds will be used. 
-0 means only topic threshold will be used, 1 means only street threshold will be used and 2 means both thresholds will 
-be used.
+[Address of dataset-sts scoring API] [File with reference questions]"``
 
 #### Precision and recall of traffic topic classification
-The precision and recall of topic detection on the all topics can be calculated by running ``gradlew run_Main_TrafficTest_TopicPrecisionRecall -PexecArgs="[Location of .tsv file] [Address of Lookup Service] [Address of dataset-sts scoring API]
- [File with reference questions]"`.
+The precision and recall of topic detection on the all topics can be calculated by running ``gradlew run_Main_TrafficTest_TopicPrecisionRecall -PexecArgs="
+[Location of .tsv file] [Address of Lookup Service] [Address of dataset-sts scoring API][File with reference questions]"`.
 
 ##Dialog API
 Dialog API expands YodaQA's API https://github.com/brmson/yodaqa/blob/master/doc/REST-API.md. Hub gets request from
